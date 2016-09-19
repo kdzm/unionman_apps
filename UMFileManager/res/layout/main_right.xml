@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabmain"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+    android:background="@drawable/border"
+    >
+
+    <FrameLayout
+		android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		>
+        <LinearLayout
+			android:id="@+id/expandFile"
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+			<ExpandableListView
+			    android:id="@+id/expandlistView"
+				android:visibility="visible"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:divider="@drawable/hisil_fengexian"
+				android:childDivider="@drawable/hisil_fengexian"
+				android:listSelector="@drawable/mselector"
+				android:fadingEdge="none"
+				/>
+        </LinearLayout>
+        <LinearLayout
+			android:id="@+id/listFile"
+            android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+			<ListView
+			    android:id="@+id/listView"
+				android:visibility="invisible"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:listSelector="@drawable/mselector"
+				android:divider="@drawable/hisil_fengexian"
+				android:fadingEdge="none"
+				/>
+        </LinearLayout>
+
+        <LinearLayout
+			android:id="@+id/gridFile"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <GridView
+                android:id="@+id/gridView"
+				android:visibility="invisible"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+                android:horizontalSpacing="5dp"
+				android:verticalSpacing="20dp"
+                android:columnWidth="5dp"
+				android:numColumns="7"
+                android:listSelector="@color/transparent"
+                />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

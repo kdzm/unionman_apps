@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="yellow">#ffff00</color>
+    <color name="black">#ff000000</color>
+
+    <!-- add by um -->
+    <color name="bright_foreground_dark">#ffffffff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#fff0f0f0</color>
+
+    <!-- setting view -->
+    <color name="cache_color_hint_color">#00000000</color>
+
+</resources>

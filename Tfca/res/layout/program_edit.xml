@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bg2"
+        android:orientation="vertical" >
+  
+    <TextView  
+	    android:id="@+id/textView1" 
+	    android:layout_width="fill_parent"
+	    android:gravity="center"
+	    android:textSize="30sp" android:layout_height="52dip" android:text="@string/chan_edit">
+    </TextView>
+    <LinearLayout 
+    android:layout_marginTop="30dip"
+    	android:orientation="horizontal"
+    	android:layout_marginLeft="30dip"
+     	android:layout_height="wrap_content"
+     	android:background="@drawable/border" android:weightSum="1" android:layout_width="740dp">
+    <TextView 
+	     android:layout_height="50dip"
+	     android:textSize="24sp"
+	     android:textColor="#ffffff"
+	     android:gravity="center" 
+	     android:background="@drawable/border" android:layout_width="420dp" android:text="@string/program"/>
+     <TextView 
+	     android:layout_height="50dip"
+	     android:textSize="24sp"
+	     android:textColor="#ffffff"
+	     android:gravity="center" 
+	     android:background="@drawable/border" android:layout_width="80dp" android:text="@string/delete"/>
+     <TextView 
+	     android:layout_height="50dip"
+	     android:textSize="24sp"
+	     android:textColor="#ffffff"
+	     android:gravity="center"
+	     android:background="@drawable/border" android:layout_weight="0.37" android:layout_width="80dp" android:text="@string/sort"/>
+     <TextView 
+	     android:layout_height="50dip"
+	     android:textSize="24sp"
+	     android:textColor="#ffffff"
+	     android:gravity="center" 
+	     android:background="@drawable/border" android:layout_width="80dp" android:text="@string/fav"/>
+     <TextView 
+	     android:layout_height="50dip"
+	     android:textSize="24sp"
+	     android:textColor="#ffffff"
+	     android:gravity="center" 
+	     android:background="@drawable/border" android:layout_weight="0.59" android:layout_width="80dp" android:text="@string/lock"/> 
+    </LinearLayout>
+    	<ListView 
+	    	android:layout_marginLeft="30dip"
+	    	android:background="@drawable/border"
+		    android:id="@+id/MyListView"
+			android:layout_height="254dip"
+			android:cacheColorHint="#00000000"
+			android:listSelector="@drawable/searchmenu_btn" android:layout_width="740dp" android:layout_weight="0.46"/>
+		  <LinearLayout 
+		 android:layout_marginBottom="10dip"
+    	android:orientation="horizontal"
+    	android:layout_marginLeft="30dip"
+     	android:layout_height="50dip" android:layout_width="740dp"> 
+     	<TextView     
+     	android:layout_marginLeft="73dip"
+	     android:layout_width="80dip"
+	     android:layout_height="fill_parent"
+	     android:textColor="#ffffff"
+	     android:gravity="bottom"	android:textSize="24sp" android:text="@string/delete"/>
+     	<ImageView android:background="@drawable/delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom"></ImageView>
+     	<TextView      	
+     	android:layout_marginLeft="75dip"
+     	android:gravity="bottom" 
+     	android:textColor="#ffffff" 
+     	android:layout_height="fill_parent" 
+     	android:layout_width="80dip" android:textSize="24sp" android:text="@string/sort"></TextView>
+     	<ImageView    	
+     	android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:background="@drawable/sort"
+     	android:layout_gravity="bottom"
+     	/>
+     	
+     	<TextView     	
+     	android:gravity="bottom" 
+     	android:textSize="24sp" 
+     	android:textColor="#ffffff" 
+     	android:layout_marginLeft="75dip" 
+     	android:layout_height="fill_parent" 
+     	android:layout_width="80dip" android:text="@string/fav"></TextView>
+
+     	<ImageView      	
+     	android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:background="@drawable/like"
+     	android:layout_gravity="bottom"
+     	/>
+     	<TextView     	
+     	android:layout_marginLeft="75dip"
+	     android:layout_width="80dip"
+	     android:layout_height="fill_parent"
+	     android:textSize="24sp"
+	     android:textColor="#ffffff"
+	     android:gravity="bottom" android:text="@string/lock"/>
+     	<ImageView      	
+     	android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:background="@drawable/lock"
+     	android:layout_gravity="bottom"
+     	/>
+     	
+     	
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

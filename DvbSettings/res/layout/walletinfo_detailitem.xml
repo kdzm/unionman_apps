@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView
+		android:id="@+id/walletItem1"
+		android:layout_height="40dip"
+		android:textColor="#ffffff"
+		android:textSize="24sp"
+		android:gravity="center"
+		android:background="@drawable/upborder"
+		android:layout_width="174dp" />
+	<TextView
+	android:id="@+id/walletItem2"
+		android:layout_height="40dip"
+		android:textColor="#ffffff"
+		android:textSize="24sp"
+		android:gravity="center"
+		android:background="@drawable/upborder"
+		android:layout_width="174dp" />
+	<TextView
+		android:id="@+id/walletItem3"
+		android:layout_height="40dip"
+		android:textColor="#ffffff"
+		android:textSize="24sp"
+		android:gravity="center"
+		android:background="@drawable/upborder"
+		android:layout_width="174dp" />
+</LinearLayout>

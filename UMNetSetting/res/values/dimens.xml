@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_left_margin">40.0dip</dimen>
+    <dimen name="setitem_left_margin">60.0dip</dimen>
+    <dimen name="setitem_text1">340.0dip</dimen>
+    <dimen name="setitem_text2">300.0dip</dimen>
+    <dimen name="setitem_height">54.0dip</dimen>
+    <dimen name="toast_bg_corner_radius">10.0dip</dimen>
+</resources>

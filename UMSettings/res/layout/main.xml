@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/aaa"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+<!--   <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="30.0dip"
+        android:layout_marginLeft="30.0dip">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_icon"
+        android:orientation="vertical" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:text="@string/app_name"/>
+    </LinearLayout>-->
+   <LinearLayout 
+      	android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="horizontal"
+	    android:paddingBottom="35.0dip"
+	    android:paddingLeft="90.0dip"
+	    android:paddingRight="130.0dip"
+	    android:paddingTop="45.0dip"  
+       >
+    <LinearLayout
+        android:background="@color/halfblack"
+        android:id="@id/leftMenu_layout"
+        android:layout_width="250.0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:id="@id/listviewup"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/trans"
+            android:focusable="true"
+            android:orientation="vertical" />
+
+        <ListView
+            android:id="@id/menulist_id"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/trans"
+            android:clipChildren="true"
+            android:divider="@null"
+            android:dividerHeight="5.0dip"
+            android:fadingEdge="vertical"
+            android:fadingEdgeLength="0.0dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:listSelector="@drawable/selector_menuitem_selected"
+            android:nextFocusDown="@id/listviewdown"
+            android:nextFocusRight="@id/rightContent_layout"
+            android:nextFocusUp="@id/listviewup"
+            android:scrollbars="none"
+            android:scrollingCache="false" />
+
+        <LinearLayout
+            android:id="@id/listviewdown"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/trans"
+            android:focusable="true"
+            android:orientation="vertical" />
+    </LinearLayout>
+        <include
+            layout="@layout/vdivider"/>
+    <FrameLayout
+        android:layout_marginLeft="50dp"
+        android:background="@color/halfblack"
+        android:id="@id/rightContent_layout"
+        android:layout_width="760.0dip"
+        android:layout_height="fill_parent"
+        android:focusable="true" />
+    </LinearLayout>
+
+</LinearLayout>

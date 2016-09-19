@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="white">#ffffffff</color>
+    <color name="gred">#838383</color>
+    
+    <color name="setting_item_focus">#43c0ff</color>
+    <color name="cache_color_hint">#00000000</color>
+    <color name="item_unselected">#D6DDE5</color>
+    <color name="menu_view_text">#ff9900</color>
+    <color name="progress_view_text">#6B6B6B</color>
+    
+    <!-- seekBar color-->
+    <color name="seekbar_bg_color">#606060</color>
+    <color name="seekbar_progress_fill_focus_color">#ffd800</color>
+    <color name="seekbar_progress_fill_color">#898989</color>
+</resources>

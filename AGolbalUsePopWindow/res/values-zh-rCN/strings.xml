@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AGolbalUsePopWindow</string>
+    <string name="pic_setting_main_title">图像设置</string>
+    <string name="pic_setting_sub_title">设置图像参数</string>
+    <string name="sound_setting_main_title">声音设置</string>
+    <string name="sound_setting_sub_title">设置声音参数</string>
+
+</resources>

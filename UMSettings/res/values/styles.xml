@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Theme.settings" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:scrollbarThumbHorizontal">@drawable/ic_horizontal_bar_in_bg</item>
+        <item name="android:scrollbarThumbVertical">@drawable/ic_vertical_bar_in_bg</item>
+    </style>
+    <style name="title">
+        <item name="android:textSize">30.0sp</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/background_title</item>
+        <item name="android:paddingLeft">@dimen/title_left_margin</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="checkRadioButton_normal">
+        <item name="android:focusable">true</item>
+        <item name="android:nextFocusLeft">@id/leftMenu_layout</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/setitem_height</item>
+        <item name="text_color1">@drawable/selector_crb_text</item>
+        <item name="text_color2">@drawable/selector_crb_text</item>
+    </style>
+    <style name="radio">
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:layout_width">170.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@drawable/selector_btn_radio</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="net_radio">
+        <item name="android:textSize">25.0sp</item>
+        <item name="android:paddingLeft">45.0dip</item>
+        <item name="android:layout_width">150.0dip</item>
+        <item name="android:layout_height">@dimen/setitem_height</item>
+        <item name="android:button">@drawable/selector_btn_radio</item>
+    </style>
+    <style name="seekBar">
+        <item name="android:focusable">true</item>
+        <item name="android:maxHeight">9.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/seekbar</item>
+        <item name="android:minHeight">9.0dip</item>
+        <item name="android:thumb">@drawable/seekbar_thumb</item>
+        <item name="android:thumbOffset">7.0dip</item>
+    </style>
+    <style name="check">
+        <item name="android:paddingLeft">50.0dip</item>
+        <item name="android:layout_width">100.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@drawable/selector_btn_check</item>
+    </style>
+    <style name="button">
+        <item name="android:textSize">25.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/selector_button</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="input_layout">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+    </style>
+    <style name="about_list">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/setitem_height</item>
+    </style>
+    <style name="edit_left_lable">
+        <item name="android:textSize">27.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:layout_width">230.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="edit_left_lable1">
+        <item name="android:textSize">27.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:layout_width">30.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="edit_long">
+        <item name="android:textSize">25.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/selector_long_input</item>
+        <item name="android:paddingLeft">7.0dip</item>
+        <item name="android:paddingRight">7.0dip</item>
+        <item name="android:nextFocusLeft">@id/leftMenu_layout</item>
+        <item name="android:layout_width">500.0px</item>
+        <item name="android:layout_height">50.0px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+    <style name="edit_short_2">
+        <item name="android:textSize">25.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/selector_short_input</item>
+        <item name="android:paddingLeft">7.0dip</item>
+        <item name="android:paddingRight">7.0dip</item>
+        <item name="android:nextFocusLeft">@id/leftMenu_layout</item>
+        <item name="android:layout_width">300.0px</item>
+        <item name="android:layout_height">50.0px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+    
+    <style name = "MY_CHECHBOX" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_btn_check</item>
+    </style>
+    
+    <style name="edit_short_1">
+        <item name="android:textSize">27.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/selector_long_input</item>
+        <item name="android:paddingLeft">7.0dip</item>
+        <item name="android:paddingRight">7.0dip</item>
+        <item name="android:nextFocusLeft">@id/leftMenu_layout</item>
+        <item name="android:layout_width">300.0px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+    <style name="edit_short">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">7.0dip</item>
+        <item name="android:paddingRight">7.0dip</item>
+        <item name="android:nextFocusLeft">@id/leftMenu_layout</item>
+        <item name="android:layout_height">60.0px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textSize">25.0sp</item>
+        <item name="android:background">@drawable/selector_short_input</item>
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowBackground">@drawable/back</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="textsize">
+        <item name="android:textSize">25.0sp</item>
+    </style>
+    <style name="systemup_pb_style" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/upgrade_progress_horizontal</item>
+    </style>
+</resources>

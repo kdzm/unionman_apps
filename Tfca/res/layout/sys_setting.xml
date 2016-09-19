@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+      android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bg1"
+        android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="54dip"
+        android:gravity="center"
+        android:text="@string/sys_set"
+        android:textColor="@color/white"
+        android:textSize="30sp" >
+    </TextView>
+
+    <Button
+        android:id="@+id/sys_setting_1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/searchmenu_btn"
+        android:text="@string/main_freq_setting"
+        android:textColor="@color/white"
+        android:textSize="24sp" >
+
+        <requestFocus />
+    </Button>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#46a1a1a1" />
+
+    <Button
+        android:id="@+id/sys_setting_2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/searchmenu_btn"
+        android:text="@string/check_signal"
+        android:textColor="@color/white"
+        android:textSize="24sp" >
+    </Button>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#46a1a1a1" />
+
+    <Button
+        android:id="@+id/sys_setting_3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/searchmenu_btn"
+        android:text="@string/parent_lock"
+        android:textColor="@color/white"
+        android:textSize="24sp" >
+    </Button>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#46a1a1a1" />
+
+    <Button
+        android:id="@+id/sys_setting_4"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/searchmenu_btn"
+        android:text="@string/tf_condition_access"
+        android:textColor="@color/white"
+        android:textSize="24sp" >
+    </Button>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#46a1a1a1" />
+
+    <Button
+        android:id="@+id/sys_setting_5"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/searchmenu_btn"
+        android:text="@string/factory_reset"
+        android:textColor="@color/white"
+        android:textSize="24sp" >
+    </Button>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#46a1a1a1" />
+
+    <Button
+        android:id="@+id/sys_setting_6"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/searchmenu_btn"
+        android:text="@string/audio_setting"
+        android:textColor="@color/white"
+        android:textSize="24sp" >
+    </Button>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#46a1a1a1" />
+</LinearLayout>
+</LinearLayout>

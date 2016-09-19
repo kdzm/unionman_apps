@@ -1,0 +1,17 @@
+<resources>
+
+    <string name = "program_data_error">获取节目信息失败！</string>
+    <string name = "opera_fail">获取运营商失败！</string>
+    <string name="app_name">UmReceiver</string>
+    <string name="update_success">Update success!</string>
+    <string name="insert_card">请插入智能卡!</string>
+    <string name="check_cable">请检查数字信号线!</string>
+    <string name="over_time">授权已过期!</string>
+    <string name="sys_time">系统时间不对！</string>
+    <string name="ca_ok">ca_ok</string>
+    <string name="have_no_package">没有50数据包</string>
+    <string name="nit_version_change_tips">节目变化，是否搜索？</string>
+    <string name="altert_dialog_title">温馨提示</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+</resources>

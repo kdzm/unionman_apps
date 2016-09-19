@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bg1"
+        android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchmenu_btn"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/dvt_verify_pin"
+            android:textColor="@color/white"
+            android:textSize="30sp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:gravity="center|left" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:gravity="right"
+            android:text="@string/dvt_input_pin"
+            android:textColor="@color/white"
+            android:textSize="24sp" >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:inputType="numberPassword"
+            android:maxLength="8"
+            android:selectAllOnFocus="true" >
+
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ok_btn"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center|left" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="560dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/dvt_pin_tips"
+            android:textColor="@color/white"
+            android:textSize="24sp" >
+
+        </TextView>
+    </LinearLayout>
+    
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" >
+
+        <TextView
+            android:id="@+id/txt_condition_access"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/modify_rank_help"
+            android:textColor="@color/white"
+            android:textSize="28sp" >
+        </TextView>
+    </LinearLayout>
+    
+</LinearLayout>

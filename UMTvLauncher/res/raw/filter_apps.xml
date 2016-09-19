@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Applications>
+
+    <!-- ATV -->
+    <Application>
+        <PackageName>
+com.hisilicon.atv
+        </PackageName>
+    </Application>
+    <!-- DTV -->
+    <Application>
+        <PackageName>
+com.hisilicon.dtv
+        </PackageName>
+    </Application>
+    <!-- Launcher -->
+    <Application>
+        <PackageName>
+com.hisilicon.launcher
+        </PackageName>
+    </Application>
+    <!-- quickSetting -->
+    <Application>
+        <PackageName>
+com.hisilicon.quicksetting
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.um.launcher
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.source
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.portplayer
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+cn.com.unionman.umtvsetting.appmanage
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.um.atv
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+cn.com.unionman.umtvsetting.umsettingmenu
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.um.gallery3d
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.umexplorer
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.um.music
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.unionman.netsetup
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+cn.com.unionman.umtvsetting.picture
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+cn.com.unionman.umtvsetting.powersave
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+cn.com.unionman.umtvsetting.sound
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+cn.com.unionman.umtvsetting.systeminfo
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+cn.com.unionman.umtvsetting.system
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.um.videoplayer
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.um.dvbsearch
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.um.dvbsearch
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.um.dvbsettings
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.um.dvb
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.um.tfca
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.um.dvtca
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.um.filemanager
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.explorer
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.farproc.wifi.analyzer
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.hisilicon.dlna.mediacenter
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.hisilicon.miracast
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.android.speechrecorder
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.example.hidualnetdemo
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.hisilicon.android
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.hisilicon.android.acceleratd.ageing
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.android.development
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.hisilicon.android.networkupgrade
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.hisilicon.dtvui
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.hi.pvr.activity
+        </PackageName>
+    </Application>
+    <Application>
+        <PackageName>
+com.hisilicon.android.HiSuspendMode
+        </PackageName>
+    </Application>
+</Applications>

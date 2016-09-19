@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UMHuangAuth</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="OK">确认</string>
+	<string name="Cancel">取消</string>
+	<string name="upgrade_warn">检测到新版本，版本信息如下：</string>
+	<string name="upgrade_notify">是否进行升级？</string>
+	<string name="download_warn">即将进入后台下载</string>
+	<string name="update_warn">即将进入升级</string>
+	<string name="toast_title">温馨提示</string>
+	<string name="down_now">正在下载</string>
+	<string name="update_now">正在更新</string>
+	<string name="detect_failure">检测失败，没有新版本或者网络异常</string>
+	<string name="download_error">下载失败</string>
+	<string name="download_success">下载成功</string>
+	<string name="download_running">正在下载</string>
+	<string name="system_update_net">网络升级</string>
+	<string name="turnon">打开</string>
+	<string name="turnoff">关闭</string>
+	<string name="auto_detect">自动检测</string>
+	<string name="manual_detect">手动检测</string>
+	<string name="detect">检测</string>
+	<string name="software_version">●软件版本号:</string>
+	<string name="mac_address">●MAC 地址:</string>
+	<string name="app_id">●软件编号:</string>
+	<string name="device_type">●设备型号:</string>
+	<string name="device_id">●设备id:</string>
+	<string name="ddnum">●Dnum:</string>
+	<string name="version_info">版本信息</string>
+	<string name="project_id">●ProjectId:</string>
+	<string name="need_detect">待检测...</string>
+	<string name="download_progress_init">0%</string>
+	<string name="no_space">升级下载空间不足，请及时清理缓冲区或者内部存储区数据</string>
+	<string name="verify_failure">升级包校验失败</string>
+	<string name="update_failure">启动更新数据包出现异常</string>
+	<string name="update_notify">数据包下载完成是否立即进入更新？</string>
+</resources>

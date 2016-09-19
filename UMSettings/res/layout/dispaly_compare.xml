@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/display_video_compare" />
+
+    <RadioGroup
+        android:id="@+id/comparegroup_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/title_left_margin" >
+
+        <RadioButton
+            android:id="@+id/compareauto_id"
+            style="@style/radio"
+            android:nextFocusDown="@+id/compare1_id"
+            android:nextFocusUp="@+id/compareauto_id"
+            android:text="@string/off" />
+
+        <RadioButton
+            android:id="@+id/compare1_id"
+            style="@style/radio"
+            android:nextFocusDown="@+id/rb2h"
+            android:nextFocusUp="@+id/rbShutDown"
+            android:text="@string/onehrs" />
+
+        <RadioButton
+            android:id="@+id/compare2_id"
+            style="@style/radio"
+            android:nextFocusDown="@+id/compare2_id"
+            android:nextFocusUp="@+id/compare1_id"
+            android:text="@string/twohrs" />
+        
+    </RadioGroup>
+
+</LinearLayout>

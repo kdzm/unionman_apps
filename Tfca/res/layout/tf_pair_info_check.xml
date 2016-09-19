@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="@dimen/tf_smc_info_width"
+        android:layout_height="@dimen/tf_smc_info_height"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bg1"
+        android:orientation="vertical" >
+
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchmenu_btn"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/tf_pair_info_check"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_smc_main_title_text_size" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="@dimen/tf_pair_info_sub_title_width"
+        android:layout_height="@dimen/tf_smc_main_item_height"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/searchmenu_btn" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="@dimen/tf_pair_info_sub_title_item_width"
+            android:layout_height="@dimen/tf_smc_main_item_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/tf_pair_info_sub_title_margin"
+            android:gravity="left"
+            android:text="@string/tf_index"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_smc_info_item_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/tf_pair_info_sub_title_item_width_2"
+            android:layout_height="@dimen/tf_smc_main_item_height"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/tf_pair_info_sub_title_margin_2"
+            android:gravity="center"
+            android:text="@string/tf_stb_index"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_smc_info_item_title_text_size" >
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tf_pair_info_items_height"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:cacheColorHint="#00000000"
+        android:listSelector="@drawable/searchmenu_btn" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tf_smc_main_item_height"
+        android:layout_gravity="center"
+        android:background="@drawable/searchmenu_btn"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tf_smc_main_item_height"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_smc_info_item_title_text_size" >
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" >
+
+
+    </LinearLayout>
+</LinearLayout>

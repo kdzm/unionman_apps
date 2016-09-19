@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+       android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bg1"
+        android:orientation="vertical" >
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="@string/audio_setting"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/setsym"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="180dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="80dp"
+            android:gravity="left|top"
+            android:text="@string/audio_mount"
+            android:textColor="@color/white"
+            android:textSize="24sp" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/audio_spinner"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:layout_weight="0.21"
+            android:tag="@string/stereo" >
+        </Spinner>
+    </LinearLayout>
+ </LinearLayout>
+</LinearLayout>

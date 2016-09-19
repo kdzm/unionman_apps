@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sw="http://schemas.android.com/apk/res/com.unionman.settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+    
+    
+    <TextView
+        style="@style/title"
+        android:text="@string/display_sound_spdif" />
+
+   <RadioGroup
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:id="@+id/spdifgroup_id"
+         android:paddingLeft="@dimen/title_left_margin"
+         android:orientation="vertical"
+       >
+       <RadioButton
+        android:id="@+id/spdifjiema_id"
+        style="@style/radio"
+        android:nextFocusUp="@+id/spdiftouchuan_id"
+        android:nextFocusDown="@+id/spdiftouchuan_id"      
+        android:text="@string/display_sound_hdmi_jiema" />
+
+    <RadioButton
+        android:id="@+id/spdiftouchuan_id"
+        style="@style/radio"
+        android:nextFocusUp="@+id/spdifjiema_id"
+        android:nextFocusDown="@+id/spdifjiema_id"
+        android:text="@string/display_sound_hdmi_touchuan" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<resources>
+
+    <string name="app_name">升级</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_network_upgrade_main">升级</string>
+    <string name="networkupgrade">网络升级</string>
+    <string name="networkupgrade_address">请输入服务器地址:</string>
+    <string name="stb_info">电视机信息</string>
+    <string name="software_version">●软件版本号:</string>
+    <string name="hardware_version">●硬件版本号:</string>
+    <string name="mac_address">●MAC 地址:</string>
+    <string name="machine_model">●机器型号:</string>
+    <string name="loader_version">●Loader版本号:</string>
+    <string name="serial_number_version">●序	 列 号:</string>
+    <string name="version_number">1.0.0.1</string>
+    <string name="upgrade">升级</string>
+    <string name="save">保存</string>
+    <string name="default_text">默认</string>
+    <string name="save_success">保存成功!</string>
+    <string name="set_default">恢复默认!</string>
+    <string name="network_disconnect">网络异常，请检查!</string>
+    <string name="upgrade_prompt_content">"系统更新文件已下载完成，是否立即升级！"</string>
+    <string name="upgrade_prompt_apk">"APK更新文件已下载完成，是否立即升级！"</string>
+    <string name="upgrade_prompt_yes">"立即升级"</string>
+    <string name="upgrade_prompt_no">"取消升级"</string>
+    <string name="upgrade_check">"升级检测中，请稍后…"</string>
+    <string name="upgrade_checking">"正在检测升级，请稍后…"</string>
+    <string name="download_data">"正在下载数据，请稍后"</string>
+    <string name="new_version">"已是最新版本！"</string>
+    <string name = "fixed_probleam">更新日志：</string>
+     <string name = "current_version">当前版本: </string>
+     <string name = "upgrade_version">升级版本: </string>
+
+    <string name="downloading">正在下载</string>
+    <string name="upgrade_yes_no">检测到新版本，是否升级？</string>
+    <string name="cable_upgrade">Cable升级</string>
+    <string name="network_upgrade">网络升级</string>
+    <string name="download_error">下载失败</string>
+    <string name="cancle">取消</string>
+    <string name="wait_to_upgrade">准备进行升级，请勿操作</string>
+    <string name="download_proress">下载进度</string>
+    <string name="crc_progress">校验进度</string>
+    <string name="frequency">频点</string>
+    <string name="symbol">符号率</string>
+    <string name="frq_unit">Khz</string>
+    <string name="sym_unit">Kpbs</string>
+    <string name="qam_unit">QAM</string>
+    <string name="modulation">调制方式</string>
+    <string name="qam">QAM</string>
+    <string name="qam16">16QAM</string>
+    <string name="qam32">32QAM</string>
+    <string name="qam64">64QAM</string>
+    <string name="pid">PID</string>
+    <string name="mhz">Mhz</string>
+    <string name="kpbs">Kpbs</string>
+    <string-array name="qam_array">
+         <item>"16 QAM"</item>
+         <item>"32 QAM"</item>
+         <item>"64 QAM"</item>
+    </string-array>
+
+	<string name="altert_dialog_title">温馨提示</string>
+	
+	<string name="information_not_complete">请输入完整信息</string>
+    <string name="detail">详情：</string>
+    <string name="installing">安装中，请稍候...</string>
+    <string name="server_no_response">服务器无响应!</string>
+    <string name="server_no_response2">服务器无响应，请检查网络连接和服务器地址!</string>
+    <string name="cur_sys_is_newest">当前系统已经是最新版本</string>
+    <string name="upgrade_success">升级成功</string>
+    <string name="upgrade_fail">升级失败</string>
+    <string name="upgreding_recovery">升级Recovery分区...</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AdbConsole</string>
+    <string name="action_settings">Settings</string>
+    <string name="status">状态</string>
+    <string name="makesure">确定</string>
+    <string name="console">亲，你可以选择打开或者关闭串口输出和adb哦</string>
+
+</resources>

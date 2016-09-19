@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/net_check" />
+    <Button 
+        android:id="@+id/bt_net_title_for_focus"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/transparent"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60.0dip"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_netcheck"
+            style="@style/button"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:text="@string/one_key"
+            android:textSize="23.0sp" />
+    </LinearLayout>
+<!--  
+    <include layout="@layout/inputts" />
+    -->
+	<Button 
+        android:id="@+id/bt_net_bottom_for_focus"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/transparent"/>
+</LinearLayout>

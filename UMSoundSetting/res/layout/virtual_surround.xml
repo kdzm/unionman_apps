@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:gravity="center"
+    android:orientation="vertical" >
+   
+   <LinearLayout
+       android:id="@+id/ll_virtual_surround"
+        android:layout_width="1027dp"
+        android:layout_height="wrap_content"       
+       android:orientation="vertical" > 
+       <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+           >
+           <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/virtual_surround"
+                android:textSize="33sp"
+                android:textColor="@android:color/white" 
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="20dp"              
+               />
+           <CheckBox 
+                android:id="@+id/sw_SurroundOnOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_alignParentRight="true"
+                android:paddingRight="20dp"
+                android:layout_centerVertical="true"
+                 android:button="@drawable/setting_switch"
+               />
+       </RelativeLayout> 
+        <FrameLayout 
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:background="@drawable/setting_dialog_bg"         
+            > 
+            <TextView 
+                android:id="@+id/tv_surround_islistshow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_virtual_surround_to_see_more"
+                android:textSize="22sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                />      
+            <ListView
+            android:id="@+id/setting_surround_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:cacheColorHint="@color/cache_color_hint_color"
+            android:divider="@drawable/line"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/linearlayout_background"
+            android:scrollbarStyle="outsideInset"
+            android:clickable="true">
+        </ListView>
+         </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

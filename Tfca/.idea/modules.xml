@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AliLauncher/AliLauncher.iml" filepath="$PROJECT_DIR$/../AliLauncher/AliLauncher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Tfca/Tfca.iml" filepath="$PROJECT_DIR$/../Tfca/Tfca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UmDvb.iml" filepath="$PROJECT_DIR$/UmDvb.iml" />
+    </modules>
+  </component>
+</project>
+

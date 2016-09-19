@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"   
+	android:layout_width="wrap_content"
+	>
+
+	<ImageView
+		android:id="@+id/device_image_Icon"
+		android:layout_width="140dp"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		>
+	</ImageView>
+
+    <TextView
+		android:id="@+id/device_text"
+		android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/device_image_Icon" 
+        android:gravity="center"
+        android:background="@drawable/text_selector"
+		android:textColor="@color/white"
+        android:textSize="25sp"
+        >
+    </TextView>
+
+</RelativeLayout>

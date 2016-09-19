@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="full_transparent_background">#00000000</color>
+    <color name="edit_text_color">#ff0a82e6</color>
+    <color name="text_color_in_dialog">#DDDDDD</color>
+    <color name="blue_pressed">@android:color/holo_blue_dark</color>
+    <color name="blue_normal">@android:color/holo_blue_light</color>
+    <color name="green_complete">@android:color/holo_green_light</color>
+    <color name="purple_progress">@android:color/holo_purple</color>
+
+    <color name="gray_normal">#FF8A8B8C</color>
+    <color name="blue_focus">#FF0085B7</color>
+    <color name="button_text_color">#DDDDDD</color>
+</resources>

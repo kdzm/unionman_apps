@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">UMTVSystemServer</string>
+	<string name="power_down_warn">Dear, TV is about to enter the standby state!</string>
+	<string name="usb_event_warn">Detected USB device insertion! Whether to open U disk directory?</string>
+	<string name="OK">OK</string>
+	<string name="Cancel">Cancel</string>
+	<string name="source_detect_warn1">Detected</string>
+	<string name="source_detect_warn2">insertion</string>
+	<string name="source_detect_warn3">Whether to open</string>
+	<string name="source_detect_warn4">Source</string>
+	<string name="source_detect_warn5">？</string>
+	<string name="ATV">ATV</string>
+    <string name="CVBS">AV</string>
+    <string name="CVBS1">AV1</string>
+    <string name="CVBS2">AV2</string>
+    <string name="CVBS3">AV3</string>
+    <string name="YPBPR">YPbPr</string>
+    <string name="YPBPR1">YPbPr1</string>
+    <string name="YPBPR2">YPbPr2</string>
+    <string name="HDMI1">HDMI1</string>
+    <string name="HDMI2">HDMI2</string>
+    <string name="HDMI3">HDMI3</string>
+    <string name="HDMI4">HDMI4</string>
+    <string name="VGA">VGA</string>
+</resources>

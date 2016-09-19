@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="first_mainmenu_textview_margin_r">30dp</dimen>
+    <dimen name="first_mainmenu_textview_textsise">36dp</dimen>
+
+    <dimen name="tf_smc_main_width">819dp</dimen>
+    <dimen name="tf_smc_main_height">780dp</dimen>
+    <dimen name="tf_smc_main_title_height">81dp</dimen>
+    <dimen name="tf_smc_main_title_text_size">45sp</dimen>
+    <dimen name="tf_smc_main_item_height">67.5dp</dimen>
+    <dimen name="tf_smc_main_item_text_size">36sp</dimen>
+
+    <dimen name="tf_smc_info_width">900dp</dimen>
+    <dimen name="tf_smc_info_height">750dp</dimen>
+    <dimen name="tf_smc_info_title_text_size">45sp</dimen>
+    <dimen name="tf_smc_info_title_height">67.5dp</dimen>
+    <dimen name="tf_smc_info_item_height">67.5dp</dimen>
+    <dimen name="tf_smc_info_item_title_width">270dp</dimen>
+    <dimen name="tf_smc_info_item_title_width_big">330dp</dimen>
+    <dimen name="tf_smc_info_item_title_text_size">36sp</dimen>
+    <dimen name="tf_smc_info_item_margin_left">60dp</dimen>
+
+    <dimen name="tf_change_pin_title_text_size">45sp</dimen>
+    <dimen name="tf_change_pin_item_magin_top">150dp</dimen>
+    <dimen name="tf_change_pin_item_title_width">270dp</dimen>
+    <dimen name="tf_change_pin_item_margin_left">150dp</dimen>
+    <dimen name="tf_change_pin_item_text_size">36sp</dimen>
+    <dimen name="tf_change_pin_item_content_magin_left">37.5dp</dimen>
+    <dimen name="tf_change_pin_item_content_magin_right">180dp</dimen>
+    <dimen name="tf_change_pin_item_content_width">135dp</dimen>
+    <dimen name="tf_change_pin_items_margin">30dp</dimen>
+
+    <dimen name="tf_watch_level_margin_top">195dp</dimen>
+    <dimen name="tf_watch_level_item_title_width">315dp</dimen>
+    <dimen name="tf_watch_level_item_content_width">300dp</dimen>
+    <dimen name="tf_watch_level_item_content_margin_left">30dp</dimen>
+    <dimen name="tf_watch_level_item_content_margin_right">45dp</dimen>
+    <dimen name="tf_watch_level_item_title_margin_left">75dp</dimen>
+
+    <dimen name="tf_working_time_item_height">150dp</dimen>
+    <dimen name="tf_working_time_item_margin_top">75dp</dimen>
+    <dimen name="tf_working_time_item_padding_left">75dp</dimen>
+    <dimen name="tf_working_time_item_title_width">210dp</dimen>
+    <dimen name="tf_working_time_item_edit_width">135dp</dimen>
+    <dimen name="tf_working_time_item_edit_width_big">210dp</dimen>
+
+    <dimen name="tf_pair_info_sub_title_width">750dp</dimen>
+    <dimen name="tf_pair_info_sub_title_margin">195dp</dimen>
+    <dimen name="tf_pair_info_sub_title_margin_2">150dp</dimen>
+    <dimen name="tf_pair_info_sub_title_item_width">150dp</dimen>
+    <dimen name="tf_pair_info_sub_title_item_width_2">300dp</dimen>
+    <dimen name="tf_pair_info_items_height">420dp</dimen>
+
+    <dimen name="tf_operator_content_width">570dp</dimen>
+    <dimen name="tf_operator_title_margin">120dp</dimen>
+
+    <dimen name="tf_smc_update_item_title_width">345dp</dimen>
+
+    <dimen name="tf_email_wtidth">1200dp</dimen>
+    <dimen name="tf_email_height">789dp</dimen>
+    <dimen name="tf_email_sub_title_margin">45dp</dimen>
+    <dimen name="tf_email_sub_title_width_1">102dp</dimen>
+    <dimen name="tf_email_sub_title_width_2">432dp</dimen>
+    <dimen name="tf_email_sub_title_width_3">132dp</dimen>
+    <dimen name="tf_email_sub_title_width_4">222dp</dimen>
+    <dimen name="tf_email_sub_title_height">45dp</dimen>
+    <dimen name="tf_email_sub_title_margin_left">30dp</dimen>
+    <dimen name="tf_email_sub_title_margin_left_2">90dp</dimen>
+    <dimen name="tf_email_content_width">1110dp</dimen>
+    <dimen name="tf_email_content_height">483dp</dimen>
+    <dimen name="tf_email_tip_text_width_1">195dp</dimen>
+    <dimen name="tf_email_tip_text_width_2">132dp</dimen>
+    <dimen name="tf_email_tip_text_width_3">270dp</dimen>
+    <dimen name="tf_email_tip_text_width_4">150dp</dimen>
+    <dimen name="tf_email_tip_text_width_5">195dp</dimen>
+    <dimen name="tf_email_tip_text_width_6">150dp</dimen>
+
+    <dimen name="stb_info_item_title_width">345dp</dimen>
+    <dimen name="stb_info_item_content_margin">45dp</dimen>
+</resources>

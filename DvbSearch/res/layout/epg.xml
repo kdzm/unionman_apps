@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <SurfaceView
+        android:id="@+id/epg_surfaceview01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bg2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="800dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_bg2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/epgguid"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="30sp" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/layout_background"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:layout_marginTop="20dp"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:id="@+id/layout_proglist"
+                    android:layout_width="264dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/epgsch_list_bg"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <ImageView
+                        android:id="@+id/imageButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/arrow_up" />
+
+                    <ListView
+                        android:id="@+id/epg_proglist"
+                        android:layout_width="250dp"
+                        android:layout_height="320dp"
+                        android:layout_marginLeft="4dp"
+                        android:listSelector="@drawable/searchmenu_btn" >
+                    </ListView>
+
+                    <ImageView
+                        android:id="@+id/imageButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/arrow_down" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_sch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_epgweek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="1" >
+
+                        <Button
+                            android:id="@+id/epgweek1"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/epg_sch_week_btn"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text="@string/mon"
+                            android:textColor="@color/greenyellow"
+                            android:textSize="18sp" >
+                        </Button>
+
+                        <Button
+                            android:id="@+id/epgweek2"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/epg_sch_week_btn"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text="@string/tue"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" >
+                        </Button>
+
+                        <Button
+                            android:id="@+id/epgweek3"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/epg_sch_week_btn"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text="@string/wed"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" >
+                        </Button>
+
+                        <Button
+                            android:id="@+id/epgweek4"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/epg_sch_week_btn"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text="@string/thurs"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" >
+                        </Button>
+
+                        <Button
+                            android:id="@+id/epgweek5"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/epg_sch_week_btn"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text="@string/fri"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" >
+                        </Button>
+
+                        <Button
+                            android:id="@+id/epgweek6"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/epg_sch_week_btn"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text="@string/sat"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" >
+                        </Button>
+
+                        <Button
+                            android:id="@+id/epgweek7"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/epg_sch_week_btn"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text="@string/sun"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" >
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_sch1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/epgsch_list_bg"
+                        android:weightSum="1" >
+
+                        <ListView
+                            android:id="@+id/epg_schlist"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="4dp" >
+                        </ListView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

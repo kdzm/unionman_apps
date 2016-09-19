@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sw="http://schemas.android.com/apk/res/com.unionman.settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+    
+    
+    <TextView
+        style="@style/title"
+        android:text="@string/display_sound_hdmi" />
+    
+<RadioGroup 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/title_left_margin"
+    android:id="@+id/hdmigroup_id"
+    android:orientation="vertical">
+    <RadioButton
+        android:id="@+id/hdmiclose_id"
+        style="@style/radio"
+        android:nextFocusUp="@+id/hdmitouchuan_id"
+        android:nextFocusDown="@+id/hdmiauto_id"       
+       android:text="@string/display_sound_hdmi_close" />
+
+    <RadioButton
+        android:id="@+id/hdmiauto_id"
+       style="@style/radio"
+        android:nextFocusUp="@+id/hdmiclose_id"
+        android:nextFocusDown="@+id/hdmijiema_id"       
+       android:text="@string/display_sound_hdmi_auto" />
+    <RadioButton
+        android:id="@+id/hdmijiema_id"
+         style="@style/radio"
+        android:nextFocusUp="@+id/hdmiauto_id"
+         android:nextFocusDown="@+id/hdmitouchuan_id"   
+        android:text="@string/display_sound_hdmi_jiema" />
+    <RadioButton
+        android:id="@+id/hdmitouchuan_id"
+        style="@style/radio"
+        android:nextFocusUp="@+id/hdmijiema_id"
+          android:nextFocusDown="@+id/hdmiclose_id"      
+       android:text="@string/display_sound_hdmi_touchuan" />        
+    
+ </RadioGroup>   
+</LinearLayout>

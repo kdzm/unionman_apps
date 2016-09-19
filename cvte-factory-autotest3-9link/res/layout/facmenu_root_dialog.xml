@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/dialog_frame_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dip"
+        android:background="@color/DIALOG_BACKBLUE"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_margin="3dip"
+            android:background="#2e8fb6"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_margin="3dip"
+                    android:background="@drawable/question" />
+
+                <TextView
+                    android:id="@+id/facmenu_dialog_title"
+                    style="@style/pagetitle_style"
+                    android:text="@string/app_name" />
+            </LinearLayout>
+
+            <TextView style="@style/pageline_style" />
+
+            <TextView
+                android:id="@+id/id_facmenu_dialogmenu_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center_horizontal"
+                android:text="@string/str_textview_factory_dialogmenu_title"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dialog_textSize" />
+            <!-- For confirm -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dialog_text_heigh"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="20dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_facmenu_dialogmenu_confirm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:text="@string/str_textview_factory_dialogmenu_confirm"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dialog_textSize" />
+                <!-- android:background="@drawable/button_state -->
+
+                <TextView
+                    android:id="@+id/id_facmenu_dialogmenu_cancel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="20dip"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:text="@string/str_textview_factory_dialogmenu_cancel"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dialog_textSize" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

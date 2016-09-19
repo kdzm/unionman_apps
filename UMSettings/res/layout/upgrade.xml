@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/upgrade" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip" >
+
+        <TextView
+            android:layout_width="230.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:layout_marginTop="10.0dip"
+            android:gravity="left"
+            android:paddingRight="20.0dip"
+            android:singleLine="true"
+            android:text="@string/upgrade_url"
+            android:textColor="@color/white"
+            android:textSize="25.0sp" />
+
+        <EditText
+            android:id="@id/edit_upgrade_url"
+            style="@style/edit_long"
+            android:layout_alignParentRight="true"
+            android:nextFocusUp="@id/edit_upgrade_url" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="10.0dip" >
+
+        <ProgressBar
+            android:id="@id/progressbarhttp"
+            style="@style/systemup_pb_style"
+            android:layout_width="500.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:layout_marginRight="100.0dip"
+            android:layout_marginTop="15.0dip"
+            android:clickable="false"
+            android:max="100"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/upgrade_percent"
+            android:layout_width="230.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_toLeftOf="@id/crb_upgrade_now"
+            android:gravity="right"
+            android:paddingRight="20.0dip"
+            android:singleLine="true"
+            android:text="@string/upgrade_url"
+            android:textColor="@color/white"
+            android:textSize="25.0sp" />
+
+        <Button
+            android:id="@id/crb_upgrade_now"
+            style="@style/button"
+            android:layout_alignParentRight="true"
+            android:nextFocusDown="@id/crb_upgrade_now"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:text="@string/upgrade_start" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+
+</LinearLayout>

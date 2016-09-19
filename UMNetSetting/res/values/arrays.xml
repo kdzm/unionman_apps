@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- <array name="apparray">
+        <item>@drawable/card_app_money</item>
+        <item>@drawable/card_app_music</item>
+        <item>@drawable/card_app_qqzone</item>
+        <item>@drawable/card_app_twitter</item>
+        <item>@drawable/card_app_cut</item>
+    </array>
+    <array name="moviearray">
+        <item>@drawable/card_movie_tangled</item>
+        <item>@drawable/card_movie_korean</item>
+        <item>@drawable/card_movie_sherlock</item>
+        <item>@drawable/card_movie_star</item>
+        <item>@drawable/card_movie_leapyear</item>
+    </array> -->
+    <string-array name="app_management">
+        <item>Unistall</item>
+        <item>Force Stop</item>
+        <item>Clear Defaults</item>
+        <item>Clear Data</item>
+    </string-array>
+    <string-array name="picture_mode_string">
+        <item>Mode</item>
+        <item>Brightness</item>
+        <item>Contrast</item>
+        <item>Hue</item>
+        <item>Saturation</item>
+        <item>Black Light</item>
+    </string-array>
+    <string-array name="sound_mode_string">
+        <item>Sound</item>
+        <item>Volume</item>
+        <item>Balance</item>
+    </string-array>
+    <string-array name="senior_mode_string">
+        <item>Language</item>
+        <item>Sleep Off</item>
+        <item>Key Sound</item>
+        <item>Boot mode</item>
+        <item>Blue Screen</item>
+    </string-array>
+    <!-- >System Info< -->
+    <string-array name="system_info">
+        <item>CPU</item>
+        <item>GPU</item>
+        <item>Memory</item>
+        <item>Device Space</item>
+        <item>Android Version</item>
+        <item>Software Version</item>
+    </string-array>
+    <string-array name="system_info_value">
+        <item>4 nucleus</item>
+        <item>8 nucleus</item>
+        <item>4G</item>
+        <item>16G</item>
+        <item>Android4.4</item>
+        <item>Hisilicon Demo B001</item>
+    </string-array>
+    <!-- Net State -->
+    <string-array name="net_state">
+        <item>Ethernet:</item>
+        <item>PPPOE:</item>
+        <item>WiFi:</item>
+        <item>IP:</item>
+        <item>Netmask:</item>
+        <item>Gateway:</item>
+        <item>DNS1:</item>
+        <item>DNS2:</item>
+        <item>WiFi MAC Address:</item>
+        <item>Ethernet MAC Address:</item>
+    </string-array>
+    <string-array name="net_state_info">
+        <item>Not Connected</item>
+        <item>Not Connected</item>
+        <item>Not Connected</item>
+    </string-array>
+    <!-- System Reset -->
+    <string-array name="factory_reset">
+        <item>Restore User Setting</item>
+        <item>ResetDefailt</item>
+    </string-array>
+    <string-array name="mount_type">
+        <item>USB</item>
+        <item>SATA</item>
+        <item>CARD</item>
+        <item>UNKOWN</item>
+    </string-array>
+    <!-- Wi-Fi security choices used when manually added a Wi-Fi network -->
+    <string-array name="wifi_security">
+        <!-- The Wi-Fi network does not have any security. -->
+        <item>@string/wifi_security_none</item>
+        <!-- Do not translate. -->
+        <item>@string/wifi_security_wep</item>
+        <!-- Do not translate. -->
+        <item>@string/wifi_security_psk_generic</item>
+    </string-array>
+    <!-- Wi-Fi IP settings. -->
+    <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+    <string-array name="wifi_ip_settings">
+        <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+        <item>DHCP</item>
+        <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+        <item>Static</item>
+   </string-array>
+   <!-- Wi-Fi proxy settings. -->
+   <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+   <string-array name="wifi_proxy_settings">
+       <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+       <item>None</item>
+       <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+       <item>Manual</item>
+   </string-array>
+   <!-- Wi-Fi settings. The status messages when the network is unknown. -->
+   <string-array name="wifi_status">
+       <!-- Status message of Wi-Fi when it is idle. -->
+       <item></item>
+       <!-- Status message of Wi-Fi when it is scanning. -->
+       <item>Scanning\u2026</item>
+       <!-- Status message of Wi-Fi when it is connecting. -->
+       <item>Connecting\u2026</item>
+       <!-- Status message of Wi-Fi when it is authenticating. -->
+       <item>Authenticating\u2026</item>
+       <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+       <item>Obtaining IP address\u2026</item>
+       <!-- Status message of Wi-Fi when it is connected. -->
+       <item>Connected</item>
+       <!-- Status message of Wi-Fi when it is suspended. -->
+       <item>Suspended</item>
+       <!-- Status message of Wi-Fi when it is disconnecting. -->
+       <item>Disconnecting\u2026</item>
+       <!-- Status message of Wi-Fi when it is disconnected. -->
+       <item>Disconnected</item>
+       <!-- Status message of Wi-Fi when it is a failure. -->
+       <item>Unsuccessful</item>
+       <!-- Status message of Wi-Fi when it is blocked. -->
+       <item>Blocked</item>
+       <!-- Status message of Wi-Fi when connectiong is being verified. -->
+       <item>Temporarily avoiding poor connection</item>
+   </string-array>
+   <!-- Match this with drawable.wifi_signal. --> <skip />
+   <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
+   <string-array name="wifi_signal">
+       <item>Poor</item>
+       <item>Fair</item>
+       <item>Good</item>
+       <item>Excellent</item>
+   </string-array>
+   
+   <!-- add 2016.06.27 -->
+   <string-array name="security">
+        <item>无</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    
+   <string-array name="channel">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
+</resources>

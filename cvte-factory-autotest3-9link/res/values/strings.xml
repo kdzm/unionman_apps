@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">CvteFactoryGroupV3</string>
+
+    <string name="cvteaingtime">CVTE老化模式:</string>
+    <string name="aingtime">Time:</string>
+    <string name="SOURCE_ATV">ATV</string>
+    <string name="SOURCE_DTV">DTV</string>
+    <string name="SOURCE_DVBC">DVBC</string>
+    <string name="SOURCE_TV">TV</string>
+    <string name="SOURCE_AV1">AV 1</string>
+    <string name="SOURCE_AV2">AV 2</string>
+    <string name="SOURCE_YPBPR">YPBPR</string>
+    <string name="SOURCE_YPBPR2">YPBPR 2</string>
+    <string name="SOURCE_HDMI1">HDMI 1</string>
+    <string name="SOURCE_HDMI2">HDMI 2</string>
+    <string name="SOURCE_HDMI3">HDMI 3</string>
+    <string name="SOURCE_VGA">VGA</string>
+
+    <string name="reset_info">Reset OK</string>
+    <string name="at_title">AT View</string>
+    <string name="wb_title">WB View</string>
+    <string name="aging_title">Aging View</string>
+    <string name="dialog_title">Dialog View</string>
+
+    <string name="str_tpv_reset">TPV工厂\n复位开始</string>
+    <string name="str_tcl_reset">TCL工厂\n复位开始</string>
+
+    <!-- DTV channel -->
+    <string name="str_facmenu_dtv_importchannel">Import DTV Channel\n(导入数字频道表)</string>
+    <string name="str_facmenu_dtv_exportchannel">Export DTV Channel\n(导出数字频道表)</string>
+
+    <!-- channel -->
+    <string name="str_facmenu_channelcontrol">Channel Control\n(频道表控制)</string>
+    <string name="str_facmenu_importchannel">Import Channel\n(导入频道表)</string>
+    <string name="str_facmenu_exportchannel">Export Channel\n(导出频道表)</string>
+
+    <!-- For dialog menu -->
+    <string name="str_textview_factory_dialogmenu_title">Are You Sure Upgrade?(确定升级？)</string>
+    <string name="str_textview_factory_dialogmenu_confirm">Confirm\n(确定)</string>
+    <string name="str_textview_factory_dialogmenu_cancel">Cancel\n(退出)</string>
+    <string name="str_design_menu">Design Menu</string>
+    <string name="str_factory_menu">Factory Menu(工厂菜单)</string>
+
+    <string name="str_done">Done</string>
+    <string name="str_product_reset">Product Reset</string>
+    <string name="str_facmenu_leftcross">＜=</string>
+    <string name="str_facmenu_rightcross">=＞</string>
+    <string name="str_facmenu_nr">NR</string>
+    <string name="str_facmenu_nextpagecross">>>></string>
+
+    <string name="str_facmenu_resetall">Reset All(还原TV+android)</string>
+    <string name="str_facmenu_resetall_question">Reset All Data?(完全重置?)</string>
+    <string name="str_facmenu_resettv">Reset TV(还原TV)</string>
+    <string name="str_facmenu_resettv_question">Reset TV Data?(确定重置TV?)</string>
+
+    <string name="str_facmenu_erase_hdcp">Erase HDCP?(擦除HDCP?)</string>
+    <string name="str_facmenu_erase_mac">Erase MAC?(擦除MAC?)</string>
+
+    <string name="str_textview_factory_otheroption_waiting_val">Please Waiting!</string>
+</resources>

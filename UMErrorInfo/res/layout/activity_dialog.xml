@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="740dip"
+    android:layout_height="420dip"
+    android:background="@drawable/dialog"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:padding="0dip" >
+    
+
+    <TextView
+        android:id="@+id/code_info"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="40dip"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tip_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="15dip"
+        android:gravity="left"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:singleLine="false"
+        android:textColor="#ffffffff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dip" />
+
+    <TextView
+        android:id="@+id/suggest_info"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="15dip"
+        android:paddingLeft="15dip"
+        android:singleLine="false"
+        android:textColor="#ffffffff"
+        android:textSize="22sp" 
+        android:layout_marginRight="10dip"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:text="@string/reboot"
+            android:textColor="#ffffffff"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/cancle_btn"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="30dip"
+            android:gravity="center"
+            android:text="@string/cancle"
+            android:textColor="#ffffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+</LinearLayout>

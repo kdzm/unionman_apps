@@ -1,0 +1,242 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_wizard_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="228dp"
+        android:layout_marginTop="126dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:text="@string/setting_wizard"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="942dp"
+        android:layout_height="450dp"
+        android:layout_marginLeft="168dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="570dp"
+                android:layout_height="370dp"
+                android:layout_marginLeft="48dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="@string/device_info"
+                    android:textColor="@color/black_deep"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/device_more_info"
+                    android:textColor="@color/black_light01"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="136dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/device_model"
+                        android:textColor="@color/black_light02"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:textIsSelectable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_device_model"
+                        android:textColor="@color/black_light02"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="136dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/android_version"
+                        android:textColor="@color/black_light02"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:textIsSelectable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_android_version"
+                        android:textColor="@color/black_light02"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="136dip"
+                        android:layout_height="wrap_content"
+                        android:text="@string/software_version"
+                        android:textColor="@color/black_light02"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:textIsSelectable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_software_version"
+                        android:textColor="@color/black_light02"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="136dip"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_light02"
+                        android:text="@string/hardware_version"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:textIsSelectable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_hardware_version"
+                        android:textColor="@color/black_light02"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="136dip"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_light02"
+                        android:text="@string/mac_address"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:textIsSelectable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_mac_address"
+                        android:textColor="@color/black_light02"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="136dip"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_light02"
+                        android:text="@string/device_sort_num"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:textIsSelectable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_device_sort_num"
+                        android:textColor="@color/black_light02"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="370dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/explain"
+                    android:textSize="26sp"
+                    android:textColor="@color/black_light01" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/device_info_explain_1"
+                    android:textSize="22sp"
+                    android:textColor="@color/black_light02" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="42dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <Button
+                android:textColor="@drawable/item_text_color"
+                android:id="@+id/btn_wireless_button"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="24sp"
+                android:background="@drawable/sel_button_selector"
+                android:text="@string/wireless_info" />
+            <Button
+                android:id="@+id/btn_wired_button"
+                android:textColor="@drawable/item_text_color"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="24sp"
+                android:background="@drawable/sel_button_selector"
+                android:text="@string/wired_info" />
+            <Button
+                android:id="@+id/btn_back"
+                android:textColor="@drawable/item_text_color"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="24sp"
+                android:background="@drawable/sel_button_selector"
+                android:text="@string/back" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgv_reflection"
+        android:layout_width="942dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="168dp"
+        android:contentDescription="@string/app_name" />
+</LinearLayout>

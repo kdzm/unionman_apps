@@ -1,0 +1,38 @@
+<resources>
+
+    <string name="app_name">Network Upgrade</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_network_upgrade_main">Network Upgrade</string>
+    <string name="networkupgrade">Network Upgrade</string>
+    <string name="networkupgrade_address">Server Address</string>
+    <string name="stb_info">Box Information</string>
+    <string name="software_version">●Software Version:</string>
+    <string name="hardware_version">●Hardware Version:</string>
+    <string name="mac_address">●Mac:</string>
+    <string name="serial_number_version">●Serial:</string>
+    <string name="version_number">1.0.0.1</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="save">Save</string>
+    <string name="default_text">Default</string>
+    <string name="save_success">Save Success!</string>
+    <string name="set_default">Restore Default!</string>
+    <string name="upgrade_check">Upgrade detection, please later</string>
+    <string name="new_version">The current version is the latest version！</string>
+    <string name="connect_exception">Connect server exception!</string>
+    <string name="unfind_new">No new version detected!</string>
+    <string name="dialog_title">Upgrade Tips</string>
+    <string name="dialog_msg">Found a new version, whether to upgrade？</string>
+    <string name="dialog_pb">Upgrade</string>
+    <string name="dialog_nb">Cancel</string>
+    <string name="dialog_upgrademsg">Download the upgrade file, please be patient...</string>
+    <string name="network_disconnect">Network is not connected, please connect the network!</string>
+    <string name="dialog_tips">Downloading upgrade file,do not shut off power and network</string>
+    <string name="system_upgrade">System Upgrade</string>
+    <string name="ready_upgrade">To upgrade the system, do not shut off the power...</string>
+    <string name="check_failed">File check failed, later re Download</string>
+    <string name="ready_download">Ready to download...</string>
+    <string name="cancel_download">The current network is not stable, cancel the download upgrade file</string>
+    <string name="check_md5">Download completed,ready to check the file</string>
+    <string name="download_failed">Download failed, automatically re download later</string>
+</resources>

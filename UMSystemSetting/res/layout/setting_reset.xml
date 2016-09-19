@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="967dp"
+    android:layout_height="600dp"
+    android:layout_marginLeft="157dp"
+    android:layout_marginTop="60dp"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/setting_reset"
+            android:textColor="@color/white"
+            android:textSize="33sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/setting_containerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/setting_dialog_bg"
+        android:orientation="vertical"
+         >
+
+        <ListView
+            android:id="@+id/setting_menuoptions_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="@color/cache_color_hint_color"
+            android:divider="@drawable/line"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/setting_select2"
+            android:scrollbars="none"
+            android:clickable="true"
+            >
+        </ListView>
+
+</LinearLayout>
+    </LinearLayout>
+    
+   <!--  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        
+        
+        
+        
+        <TextView
+            android:id="@+id/pic_brightness_txt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/picmode_brightness_string"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/pic_constrast_txt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/picmode_contrast_string"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/pic_saturation_txt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/picmode_saturation_string"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        
+         <TextView
+            android:id="@+id/pic_hue_txt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/picmode_hue_string"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+                  <TextView
+            android:id="@+id/pic_sharpness_txt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/picmode_sharpness_string"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+                           <TextView
+            android:id="@+id/pic_backlight_txt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/picmode_backlight_string"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+                                    <TextView
+            android:id="@+id/pic_display_mode_txt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/pic_display_mode_string"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+         <TextView
+            android:id="@+id/pic_senior_txt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/setting_senior"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+ 
+    </LinearLayout>
+-->
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="command_setting_adc_tune">正在设置……</string>
+    <string name="command_set_adc_tune">自动校正ADC</string>
+    <string name="command_setted_adc_tune_successfully">设置成功！</string>
+    <string name="command_setted_adc_tune_failed">设置失败！</string>
+    <string name="aging_note_txt">Aging Mode On</string>
+    <string name="mmode_note_txt">M</string>
+    <string name="upgrade_file_not_exists">升级文件不存在!</string>
+    <string name="insert_the_USB">请插入U盘!</string>
+    <string name="deviceid">Device ID:</string>
+    <string name="devicemodel">Device Model:</string>
+    <string name="dnum">Dnum:</string>
+    <string name="didtoken">Didtoken:</string>
+    <string name="huanid">Huan ID:</string>
+    <string name="Software_Version">Software Version:</string>
+    <string name="Build_Time">Build Time:</string> 
+    <string name="ca_cardno">CA Card:</string> 
+    <string name="client_type">Client Type:</string>
+    <string name="mac_addr">Mac Addr:</string>
+    <string name="project_id">Project ID:</string>
+    <string name="hw_ver">Hardware Version:</string>
+    <string name="sn_no">Serial NO.:</string>
+    
+    <string name="client_type_val">unknow</string>
+    <string name="mac_addr_val">unknow</string>
+    <string name="project_id_val">unknow</string>
+    <string name="hw_ver_val">unknow</string>
+    <string name="sn_no_val">unknow</string>
+    
+    
+    <string name="deviceid_val">unkonwn</string>
+    <string name="devicemodel_val">unkonwn</string>
+    <string name="dnum_val">unkonwn</string>
+    <string name="didtoken_val">unkonwn</string>
+    <string name="huanid_val">unkonwn</string>
+    <string name="Software_Version_val">unkonwn</string>
+    <string name="Build_Time_val">unkonwn</string>
+    <string name="ca_cardno_val">unkonwn(Only DVBC or DTMB)</string> 
+    <string name="ca_cardno_not_ready_yet">no Card Or not int DVBC or DTMB</string> 
+    <string name="adjust_ting">自动调整中 ...</string>
+    <string name="adjust_failed">自动调整失败！</string>
+    <string name="adjust_success">自动调整成功！</string>
+    <string name="card_inserted">卡插入</string>
+    
+    <string name="card_t0">T0协议卡</string>
+    <string name="card_removed_ok">卡拔出，检测通过</string>
+    <string name="card_unknow">未知卡</string>
+    <string name="card_removed">未知的卡拔出</string>
+    
+</resources>

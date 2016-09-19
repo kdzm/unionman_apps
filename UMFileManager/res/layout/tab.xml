@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:id="@android:id/tabhost"
+	android:layout_alignParentBottom="true"
+	android:background="@drawable/file_manager_bg"
+	>
+  	<LinearLayout
+		android:id="@+id/LinearLayout01"
+		android:orientation="vertical"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		>
+
+		<RelativeLayout
+		    android:id="@+id/tab_title"
+		    android:layout_marginLeft="110dp"
+		    android:layout_marginRight="110dp"
+		    android:layout_marginTop="50dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			>
+	        <ImageView
+	            android:id="@+id/main_iv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/btn_camera_arrow_left_default"
+	            />
+	        <TextView
+	            android:id="@+id/main_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="8dp"
+	            android:layout_toRightOf="@+id/main_iv"
+	            android:text="@string/app_title"
+	            android:textSize="35sp"
+	            android:textColor="@color/white"
+	         />
+		</RelativeLayout>
+		
+	    <TabWidget
+			android:id="@android:id/tabs"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:visibility="gone"
+			android:layout_marginTop="30dp"
+			>    
+	    </TabWidget>
+	    
+		<FrameLayout
+			android:id="@android:id/tabcontent"
+		    android:layout_height="fill_parent"
+			android:layout_width="fill_parent"
+		    android:layout_marginBottom="0dp"
+		    >
+       </FrameLayout>
+	</LinearLayout>
+</TabHost>

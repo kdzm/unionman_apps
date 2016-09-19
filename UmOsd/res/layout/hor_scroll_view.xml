@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:id="@+id/hor_scroll_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+    <LinearLayout android:id="@+id/scroll_inner_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    </LinearLayout>
+</HorizontalScrollView>

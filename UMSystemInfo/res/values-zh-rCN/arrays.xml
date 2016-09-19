@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string-array name="app_management">
+        <item>卸载</item>
+        <item>停止</item>
+        <item>删除默认设置</item>
+        <item>清除数据</item>
+    </string-array>
+    <string-array name="picture_mode_string">
+        <item>模式</item>
+        <item>亮度</item>
+        <item>对比度</item>
+        <item>色调</item>
+        <item>饱和度</item>
+        <item>背光</item>
+    </string-array>
+    <string-array name="sound_mode_string">
+        <item>音效</item>
+        <item>音量</item>
+        <item>平衡</item>
+    </string-array>
+    <string-array name="senior_mode_string">
+        <item>语言切换</item>
+        <item>系统睡眠关机</item>
+        <item>按键音</item>
+        <item>开机模式</item>
+        <item>蓝屏开关</item>
+    </string-array>
+    <!-- >系统信息< -->
+    <string-array name="system_info">
+        <item>关于本机</item>
+        <item>软件升级</item>
+        <item>电子说明书</item>
+        <item>法律信息</item>
+    </string-array>
+    <string-array name="system_info_value">
+        <item>双核</item>
+        <item>八核</item>
+        <item>1G</item>
+        <item>4G</item>
+        <item>Android4.4</item>
+        <item>Hisilicon Demo B001</item>
+        <item>unknow</item>
+    </string-array>
+    <!-- >网络状态< -->
+    <string-array name="net_state">
+        <item>本地连接:</item>
+        <item>宽带拨号:</item>
+        <item>无线连接:</item>
+        <item>IP地址:</item>
+        <item>子网掩码:</item>
+        <item>网关</item>
+        <item>DNS:"</item>
+    </string-array>
+    <string-array name="net_state_info">
+        <item>未连接</item>
+        <item>未连接</item>
+        <item>未连接</item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <!-- >恢复出厂设置< -->
+    <string-array name="factory_reset">
+        <item>恢复用户设定</item>
+        <item>系统还原</item>
+    </string-array>
+    <string-array name="mount_type">
+        <item>U盘</item>
+        <item>硬盘</item>
+        <item>SD卡</item>
+        <item>内部存储</item>
+        <item>未知</item>
+    </string-array>
+    <string-array name="system_info1">
+        <item>CPU:</item>
+        <item>GPU:</item>
+        <item>内存:</item>
+        <item>存储空间:</item>
+        <item>Android版本:</item>
+        <item>软件版本:</item>
+        <item>编译时间:</item>
+    </string-array>
+</resources>

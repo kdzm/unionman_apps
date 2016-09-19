@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HomeMedia</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Image_manager">图片浏览</string>
+    <string name="Audio_player">音频播放</string>
+    <string name="Video_player">视频播放</string>
+    <string name="File_manager">文件浏览</string>
+
+</resources>

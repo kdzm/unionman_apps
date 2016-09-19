@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout 
+        android:id="@+id/content_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+    <TextView
+        android:id="@+id/deviceid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="24sp"/>
+    
+    <TextView
+        android:id="@+id/devicenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="24sp"/>
+    
+    <TextView
+        android:id="@+id/devicemode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/activekey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/didtoken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="24sp"/>
+    
+    <TextView
+        android:id="@+id/huanid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/licensetype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/licensedata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="24sp"/>
+    </LinearLayout>
+  
+    
+</RelativeLayout>

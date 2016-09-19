@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="300dp"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/searchmenu_btn"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="right|center"
+                android:text="@string/dvt_ipp_operiods"
+                android:textColor="@color/white"
+                android:textSize="24sp" >
+            </TextView>
+
+            <EditText
+                android:hint="1"
+                android:maxLength="2"
+                android:id="@+id/dvt_ipp_num"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/time_selected"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <!--
+                 <TimePicker
+                android:id="@+id/timePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/textView2" />
+            -->
+        </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/ipp_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/dvt_insert_parent_card"
+        android:textSize="25sp"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal">
+        <Button 
+            android:id="@+id/ipp_ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dvt_yes"/>
+        <Button 
+            android:id="@+id/ipp_cancle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dvt_no"/>
+    </LinearLayout>
+</LinearLayout>

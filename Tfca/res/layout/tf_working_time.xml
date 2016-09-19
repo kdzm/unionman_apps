@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="@dimen/tf_smc_info_width"
+        android:layout_height="@dimen/tf_smc_info_height"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bg1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tf_smc_info_title_height"
+            android:background="@drawable/searchmenu_btn"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/tf_working_time"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tf_smc_main_title_text_size" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tf_working_time_item_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/tf_working_time_item_margin_top"
+            android:background="@drawable/searchmenu_btn"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/tf_working_time_item_padding_left" >
+
+            <TextView
+                android:layout_width="@dimen/tf_working_time_item_title_width"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="right|center"
+                android:text="@string/tf_start_time"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tf_smc_main_item_text_size" >
+            </TextView>
+
+            <EditText
+                android:hint="0"
+                android:maxLength="2"
+                android:id="@+id/tv_start_hour"
+                android:layout_width="@dimen/tf_working_time_item_edit_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/time_selected"
+                android:selectAllOnFocus="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:text="@string/mao_hao"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tf_smc_main_title_text_size" />
+
+            <EditText
+                android:hint="0"
+                android:maxLength="2"
+                android:id="@+id/tv_start_minute"
+                android:layout_width="@dimen/tf_working_time_item_edit_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/time_selected"
+                android:selectAllOnFocus="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:text="@string/mao_hao"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tf_smc_main_title_text_size" />
+
+            <EditText
+                android:hint="0"
+                android:maxLength="2"
+                android:id="@+id/tv_start_second"
+                android:layout_width="@dimen/tf_working_time_item_edit_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/time_selected"
+                android:selectAllOnFocus="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <!--
+                 <TimePicker
+                android:id="@+id/timePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/textView2" />
+            -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/searchmenu_btn"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp" >
+
+            <TextView
+                android:layout_width="@dimen/tf_working_time_item_title_width"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="right|center"
+                android:text="@string/tf_end_time"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tf_smc_main_item_text_size" >
+            </TextView>
+
+            <EditText 
+                android:hint="0"
+                android:maxLength="2"              
+                android:id="@+id/tv_end_hour"
+                android:layout_width="@dimen/tf_working_time_item_edit_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/time_selected"
+                android:selectAllOnFocus="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:text="@string/mao_hao"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tf_smc_main_title_text_size" />
+
+            <EditText
+                android:hint="0"
+                android:maxLength="2"
+                android:id="@+id/tv_end_minute"
+                android:layout_width="@dimen/tf_working_time_item_edit_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/time_selected"
+                android:selectAllOnFocus="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:text="@string/mao_hao"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/tf_smc_main_title_text_size" />
+
+            <EditText
+                android:hint="0"
+                android:maxLength="2"
+                android:id="@+id/tv_end_second"
+                android:layout_width="@dimen/tf_working_time_item_edit_width"
+                android:layout_height="match_parent"
+                android:background="@drawable/time_selected"
+                android:selectAllOnFocus="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <!--
+                 <TimePicker
+                android:id="@+id/timePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/textView2" />
+            -->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/searchmenu_btn" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="@dimen/tf_working_time_item_title_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:gravity="right"
+                android:text="@string/tf_input_pin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tf_smc_main_item_text_size" >
+            </TextView>
+
+            <EditText
+                
+                android:id="@+id/editText3"
+                android:layout_width="@dimen/tf_working_time_item_edit_width_big"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/textView4"
+                android:gravity="center_horizontal"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:selectAllOnFocus="true" >
+
+                <requestFocus>
+                </requestFocus>
+            </EditText>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="28sp"
+         android:background="@drawable/btn_bg" />
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" >
+
+
+    </LinearLayout>
+</LinearLayout>

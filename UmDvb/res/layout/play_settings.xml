@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/full_transparent_background">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ly_sound_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/menu_setting_item">
+            <TextView
+                android:layout_width="@dimen/play_setting_item_title_width1"
+                android:layout_height="@dimen/play_setting_item_height"
+                android:text="@string/sound_track"
+                android:textSize="@dimen/play_setting_item_text_size"/>
+            <RelativeLayout
+                android:layout_width="@dimen/play_setting_item_content_width"
+                android:layout_height="@dimen/play_setting_item_height" >
+                <TextView
+                    android:id="@+id/tv_sound_track"
+                    android:layout_width="@dimen/play_setting_item_content_text_width"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/play_setting_item_text_size"
+                    android:textColor="@drawable/sel_settings_text_color"
+                    android:layout_centerInParent="true"
+                    android:focusable="true"/>
+                <ImageView
+                    android:id="@+id/imgv_sound_track_arrow_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/tv_sound_track"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/sel_arrow_left"
+                    android:contentDescription="@string/app_name" />
+                <ImageView
+                    android:id="@+id/imgv_sound_track_arrow_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_sound_track"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/sel_arrow_right"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/menu_setting_item">
+            <TextView
+                android:layout_width="@dimen/play_setting_item_title_width1"
+                android:layout_height="@dimen/play_setting_item_height"
+                android:text="@string/subtitle"
+                android:textSize="@dimen/play_setting_item_text_size"/>
+            <RelativeLayout
+                android:layout_width="@dimen/play_setting_item_content_width"
+                android:layout_height="@dimen/play_setting_item_height" >
+                <LinearLayout
+                    android:id="@+id/ly_sub_title_content"
+                    android:layout_width="@dimen/play_setting_item_content_text_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_sub_title"
+                        android:textColor="@drawable/sel_settings_text_color"
+                        android:textSize="@dimen/play_setting_item_text_size"
+                        android:focusable="true"/>
+                    <com.um.ui.WiperSwitch
+                        android:id="@+id/ws_subtitle_switch"
+                        android:layout_width="@dimen/WiperSwitch_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/WiperSwitch_marginTop"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgv_sub_title_arrow_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/ly_sub_title_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/sel_arrow_left"
+                    android:contentDescription="@string/app_name" />
+                <ImageView
+                    android:id="@+id/imgv_sub_title_arrow_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/ly_sub_title_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/sel_arrow_right"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+

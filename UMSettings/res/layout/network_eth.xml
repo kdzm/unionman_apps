@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/network_eth" />
+
+    <LinearLayout
+        android:id="@id/linearlayout_dhcp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <RadioButton
+            android:id="@id/radio_eth_dhcp"
+            style="@style/net_radio"
+            android:layout_width="200.0dip"
+            android:layout_marginLeft="@dimen/setitem_left_margin"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:nextFocusUp="@id/radio_eth_dhcp"
+            android:text="@string/network_dhcp" />
+
+        <TextView
+            android:id="@id/eth_dhcp_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setitem_left_margin"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@id/eth_dhcp_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setitem_left_margin"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <include layout="@layout/divider" />
+
+    <LinearLayout
+        android:id="@id/linearlayout_static"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <RadioButton
+            android:id="@id/radio_eth_static"
+            style="@style/net_radio"
+            android:layout_width="200.0dip"
+            android:layout_marginLeft="@dimen/setitem_left_margin"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:text="@string/network_static" />
+
+        <TextView
+            android:id="@id/eth_static_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setitem_left_margin"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@id/eth_static_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setitem_left_margin"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <include
+        android:id="@id/line1"
+        layout="@layout/divider" />
+
+    <LinearLayout
+        android:id="@id/linearlayout_pppoe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <RadioButton
+            android:id="@id/radio_eth_pppoe"
+            style="@style/net_radio"
+            android:layout_width="200.0dip"
+            android:layout_marginLeft="@dimen/setitem_left_margin"
+            android:nextFocusDown="@id/radio_eth_pppoe"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:text="@string/network_pppoe" />
+
+        <TextView
+            android:id="@id/eth_pppoe_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setitem_left_margin"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@id/eth_pppoe_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setitem_left_margin"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <include layout="@layout/divider" />
+
+</LinearLayout>

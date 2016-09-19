@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/net_check" />
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center" >
+		<ProgressBar
+        android:id="@+id/pb_progress"
+        android:layout_width="35.0dip"
+        android:layout_height="35.0dip"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/progress_circle" />
+		<TextView 
+		    android:id="@+id/tv_state"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="30dp"
+		    android:textSize="28sp"
+		    android:text="@string/onekey_testing"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip"
+        android:gravity="center" >
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="50dp"
+		    android:textSize="28sp"
+		    android:text="@string/onekey_ip"/>
+		<ImageView 
+		    android:id="@+id/iv_ip"
+		    android:layout_marginLeft="50dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:visibility="invisible"
+		    android:src="@drawable/tui_ic_checkmark"/>
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center" >
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="50dp"
+		    android:textSize="28sp"
+		    android:text="@string/onekey_gateway"/>
+		<ImageView 
+		    android:id="@+id/iv_gateway"
+		    android:layout_marginLeft="50dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:visibility="invisible"
+		    android:src="@drawable/tui_ic_checkmark"/>
+    </LinearLayout>
+    
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center" >
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="50dp"
+		    android:textSize="28sp"
+		    android:text="@string/onekey_dns"/>
+		<ImageView 
+		    android:id="@+id/iv_dns"
+		    android:layout_marginLeft="50dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:visibility="invisible"
+		    android:src="@drawable/tui_ic_checkmark"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60.0dip"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_stop"
+            style="@style/button"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:text="@string/onekey_stop"
+            android:textSize="23.0sp" />
+    </LinearLayout>
+<!--  
+    <include layout="@layout/inputts" />
+    -->
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_bg"
+    android:gravity="center"
+    tools:context=".MainActivity" >
+    
+<RelativeLayout    
+    android:gravity="center"
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content">  
+	<ImageButton 
+	android:id="@+id/ImgBtn" 
+	android:layout_width="180dp" 
+	android:layout_height="180dp"
+	android:layout_marginRight="60dp"
+	android:src="@drawable/image_viewer" 
+	/> 	
+	<TextView  
+	 android:id="@+id/ImgBtn_text"
+	 android:layout_below="@id/ImgBtn"
+	 android:layout_width="wrap_content"  
+	 android:layout_height="wrap_content"  
+	 android:text="@string/Image_manager"
+	 android:paddingLeft="55dp"	 
+ 	/>
+</RelativeLayout  >
+	
+<RelativeLayout    
+    android:gravity="center"
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content">  
+	<ImageButton 
+	android:id="@+id/AudioBtn" 
+	android:layout_width="180dp" 
+	android:layout_height="180dp" 
+	android:layout_marginRight="60dp"
+	android:src="@drawable/portable_music_player" 
+	/> 
+	<TextView  
+	 android:id="@+id/AudioBtn_text"
+	 android:layout_below="@id/AudioBtn"
+	 android:layout_width="wrap_content"  
+	 android:layout_height="wrap_content"  
+	 android:text="@string/Audio_player"
+	 android:paddingLeft="55dp"	 
+ 	/>
+</RelativeLayout  >
+
+<RelativeLayout    
+    android:gravity="center"
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content">  
+	<ImageButton 
+	android:id="@+id/VideoBtn" 
+	android:layout_width="180dp" 
+	android:layout_height="180dp" 
+	android:layout_marginRight="60dp"
+	android:src="@drawable/windows_media_player" 
+	/> 
+	<TextView  
+	 android:id="@+id/VideoBtn_text"
+	 android:layout_below="@id/VideoBtn"
+	 android:layout_width="wrap_content"  
+	 android:layout_height="wrap_content"  
+	 android:text="@string/Video_player"
+	 android:paddingLeft="55dp"	 
+ 	/>
+</RelativeLayout  >
+	
+
+<RelativeLayout    
+    android:gravity="center"
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content">  
+	<ImageButton 
+	android:id="@+id/FileBtn" 
+	android:layout_width="180dp" 
+	android:layout_height="180dp"
+	android:src="@drawable/file_manager" /> 
+	<TextView  
+	 android:id="@+id/FileBtn_text"
+	 android:layout_below="@id/FileBtn"
+	 android:layout_width="wrap_content"  
+	 android:layout_height="wrap_content"  
+	 android:text="@string/File_manager"
+	 android:paddingLeft="55dp"	 
+ 	/>
+</RelativeLayout  >
+	
+</LinearLayout>

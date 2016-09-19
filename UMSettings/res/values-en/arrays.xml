@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Scanning...</item>
+        <item>Connection...</item>
+        <item>Authentication identity…</item>
+        <item>Get IP address…</item>
+        <item>Connected</item>
+        <item>Rate</item>
+        <item>Is breaking…</item>
+        <item>Has been disconnected</item>
+        <item>Failure</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Scanning...</item>
+        <item>Connection %1$s...</item>
+        <item>Authentication identity %1$s...</item>
+        <item>GetIP addr %1$s...</item>
+        <item>Has been Connected %1$s</item>
+        <item>Rate</item>
+        <item>Is breaking %1$s...</item>
+        <item>Has been disconnected</item>
+        <item>Failure</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>Open</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Weak</item>
+        <item>Normal</item>
+        <item>Good</item>
+        <item>Excellent</item>
+    </string-array>
+</resources>

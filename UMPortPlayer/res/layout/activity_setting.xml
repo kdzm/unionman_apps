@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <ListView
+        android:id="@+id/setting_list" 
+        android:layout_width="880dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_dialog_bg"
+        android:cacheColorHint="@color/cache_color_hint_color"
+		android:divider="@drawable/line"
+		android:fadingEdge="none"
+		android:listSelector="@drawable/linearlayout_background">
+        
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.um.launcher"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/movie_item_netvideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/movie_item_netvideo_marginLeft"
+        android:layout_marginTop="@dimen/movie_item_netvideo_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusDown="@+id/movie_item_sohu"
+        android:nextFocusRight="@+id/movie_item_letv" >
+
+        <RelativeLayout
+            android:id="@+id/movie_child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.um.launcher.coverflow.CoverFlowMovie
+                android:id="@+id/movie_coverflow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_post"
+                android:orientation="horizontal"
+                custom:animateDuration="500"
+                custom:delayTime="3000"
+                custom:images="@array/moviearray" >
+            </com.um.launcher.coverflow.CoverFlowMovie>
+            <TextView
+                android:id="@+id/movie_netvideo_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="240dp"
+                android:text="@string/netvideo"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/movie_item_letv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/movie_item_letv_marginLeft"
+        android:layout_marginTop="@dimen/movie_item_letv_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusDown="@+id/movie_item_taijie"
+        android:nextFocusLeft="@id/movie_item_netvideo"
+        android:scaleX="0.8335"
+        android:scaleY="0.8386" >
+
+        <RelativeLayout
+            android:id="@+id/movie_child_letv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/movie_letv_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/movie_icon_letv" />
+
+            <TextView
+                android:id="@+id/movie_letv_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/movie_letv_img"
+                android:background="@drawable/movie_shadow"
+                android:gravity="center_horizontal|bottom"
+                android:paddingBottom="10dip"
+                android:scaleX="1.1"
+                android:scaleY="1.1"
+                android:text="@string/leshi"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/movie_item_sohu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/movie_item_sohu_marginLeft"
+        android:layout_marginTop="@dimen/movie_item_sohu_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusRight="@+id/movie_item_qqlive"
+        android:scaleX="0.83"
+        android:scaleY="0.83" >
+
+        <RelativeLayout
+            android:id="@+id/movie_chaid_sohu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_bordeaux"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/movie_sohu_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/movie_icon_sohu" />
+
+            <TextView
+                android:id="@+id/movie_sohu_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movie_sohu_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/sohu"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/movie_item_qqlive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/movie_item_qqlive_marginLeft"
+        android:layout_marginTop="@dimen/movie_item_qqlive_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@id/movie_item_sohu"
+        android:nextFocusRight="@+id/movie_item_iqy"
+        android:scaleX="0.83"
+        android:scaleY="0.83" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_cyan"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/movie_qqlive_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/movie_icon_qqlive" />
+
+            <TextView
+                android:id="@+id/movie_txt_qqlive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movie_qqlive_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/QQLive"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/movie_item_iqy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/movie_item_iqy_marginLeft"
+        android:layout_marginTop="@dimen/movie_item_iqy_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@id/movie_item_qqlive"
+        android:nextFocusRight="@+id/movie_item_youku"
+        android:scaleX="0.83"
+        android:scaleY="0.83" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_yellow"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/movie_iqy_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/movie_icon_iqy" />
+
+            <TextView
+                android:id="@+id/movie_txt_iqy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movie_iqy_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/qiyi"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/movie_item_youku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/movie_item_youku_marginLeft"
+        android:layout_marginTop="@dimen/movie_item_youku_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@id/movie_item_iqy"
+        android:nextFocusRight="@+id/movie_item_taijie"
+        android:scaleX="0.83"
+        android:scaleY="0.83" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_purple"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/movie_youku_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/movie_icon_youku" />
+
+            <TextView
+                android:id="@+id/movie_youku_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movie_youku_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/youku"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/movie_item_taijie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/movie_item_taijie_marginLeft"
+        android:layout_marginTop="@dimen/movie_item_taijie_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@id/movie_item_youku"
+        android:scaleX="0.83"
+        android:scaleY="0.83" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_bg_seablue"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/movie_taijie_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/movie_icon_taijie" />
+
+            <TextView
+                android:id="@+id/movie_taijie_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movie_taijie_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/taijie"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

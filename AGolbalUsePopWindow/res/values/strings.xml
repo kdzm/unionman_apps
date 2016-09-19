@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AGolbalUsePopWindow</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="pic_setting_main_title">picture setting</string>
+    <string name="pic_setting_sub_title">set the picture para</string>
+    <string name="sound_setting_main_title">sound setting</string>
+    <string name="sound_setting_sub_title">set the sound para</string>
+
+</resources>

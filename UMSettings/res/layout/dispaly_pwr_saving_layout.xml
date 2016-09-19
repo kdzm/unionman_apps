@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/display_pwr_saving_s" />
+
+    <RadioGroup
+        android:id="@+id/comparegroup_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/title_left_margin" >
+
+        <RadioButton
+            android:id="@+id/rbShutDown"
+            style="@style/radio"
+            android:nextFocusDown="@+id/rb1h"
+            android:nextFocusUp="@+id/rbShutDown"
+            android:text="@string/off" />
+
+        <RadioButton
+            android:id="@+id/rb1h"
+            style="@style/radio"
+            android:nextFocusDown="@+id/rb2h"
+            android:nextFocusUp="@+id/rbShutDown"
+            android:text="@string/onehrs" />
+
+        <RadioButton
+            android:id="@+id/rb2h"
+            style="@style/radio"
+            android:nextFocusDown="@+id/rb3h"
+            android:nextFocusUp="@+id/rb1h"
+            android:text="@string/twohrs" />
+        
+        <RadioButton
+            android:id="@+id/rb3h"
+            style="@style/radio"
+            android:nextFocusDown="@+id/rb4h"
+            android:nextFocusUp="@+id/rb2h"
+            android:text="@string/threehrs" />
+        
+        <RadioButton
+            android:id="@+id/rb4h"
+            style="@style/radio"
+            android:nextFocusDown="@+id/rbShutDown"
+            android:nextFocusUp="@+id/rb3h"
+            android:text="@string/fourhrs" />
+    </RadioGroup>
+
+</LinearLayout>

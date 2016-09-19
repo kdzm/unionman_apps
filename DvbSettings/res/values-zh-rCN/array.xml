@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dvb_setting_dvbc">
+        <item >条件接收</item>
+        <item >主频设置</item>
+        <item >节目信息</item>
+<!--         <item >密码设置</item>
+        <item >声道设置</item> -->
+        <item >恢复出厂</item>
+    </string-array>
+    <string-array name="dvb_setting_instruct_dvbc">
+        <item >设置CA卡参数</item>
+        <item >设置当地主频点</item>
+        <item >查看当前节目相关信息</item>
+<!--         <item >设置有线电视密码</item>
+        <item >设置电视机的输出声道</item>      -->  
+        <item >所有有线数字设置参数恢复为出厂默认值</item>
+    </string-array>
+    <string-array name="dvb_setting_dtmb">
+        <item >节目信息</item>
+<!--         <item >密码设置</item>
+        <item >声道设置</item> -->
+        <item >恢复出厂</item>
+    </string-array>
+    <string-array name="dvb_setting_instruct_dtmb">
+        <item >查看当前节目相关信息</item>
+<!--         <item >设置地面无线密码</item>
+        <item >设置电视机的输出声道</item>     -->   
+        <item >所有无线数字设置参数恢复为出厂默认值</item>
+    </string-array>    
+</resources>

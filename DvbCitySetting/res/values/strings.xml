@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DVB City Setting</string>
+    <string name="explain">Explain</string>
+    <string name="city_setting">City Setting</string>
+    <string name="city_setting_tip"> ● Select your city</string>
+    <string name="cancle">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="more_time_to_exit">Press one more time to exit</string>
+    <string name="install_success">Install success</string>
+    <string name="install_fail">Install fail</string>
+    <string name="uninstall_success">UnInstall success</string>
+    <string name="uninstall_fail">UnInstall fail</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_prompt">Prompt</string>
+    <string name="dialog_no_ca_card">CA card not found</string>
+    <string name="dialog_city_not_support">City not support</string>
+    <string name="city_not_support">Not support this city, some function of cable may be limited,\nThe other functions will not be affected but cable TV,\nSo you can still do not choose any city.</string>
+    <string name="ca_not_found_tips">Ca card not found</string>
+    <string name="city_dvb_installing_title">Installing DVB service,please wait…</string>
+    <string name="city_dvb_installing_content">Installing DVB service… \nNot to exit the program during the install,after the installation is complete will automatically exit.</string>
+    <string name="city_already_install_title">You have installed the DVB service</string>
+    <string name="city_already_install_msg">You have installed the DVB service of this city,no need to install.</string>
+    <string name="city_install_success_title">DVB service has been installed</string>
+    <string name="city_install_success_msg">DVB service has been installed，program will exit.</string>
+    <string name="city_install_failed_title">DVB service install failed</string>
+    <string name="city_install_failed_msg">An unknown error occurred, DVB service installation failure, please exit the program and try again.\nIf still fail, please try again after restarting.</string>
+    <string name="city_fix_install_title">DVB service component incomplete</string>
+    <string name="city_fix_install_msg">DVB service components related to some applications may have been deleted, this could lead to DVB limited functioning, fix the installation?</string>
+    <string name="city_re_install_title">DVB service installation failed</string>
+    <string name="city_re_install_msg">Detect you installed the DVB services, or modify the city, but there is no successful installation, whether or not to install?</string>
+    <string name="city_ca_support">This city supports including CA: </string>
+    <string name="tf_ca">TF CA</string>
+    <string name="dvt_ca">DVT CA</string>
+ 	<string name="next_step">NextStep</string>
+	<string name="last_step">LastStep</string> 
+	
+	<string name="exit">Exit</string>	
+	
+ <string-array name="province_array">
+         <item>广东省</item>
+    </string-array>
+  <string-array name="state_array">
+         <item>惠州市</item>
+    </string-array>
+  <string-array name="city_array">
+         <item>惠城区</item>
+          <item>博罗县</item>        
+    </string-array>      
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+       <string-array name="sound_set_arrays">
+        <item>Sound Mode</item>
+        <item>Treble</item>
+        <item>Bass</item>
+        <item>EQ</item>
+        <item>Balance</item>
+        <item>SRS</item>
+        <item>SRDIF Out</item>
+        <item>SPDIF delay</item>
+        <item>SubWoofer</item>
+        <item>Sub.Vol</item>
+        <item>Hang Mode</item>
+        <item>AVC</item>
+        <item>Input Volume</item>
+        <item>Fade out</item>
+        <item>Sound switch set</item>
+        <item>Picture synchronization parameters adjust</item>
+        <item>Internal-external speaker output Selection</item>
+    </string-array>
+    <string-array name="senior_set_arrays">
+        <item>Dy.Backlight</item>
+        <item>Backlight</item>
+        <item>Sing.Listen</item>
+        <item>Blue screen</item>
+    </string-array>
+    <string-array name="demo_mode_arrays">
+        <item>MEMC</item>
+        <item>Saturation</item>
+        <item>DNR</item>
+        <item>Sharpness</item>
+        <item>DCI</item>
+        <item>SR</item>
+        <item>DBDR</item>
+    </string-array>
+ <string-array name="text_color">
+        <item>#ffffff</item>
+        <item>#6B6B6B</item>
+        <item>#ff9900</item>
+    </string-array>
+        <string-array name="picture_mode">
+        <item>Picture Mode</item>
+        <item>ColorTemp</item>
+        <item>MEMC</item>
+        <item>FleshTone</item>
+        <item>DNR</item>
+        <item>Contrast</item>
+        <item>Blue extend</item>
+        <item>Display Mode</item>
+        <item>VGA Setting</item>
+    </string-array>
+    <string-array name="sound_mode">
+        <item>Voice</item>
+        <item>Hailer</item>
+        <item>Bass</item>
+        <item>EQ</item>
+        <item>Balance</item>
+        <item>SRS</item>
+        <item>Bass Switch</item>
+        <item>Bass Vol</item>
+        <item>Wall Sound</item>
+        <item>Intell.Volume</item>
+        <item>SPDIF Out</item>
+        <item>SPDIF delay</item>
+    </string-array>
+    <string-array name="color_setting">
+        <item>Picture</item>
+        <item>Brightness</item>
+        <item>Contrast</item>
+        <item>Saturation</item>
+        <item>Sharpness</item>
+    </string-array>
+    <string-array name="EQ_setting">
+        <item>120Hz</item>
+        <item>500Hz</item>
+        <item>1.5KHz</item>
+        <item>5KHz</item>
+        <item>10KHz</item>
+    </string-array>
+    <string-array name="SRS_setting">
+        <item>SRS Switch</item>
+        <item>SRS Treble</item>
+        <item>SRS Bass</item>
+    </string-array>
+       <string-array name="aspect">
+        <item>Display Mode</item>
+        <item>16:9</item>
+        <item>4:3</item>
+        <item>Point.Point</item>
+        <item>Panorama</item>
+        <item>Charater</item>
+        <item>Film</item>
+        <item>Subtitle</item>
+    </string-array>
+     <string-array name="MenuOf3D">
+        <item>3D</item>
+        <item>OFF</item>
+        <item>2DTO3D</item>
+        <item>Left-Right</item>
+        <item>Up-Down</item>
+        <item>Auto</item>
+    </string-array>
+    <string-array name="setting_menu_img">
+        <item>Picture Mode</item>
+         <item>MEMC</item>
+        <item>Brightness</item>
+        <item>Contrast</item>
+        <item>Saturation</item>
+        <item>Sharpness</item>
+        <item>Display Mode</item>
+    </string-array>
+        <string-array name="setting_menu_voice">
+        <item>Sound Mode</item>
+        <item>EQ</item>
+        <item>Balance</item>
+        <item>SRS</item>
+        <item>AVC</item>
+        <item>SPDIF</item>
+        <item>SPDIF Delay</item>
+        <item>SubWoofer</item>
+        <item>Sub.Vol</item>
+        <item>Hang Mode</item>
+    </string-array>
+        <string-array name="menuof3D_set_arrays">
+        <item>3D Mode</item>
+        <item>LR Switch</item>
+        <item>3DTo2D</item>
+        <item>Depth</item>
+        <item>View</item>
+    </string-array>
+        <string-array name="setting_menu_senior">
+        <item>Dy.Backlight</item>
+        <item>Backlight</item>
+        <item>Sing.Listen</item>
+    </string-array>
+
+  </resources>

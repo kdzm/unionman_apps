@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/selectedlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/setting_menu_bg"
+        android:gravity="center_horizontal"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/focus_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_menu_focus" />
+
+        <LinearLayout
+            android:id="@+id/menu_item_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_containerlayout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/selectedlayout"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/listview_bg"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/up_arrow_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/listview_up"
+            android:orientation="vertical" />
+
+        <ListView
+            android:id="@+id/menuoptions_list"
+            android:layout_width="200dp"
+            android:layout_height="260dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:cacheColorHint="@color/cache_color_hint_color"
+            android:divider="@drawable/line"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/listview_item_selector"
+            android:scrollbars="none" >
+
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/down_arrow_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/listview_down"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+</RelativeLayout>

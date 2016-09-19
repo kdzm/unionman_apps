@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sw="http://schemas.android.com/apk/res/com.unionman.settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/network_set" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@+id/crb_wifi_toggle"
+        style="@style/checkRadioButton_normal"
+        android:nextFocusUp="@id/crb_wifi_toggle"
+        sw:text1="@string/network_wlan" />
+
+    <include
+        android:id="@id/line1"
+        layout="@layout/divider" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@+id/crb_wifi_ap_set"
+        style="@style/checkRadioButton_normal"
+        sw:hasImage="false"
+        sw:text1="@string/network_wlan_set"
+        sw:text2="@string/network_wlan_set_info" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:visibility="gone">
+
+        <com.unionman.settings.custom.CheckRadioButton
+            android:id="@+id/crb_wifi_net_set"
+            style="@style/checkRadioButton_normal"
+            sw:hasImage="false"
+            sw:text1="@string/network_wlan_net_set"
+            sw:text2="@string/network_wlan_net_set_info" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/line2"
+        layout="@layout/divider" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@+id/crb_eth_set"
+        style="@style/checkRadioButton_normal"
+        android:nextFocusDown="@+id/crb_ap_toggle"
+        sw:hasImage="false"
+        sw:text1="@string/network_eth"
+        sw:text2="@string/network_eth_info" />
+
+    <TextView
+        style="@style/title"
+        android:text="@string/ap_set" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@+id/crb_ap_toggle"
+        style="@style/checkRadioButton_normal"
+        android:nextFocusUp="@+id/crb_eth_set"
+        sw:text1="@string/ap_start" />
+
+    <include
+        android:id="@+id/line1"
+        layout="@layout/divider" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@+id/crb_ap_set"
+        style="@style/checkRadioButton_normal"
+        android:nextFocusDown="@+id/crb_wifi_toggle"
+        sw:hasImage="false"
+        sw:text1="@string/ap_set"
+        sw:text2="@string/ap_set_detail" />
+
+</LinearLayout>

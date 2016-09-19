@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pupop_menu_bg">
+        <Button
+            android:id="@+id/menu01"
+            android:layout_width="@dimen/popup_menu_item_weight"
+            android:layout_height="@dimen/popup_menu_item_height"
+            android:gravity="center"
+            android:focusable="true"
+            android:layout_marginRight="@dimen/popup_menu_item_margin"
+            android:layout_alignParentRight="true"
+            android:text="@string/net_setting"
+            android:layout_centerVertical="true"
+            android:drawableStart="@drawable/pupop_menu_net"
+            android:textColor="@color/white"
+            android:background="@drawable/pupop_menu_btn_bg"
+            android:textSize="@dimen/popup_menu_item_text_size"/>
+
+        <View
+            android:id="@+id/divider_01"
+            android:layout_width="2dp"
+            android:layout_height="@dimen/popup_menu_height"
+            android:layout_toLeftOf="@id/menu01"
+            android:layout_marginRight="@dimen/popup_menu_item_margin"
+            android:layout_marginTop="@dimen/popup_menu_item_margin"
+            android:background="@drawable/divider_h"/>
+
+        <Button
+            android:id="@+id/menu02"
+            android:layout_width="@dimen/popup_menu_item_weight"
+            android:layout_height="@dimen/popup_menu_item_height"
+            android:focusable="true"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/divider_01"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/popup_menu_item_margin"
+            android:text="@string/blue_tooth_setting"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/pupop_menu_blue_tooth"
+            android:background="@drawable/pupop_menu_btn_bg"
+            android:textSize="@dimen/popup_menu_item_text_size" />
+
+        <View
+            android:id="@+id/divider_02"
+            android:layout_width="2dp"
+            android:layout_height="@dimen/popup_menu_height"
+            android:layout_toLeftOf="@id/menu02"
+            android:layout_marginRight="@dimen/popup_menu_item_margin"
+            android:layout_marginTop="@dimen/popup_menu_item_margin"
+            android:visibility="invisible"
+            android:background="@drawable/divider_h"/>
+
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/menu03"
+            android:layout_width="@dimen/popup_menu_item_weight"
+            android:layout_height="@dimen/popup_menu_item_height"
+            android:focusable="true"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/divider_02"
+            android:layout_marginRight="@dimen/popup_menu_item_margin"
+            android:text="@string/blue_tooth_setting"
+            android:textColor="@color/white"
+            android:background="@drawable/pupop_menu_btn_bg"
+            android:textSize="@dimen/popup_menu_item_text_size" />
+    </RelativeLayout>
+</RelativeLayout>

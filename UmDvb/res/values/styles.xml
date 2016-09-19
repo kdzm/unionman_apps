@@ -1,0 +1,57 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.NoActionBar"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!-- add by mingzhu.jiang -->
+    <style name="umlauncher_txt">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="umlauncher_imageview">
+        <item name="android:layout_width">96dp</item>
+        <item name="android:layout_height">98dp</item>
+        <item name="android:layout_gravity">top|center</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:contentDescription">@string/app_name</item>
+    </style>
+     <style name="dvb_mainmenu_txt">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+        <style name="Dialog_backgroundDimEnabled_false" parent="android:style/Theme.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>            
+		<item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+	</style>	
+	
+      <style name="popwindow_view">
+          <item name="android:windowEnterAnimation">@anim/dia_fade_in</item>
+          <item name="android:windowExitAnimation">@anim/dia_fade_out</item>
+    </style>
+</resources>

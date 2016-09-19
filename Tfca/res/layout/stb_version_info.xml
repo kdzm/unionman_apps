@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="@dimen/tf_smc_info_width"
+        android:layout_height="@dimen/tf_smc_info_height"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bg1"
+        android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tf_smc_info_title_height"
+        android:layout_gravity="top"
+        android:background="@drawable/searchmenu_btn"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/stb_info"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_smc_info_title_text_size" >
+        </TextView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tf_smc_info_title_height"
+        android:background="@drawable/searchmenu_btn"
+        android:layout_marginTop="50dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="@dimen/stb_info_item_title_width"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:text="@string/tf_stb_num"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_smc_info_item_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_stbid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stb_info_item_content_margin"
+            
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_smc_info_item_title_text_size" >
+        </TextView>
+    </LinearLayout>
+    
+     <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tf_smc_info_title_height"
+        android:background="@drawable/searchmenu_btn"
+        android:gravity="bottom"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="@dimen/stb_info_item_title_width"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:text="@string/hardware_ver"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_smc_info_item_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_hardware_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stb_info_item_content_margin"
+            
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_smc_info_item_title_text_size" >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tf_smc_info_title_height"
+        android:background="@drawable/searchmenu_btn"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="@dimen/stb_info_item_title_width"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:text="@string/software_ver"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_smc_info_item_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_software_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stb_info_item_content_margin"
+            
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_smc_info_item_title_text_size" >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tf_smc_info_title_height"
+        android:background="@drawable/searchmenu_btn"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="@dimen/stb_info_item_title_width"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:text="@string/loader_ver"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_smc_info_item_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_loader_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/stb_info_item_content_margin"
+            
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_smc_info_item_title_text_size" >
+        </TextView>
+    </LinearLayout>
+    
+    
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" >
+
+
+    </LinearLayout>
+</LinearLayout>
+    

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UMSystemSetting</string>
+    <string name="channellist">频道列表</string>
+    <string name="move_channel_message">是否移动所选频道</string>
+    <string name="delet_channel_message">是否删除所选频道</string>
+    <string name="move_channel_ok">确定</string>
+    <string name="move_channel_cancel">取消</string>
+    <string name="tips_info_text">使用上下按键移动到你想要移动的地方，然后按返回按键，进行移动确认</string>
+    <!-- >Search < -->
+    <string name="autoscan">自动搜台</string>
+    <string name="finetune">频道微调</string>
+    <string name="manual_search">手动搜台</string>
+    <string name="frequency_channel">频道数：</string>
+    <string name="frequency_rate">频率：</string>
+    <string name="frequency_band">频段：</string>
+    <string name="channel_string">当前频道：</string>
+    <string name="channel_number">0</string>
+    <string name="band_val">VHF-L</string>
+    <string name="auto_scanning">自动搜台中,请稍后......</string>
+
+    <!-- > Image mode < -->
+     <string name="picmode_string">图像模式</string>
+    <string name="picmode_standard_string">标准</string>
+    <string name="picmode_dynamic_string">亮丽</string>
+    <string name="picmode_softness_string">柔和</string>
+    <string name="picmode_user_string">自设</string>
+    <string name="picmode_brightness_string">亮度</string>
+	<string name="picmode_contrast_string">对比度</string>
+	<string name="picmode_saturation_string">彩色饱和度</string>
+	<string name="picmode_hue_string">色调</string>
+	<string name="picmode_sharpness_string">清晰度</string>
+	<string name="picmode_backlight_string">背光</string>
+	<string name="pic_display_mode_string">画面尺寸</string>
+	<string name="Color_temperature">色温</string>	
+    <!-- > Color temperature < -->
+    <string name="clrtmp_nature_string">标准</string>
+    <string name="clrtmp_warm_string">暖色</string>
+    <string name="clrtmp_cool_string">冷色</string>
+
+    <!-- >ASPECT< -->
+    <string name="aspect_auto_string">自动</string>
+    <string name="aspect_16_9_string">16:9</string>
+    <string name="aspect_4_3_string">4:3</string>
+    <string name="aspect_point2point_string">点对点</string>
+    <string name="aspect_panorama_string">全景</string>
+    <string name="aspect_zoom_string">人物</string>
+    <string name="aspect_zoom1_string">放大1</string>
+    <string name="aspect_zoom2_string">放大2</string>
+    <string name="aspect_cinema_string">电影</string>
+    <string name="aspect_subtitle_string">字幕</string>
+    <!-- Motion compensation mode -->
+    <string name="memc_off">关</string>
+    <string name="memc_low">弱</string>
+    <string name="memc_mid">中</string>
+    <string name="memc_high">强</string>
+	<string name="memc_auto">自动</string>
+	
+    <!-- >set on or off< -->
+    <string name="on">开</string>
+    <string name="off">关</string>
+    <string name="demo_string">分屏演示</string>
+
+    <string name="onehrs">1小时</string>
+    <string name="twohrs">2小时</string>
+    <string name="threehrs">3小时</string>
+    <string name="fourhrs">4小时</string>
+    
+    <string name="tenmins">10分钟</string>
+    <string name="twenmins">20分钟</string>
+    <string name="tirmins">30分钟</string>
+    <string name="sixmins">60分钟</string>
+    <string name="ninemins">90分钟</string>
+    <string name="ohtmins">120分钟</string>
+    <string name="ohemins">180分钟</string>
+    <string name="thfmins">240分钟</string>
+    
+	<string name="fourkpic">4K图片</string>
+	<string name="animation">动画</string>
+
+    <!-- Support color correction -->
+    <string name="weak_string">弱</string>
+    <string name="low_string">低</string>
+    <string name="middle_string">中</string>
+    <string name="high_string">强</string>
+
+    <!-- >MenuOf3D model< -->
+    <string name="menuof_2dto3d_string">2D转3D</string>
+    <string name="menuof3d_leftright_string">左右</string>
+    <string name="menuof3d_updown_string">上下</string>
+    <string name="menuof3d_auto_string">自动</string>
+    <string name="menuof3d_frame_string">帧序列</string>
+    <string name="menuof3d_checkbox_string">checkbox</string>
+    <string name="menuof3d_line_string">line-alternative</string>
+    <string name="menuof3d_field_string">field-alternative</string>
+    <string name="menuof3d_frame2_string">frame-alternative</string>
+    <!-- >The sound mode setting< -->
+    <string name="sndmode_standard_string">标准</string>
+    <string name="sndmode_dialog_string">新闻</string>
+    <string name="sndmode_music_string">音乐</string>
+    <string name="sndmode_movie_string">电影</string>
+    <string name="sndmode_onsite1_string">临场1</string>
+    <string name="sndmode_onsite2_string">临场2</string>
+    <string name="sndmode_user_string">自设</string>
+    <string name="auto_adjust">>></string>
+
+    <!-- >SPDIF out put< -->
+    <string name="spdif_pcm_string">PCM</string>
+    <string name="spdif_rawdata_string">RAW</string>
+
+    <!-- Standard color settings< -->
+    <string name="clrsys_pal_string">PAL</string>
+    <string name="clrsys_ntsc_string">NTSC</string>
+
+    <!-- Voice system settings< -->
+    <string name="audsys_DK_string">DK</string>
+    <string name="audsys_I_string">I</string>
+    <string name="audsys_BG_string">BG</string>
+    <string name="audsys_M_string">M</string>
+
+    <!-- > Change the channel mode< -->
+    <string name="ModeEnable_string">静帧</string>
+    <string name="DisModeEnable_string">标准</string>
+    <string name="setting_net">网络设置</string>
+    <string name="setting_iamge">图像设置</string>
+    <string name="setting_voice">声音设置</string>
+    <string name="setting_ps">节能设置</string>
+    <string name="setting_system">系统设置</string>
+    <string name="setting_info">系统信息</string>
+     <string name="setting_app">应用管理</string>
+    <string name="setting_ch">频道设置</string>
+    <string name="setting_senior">高级设置</string>
+    <string name="setting_market">卖场模式</string>
+    <string name="setting_reset">恢复出厂设置</string>
+    <string name="setting_storageinfo">存储</string>
+    <string name="setting_storageinfointernal">系统存储数据</string>
+    <string name="setting_storageinfoexternal">内置存储器</string>
+    <string name="setting_storageinfototal">总容量:   </string>
+    <string name="setting_storageinfoavail">剩余容量: </string>
+    <string name="title_activity_audio">AudioActivity</string>
+    <string name="title_activity_disp">DispActivity</string>
+
+    <!-- Signal source -->
+    <string name="DVBC">有线数字</string>
+    <string name="DTMB">无线数字</string>
+    <string name="ATV">模拟电视</string>
+    <string name="CVBS1">视频1</string>
+    <string name="CVBS2">视频2</string>
+    <string name="YPBPR1">分量</string>
+    <string name="HDMI1">HDMI1</string>
+    <string name="HDMI2">HDMI2</string>
+    <string name="HDMI3">HDMI3</string>
+    <string name="VGA">VGA</string>
+
+    <!-- no_signal -->
+    <string name="no_signal">无信号</string>
+
+    <!-- xml Public string resources -->
+    <string name="VGA_adjust">VGA校正</string>
+    <string name="adjust_ting">自动调整中 ...</string>
+    <string name="adjust_failed">自动调整失败！</string>
+    <string name="adjust_success">自动调整成功！</string>
+    <string name="sure">确定</string>
+    <string name="exit">退出</string>
+    <string name="text">text</string>
+
+    <string name="all_scan_freq_rate">%1$s MHz</string>
+    <string name="toast_start_factory_failed">启动工厂菜单失败！</string>
+    <string name="channel_edit_list">频道编辑</string>
+    <string name="channel_name">频道名称</string>
+    <string name="channel_skip">跳台</string>
+    <string name="channel_move">移动</string>
+    <string name="channel_delete">删除</string>
+    <string name="channel_enjoy">喜欢</string>
+    <string name="channel_back">返回</string>
+    <string name="channel_rename">重命名</string>
+
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="second">秒</string>
+
+    <string name="set_time">设置时间</string>
+    <string name="set_date">设置日期</string>
+    <string name="auto_update">自动更新</string>
+    <string name="chinese">中文</string>
+    <string name="english">英文</string>
+    <string name="set_date_tips">按确认键可移出焦点</string>
+    
+    <string name="system_back_textview">重启电视以恢复系统还原的设定，此操作不可逆？</string>
+    <string name="user_back_textview">重启电视以恢复所有用户的设定，此操作不可逆？</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    
+    <string name="choose_input_method">选择输入法</string>
+    <string name="udisk">U盘:</string>
+	<string name="storein">内部存储:</string> 
+	
+      <string name="input_password_hint">请输入6位数字密码</string>   
+     <string name="password_error">密码错误，请重新输入！</string>	
+     
+	<string name="setting_for_ntp">ntp设置</string>	
+	<string name="set_ntp_address">请输入新的ntp服务器地址：</string>	
+	<string name="ntp_address">ntp服务器地址</string>	
+	<string name="ntp_address_help">点击即可手动设置ntp服务器地址</string>	
+    <string name="please_input_legal_ip_address">请输入合法ip地址</string>  	    
+    <string name="setting_success">设置成功</string>  
+    <string name="ip">IP</string> 
+	<string name="spot">.</string>    
+    <string name="ethernet_ipaddr">IP&#160;&#160;&#160;&#160;地址:</string>	        
+</resources>

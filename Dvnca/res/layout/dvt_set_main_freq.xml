@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bg1"
+        android:orientation="vertical" >
+        
+    <LinearLayout 
+    	android:layout_width="match_parent" android:id="@+id/linearLayout1" 
+    	android:orientation="vertical" android:layout_height="86dp" 
+    	android:layout_weight="0.14">
+        <TextView 
+        	android:gravity="center" 
+        	android:layout_gravity="center" 
+        	android:layout_height="60dp" 
+        	android:textSize="24sp" 
+        	android:text="@string/main_freq_setting" 
+        	android:textAppearance="?android:attr/textAppearanceLarge" 
+        	android:layout_width="wrap_content"
+        	android:id="@+id/textView1">
+		</TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fre_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="80dp"
+            android:gravity="center_vertical|right"
+            android:text="@string/main_frequency"
+            android:textSize="24sp" >
+
+		</TextView>
+
+        <EditText
+            android:id="@+id/set_main_frq_edit"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:inputType="numberDecimal"
+            android:maxLength="3"
+            android:selectAllOnFocus="true" >
+
+            <requestFocus></requestFocus>
+        </EditText>
+        
+    </LinearLayout>
+
+	<LinearLayout 
+		android:layout_height="70dp" 
+		android:id="@+id/linearLayout3" 
+		android:layout_width="match_parent" 
+		android:orientation="vertical" 
+		android:layout_weight="0.51" 
+		android:layout_marginTop="50dp"
+		android:gravity="center">
+
+		<Button
+		    android:id="@+id/set_main_frq_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center|bottom"
+		    android:background="@drawable/ok_btn"
+		    android:text="@string/ok"
+		    android:textSize="24sp" >
+
+		</Button>
+		</LinearLayout>
+	<LinearLayout 
+		android:layout_height="70dp" 
+		android:id="@+id/linearLayout4" 
+		android:layout_width="match_parent" 
+		android:orientation="vertical" 
+		android:layout_weight="0.51" 
+		android:gravity="center">
+
+		<TextView 
+        	android:gravity="center" 
+        	android:layout_gravity="center" 
+        	android:layout_height="60dp" 
+        	android:textSize="24sp" 
+        	android:text="@string/box_card_help" 
+        	android:textAppearance="?android:attr/textAppearanceLarge" 
+        	android:layout_width="wrap_content"
+        	android:id="@+id/textView4">
+		</TextView>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

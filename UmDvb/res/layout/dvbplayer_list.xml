@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/channel_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/Dvbplayer_TextView_00"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/pg_list_item_layout_height"
+        android:layout_marginLeft="@dimen/pg_list_item_marginLeft"
+        android:gravity="center|left"
+        android:textSize="@dimen/pg_list_item_textSize"
+	    android:textColor="@color/white"
+	    android:layout_marginTop="@dimen/pg_list_item_marginTopp"
+	    android:layout_marginBottom="@dimen/pg_list_item_marginTopp"  />
+	<TextView
+	    android:id="@+id/Dvbplayer_TextView_01"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/pg_list_item_layout_height"
+	    android:layout_marginLeft="@dimen/pg_list_item_marginLeft"
+	    android:gravity="center|left"
+	    android:singleLine="true"
+	    android:textSize="@dimen/pg_list_item_textSize"
+	    android:textColor="#ffffff"
+		android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+	    android:layout_marginTop="@dimen/pg_list_item_marginTopp"
+	    android:layout_marginBottom="@dimen/pg_list_item_marginTopp" >
+	</TextView>
+</LinearLayout>

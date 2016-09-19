@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dvbsetting_bg"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:id="@+id/setfre"
+        android:layout_width="@dimen/sign_check_width"
+        android:layout_height="@dimen/sign_check_height"
+        android:layout_marginTop="@dimen/sign_check_content_margin_top"
+        android:background="@drawable/dvbsetting_item_sh"
+        android:gravity="center|left" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/sign_check_item_title_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/frequency"
+            android:textSize="@dimen/sign_check_item_title_text_size" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/lagoutfreq"
+            android:layout_width="@dimen/sign_check_edit_layout_width"
+            android:layout_height="@dimen/sign_check_edit_layout_height"
+            android:layout_marginLeft="@dimen/sign_check_edit_layout_margin_left"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/sign_edit_frq"
+                android:layout_width="@dimen/sign_check_edit_width"
+                android:layout_height="@dimen/sign_check_edit_height"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:inputType="numberDecimal"
+                android:focusable="true"
+                android:maxLength="3"
+                android:textSize="@dimen/sign_check_edit_text_size"
+                android:selectAllOnFocus="true">
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:textColor="@color/white"
+            android:text="@string/frq_unit"
+            android:textSize="@dimen/sign_check_edit_text_size" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setsymbol"
+        android:layout_width="@dimen/sign_check_width"
+        android:layout_height="@dimen/sign_check_height"
+        android:layout_marginTop="@dimen/sign_check_content_margin_top_2"
+        android:background="@drawable/dvbsetting_item_sh"
+        android:gravity="center|left" >
+
+        <TextView
+            android:id="@+id/textViewsymbol"
+            android:layout_width="@dimen/sign_check_item_title_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/symbol"
+            android:textSize="@dimen/sign_check_item_title_text_size" />
+        <LinearLayout
+            android:id="@+id/lagoutsymbol"
+            android:layout_width="@dimen/sign_check_edit_layout_width"
+            android:layout_height="@dimen/sign_check_edit_layout_height"
+            android:layout_marginLeft="@dimen/sign_check_edit_layout_margin_left"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/sign_edit_synbol"
+                android:layout_width="@dimen/sign_check_edit_width"
+                android:layout_height="@dimen/sign_check_edit_height"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:focusable="true"
+                android:maxLength="4"
+                android:textSize="@dimen/sign_check_item_title_text_size"
+                android:selectAllOnFocus="true">
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:textColor="@color/white"
+            android:text="@string/sym_unit"
+            android:textSize="@dimen/sign_check_item_title_text_size" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setsymbolss"
+        android:layout_width="@dimen/sign_check_width"
+        android:layout_height="@dimen/sign_check_height"
+        android:layout_marginTop="@dimen/sign_check_content_margin_top_3"
+        android:background="@drawable/dvbsetting_item_sh"
+        android:gravity="center|left" >
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="@dimen/sign_check_item_title_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/modulation"
+            android:textSize="@dimen/sign_check_item_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textViewQam1"
+            android:layout_width="@dimen/sign_check_qam_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/sign_check_qam_margin_left"
+            android:textColor="@color/white"
+            android:text="@string/qam16"
+            android:focusable="true"
+            android:nextFocusDown="@+id/sign_check_btn"
+            android:textSize="@dimen/sign_check_item_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textViewQam2"
+            android:layout_width="@dimen/sign_check_qam_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/sign_check_qam_margin_left"
+            android:textColor="@color/white"
+            android:text="@string/qam32"
+            android:focusable="true"
+            android:nextFocusDown="@+id/sign_check_btn"
+            android:textSize="@dimen/sign_check_item_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textViewQam3"
+            android:layout_width="@dimen/sign_check_qam_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/sign_check_qam_margin_left"
+            android:textColor="@color/white"
+            android:text="@string/qam64"
+            android:focusable="true"
+            android:nextFocusDown="@+id/sign_check_btn"
+            android:textSize="@dimen/sign_check_item_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textViewQam4"
+            android:layout_width="@dimen/sign_check_qam_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/sign_check_qam_margin_left"
+            android:textColor="@color/white"
+            android:text="@string/qam128"
+            android:focusable="true"
+            android:nextFocusRight="@+id/sign_check_btn"
+            android:nextFocusDown="@+id/sign_check_btn"
+            android:textSize="@dimen/sign_check_item_title_text_size" >
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/displaysign"
+        android:layout_width="@dimen/sign_check_width"
+        android:layout_height="@dimen/sign_check_height_big"
+        android:background="@drawable/dvbsetting_signal_bg"
+        android:layout_marginTop="@dimen/sign_check_content_margin_top_4"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/sign_intensity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sign_check_intensity_margin_top"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="@dimen/sign_check_item_title_width"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/signal_qingdu"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progressBarSignCheckStrength"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/sign_check_status_progress_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progressbar_green" >
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/textViewSingalStrengthValue"
+                android:layout_width="@dimen/sign_check_status_tip_width"
+                android:layout_height="@dimen/sign_check_status_tip_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sign_check_status_tip_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sign_quality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="@dimen/sign_check_item_title_width"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/signal_zhiliang"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progressSignCheckQulty"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/sign_check_status_progress_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progressbar_yellow" >
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/textViewSingalQualityValue"
+                android:layout_width="@dimen/sign_check_status_tip_width"
+                android:layout_height="@dimen/sign_check_status_tip_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sign_check_status_tip_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/error_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="@dimen/sign_check_item_title_width"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/error_rate"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <ProgressBar
+                android:id="@+id/progressBarSignCheckBer"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/sign_check_status_progress_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progressbar_pink" >
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/textViewSingalBerValue"
+                android:layout_width="@dimen/sign_check_status_tip_width"
+                android:layout_height="@dimen/sign_check_status_tip_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sign_check_status_tip_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sign_check_btn"
+        android:layout_width="@dimen/sign_check_button_width"
+        android:layout_height="@dimen/sign_check_button_height"
+        android:layout_marginTop="@dimen/sign_check_button_margin_top"
+        android:layout_marginLeft="@dimen/sign_check_button_margin_left"
+        android:background="@drawable/dvbsetting_ok_sh"
+        android:gravity="center"
+        android:focusable="true"
+        android:nextFocusUp="@+id/textViewQam3"
+        android:nextFocusLeft="@+id/textViewQam3"
+        android:text="@string/sure_check"
+        android:textSize="@dimen/sign_check_item_title_text_size" >
+        <requestFocus>
+        </requestFocus>
+    </Button>
+
+    <ImageView
+        android:layout_width="@dimen/set_freq_focus_view_width"
+        android:layout_height="@dimen/set_freq_focus_view_height"
+        android:id="@+id/foucs_frame"
+        android:layout_marginTop="@dimen/sign_check_button_margin_top"
+        android:layout_marginLeft="@dimen/sign_check_button_margin_left"
+        android:background="@drawable/dvbsetting_select_ok">
+    </ImageView>
+
+</RelativeLayout>

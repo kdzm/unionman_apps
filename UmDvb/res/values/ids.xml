@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="classified_list_view"/>
+    <item type="id" name="channel_list_view"/>
+    <item type="id" name="weekday_list_view"/>
+    <item type="id" name="epg_info_list_view"/>
+</resources>

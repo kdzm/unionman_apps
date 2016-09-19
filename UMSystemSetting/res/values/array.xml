@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pic_setting">
+        <item>Picture Mode</item>
+        <item>ColorTemp</item>
+        <item>MEMC</item>
+        <item>DNR</item>
+        <item>DCI</item>
+<!--        <item>FleshTone</item> -->
+<!--        <item>Blue Extend</item> -->
+<!--        <item>VGA</item> -->
+        <item>Display Mode</item>
+    </string-array>
+    <string-array name="voice_setting">
+        <item>Sound Mode</item>
+<!--        <item>Treble</item> -->
+<!--        <item>Bass</item> -->
+        <item>EQ</item>
+        <item>Balance</item>
+        <item>SRS</item>
+        <item>AVC</item>
+        <item>SPDIF</item>
+<!--        <item>SPDIF Delay</item> -->
+<!--        <item>SubWoofer</item> -->
+<!--        <item>Sub.vol</item> -->
+        <item>Hang Mode</item>
+    </string-array>
+
+    <string name="SPDIF_delay">SPDIF Delay</string>
+
+    <string-array name="menuof3d_setting">
+        <item>3D Mode</item>
+        <item>LRSwitch</item>
+        <item>3DTo2D</item>
+        <item>Depth</item>
+        <item>View</item>
+    </string-array>
+    <string-array name="channel_setting">
+        <item>Skip</item>
+        <item>Color System</item>
+        <item>Audio System</item>
+        <item>FineTune</item>
+        <item>Manual Search</item>
+        <item>Auto Search</item>
+        <item>Channel Edit</item>
+        <item>Change Mode</item>
+    </string-array>
+    <string-array name="senior_setting">
+        <item>Dy.Backlight</item>
+        <item>Sta.Backlight</item>
+        <item>Sing.Listen</item>
+    </string-array>
+    <string-array name="demo_mode_setting">
+        <item>MEMC</item>
+<!--        <item>Saturation</item> -->
+<!--        <item>DNR</item> -->
+<!--        <item>Sharpness</item> -->
+        <item>DCI</item>
+        <item>SR</item>
+<!--        <item>DBDR</item> -->
+    </string-array>
+
+    <!-- > ATV APP  < -->
+    <string-array name="picture_mode_setting">
+        <item>Picture Mode</item>
+        <item>Brightness</item>
+        <item>Contrast</item>
+        <item>Saturation</item>
+        <item>Hue</item>
+        <item>Sharpness</item>
+    </string-array>
+    <string-array name="color_temp_setting">
+        <item>ColorTemp</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+    </string-array>
+    <string-array name="VGA_setting">
+        <item>Auto Adjust</item>
+        <item>Horizontal</item>
+        <item>Vertical</item>
+        <item>Clock</item>
+        <item>Phase</item>
+    </string-array>
+    <string-array name="EQ_setting">
+        <item>120Hz</item>
+        <item>500Hz</item>
+        <item>1.5KHz</item>
+        <item>5KHz</item>
+        <item>10KHz</item>
+    </string-array>
+    <string-array name="SRS_setting">
+        <item>SRS</item>
+        <item>SRS Treble</item>
+        <item>SRS Bass</item>
+    </string-array>
+    <string-array name="Auto_Adjust">
+        <item>Auto Adjust</item>
+    </string-array>
+
+    <!-- The screen color system< -->
+    <string-array name="COLOR_CLRSYS">
+        <item>PAL</item>
+        <item>NTSC</item>
+    </string-array>
+
+    <!-- Display voice system< -->
+    <string-array name="SOUND_CLRSYS">
+        <item>DK</item>
+        <item>I</item>
+        <item>BG</item>
+        <item>M</item>
+    </string-array>
+    <string-array name="source">
+        <item>ATV</item>
+        <item>CVBS1</item>
+        <item>CVBS2</item>
+        <item>CVBS3</item>
+        <item>DTMB</item>
+        <item>DVBC</item>
+        <item>HDMI1</item>
+        <item>HDMI2</item>
+        <item>HDMI3</item>
+        <item>HDMI4</item>
+        <item>VGA</item>
+        <item>YPbPr</item>
+    </string-array>
+    <string-array name="source_next">
+        <item>720P 60Hz</item>
+    </string-array>
+    <string-array name="text_colorchange">
+        <item>#ffffff</item>
+        <item>#6B6B6B</item>
+        <item>#ff9900</item>
+        <item>#898989</item>
+    </string-array>
+    <string-array name="system_setting">
+        <item>System Setup</item>
+        <item>Language</item>
+        <item>Time Setup</item>
+        <item>Sleep On</item>
+        <item>Screensaver</item>
+        <item>Key Sound</item>
+        <item>Standby Led</item>
+        <item>Demo Mode</item>
+        <item>Input Method</item>
+        <item>Usb</item>
+        <item>Secure</item>
+        <item>Bluetooth</item>
+        <item>Storage</item>
+        <item>Reset</item>
+        <item>User Password Setting</item>
+        <item>Source Remember when Power on</item>         
+    </string-array>
+       <string-array name="system_setting_help">
+        <item>System Setup</item>
+        <item>Set the system language</item>
+        <item>Automatic Updates will use the network time, and when no network the system will use the time information of the digital television signal</item>
+        <item>Set the auto off time</item>
+        <item>Set the screensave mode</item>
+        <item>Set the status of key sound</item>
+        <item>Set the status of standby light</item>
+        <item>Set the status of store mode</item>
+        <item>Select the input method which user wants</item>
+        <item>Set the status of external storage recognition</item>
+        <item>Switching install third-party applications functions</item>
+        <item>Set the status of bluetooth</item>
+        <item>View the current storage space information of the system and external storage device</item>
+        <item>All setup parameters are reseted to factory defaults or The whole system are reseted to factory state</item>
+        <item>set the password when system restore or factory reset</item>  
+        <item>set the source when power on</item>               
+    </string-array> 
+    
+    <string-array name="factory_reset">
+        <item>Restore User Setting</item>
+        <item>ResetDefailt</item>
+    </string-array>
+         <string-array name="factory_reset_help">
+        <item>All setup parameters are reseted to factory defaults</item>
+        <item>The whole system are reseted to factory state</item>
+    </string-array> 
+    <string-array name="mount_type">
+        <item>USB</item>
+        <item>SATA</item>
+        <item>CARD</item>
+        <item>UNKOWN</item>
+    </string-array>  
+</resources>

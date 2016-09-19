@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/dialog_list"
+        android:layout_width="@dimen/dialog_frame_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dip"
+        android:background="@color/DIALOG_BACKBLUE"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_margin="3dip"
+            android:background="#D02e8fb6"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/facmenu_dialog_title"
+                style="@style/pagetitle_style"
+                android:paddingLeft="10dip"
+                android:text="@string/app_name" />
+
+            <TextView style="@style/pageline_style" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/id_facmenu_dialogmenu_importchannel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_state"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:text="@string/str_facmenu_importchannel"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dialog_textSize" />
+
+                <TextView
+                    android:id="@+id/id_facmenu_dialogmenu_exportchannel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_state"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:text="@string/str_facmenu_exportchannel"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/dialog_textSize" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@color/LIGHT_GREEN"
+        android:padding="10dp"
+        android:text="@string/dialog_title"
+        android:textColor="@color/RED"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

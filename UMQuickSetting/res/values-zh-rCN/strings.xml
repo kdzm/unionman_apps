@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HiQuickSetting</string>
+
+    <string name="picture_mode">图像模式</string>
+    <string name="option_source">标准</string>
+    <string name="mode">模式</string>
+    <string name="brightness">亮度</string>
+    <string name="contrast">对比度</string>
+    <string name="definition">清晰度</string>
+
+    <string name="tone">色调</string>
+    <string name="max_value">50</string>
+
+
+    <!-- > 图像模式 < -->
+
+    <string name="picmode_standard_string">标准</string>
+    <string name="picmode_dynamic_string">亮丽</string>
+    <string name="picmode_softness_string">柔和</string>
+    <string name="picmode_user_string">自设</string>
+
+    <!-- >比列模式< -->
+    <string name="aspect_auto_string">自动</string>
+  <string name="aspect_16_9_string">16:9</string>
+    <string name="aspect_4_3_string">4:3</string>
+    <string name="aspect_pointtopoint_string">点对点</string>
+    <string name="aspect_panorama_string">全景</string>
+    <string name="aspect_zoom_string">人物</string>
+    <string name="aspect_zoom1_string">放大1</string>
+    <string name="aspect_zoom2_string">放大2</string>
+    <string name="aspect_film_string">电影</string>
+    <string name="aspect_subtitle_string">字幕</string>
+    <!-- 运动补偿模式 -->
+    <string name="repeat_string">普通模式</string>
+    <string name="MEMC1_string">流畅模式1</string>
+    <string name="MEMC2_string">流畅模式2</string>
+    <string name="MEMC3_string">流畅模式3</string>
+
+    <!-- PIP窗口位置调整 -->
+    <string name="piplocation_left_up">左上</string>
+    <string name="piplocation_right_up">右上</string>
+    <string name="piplocation_left_down">左下</string>
+    <string name="piplocation_right_down">右下</string>
+
+    <!-- >开关设置< -->
+    <string name="on">开</string>
+    <string name="off">关</string>
+    <string name="split_screen_string">分屏演示</string>
+
+ 
+    <!-- >声音模式设置< -->
+   <string name="sndmode_standard_string">标准</string>
+    <string name="sndmode_news_string">新闻</string>
+    <string name="sndmode_music_string">音乐</string>
+    <string name="sndmode_movie_string">电影</string>
+    <string name="sndmode_onsite1_string">临场1</string>
+    <string name="sndmode_onsite2_string">临场2</string>
+    <string name="sndmode_user_string">自设</string>
+
+ <!-- >主界面菜单< -->
+    <string name="setting_iamge">图像设置</string>
+    <string name="setting_voice">声音设置</string>
+    <string name="setting_3d">3D设置</string>
+    <string name="setting_senior">高级设置</string>
+    <string name="setting_market">卖场模式</string>
+
+    <!-- >3D模式< -->
+    <string name="menuof3d_2dto3d_string">2DTO3D</string>
+    <string name="menuof3d_leftright_string">左右</string>
+    <string name="menuof3d_updown_string">上下</string>
+    <string name="menuof3d_auto_string">自动</string>
+    <string name="menuof3d_frame_string">帧序列</string>
+    <string name="menuof3d_checkbox_string">checkbox</string>
+    <string name="menuof3d_line_string">line-alternative</string>
+    <string name="menuof3d_field_string">field-alternative</string>
+    <string name="menuof3d_framealter_string">frame-alternative</string>
+
+    <!-- >SPDIF光纤输出< -->
+    <string name="spdif_pcm_string">PCM</string>
+    <string name="spdif_rawdata_string">RAW</string>
+
+</resources>

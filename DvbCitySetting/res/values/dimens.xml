@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spinner_item_height">30dp</dimen>
+    <dimen name="province_dropdown_max_height">355dp</dimen>
+    <dimen name="state_dropdown_max_height">282dp</dimen>
+    <dimen name="city_dropdown_max_height">208dp</dimen>
+</resources>

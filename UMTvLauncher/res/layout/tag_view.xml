@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="980dp"
+    android:layout_height="100dp"
+    android:orientation="horizontal" >
+    
+    <!--  
+    <RelativeLayout
+        android:id="@+id/tag_tv"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/tag_setting"
+        android:nextFocusRight="@+id/tag_movie" >
+
+        <TextView
+            android:id="@+id/tag_tv_txt"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/tag_tv"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:id="@+id/tag_tv_img"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:paddingLeft="-15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/page_tag_selected"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    -->
+	 
+    <!--<RelativeLayout
+        android:id="@+id/tag_movie"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/tag_tv"
+        android:nextFocusRight="@+id/tag_app" >
+
+        <TextView
+            android:id="@+id/tag_movie_txt"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/tag_movie"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:id="@+id/tag_movie_img"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:paddingLeft="-15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/page_tag_selected"
+            android:visibility="invisible" />
+    </RelativeLayout> -->
+ 
+     <RelativeLayout
+        android:id="@+id/tag_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/tag_app"
+        android:nextFocusRight="@+id/tag_education">
+
+        <TextView
+            android:id="@+id/tag_first_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tag_first"
+            android:textColor="@color/white"
+            android:textSize="33sp" />
+
+        <ImageView
+            android:id="@+id/tag_first_img"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/page_tag_selected"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/tag_education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/tag_first"
+        android:nextFocusRight="@+id/tag_game" >
+
+        <TextView
+            android:id="@+id/tag_education_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tag_education"
+            android:textColor="@color/white"
+            android:textSize="33sp" />
+
+        <ImageView
+            android:id="@+id/tag_education_img"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/page_tag_selected"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/tag_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/tag_education"
+        android:nextFocusRight="@+id/tag_app" >
+
+        <TextView
+            android:id="@+id/tag_game_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tag_game"
+            android:textColor="@color/white"
+            android:textSize="33sp" />
+
+        <ImageView
+            android:id="@+id/tag_game_img"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/page_tag_selected"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    
+	<RelativeLayout
+        android:id="@+id/tag_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/tag_game"
+        android:nextFocusRight="@+id/tag_first" >
+
+        <TextView
+            android:id="@+id/tag_app_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tag_app"
+            android:textColor="@color/white"
+            android:textSize="33sp" />
+
+        <ImageView
+            android:id="@+id/tag_app_img"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/page_tag_selected"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    
+	<!--
+    <RelativeLayout
+        android:id="@+id/tag_setting"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/tag_game"
+        android:nextFocusRight="@+id/tag_first" >
+
+        <TextView
+            android:id="@+id/tag_setting_txt"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/tag_setting"
+            android:textColor="@color/white"
+            android:textSize="33sp" />
+
+        <ImageView
+            android:id="@+id/tag_setting_img"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="-15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/page_tag_selected"
+            android:visibility="invisible" />
+    </RelativeLayout>
+	-->
+</LinearLayout>

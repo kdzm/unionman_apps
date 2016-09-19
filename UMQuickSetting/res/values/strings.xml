@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HiQuickSetting</string>
+
+
+    <string name="picture_mode">Picture Mode</string>
+    <string name="option_source">Standard</string>
+    <string name="mode">Picture Mode</string>
+    <string name="brightness">Brightness</string>
+    <string name="contrast">Contrast</string>
+    <string name="definition">Sharpness</string>
+    <string name="tone">FleshTone</string>
+    <string name="max_value">50</string>
+
+
+    <!-- > picture model < -->
+
+    <string name="picmode_standard_string">Standard</string>
+    <string name="picmode_dynamic_string">Vivid</string>
+    <string name="picmode_softness_string">Soft</string>
+    <string name="picmode_user_string">User</string>
+
+    <!-- >aspect mode< -->
+    <string name="aspect_auto_string">Auto</string>
+    <string name="aspect_16_9_string">16:9</string>
+    <string name="aspect_4_3_string">4:3</string>
+    <string name="aspect_pointtopoint_string">Point.Point</string>
+    <string name="aspect_panorama_string">Panorama</string>
+    <string name="aspect_zoom_string">Charater</string>
+    <string name="aspect_zoom1_string">Enlarge1</string>
+    <string name="aspect_zoom2_string">Enlarge2</string>
+    <string name="aspect_film_string">Film</string>
+    <string name="aspect_subtitle_string">Subtitles</string>
+    <!-- Motion compensation mode -->
+    <string name="repeat_string">Normal</string>
+    <string name="MEMC1_string">Smooth1</string>
+    <string name="MEMC2_string">Smooth2</string>
+    <string name="MEMC3_string">Smooth3</string>
+    <!-- PIP Location -->
+    <string name="piplocation_left_up">Upper-Left</string>
+    <string name="piplocation_right_up">Upper-Right</string>
+    <string name="piplocation_left_down">Lower-Left</string>
+    <string name="piplocation_right_down">Lower-Right</string>
+
+    <!-- >set on or off< -->
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="split_screen_string">Split Demo</string>
+
+
+    <!-- >set sound model< -->
+   <string name="sndmode_standard_string">Standard</string>
+    <string name="sndmode_news_string">News</string>
+    <string name="sndmode_music_string">Music</string>
+    <string name="sndmode_movie_string">Movie</string>
+    <string name="sndmode_onsite1_string">Hoc1</string>
+    <string name="sndmode_onsite2_string">Hoc2</string>
+    <string name="sndmode_user_string">User</string>
+
+ 
+
+    <string name="setting_iamge">Picture Setup</string>
+    <string name="setting_voice">Sound Setup</string>
+    <string name="setting_3d">3D Setting</string>
+    <string name="setting_senior">Advanced</string>
+    <string name="setting_market">Demo Mode</string>
+
+    <!-- >3D model< -->
+    <string name="menuof3d_2dto3d_string">2DTO3D</string>
+    <string name="menuof3d_leftright_string">Left-Right</string>
+    <string name="menuof3d_updown_string">Up-Down</string>
+    <string name="menuof3d_auto_string">Auto</string>
+    <string name="menuof3d_frame_string">Framepeaking</string>
+    <string name="menuof3d_checkbox_string">checkbox</string>
+    <string name="menuof3d_line_string">line-alternative</string>
+    <string name="menuof3d_field_string">field-alternative</string>
+    <string name="menuof3d_framealter_string">frame-alternative</string>
+
+    <!-- >SPDIF out put< -->
+    <string name="spdif_pcm_string">PCM</string>
+    <string name="spdif_rawdata_string">RAW</string>
+
+</resources>

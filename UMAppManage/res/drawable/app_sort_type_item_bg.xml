@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/app_sort_type_item_foucus_shape" android:state_focused="true"></item>
+    <item android:drawable="@drawable/app_sort_type_item_shape" android:state_focused="false" android:state_selected="false"></item>
+    <item android:drawable="@drawable/app_sort_type_item_select_shape" android:state_focused="false" android:state_selected="true"></item>
+</selector>

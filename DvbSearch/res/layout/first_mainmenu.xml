@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dvb_bg2"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/ly_button01"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true" >
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mainmenu_btn1"
+            android:contentDescription="@string/tv_list"
+            android:src="@drawable/mainmenu_tv_normal"
+            android:textColor="@color/headColor"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@id/button1"
+            android:layout_marginRight="@dimen/first_mainmenu_textview_margin_r"
+            android:textSize="@dimen/first_mainmenu_textview_textsise"
+            android:text="@string/tv_list"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_button02"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/ly_button01"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" >
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mainmenu_btn1"
+            android:contentDescription="@string/tv_list"
+            android:src="@drawable/mainmenu_radio_normal"
+            android:text="@string/radio_list"
+            android:textColor="@color/headColor"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@id/button2"
+            android:layout_marginRight="@dimen/first_mainmenu_textview_margin_r"
+            android:textSize="@dimen/first_mainmenu_textview_textsise"
+            android:text="@string/radio_list"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ly_button03"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/ly_button02"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" >
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mainmenu_btn1"
+            android:contentDescription="@string/tv_list"
+            android:src="@drawable/mainmenu_search_normal"
+            android:text="@string/search_prog"
+            android:textColor="@color/headColor"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@id/button3"
+            android:layout_marginRight="@dimen/first_mainmenu_textview_margin_r"
+            android:textSize="@dimen/first_mainmenu_textview_textsise"
+            android:text="@string/search_prog"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_button04"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/ly_button03"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" >
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mainmenu_btn1"
+            android:contentDescription="@string/tv_list"
+            android:src="@drawable/mainmenu_epg_normal"
+            android:text="@string/egp_guid"
+            android:textColor="@color/headColor"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@id/button4"
+            android:layout_marginRight="@dimen/first_mainmenu_textview_margin_r"
+            android:textSize="@dimen/first_mainmenu_textview_textsise"
+            android:text="@string/egp_guid"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_button05"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/ly_button04"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" >
+        <ImageButton
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mainmenu_btn1"
+            android:contentDescription="@string/tv_list"
+            android:src="@drawable/mainmenu_sys_normal"
+            android:text="@string/sys_set"
+            android:textColor="@color/headColor"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@id/button5"
+            android:layout_marginRight="@dimen/first_mainmenu_textview_margin_r"
+            android:textSize="@dimen/first_mainmenu_textview_textsise"
+            android:text="@string/sys_set"/>
+    </RelativeLayout>
+
+</RelativeLayout>

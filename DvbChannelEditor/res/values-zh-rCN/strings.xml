@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">节目编辑</string>
+    <string name="program">节目</string>
+    <string name="enter_password">请输入密码</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="password">密码: </string>
+    <string name="password_err">密码错误</string>
+    <string name="press_again_exit">再按一次退出</string>
+    <string name="chan_to_udisk">拷贝到U盘</string>
+	<string name="chan_from_udisk">从U盘拷贝</string>
+	<string name="chan_copy_success">U盘拷贝成功</string>
+	<string name="chan_copy_fail">U盘拷贝失败</string>
+	<string name="exit">退出</string>
+	<string name="save_chan_edit_yes_no">是否保存节目编辑？</string>
+	<string name="saving_chan_edit_data">数据保存中，请稍等...</string>
+	<string name="channel_del">删除</string>
+	<string name="channel_fav">喜爱</string>
+	<string name="channel_hide">隐藏</string>
+	<string name="channel_move">移动</string>
+	<string name="channel_statue">状态</string>
+</resources>

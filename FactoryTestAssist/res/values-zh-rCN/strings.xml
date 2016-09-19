@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FactoryTestAssist</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="preparing_for_factory_test">准备工厂测试环境</string>
+	<string name="reset_system">恢复出厂设置</string>
+	<string name="reset_system_success">恢复出厂设置成功，即将进入待机状态!</string>
+	<string name="reset_system_failed">恢复出厂设置失败!</string>
+	<string name="please_wait">正在清除数据，请勿关闭电视机！</string>
+	<string name="reinit_system">初始化数据</string>
+	<string name="reinit_system_please_wait">正在重新初始化工厂数据，请耐心等待！</string>
+	<string name="reinit_system_success">初始化工厂数据成功，即将进入待机状态!</string>
+	<string name="reinit_system_failed">>初始化工厂数据失败!</string>
+	<string name="please_wait_for_prepare">正在准备测试环境，请耐心等待！</string>
+	<string name="prepare_success">准备工厂测试环境成功!</string>
+    <string name="prepare_failed">Error:准备工厂测试环境失败!</string>
+    <string name="timeout_tip">操作超时，请尝试重启电视机!</string>
+</resources>

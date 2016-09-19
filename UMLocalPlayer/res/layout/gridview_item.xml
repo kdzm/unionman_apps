@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gridview_bg" >
+
+        <CheckBox
+            android:id="@+id/iv_item_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_fileicon"
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_filename"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="25sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_filesize"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+</LinearLayout>

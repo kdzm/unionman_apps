@@ -1,0 +1,20 @@
+<resources>
+    
+    <dimen name="menu_view_weidth">945dp</dimen>
+    <dimen name="menu_view_height">100dp</dimen>
+    <dimen name="menu_view_x">155dp</dimen>
+    <dimen name="menu_view_y">260dp</dimen>
+    
+
+    <dimen name="setting_menu_width">1280dp</dimen>
+    <dimen name="setting_menu_height">600dp</dimen>
+    <dimen name="setting_menu_x">0dp</dimen>
+    <dimen name="setting_menu_y">600dp</dimen>
+    
+    <dimen name="setting_view_width">650dp</dimen>
+   <dimen name="setting_view_x">0dp</dimen>
+	<dimen name="setting_view_y">0dp</dimen>
+    
+     <dimen name="level_2_height">60dp</dimen>
+
+</resources>

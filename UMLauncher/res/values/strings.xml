@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UMLauncher</string>
+    <string name="title_alert">提示</string>
+    <string name="dialog_recheck_button">重新检测</string>
+    <string name="dialog_netconfig_button">网络设置</string>
+    <string name="dialog_local_button">本地功能</string>
+    <string name="no_connection">没有检测到网络，请选择以下操作</string>
+    <string name="check">检测网络中...</string>
+    <string name="no_connection_tile"> 没有检测到网络...</string>
+</resources>

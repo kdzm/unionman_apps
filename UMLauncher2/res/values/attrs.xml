@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WifiEncryptionState">
+        <attr name="state_encrypted" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CoverFlow">
+        <attr name="animateDuration" format="integer" />
+        <attr name="delayTime" format="integer" />
+        <attr name="images" format="integer" />
+    </declare-styleable>
+
+	<declare-styleable name="RoundedImageView">
+    <attr name="riv_corner_radius" format="dimension" />
+    <attr name="riv_border_width" format="dimension" />
+    <attr name="riv_border_color" format="color" />
+    <attr name="riv_mutate_background" format="boolean" />
+    <attr name="riv_oval" format="boolean" />
+    <attr name="android:scaleType" />
+    <attr name="riv_tile_mode">
+      <enum name="clamp" value="0" />
+      <enum name="repeat" value="1" />
+      <enum name="mirror" value="2" />
+    </attr>
+    <attr name="riv_tile_mode_x">
+      <enum name="clamp" value="0" />
+      <enum name="repeat" value="1" />
+      <enum name="mirror" value="2" />
+    </attr>
+    <attr name="riv_tile_mode_y">
+      <enum name="clamp" value="0" />
+      <enum name="repeat" value="1" />
+      <enum name="mirror" value="2" />
+    </attr>
+  </declare-styleable>
+
+    <declare-styleable name="PosterView">
+        <attr name="pv_poster" format="reference" />
+        <attr name="pv_poster_bg" format="reference" />
+        <attr name="pv_title_bg" format="reference" />
+        <attr name="pv_main_title" format="string" />
+        <attr name="pv_sub_title" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="AppView">
+        <attr name="av_icon_bg" format="reference" />
+        <attr name="av_title_bg" format="reference" />
+        <attr name="av_icon" format="reference" />
+        <attr name="av_title" format="string" />
+        <attr name="av_icon_type">
+            <enum name="icon" value="0" />
+            <enum name="pic" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

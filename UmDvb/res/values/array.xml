@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dvb_setting_dvbc">
+        <item >Auto search</item>
+        <item >Manul search</item>
+        <item >Full frequency search</item>
+        <item >Edit prog</item>
+        <item >Epg guide</item>
+        <item >Picture setting</item>
+        <item >Audio setting</item>
+        <item >Cable setting</item>
+    </string-array>
+        <string-array name="dvb_setting_instruct_dvbc">
+        <item >According to the nit table on the local main frequency to search</item>
+        <item >Manual search a single frequency</item>
+        <item >Search the standard frequency in order</item>
+        <item >Edit the attributes of channel,such as favorite,move...</item>
+        <item >View the program information of one week</item>
+        <item >Set the parameters of picture</item>
+        <item >Set the StopMode for Switch channel</item>
+        <item >Set the parameters of sound</item>
+        <item >Set the parameters of the DVBC</item>
+    </string-array>
+
+    <string-array name="dvb_setting_dtmb">
+        <item >Auto search</item>
+        <item >Manul search</item>
+        <item >Edit prog</item>
+        <item >Epg guide</item>
+        <item >Picture setting</item>
+        <item >Audio setting</item>
+        <item >Terrestrial setting</item>
+    </string-array>
+    <string-array name="dvb_setting_instruct_dtmb">
+        <item >search all the program in DTMB</item>
+        <item >Manual search a single frequency</item>
+        <item >Edit the attributes of channel,such as favorite,move...</item>
+        <item >View the program information of one week</item>
+        <item >Set the parameters of picture</item>    
+        <item >Set the parameters of sound</item>
+        <item >Set the parameters of the DTMB</item>
+    </string-array>
+</resources>

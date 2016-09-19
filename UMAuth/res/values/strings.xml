@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">UMGetToken</string>
+    <string name="login_title">用户登录</string>
+    <string name="login_button">登录</string>
+    <string name="reset_button">重置</string>
+	<string name="user_id">账号：</string>
+	<string name="password">密码：</string>	
+	<string name="login_input_userid_tips">输入账号或密码不能为空</string>
+	<string name="login_error_tips">账户认证失败，请确认账户及密码</string>
+    <string name="login_and_wait">正在登录，请稍等</string>
+</resources>

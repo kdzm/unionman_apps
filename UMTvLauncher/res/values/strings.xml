@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">UMTvLauncher</string>
+    <string name="please_wait">Application is loading,please wait……</string>
+    <string name="no_del_sys_app">System application cannot uninstall</string>
+    <string name="please_sure">Please confirm whether the uninstaill<g id="part1">%1$s</g>?</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="clear_data">Clear data</string>
+    <string name="clear_data_suc">Clear data success!</string>
+    <string name="clear_data_fail">Clear data fail!</string>
+    <string name="clear_data_dlg_title">"Delete the application data? "</string>
+    <string name="force_stop_package">"Stop this application? "</string>
+    <string name="clear_default">"Remove the default settings? "</string>
+    <string name="clear_data_dlg_text">"The system will permanently delete all data for this application. This includes all files, settings, account, database etc.."</string>
+    <string name="myapp_title">All App</string>
+    <string name="info_txt">Press the menu key management application</string>
+    <string name="wifi_state_unknow">please input the wifi or the wifi not support</string>
+    <string name="sina_news">Sina News</string>
+    <string name="weibo_photos">Weibo Photos</string>
+    <string name="qrcode">QR Code</string>
+    <string name="source">Signal Source</string>
+    <string name="media_center">Media Center</string>
+    <string name="multi_screen">Multi Control</string>
+    <string name="house_keeper">House Keeper</string>
+    <string name="app_center">App Store</string>
+    <!-- TV Page -->
+    <string name="VGA">VGA</string>
+    <string name="HDMI3">HDMI3</string>
+    <string name="HDMI2">HDMI2</string>
+    <string name="DVB">DVB-C</string>
+    <string name="DTV">DTMB</string>
+    <string name="ATV">ATV</string>
+    <string name="AV">AV</string>
+    <string name="AV1">AV1</string>
+    <string name="AV2">AV2</string>
+    <string name="YPbPr">YPbPr</string>
+    <string name="HDMI1">HDMI1</string>
+    <!-- Movie Page -->
+    <string name="netvideo">Online Video</string>
+    <string name="leshi">Letv</string>
+    <string name="sohu">Sohu Tv</string>
+    <string name="QQLive">QQLive</string>
+    <string name="qiyi">IQiYi</string>
+    <string name="youku">YouKu</string>
+    <string name="taijie">Togic Video</string>
+    <string name="tsqinghua_school">Tsinghua School</string>
+    <string name="children">Children Park</string>
+    <string name="reading">Tsinghua Smart Point Reading</string>
+    <string name="healthy">Health Education</string>
+    <string name="society">Social Education</string>
+    <string name="pple">Popl</string>
+    <string name="integrated">Comprehensive education</string>
+    <!-- App Page -->
+    <string name="appstore_normal">App Store</string>
+    <string name="app_normal">All App</string>
+    <string name="media_normal">MediaCenter</string>
+    <string name="email_normal">Browser</string>
+    <string name="multi_normal">MultiScreen</string>
+    <string name="three_normal">3DBenchmark</string>
+    <string name="qq_normal">TV QQ</string>
+    <string name="video_normal">Video Call</string>
+    <string name="audio_normal">Music World</string>
+    <string name="filemanage_normal">File Manage</string>
+    <string name="homenurse_normal">Family Nurse</string>
+    <string name="healthydiet_normal">Healthy Recipes</string>
+    <!-- Game Page -->
+    <string name="games_hall">Game Center</string>
+    <string name="game_car">Need for Speed</string>
+    <string name="game_war">Modern War</string>
+    <string name="game_gp">Torrent Airship</string>
+    <string name="game_fruit">Fruit Ninja</string>
+    <string name="game_fish">FishLord</string>
+    <string name="game_jiajia">Sports Gaga</string>
+    <string name="game_boxingking">King of Fighters</string>
+    <string name="game_helicopter_war">Helicopter War</string>
+    <string name="game_feizhi">Fei Chi Game</string>
+    <string name="game_xiaochong">Shallot Game</string>
+    <!-- Set Page -->
+    <string name="net_setting">Network</string>
+    <string name="pic_setting">Picture</string>
+    <string name="voice_setting">Sound</string>
+    <string name="system">Upgrade</string>
+    <string name="advance_setting">SysSet</string>
+    <string name="recover_setting">Restore</string>
+    <string name="system_info">Info</string>
+    <string name="help">Help</string>
+    <string name="powersaving">Power Saving</string>
+    <string name="appmanage">App Manage</string>
+    
+    <string name="netstat_connected">Connected</string>
+    <string name="netstat_unconnected">Unconnected</string>
+    <string name="networkerror">Can not find any update information please check the network </string>
+
+    <!-- TagView -->
+    <string name="tag_first">Home</string>
+    <string name="tag_tv">TV</string>
+    <string name="tag_movie">Movie</string>
+    <string name="tag_education">Edu</string>
+    <string name="tag_app">App</string>
+    <string name="tag_game">Game</string>
+    <string name="tag_setting">Settings</string>
+    <!-- Sound Setting -->
+    <string name="sndmode_standard_string">Saturation</string>
+    <string name="sndmode_news_string">News</string>
+    <string name="sndmode_music_string">Music</string>
+    <string name="sndmode_movie_string">Movie</string>
+    <string name="sndmode_onsite1_string">Hoc1</string>
+    <string name="sndmode_onsite2_string">Hoc2</string>
+    <!-- Locale Setting -->
+    <string name="chinese">Chinese</string>
+    <string name="english">English</string>
+    <!-- System ShutDown -->
+    <string name="sleep_close">Off</string>
+    <string name="five_min">5 Minutes</string>
+    <string name="thirty_min">30 Minutes</string>
+    <string name="sixty_min">60 Minutes</string>
+    <string name="ninety_min">90 Minutes</string>
+    <string name="sixscore_min">120 Minutes</string>
+    <!--Key Sound-->
+    <string name="key_sound_off">Off</string>
+    <string name="key_sound_on">On</string>
+    <!--Power On Mode-->
+    <string name="power_on_mode_launcher">Launcher</string>
+    <string name="power_on_mode_tv">TV</string>
+    <!--Blue Screen-->
+    <string name="blue_screen_off">Off</string>
+    <string name="blue_screen_on">On</string>
+    <!-- System Update -->
+    <string name="system_update_local">LocalUpdate</string>
+    <string name="system_update_net">OnlineUpdate</string>
+    <!-- >Select Tv Model< -->
+    <string name="testboard_B">testboard Hi3751V100D_K3.10</string>
+    <string name="testboard">testboard Hi3751V100</string>
+    <string name="select_TV_version">please select update version：</string>
+    <!-- Net Setting -->
+    <string name="net_ether_setting">Ethernet Setting</string>
+    <string name="net_wifi_setting">WiFi Setting</string>
+    <string name="net_state_setting">Network State</string>
+    <!-- Net Setting Input -->
+    <string name="net_input_title">Name:</string>
+    <string name="net_input_ssid_title">Name:</string>
+    <string name="net_input_pwd_title">Pass:</string>
+    <string name="net_input_account">Enter account name</string>
+    <string name="net_input_ssid">Enter network name</string>
+    <string name="net_input_pwd">Enter password</string>
+    <string name="net_show_pwd">Display password</string>
+    <string name="net_auto_connect">Even after the automatic fault line</string>
+    <!-- Net Setting Connect Info -->
+    <string name="net_connecting">Connecting……</string>
+    <string name="net_connect_failed">Connection failed!</string>
+    <string name="net_setting_ip">Setting IP……</string>
+    <string name="net_set_ip_failed">Please set the correct IP</string>
+    <string name="net_getting_ip">Getting IP……</string>
+    <string name="net_btn_connect">Connect</string>
+    <!-- Wifi Setting -->
+    <string name="wifi_setting">WiFi Setting</string>
+    <!-- Label for the status of the connection -->
+    <string name="wifi_status">Status</string>
+    <!-- Action bar text message to manually add a wifi network [CHAR LIMIT=20]-->
+    <string name="wifi_add_network">Add network</string>
+    <!-- Substring of wifi status for wifi with authentication.  This version is for when the string is first in the list (titlecase in english) -->
+    <!-- Label for the signal strength of the connection -->
+    <string name="wifi_signal">Signal strength</string>
+    <!-- Label for the link speed of the connection -->
+    <string name="wifi_speed">Link speed</string>
+    <string name="wifi_secured_first_item">Secured with <xliff:g id="wifi_security_short">%1$s</xliff:g></string>
+    <!--Substring of status line when Wi-Fi Protected Setup (WPS) is available and string is listed first [CHAR LIMIT=20]-->
+    <string name="wifi_wps_available_first_item">WPS available</string>
+    <!-- Substring of wifi status when Wi-Fi Protected Setup (WPS) is available and string is listed after a wifi_secured_* string-->
+    <string name="wifi_wps_available_second_item">\u0020(WPS available)</string>
+    <string name="wifi_secured_second_item">, secured with <xliff:g id="wifi_security_short">%1$s</xliff:g></string>
+    <!-- Button label to save a Wi-Fi network configuration -->
+    <string name="wifi_save">Save</string>
+    <!-- Button label to delete a Wi-Fi network -->
+    <string name="wifi_forget">Forget</string>
+    <!-- Button label to dismiss the dialog -->
+    <string name="wifi_cancel">Cancel</string>
+    <!-- Summary for the remembered network. -->
+    <string name="wifi_remembered">Saved</string>
+    <!-- Summary for the remembered network but currently not in range. -->
+    <string name="wifi_not_in_range">Not in range</string>
+    <!-- Status for networks disabled for unknown reason -->
+    <string name="wifi_disabled_generic">Disabled</string>
+    <!-- Status for networked disabled from a DNS or DHCP failure -->
+    <string name="wifi_disabled_network_failure">Avoided poor Internet connection</string>
+    <!-- Status for networks disabled from authentication failure (wrong password or certificate). -->
+    <string name="wifi_disabled_password_failure">Authentication problem</string>
+    <!-- Toast message when Wi-Fi cannot scan for networks -->
+    <!-- Button label to connect to a Wi-Fi network -->
+    <string name="wifi_connect">Connect</string>
+    <string name="wifi_fail_to_scan">Can\'t scan for networks</string>
+    <!-- Wi-Fi settings. text displayed when Wi-Fi is off and network list is empty-->
+    <string name="wifi_stoped">To see available networks, turn Wi\u2011Fi on.</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary Menu item on Wifi information screen-->
+    <string name="wifi_status_test" translatable="false">Wi-Fi status</string>
+    <!-- Wi-Fi settings. text displayed when Wi-Fi is on and network list is empty-->
+    <string name="wifi_search_wifi_list">Searching for Wi\u2011Fi networks\u2026</string>
+    <!-- Wi-Fi dialog -->
+    <!-- Used in Wi-Fi settings dialogs when Wi-Fi does not have any security. -->
+    <string name="wifi_security_none">None</string>
+    <!-- Do not translate.  Terminology for wifi with WEP security -->
+    <string name="wifi_security_wep">WEP</string>
+    <!-- Do not translate.  Terminology for wifi with WPA security -->
+    <string name="wifi_security_wpa">WPA PSK</string>
+    <!-- Do not translate.  Terminology for wifi with WPA2 security -->
+    <string name="wifi_security_wpa2">WPA2 PSK</string>
+   <!-- Do not translate.  Terminology for wifi with both WPA/WPA2 security, or un     known -->
+    <string name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_eap">802.1x EAP</string>
+    <string name="wifi_security_short_wep">WEP</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA security -->
+    <string name="wifi_security_short_wpa">WPA</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA2 security -->
+    <string name="wifi_security_short_wpa2">WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with both WPA/WPA2 security -->
+    <string name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_short_eap">802.1x</string>
+    <string name="wifi_ssid">Network SSID</string>
+    <string name="wifi_ssid_hint">Enter the SSID</string>
+    <string name="wifi_security">Security</string>
+    <string name="wifi_password">Password</string>
+    <string name="wifi_show_password">Show password</string>
+    <string name="wifi_show_advanced">Show advanced options</string>
+    <string name="proxy_settings_title">Proxy</string>
+    <string name="proxy_hostname_label">Proxy hostname</string>
+    <string name="proxy_hostname_hint">proxy.example.com</string>
+    <string name="proxy_port_label">Proxy port</string>
+    <string name="proxy_port_hint">8080</string>
+    <string name="proxy_exclusionlist_label">Bypass proxy for</string>
+    <string name="proxy_exclusionlist_hint">example.com,mycomp.test.com,localhost</string>
+    <!-- HTTP proxy settings. Title for Proxy-Auto Config URL.  [CHAR LIMIT=NONE]-->
+    <string name="proxy_url">"PAC URL: "</string>
+    <!-- HTTP proxy settings. Title if there is an error-->
+    <string name="proxy_error">Attention</string>
+    <!-- HTTP proxy settings. Button to get rid of error box-->
+    <string name="proxy_error_dismiss">OK</string>
+    <!-- HTTP proxy settings. The error if the hostname is not valid -->
+    <string name="proxy_error_invalid_host">The hostname you typed isn\'t valid.</string>
+    <!-- HTTP proxy settings. The error if the exclusion list is not valid -->
+    <string name="proxy_error_invalid_exclusion_list">The exclusion list you typed isn\'t properly formatted. Type a comma-separated list of excluded domains.</string>
+    <!-- HTTP proxy settings. Error msg -->
+    <string name="proxy_error_empty_port">You need to complete the port field.</string>
+    <!-- HTTP proxy settings. Error msg -->
+    <string name="proxy_error_empty_host_set_port">The port field must be empty if the host field is empty.</string>
+    <!-- HTTP proxy settings. Error msg -->
+    <string name="proxy_error_invalid_port">The port you typed isn\'t valid.</string>
+    <!-- HTTP proxy settings. Warning message about limited application support [CHAR LIMIT=100]-->
+    <string name="proxy_warning_limited_support">The HTTP proxy is used by the browser but may not be used by the other apps.</string>
+    <string name="wifi_ip_settings">IP settings</string>
+    <string name="wifi_ip_address">IP address</string>
+    <string name="wifi_ip_address_hint">196.168.1.128</string>
+    <string name="wifi_gateway">Gateway</string>
+    <string name="wifi_gateway_hint">192.168.1.1</string>
+    <string name="wifi_network_prefix_length">Network prefix length</string>
+    <string name="wifi_network_prefix_length_hint" translatable="false">24</string>
+    <string name="wifi_dns1">DNS 1 </string>
+    <string name="wifi_dns1_hint">8.8.8.8</string>
+    <string name="wifi_dns2">DNS 2</string>
+    <string name="wifi_dns2_hint">8.8.4.4</string>
+    <!-- Error message if the IP address is not valid [CHAR LIMIT=50]-->
+    <string name="wifi_ip_settings_invalid_ip_address">Type a valid IP address.</string>
+    <!-- Error message if the gateway is not valid [CHAR LIMIT=50]-->
+    <string name="wifi_ip_settings_invalid_gateway">Type a valid gateway address.</string>
+    <!-- Error message if the dns is not valid [CHAR LIMIT=50]-->
+    <string name="wifi_ip_settings_invalid_dns">Type a valid DNS address.</string>
+    <!-- Error message if the network prefix length is not valid [CHAR LIMIT=50]-->
+    <string name="wifi_ip_settings_invalid_network_prefix_length">Type a network pr     efix length between 0 and 32.</string>
+    <!-- Hint for unchanged fields -->
+    <string name="wifi_unchanged">(unchanged)</string>
+    <!-- Summary text when turning Wi-Fi-->
+    <string name="wifi_stoping">Turning Wi\u2011Fi off\u2026</string>
+    <string name="wifi_starting">Turning Wi\u2011Fi on\u2026</string>
+    <string name="wifi_refresh">Refresh WiFi list</string>
+    <string name="wifi_add_new">Add WIFI network</string>
+    <string name="wifi_direct_connect">Direct WIFI</string>
+    <string name="wifi_no_scan">Not in range</string>
+    <!-- Title for the WPS setup dialog [CHAR LIMIT=50] -->
+    <string name="wifi_wps_setup_title">Wi\u2011Fi Protected Setup</string>
+    <!-- Message in WPS dialog at start up [CHAR LIMIT=150] -->
+    <string name="wifi_wps_setup_msg">Starting WPS\u2026</string>
+    <!-- Message in WPS dialog for PBC after start up [CHAR LIMIT=150] -->
+    <string name="wifi_wps_onstart_pbc">Press the Wi\u2011Fi Protected Setup button on your router. It may be called \"WPS\" or contain this symbol:</string>
+    <!-- Message in WPS dialog for PIN after start up [CHAR LIMIT=150] -->
+    <string name="wifi_wps_onstart_pin">Enter pin <xliff:g id="number">%1$s</xliff:g> on your Wi\u2011Fi router. The setup can take up to two minutes to complete.</string>
+    <!-- Text displayed when WPS succeeds [CHAR LIMIT=150] -->
+    <string name="wifi_wps_complete">WPS succeeded. Connecting to the network\u2026</string>
+    <!-- Text displayed when Wi-Fi is connected through WPS [CHAR LIMIT=150] -->
+    <string name="wifi_wps_connected">Connected to Wi\u2011Fi network <xliff:g id="network_name">%s</xliff:g></string>
+    <!-- Text displayed when WPS setup is in progress [CHAR LIMIT=150] -->
+    <string name="wifi_wps_in_progress">WPS is already in progress and can take up to two minutes to complete</string>
+    <!-- Text displayed when WPS fails to start [CHAR LIMIT=150] -->
+    <string name="wifi_wps_failed_generic">WPS failed. Please try again in a few minutes.</string>
+    <!-- Text displayed when WPS fails due to WEP [CHAR LIMIT=150] -->
+    <string name="wifi_wps_failed_wep">The wireless router security setting (WEP) is not supported</string>
+     <!-- Text displayed when WPS fails to TKIP [CHAR LIMIT=150] -->
+    <string name="wifi_wps_failed_tkip">The wireless router security setting (TKIP) is not supported</string>
+     <!-- Text displayed when WPS fails due to authentication issues [CHAR LIMIT=150] -->
+    <string name="wifi_wps_failed_auth">Authentication failure. Please try again.</string>
+     <!-- Text displayed when WPS fails due to another session [CHAR LIMIT=150] -->
+    <string name="wifi_wps_failed_overlap">Another WPS session was detected. Please try again in a few minutes.</string>
+    <!-- Ether Setting -->
+    <string name="ether">Ethernet</string>
+    <string name="ether_setting">Ethernet Setting</string>
+    <string name="ether_auto_ip">DHCP</string>
+    <string name="ether_manual_ip">Static IP</string>
+    <string name="ether_pppoe_set">Pppoe setting</string>
+    <string name="ether_pppoe">Pppoe</string>
+    <!-- System Update Dialog -->
+    <string name="system_no_update_text">Can\'t find upgrade file!</string>
+    <string name="system_update_textview">The upgrade process is irreversible, now completed the upgrade to restart the TV?</string>
+    <string name="system_back_textview">Restart the TV to restore the system restore settings, this operation is not reversible?</string>
+    <string name="user_back_textview">Restart the TV to restore all user settings, this operation is not reversible?</string>
+    <string name="net_update_failed_text">Test failed, please check the TV network settings!</string>
+    <string name="net_update_success_text">Download available Update package?</string>
+    <string name="net_update_finish_text">Upgrade package download is complete, whether to restart the TV to complete the upgrade?</string>
+    <string name="sdcard_not_exist">sdcard not exist</string>
+    <string name="sdcard_available_space_not_enough">sdcard available space not enoughsd</string>
+    <!-- Net Setting IP setting -->
+    <string name="ip">IP</string>
+    <string name="subnet">Netmask</string>
+    <string name="network_prefix">Prefix length</string>
+    <string name="gateway">Gateway</string>
+    <string name="modify">Modify</string>
+    <string name="forget">Never Save</string>
+    <string name="dns">DNS</string>
+
+    <string name="toast_download_failed">Download Failed!Please check the File on server.</string>
+    <!-- Manage applications, individual application screen, confirmation dialog button. Displays when user selects to "Clear data". Goes through with the clearing of the data. -->
+    <string name="dlg_ok">OK</string>
+    <string name="app_no_support">App no support for now</string>
+    <string name="app_no_enter">can not enter app, please make sure app have installed</string>
+    <string name="app_dlna">dlna</string>
+    <string name="app_miracast">miracast</string>
+    <string name="app_multiscreen">multiscreen</string>
+    <string name="app_skyplay">skyplay</string>
+    <string name="no_signal">no signal</string>
+    <string name="signal_nosupport">signal no support</string>
+     <string name="no_program">no program</string>
+</resources>

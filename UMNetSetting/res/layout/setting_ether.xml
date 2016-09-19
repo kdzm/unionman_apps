@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/ether_setting"
+            android:textColor="@color/white"
+            android:textSize="33sp" />
+
+        <CheckBox
+            android:id="@+id/ether_switch_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:button="@drawable/setting_switch" />
+    </LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/setting_dialog_bg"
+        android:orientation="vertical" >
+
+
+
+        <LinearLayout
+            android:id="@+id/ether_autoip_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/linearlayout_background"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ether_autoip_txt"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/ether_auto_ip"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ether_autosel_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/net_select"
+                android:gravity="center_vertical"
+                android:visibility="gone" />
+        </LinearLayout>
+            <ImageView              
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line" />
+        <LinearLayout
+            android:id="@+id/ether_manualip_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/linearlayout_background"           
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ether_manualip_txt"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/ether_manual_ip"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ether_manualsel_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/net_select"
+                android:gravity="center_vertical"
+                android:visibility="gone" />
+        </LinearLayout>
+            <ImageView              
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line" />
+
+
+
+        <TextView
+            android:id="@+id/ether_pppoe_txt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/ether_pppoe"
+            android:textColor="@color/white"
+            android:background="@drawable/linearlayout_background"
+            android:textSize="20sp" 
+            android:visibility="gone"/>
+                 <ImageView              
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line" 
+                android:visibility="gone"/>   
+    </LinearLayout>
+
+</LinearLayout>

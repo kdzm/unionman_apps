@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:textSize="30sp" />
+
+    <com.unionman.filebrowser.localplayer.AlwaysMarqueeTextView
+        android:id="@+id/tv_path"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_toLeftOf="@id/tv_count"
+        android:ellipsize="marquee" 
+        android:paddingTop="5dp"
+        android:marqueeRepeatLimit="marquee_forever" 
+        android:singleLine="true"
+        android:textSize="30sp" />
+
+</RelativeLayout>

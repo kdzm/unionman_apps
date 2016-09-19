@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.um.launcher"
+    android:id="@+id/first_page_id"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent">
+    <com.um.launcher.widget.HomeRelativeLayout
+        android:id="@+id/ly_content"
+        android:layout_width="3000dip"
+        android:layout_height="match_parent"
+        android:paddingTop="100dp"
+        android:focusable="true" >
+        
+        <com.um.launcher.widget.VideoLayout
+            android:id="@+id/first_item_window"
+            android:layout_width="@dimen/poster_width"
+            android:layout_height="@dimen/poster_height"
+            android:layout_marginLeft="@dimen/launcher_first_item_margin"
+            android:nextFocusDown="@id/first_item_window"
+            android:layout_marginTop="60dp"
+            android:focusable="true" >
+
+            <RelativeLayout
+                android:id="@+id/first_window_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <com.um.launcher.widget.PosterView
+                    android:id="@+id/first_minvideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"  
+		            app:pv_poster="@drawable/cmcc_showpic"
+		            app:pv_title_bg="@drawable/poster_00_title_bg"
+		            app:pv_main_title="@string/cmcc"
+		            app:pv_sub_title="@string/cmcc_app"            
+                    />
+                 <TextView
+                    android:id="@+id/first_window_signal_txt"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    android:text="@string/no_signal"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                 />
+
+                <TextView
+                    android:id="@+id/first_window_txt"
+                    android:visibility="invisible"                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+        </com.um.launcher.widget.VideoLayout>
+
+        <!-- 广告图片块 -->
+        <com.um.launcher.widget.RoundedImageView
+            android:id="@+id/first_item_ad"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ad1"
+            android:focusable="false"
+            android:layout_below="@id/first_item_window"
+            android:layout_marginTop="@dimen/launcher_item_margin_top"
+            android:layout_alignLeft="@id/first_item_window"
+            android:visibility="invisible" 
+            app:riv_corner_radius="13dip"
+            app:riv_oval="false"          
+            />
+
+        <!-- yongfa.yang modified.160621
+        <com.um.launcher.widget.PosterView
+            android:id="@+id/poster01"
+            android:layout_width="@dimen/poster_width"
+            android:layout_height="@dimen/poster_height"
+            android:focusable="true"
+            android:layout_alignTop="@id/first_item_window"
+            app:pv_poster_bg="@drawable/poster_bg_01"
+            app:pv_poster="@drawable/poster01"
+            app:pv_title_bg="@drawable/poster_01_title_bg"
+            app:pv_main_title="@string/app_name"
+            app:pv_sub_title="@string/app_name"
+            android:layout_toRightOf="@id/first_item_window"
+            android:layout_marginLeft="@dimen/launcher_item_margin_left"
+            />
+        <com.um.launcher.widget.PosterView
+            android:id="@+id/poster02"
+            android:layout_width="@dimen/poster_width"
+            android:layout_height="@dimen/poster_height"
+            android:focusable="true"
+            android:layout_alignTop="@id/first_item_window"
+            app:pv_poster_bg="@drawable/poster_bg_02"
+            app:pv_poster="@drawable/poster02"
+            app:pv_title_bg="@drawable/poster_02_title_bg"
+            app:pv_main_title="@string/app_name"
+            app:pv_sub_title="@string/app_name"
+            android:layout_marginLeft="@dimen/launcher_item_margin_left"
+            android:layout_toRightOf="@id/poster01"
+            /> -->
+        <!-- yongfa.yang 160621 
+        <com.um.launcher.widget.AppView
+            android:id="@+id/app01"
+            android:layout_width="@dimen/app_item_width_big"
+            android:layout_height="@dimen/app_item_height_small"
+            android:nextFocusDown="@+id/app02"
+            android:focusable="true"
+            android:layout_toRightOf="@id/first_item_window"
+            app:av_title_bg="@drawable/youxi_title_bg"
+            app:av_icon_bg="@drawable/youxi_bg"
+            app:av_icon="@drawable/youxi"
+            app:av_title="@string/tag_game"
+            android:layout_alignTop="@id/first_item_window"
+            app:av_icon_type="pic"
+            android:layout_marginLeft="@dimen/launcher_item_margin_left"
+            /> -->
+            
+            <!-- 媒体中心应用块 -->
+        <com.um.launcher.widget.AppView
+            android:id="@+id/app04"
+            android:layout_width="@dimen/app_item_width_small"
+            android:layout_height="@dimen/app_item_height_small"
+            android:focusable="true"
+            app:av_title_bg="@drawable/app_03_title_bg"
+            app:av_icon_bg="@drawable/app_bg_03"
+            app:av_title="@string/media_normal"
+            app:av_icon="@drawable/page_media"
+            app:av_icon_type="icon"
+            android:layout_alignTop="@id/first_item_window"
+            android:layout_marginLeft="@dimen/launcher_item_margin_left"
+            android:layout_toRightOf="@id/first_item_window"
+            />
+        
+        <!-- 信号源应用块 -->
+        <com.um.launcher.widget.AppView
+            android:id="@+id/app05"
+            android:layout_width="@dimen/app_item_width_small"
+            android:layout_height="@dimen/app_item_height_small"
+            android:focusable="true"
+            app:av_title_bg="@drawable/app_04_title_bg"
+            app:av_icon_bg="@drawable/app_bg_04"
+            app:av_title="@string/source"
+            app:av_icon="@drawable/page_source"
+            android:layout_alignTop="@id/first_item_window"
+            android:layout_toRightOf="@id/app04"
+            android:layout_marginLeft="@dimen/launcher_item_margin_left"
+            />
+            
+        <!-- 设置应用块 -->
+        <com.um.launcher.widget.AppView
+            android:id="@+id/app02"
+            android:layout_width="@dimen/app_item_width_small"
+            android:layout_height="@dimen/app_item_height_small"
+            android:focusable="true"
+            app:av_title_bg="@drawable/app_01_title_bg"
+            app:av_icon_bg="@drawable/app_bg_01"
+            app:av_title="@string/tag_setting"
+            app:av_icon="@drawable/page_setting"
+            app:av_icon_type="icon"
+            android:layout_below="@id/app04"
+            android:layout_alignLeft="@id/app04"
+            android:layout_marginTop="@dimen/launcher_item_margin_top"
+            />
+        
+        <!-- 多屏互动应用块 -->
+        <com.um.launcher.widget.AppView
+            android:id="@+id/app03"
+            android:layout_width="@dimen/app_item_width_small"
+            android:layout_height="@dimen/app_item_height_small"
+            android:focusable="true"
+            app:av_title_bg="@drawable/app_02_title_bg"
+            app:av_icon_bg="@drawable/app_bg_02"
+            app:av_title="@string/multi_normal"
+            app:av_icon="@drawable/page_multiscreen"
+            app:av_icon_type="icon"
+            android:layout_alignTop="@id/app02"
+            android:layout_toRightOf="@id/app02"
+            android:layout_marginLeft="@dimen/launcher_item_margin_left"
+            />
+        
+        <!-- yongfa.yang 160621 
+        <com.um.launcher.widget.AppView
+            android:id="@+id/app06"
+            android:layout_width="@dimen/app_item_width_big"
+            android:layout_height="@dimen/app_item_height_small"
+            android:nextFocusUp="@+id/app04"
+            android:focusable="true"
+            app:av_title_bg="@drawable/jiaoyu_title_bg"
+            app:av_icon_bg="@drawable/jiaoyu_bg"
+            app:av_icon="@drawable/jiaoyu"
+            app:av_title="@string/tag_education"
+            app:av_icon_type="pic"
+            android:layout_marginTop="@dimen/launcher_item_margin_top"
+            android:layout_below="@id/app04"
+            android:layout_alignLeft="@id/app04"
+            /> -->
+            
+            <!-- 更多应用应用块。 -->
+        <include layout="@layout/custom_apps"/>
+        
+        <!-- 以下是最下方的倒影栏。 -->
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@id/first_item_ad"
+            android:layout_below="@id/first_item_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/imgv_reflect01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <!--  yongfa.yang 160621 
+            <ImageView
+                android:id="@+id/imgv_reflect02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/launcher_item_margin_left"/>
+            <ImageView
+                android:id="@+id/imgv_reflect03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/launcher_item_margin_left"/> -->
+            <ImageView
+                android:id="@+id/imgv_reflect04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/launcher_item_margin_left"/>
+            <ImageView
+                android:id="@+id/imgv_reflect05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/launcher_item_margin_left"/>
+            <!-- yongfa.yang 160621 
+            <ImageView
+                android:id="@+id/imgv_reflect06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/launcher_item_margin_left"/> -->
+            <ImageView
+                android:id="@+id/imgv_reflect07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/launcher_item_margin_left"/>
+        </LinearLayout>
+        
+        <!-- 以下是上二排的标题栏。 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/first_item_window"
+            android:textSize="@dimen/category_title_text_size"
+			android:paddingBottom="@dimen/category_title_text_padding_bottom"
+			android:paddingLeft="@dimen/category_title_text_padding_left"
+            android:textColor="@color/launcher_category_title_color"
+            android:text="@string/tag_tv"/>
+        <!-- yongfa.yang  160621 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/category_title_text_size"
+            android:layout_alignLeft="@id/poster01"
+			android:paddingBottom="@dimen/category_title_text_padding_bottom"
+			android:paddingLeft="@dimen/category_title_text_padding_left"
+            android:textColor="@color/launcher_category_title_color"
+            android:text="@string/AV"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/category_title_text_size"
+            android:layout_alignLeft="@id/poster02"
+			android:paddingBottom="@dimen/category_title_text_padding_bottom"
+			android:paddingLeft="@dimen/category_title_text_padding_left"
+            android:textColor="@color/launcher_category_title_color"
+            android:text="@string/appstore_normal"/> -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/app04"
+            android:textSize="@dimen/category_title_text_size"
+			android:paddingBottom="@dimen/category_title_text_padding_bottom"
+			android:paddingLeft="@dimen/category_title_text_padding_left"
+            android:textColor="@color/launcher_category_title_color"
+            android:text="@string/apps"/>
+    </com.um.launcher.widget.HomeRelativeLayout>
+
+
+</FrameLayout>

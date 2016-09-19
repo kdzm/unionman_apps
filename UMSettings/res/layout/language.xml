@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sw="http://schemas.android.com/apk/res/com.unionman.settings"
+    android:id="@id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/language_select" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@id/crb_language_set"
+        style="@style/checkRadioButton_normal"
+        android:nextFocusUp="@id/crb_language_set"
+        android:nextFocusDown="@id/crb_language_set"
+        sw:hasImage="false"
+        sw:text1="@string/language_select" />
+
+    <include layout="@layout/divider" />
+
+  <!--   <TextView
+        style="@style/title"
+        android:text="@string/language_input" /> -->
+
+</LinearLayout>

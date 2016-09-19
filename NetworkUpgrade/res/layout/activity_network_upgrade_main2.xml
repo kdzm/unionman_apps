@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/networkupgrade_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/networkupgrade"
+            android:textColor="@android:color/black"
+            android:textSize="40sp" >
+        </TextView>
+
+         <TextView
+            android:id="@+id/networkupgrade_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dip"
+            android:text="@string/networkupgrade_address"
+            android:textColor="@android:color/black"
+            android:textSize="35sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/server_address"
+            style="@style/edit_long"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:inputType="text"
+            android:scrollHorizontally="true"
+            android:textCursorDrawable="@null" />
+        
+        <TextView
+            android:id="@+id/stbinfo_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginTop="30dip"
+            android:text="@string/stb_info"
+            android:textColor="@android:color/black"
+            android:textSize="35sp" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/software_version"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:text="@string/software_version"
+                android:textColor="@android:color/black"
+                android:textSize="28sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/software_number_version"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="@string/version_number"
+                android:textColor="@android:color/black"
+                android:textSize="28sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/hardware_version"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:text="@string/hardware_version"
+                android:textColor="@android:color/black"
+                android:textSize="28sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/hardware_number_version"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="@string/version_number"
+                android:textColor="@android:color/black"
+                android:textSize="28sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/mac_addr"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:text="@string/mac_address"
+                android:textColor="@android:color/black"
+                android:textSize="28sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/mac_addr_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="28sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/serial_version"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:text="@string/serial_number_version"
+                android:textColor="@android:color/black"
+                android:textSize="28sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/serial_number_version"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="@string/version_number"
+                android:textColor="@android:color/black"
+                android:textSize="28sp" >
+            </TextView>
+        </LinearLayout>
+
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="140dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/save"
+            style="@style/button"
+            android:contentDescription="@string/save"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/default_id"
+            style="@style/button"
+            android:contentDescription="@string/default_text"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/default_text" />
+
+        <Button
+            android:id="@+id/network_upgrade_button"
+            style="@style/button"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="@string/upgrade" />
+    </LinearLayout>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_version"
+        android:layout_gravity="right"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="sound_set_arrays">
+        <item>声音模式</item>
+        <item>高音</item>
+        <item>低音</item>
+        <item>EQ</item>
+        <item>平衡</item>
+        <item>SRS</item>
+        <item>SRDIF输出</item>
+        <item>SPDIF输出延迟</item>
+        <item>重低音开关</item>
+        <item>重低音音量</item>
+        <item>壁挂音效果</item>
+        <item>智能音量控制</item>
+        <item>输入音量控制</item>
+        <item>输出淡入淡出</item>
+        <item>音效总体开关设置</item>
+        <item>音画同步参数调节</item>
+        <item>内外部扬声器输出选择</item>
+    </string-array>
+    <string-array name="senior_set_arrays">
+        <item>动态背光</item>
+        <item>静态背光</item>
+        <item>单独听</item>
+        <item>无信号蓝屏</item>
+    </string-array>
+    <string-array name="demo_mode_arrays">
+        <item>运动补偿</item>
+        <item>色彩饱和度</item>
+        <item>图像降噪</item>
+        <item>清晰度</item>
+        <item>动态对比度</item>
+        <item>4K 图像</item>
+        <item>DBDR</item>
+    </string-array>
+    <string-array name="text_color">
+        <item>#ffffff</item>
+        <item>#6B6B6B</item>
+        <item>#ff9900</item>
+    </string-array>
+        <string-array name="picture_mode">
+        <item>图像模式</item>
+        <item>色温</item>
+        <item>运动补偿</item>
+        <item>肤色校正</item>
+        <item>图像降燥</item>
+        <item>动态对比度</item>
+        <item>蓝电平扩展</item>
+        <item>比例模式</item>
+        <item>VGA设置</item>
+    </string-array>
+    <string-array name="sound_mode">
+        <item>声音模式</item>
+        <item>高音</item>
+        <item>低音</item>
+        <item>EQ</item>
+        <item>平衡</item>
+        <item>SRS</item>
+        <item>重低音开关</item>
+        <item>重低音音量</item>
+        <item>壁挂音效果</item>
+        <item>智能音量</item>
+        <item>SPDIF输出</item>
+        <item>SPDIF延迟</item>
+    </string-array>
+    <string-array name="color_setting">
+        <item>图像模式</item>
+        <item>亮度</item>
+        <item>对比度</item>
+        <item>色彩饱和度</item>
+        <item>清晰度</item>
+    </string-array>
+  
+    <string-array name="EQ_setting">
+        <item>120Hz</item>
+        <item>500Hz</item>
+        <item>1.5KHz</item>
+        <item>5KHz</item>
+        <item>10KHz</item>
+    </string-array>
+    <string-array name="SRS_setting">
+        <item>SRS开关</item>
+        <item>语音清晰度</item>
+        <item>低音提升</item>
+    </string-array>
+    <string-array name="aspect">
+        <item>比例模式</item>
+        <item>16:9</item>
+        <item>4:3</item>
+        <item>点对点</item>
+        <item>全景</item>
+        <item>人物</item>
+        <item>电影</item>
+        <item>字幕</item>
+    </string-array>
+     <string-array name="MenuOf3D">
+        <item>3D</item>
+        <item>关</item>
+        <item>2D转3D</item>
+        <item>左右</item>
+        <item>上下</item>
+        <item>自动</item>
+    </string-array>
+        <string-array name="setting_menu_img">
+        <item>图像模式</item>
+        <item>运动补偿</item>
+        <item>亮度</item>
+        <item>对比度</item>
+        <item>色度</item>
+        <item>清晰度</item>
+        <item>比例模式</item>
+    </string-array>
+        <string-array name="setting_menu_voice">
+        <item>声音模式</item>
+        <item>EQ</item>
+        <item>平衡</item>
+        <item>SRS</item>
+        <item>智能音量</item>
+        <item>SPDIF输出</item>
+        <item>SPDIF输出延迟</item>
+        <item>重低音开关</item>
+        <item>重低音音量</item>
+        <item>壁挂音效果</item>
+    </string-array>
+        <string-array name="menuof3D_set_arrays">
+        <item>3D模式</item>
+        <item>左右交换</item>
+        <item>3D转2D</item>
+        <item>景深</item>
+        <item>视点</item>
+    </string-array>
+    
+    <string-array name="setting_menu_senior">
+        <item>动态背光</item>
+        <item>静态背光</item>
+        <item>单独听</item>
+    </string-array>
+
+</resources>

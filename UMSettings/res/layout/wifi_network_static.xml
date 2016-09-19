@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sw="http://schemas.android.com/apk/res/com.unionman.settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/string_static_ip_set" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="170.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/network_ip"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <com.unionman.settings.custom.IpAddrEditText
+            android:id="@id/iptxt_wifi_static_ip"
+            android:layout_width="287.0dip"
+            android:layout_height="38.0dip"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:nextFocusUp="@id/iptxt_wifi_static_ip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="170.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/network_mask"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <com.unionman.settings.custom.IpAddrEditText
+            android:id="@id/iptxt_wifi_static_mask"
+            android:layout_width="287.0dip"
+            android:layout_height="38.0dip"
+            android:nextFocusLeft="@id/leftMenu_layout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="170.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/network_gateway"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <com.unionman.settings.custom.IpAddrEditText
+            android:id="@id/iptxt_wifi_static_gateway"
+            android:layout_width="287.0dip"
+            android:layout_height="38.0dip"
+            android:nextFocusLeft="@id/leftMenu_layout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="170.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/network_dns"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <com.unionman.settings.custom.IpAddrEditText
+            android:id="@id/iptxt_wifi_static_dns"
+            android:layout_width="287.0dip"
+            android:layout_height="38.0dip"
+            android:nextFocusLeft="@id/leftMenu_layout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="170.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/network_dns2"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <com.unionman.settings.custom.IpAddrEditText
+            android:id="@id/iptxt_wifi_static_dns2"
+            android:layout_width="287.0dip"
+            android:layout_height="38.0dip"
+            android:nextFocusLeft="@id/leftMenu_layout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210.0dip"
+        android:layout_marginTop="60.0dip" >
+
+        <Button
+            android:id="@id/btn_wifi_static_ok"
+            style="@style/button"
+            android:nextFocusDown="@id/btn_wifi_static_ok"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@id/btn_wifi_static_cancel"
+            style="@style/button"
+            android:layout_marginLeft="20.0dip"
+            android:nextFocusDown="@id/btn_wifi_static_cancel"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</LinearLayout>

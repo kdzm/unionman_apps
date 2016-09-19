@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sw="http://schemas.android.com/apk/res/com.unionman.settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/app_manage" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@id/crb_app_down"
+        style="@style/checkRadioButton_normal"
+        android:nextFocusUp="@id/crb_app_down"
+        sw:hasImage="false"
+        sw:text1="@string/app_download"
+        sw:text2="@string/app_down_info" />
+
+    <include layout="@layout/divider" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@id/crb_app_run"
+        style="@style/checkRadioButton_normal"
+        sw:hasImage="false"
+        sw:text1="@string/app_run"
+        sw:text2="@string/app_run_info" />
+
+    <include layout="@layout/divider" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@id/crb_app_all"
+        style="@style/checkRadioButton_normal"
+        sw:hasImage="false"
+        sw:text1="@string/app_all"
+        sw:text2="@string/app_all_info" />
+
+    <TextView
+        style="@style/title"
+        android:text="@string/app_memory" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@id/crb_app_mem_total"
+        style="@style/checkRadioButton_normal"
+        sw:hasImage="false"
+        sw:text1="@string/app_mem_total" />
+
+    <include layout="@layout/divider" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@+id/crb_app_mem_ava"
+        style="@style/checkRadioButton_normal"
+        android:nextFocusDown="@+id/crb_storage_ava"
+        sw:hasImage="false"
+        sw:text1="@string/app_mem_available" />
+    
+     <TextView
+        style="@style/title"
+        android:text="@string/storage" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@+id/crb_storage_ava"
+        style="@style/checkRadioButton_normal"
+        sw:hasImage="false"
+        sw:text1="@string/storage_available" />
+
+    <include layout="@layout/divider" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@+id/crb_storage_used"
+        style="@style/checkRadioButton_normal"
+        android:nextFocusDown="@+id/crb_storage_used"
+        sw:hasImage="false"
+        sw:text1="@string/storage_used" />
+    
+     <include layout="@layout/divider" />
+
+</LinearLayout>

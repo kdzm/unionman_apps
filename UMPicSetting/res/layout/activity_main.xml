@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical"
+    tools:context=".ATVMainActivity" >
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:visibility="visible" />
+
+    <TextView 
+        android:id="@+id/tv_nosignal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:text="@string/no_signal"
+        android:visibility="invisible"/>
+
+ 
+    <cn.com.unionman.umtvsetting.picture.widget.NoSignalLayout
+        android:id="@+id/nosignallayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </cn.com.unionman.umtvsetting.picture.widget.NoSignalLayout>
+
+    <cn.com.unionman.umtvsetting.picture.widget.ChannelListLayout
+        android:id="@+id/channellistLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+    </cn.com.unionman.umtvsetting.picture.widget.ChannelListLayout>
+
+    <cn.com.unionman.umtvsetting.picture.widget.ChannelEditView
+        android:id="@+id/channeleditview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+         android:visibility="gone"
+        >
+    </cn.com.unionman.umtvsetting.picture.widget.ChannelEditView>
+       <cn.com.unionman.umtvsetting.picture.widget.SignalShow 
+         android:id="@+id/SignalShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dip"
+        ></cn.com.unionman.umtvsetting.picture.widget.SignalShow>
+       
+
+</RelativeLayout>

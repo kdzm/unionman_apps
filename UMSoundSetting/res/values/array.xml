@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pic_setting">
+        <item>Picture Mode</item>
+        <item>ColorTemp</item>
+        <item>MEMC</item>
+        <item>DNR</item>
+        <item>DCI</item>
+<!--        <item>FleshTone</item> -->
+<!--        <item>Blue Extend</item> -->
+<!--        <item>VGA</item> -->
+        <item>Display Mode</item>
+    </string-array>
+    <string-array name="voice_setting">
+        <item>Sound Mode</item>
+<!--        <item>Treble</item> -->
+<!--        <item>Bass</item> -->
+        <item>EQ</item>
+        <item>Balance</item>
+        <item>SRS</item>
+        <item>AVC</item>
+        <item>SPDIF</item>
+<!--        <item>SPDIF Delay</item> -->
+<!--        <item>SubWoofer</item> -->
+<!--        <item>Sub.vol</item> -->
+        <item>Hang Mode</item>
+        <item>Track Mode</item>
+        <item>Track Select</item>
+        <item>voice speaker</item>        
+    </string-array>
+
+    <string name="SPDIF_delay">SPDIF Delay</string>
+
+    <string-array name="menuof3d_setting">
+        <item>3D Mode</item>
+        <item>LRSwitch</item>
+        <item>3DTo2D</item>
+        <item>Depth</item>
+        <item>View</item>
+    </string-array>
+    <string-array name="channel_setting">
+        <item>Skip</item>
+        <item>Color System</item>
+        <item>Audio System</item>
+        <item>FineTune</item>
+        <item>Manual Search</item>
+        <item>Auto Search</item>
+        <item>Channel Edit</item>
+        <item>Change Mode</item>
+    </string-array>
+    <string-array name="senior_setting">
+        <item>Dy.Backlight</item>
+        <item>Sta.Backlight</item>
+        <item>Sing.Listen</item>
+    </string-array>
+    <string-array name="demo_mode_setting">
+        <item>MEMC</item>
+<!--        <item>Saturation</item> -->
+<!--        <item>DNR</item> -->
+<!--        <item>Sharpness</item> -->
+        <item>DCI</item>
+        <item>SR</item>
+<!--        <item>DBDR</item> -->
+    </string-array>
+
+    <!-- > ATV APP  < -->
+    <string-array name="picture_mode_setting">
+        <item>Picture Mode</item>
+        <item>Brightness</item>
+        <item>Contrast</item>
+        <item>Saturation</item>
+        <item>Hue</item>
+        <item>Sharpness</item>
+    </string-array>
+    <string-array name="color_temp_setting">
+        <item>ColorTemp</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+    </string-array>
+    <string-array name="VGA_setting">
+        <item>Auto Adjust</item>
+        <item>Horizontal</item>
+        <item>Vertical</item>
+        <item>Clock</item>
+        <item>Phase</item>
+    </string-array>
+    <string-array name="EQ_setting">
+        <item>120Hz</item>
+        <item>500Hz</item>
+        <item>1.5KHz</item>
+        <item>5KHz</item>
+        <item>10KHz</item>
+    </string-array>
+    <string-array name="SRS_setting">
+        <item>SRS</item>
+        <item>SRS Treble</item>
+        <item>SRS Bass</item>
+    </string-array>
+    <string-array name="Auto_Adjust">
+        <item>Auto Adjust</item>
+    </string-array>
+
+    <!-- The screen color system< -->
+    <string-array name="COLOR_CLRSYS">
+        <item>PAL</item>
+        <item>NTSC</item>
+    </string-array>
+
+    <!-- Display voice system< -->
+    <string-array name="SOUND_CLRSYS">
+        <item>DK</item>
+        <item>I</item>
+        <item>BG</item>
+        <item>M</item>
+    </string-array>
+    <string-array name="source">
+        <item>ATV</item>
+        <item>CVBS1</item>
+        <item>CVBS2</item>
+        <item>CVBS3</item>
+        <item>DTMB</item>
+        <item>DVBC</item>
+        <item>HDMI1</item>
+        <item>HDMI2</item>
+        <item>HDMI3</item>
+        <item>HDMI4</item>
+        <item>VGA</item>
+        <item>YPbPr</item>
+    </string-array>
+    <string-array name="source_next">
+        <item>720P 60Hz</item>
+    </string-array>
+    <string-array name="text_colorchange">
+        <item>#ffffff</item>
+        <item>#6B6B6B</item>
+        <item>#ff9900</item>
+        <item>#898989</item>
+    </string-array>
+
+</resources>

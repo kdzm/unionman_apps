@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<packge>
+<upgrade product-model="UM-UNT200C1B1">
+  <target-machine >
+    <hardware version="UM-UNT200C1B1"/>
+  </target-machine>
+  <source version="2.4.262">
+      <packet update="true" type="zip" url="http://gd.umstb.com.cn/stbUpgrade/testForUpgrade20150321/data/update.zip"/>
+  </source>
+  <control >
+        <way download-way="breakpoint"/>
+        <mode update-mode="force"/>
+  </control>
+</upgrade>
+</packge>

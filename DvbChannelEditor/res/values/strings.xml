@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Program editor</string>
+    <string name="program">program</string>
+    <string name="enter_password">Please enter the password</string>
+    <string name="ok">confirm</string>
+    <string name="cancel">cancel</string>
+    <string name="password">password: </string>
+    <string name="password_err">Password error</string>
+    <string name="press_again_exit">Click again to exit!</string>
+    <string name="chan_to_udisk">Copy to U disk</string>
+	<string name="chan_from_udisk">Copy from U disk</string>
+	<string name="chan_copy_success">Copy success</string>
+	<string name="chan_copy_fail">copy failed</string>
+	<string name="exit">Exit</string>
+	<string name="save_chan_edit_yes_no">save operation?</string>
+	<string name="saving_chan_edit_data">Save data,please wait...</string>
+	<string name="channel_del">delete</string>
+	<string name="channel_fav">fav</string>
+	<string name="channel_hide">hide</string>
+	<string name="channel_move">move</string>
+	<string name="channel_statue">status</string>
+</resources>

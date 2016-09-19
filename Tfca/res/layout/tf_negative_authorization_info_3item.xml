@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="560dp"
+    android:layout_height="55dp"
+    android:orientation="horizontal"
+    tools:context="com.um.ui.Tf_general_authorized" >
+
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="90dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/confirmation_code"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="90dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24sp" >
+    </TextView>
+
+</LinearLayout>

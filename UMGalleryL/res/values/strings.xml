@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UMGalleryL</string>
+    <string name="hello_world">Image Info</string>
+    <string name="scanning">Scanning...</string>
+    <string name="loading">Loading...</string>
+    <string name="details">Name：%1$s,\tWidth：%2$d,\tHeight：%3$d,\tSize：%4$s,\tPath：%5$s</string>
+    <string name="help_info">press "center" into or change Slide play</string>
+
+    <string-array name="controllers">
+        <item>Explorer</item>
+        <item>Scale</item>
+        <item>Rotate</item>
+        <item>Sliding</item>
+    </string-array>
+    <!-- add by um -->
+    <string-array name="picturesetting">
+        <item>Picture Info</item>
+        <item>Rotation</item>
+       <!-- <item>Scale</item>  -->
+        <item>Slide Setting</item>
+    </string-array>
+    <string-array name="slide">
+        <item>Time interval</item>
+        <item>Switch Mode</item>
+    </string-array>
+    <!-- 图片详细信息 -->
+    <string name="file_info_name">PictureName：</string>
+    <string name="file_info_size">FileSize：</string>
+    <string name="file_info_picsize">PictureSize：</string>
+    <string name="file_info_modify_time">ModifyTime：</string>
+    <string name="file_info_type">PictureType：</string>
+    <string name="file_info">DetailInfo</string>
+    <string name="dir">Folder</string>
+    <!-- end -->
+
+    <string name="already_first">Already the first!</string>
+    <string name="already_last">Already the last!</string>
+    <string name="menu">Menu</string>
+    <string name="menu_scale">Scale</string>
+    <string name="menu_rotate">Rotate</string>
+    <string name="menu_sliding">Sliding</string>
+    <string name="menu_sliding_start">Start</string>
+    <string name="interval">Interval</string>
+    <string name="animation">Animation</string>
+    <string name="media_unmount_warnning">Your USB storage has removed, we cann\'t show pictures any more!</string>
+    <string name="picker_string">&lt;small>%1$s&lt;/small> &#160;&#160;&#160;&#160;&#160;&#160; &lt;b> %2$s &lt;/b> &#160;&#160;&#160;&#160;&#160;&#160; &lt;small>%3$s&lt;/small></string>
+
+    <drawable name="transparent">#00000000</drawable>
+
+</resources>

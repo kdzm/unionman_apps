@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="first_mainmenu_textview_margin_r">30dp</dimen>
+    <dimen name="first_mainmenu_textview_textsise">36dp</dimen>
+    <dimen name="dvbplay_chanbar_Layout_height">173dp</dimen>
+    <dimen name="dvbplay_chanbar_Layout_marginBottom">30dp</dimen>
+    <dimen name="dvbplay_chanbar_Layout_marginLeft">75dp</dimen>
+    <dimen name="dvbplay_chanbar_Layout_marginRight">75dp</dimen>
+    <dimen name="dvbplay_num_name_Layout_width">450dp</dimen>
+    <dimen name="dvbplay_num_name_Layout_marginRight">120dp</dimen>
+    <dimen name="dvbplay_num_name_Layout_marginTop">90dp</dimen>
+    <dimen name="dvbplay_num_name_Layout_width1">240dp</dimen>
+    <dimen name="dvbplay_channel_name_text_size">48sp</dimen>
+    <dimen name="dvbplay_channel_name_paddingLeft">15dp</dimen>
+    <dimen name="dvbplay_channel_name_paddingRight">15dp</dimen>
+    <dimen name="dvbplay_img_dvt_preview_marginLeft">375dp</dimen>
+    <dimen name="dvbplay_img_dvt_preview_marginTop">8dp</dimen>
+    <dimen name="dvbplay_img_preview_marginLeft">450dp</dimen>
+    <dimen name="dvbplay_img_preview_marginTop">90dp</dimen>
+    <dimen name="dvbplay_img_email_marginLeft">1500dp</dimen>
+    <dimen name="dvbplay_img_email_marginTop">240dp</dimen>
+    <dimen name="dvbplay_img_email_full_marginLeft">1380dp</dimen>
+    <dimen name="dvbplay_img_email_full_marginTop">240dp</dimen>
+    <dimen name="dvbplay_img_detitle_marginLeft">1650dp</dimen>
+    <dimen name="dvbplay_img_detitle_marginTop">2400dp</dimen>
+    <dimen name="dvbplay_txt_finger_marginLeft">1500dp</dimen>
+    <dimen name="dvbplay_txt_finger_marginTop">330dp</dimen>
+    <dimen name="dvbplay_txt_finger_padding">6dp</dimen>
+    <dimen name="dvbplay_txt_finger_textSize">38sp</dimen>
+    <dimen name="dvbplay_tv_urgency_broadcast_marginTop">160dp</dimen>
+    <dimen name="dvbplay_tv_urgency_broadcast_marginLeft">75dp</dimen>
+    <dimen name="dvbplay_tv_urgency_broadcast_textSize">36sp</dimen>
+	
+    <dimen name="chanbar_layout_width">1348dp</dimen>
+    <dimen name="chanbar_layout_height">200dp</dimen>
+    <dimen name="chanbar_layout_marginLeft">38dp</dimen>
+    <dimen name="chanbar_layout_marginTop">12dp</dimen>
+    <dimen name="chanbar_cur_prog_txexView_width">225dp</dimen>
+    <dimen name="chanbar_layout_marginTop2">2dp</dimen>
+    <dimen name="chanbar_cur_prog_textSize">38sp</dimen>
+    <dimen name="chanbar_cur_prog_textSize1">35sp</dimen>
+    <dimen name="chanbar_chanbar_text_p_name_width">624dp</dimen>
+	
+    <dimen name="conlist_classified_list_view_width">270dp</dimen>
+    <dimen name="conlist_classified_list_view_layout_marginTop">195dp</dimen>
+    <dimen name="conlist_channel_list_view_width">428dp</dimen>
+    <dimen name="conlist_channel_list_view_height">1050dp</dimen>
+    <dimen name="conlist_channel_list_view_paddingTop">15dp</dimen>
+    <dimen name="conlist_weekday_list_view_width">120dp</dimen>
+    <dimen name="conlist_weekday_list_view_paddingTop">90dp</dimen>
+    <dimen name="conlist_epg_info_list_view_width">420dp</dimen>
+	
+	
+    <dimen name="classified_list_item_marginLeft">30dp</dimen>
+    <dimen name="classified_list_item_paddingTop">18dp</dimen>
+    <dimen name="classified_list_item_text_size">45sp</dimen>
+	
+    <dimen name="quick_list_item_layout_width">596dp</dimen>
+    <dimen name="quick_list_item_layout_height">69dp</dimen>
+    <dimen name="quick_list_item_text_size">36sp</dimen>
+	
+    <dimen name="epg_list_item_LinearLayout">15dp</dimen>
+    <dimen name="epg_list_item_layout_width">405dp</dimen>
+    <dimen name="epg_list_item_marginLeft">7dp</dimen>
+    <dimen name="epg_list_item_text_size">37sp</dimen>
+    <dimen name="epg_list_item_layout_width1">210dp</dimen>
+    <dimen name="epg_list_item_marginLeft1">30dp</dimen>
+    <dimen name="epg_list_item_txet_size">28sp</dimen>
+	
+    <dimen name="week_list_item_txet_size">33sp</dimen>
+    <dimen name="week_list_item_paddingLeft">7dp</dimen>
+    <dimen name="week_list_item_paddingTop">38dp</dimen>
+	
+    <dimen name="pg_list_item_layout_height">90dp</dimen>
+    <dimen name="pg_list_item_marginLeft">15dp</dimen>
+    <dimen name="pg_list_item_textSize">35sp</dimen>
+    <dimen name="pg_list_item_marginTopp">7dp</dimen>
+	
+    <dimen name="exit_pop_tip_marginLeft">420dp</dimen>
+    <dimen name="exit_pop_tip_textSize">42sp</dimen>
+    <dimen name="exit_pop_tip_layout_marginLeft">60dp</dimen>
+    <dimen name="exit_pop_tip_layout_marginTop">45dp</dimen>
+    <dimen name="exit_pop_tip_Button_marginLeft">45dp</dimen>
+    <dimen name="exit_pop_tip_Button_marginTop">105dp</dimen>
+    <dimen name="exit_pop_tip_pg_textSize">38sp</dimen>
+    <dimen name="exit_pop_tip_pg_marginLeft">8dp</dimen>
+    <dimen name="exit_pop_tip_pg_pic_width">270dp</dimen>
+    <dimen name="exit_pop_tip_pg_pic_height">280dp</dimen>
+	
+    <dimen name="menu_control_layout_width">1356dp</dimen>
+    <dimen name="menu_control_layout_height">387dp</dimen>
+    <dimen name="menu_control_txt_layout_width">488dp</dimen>
+    <dimen name="menu_control_txt_layout_height">120dp</dimen>
+    <dimen name="menu_control_txt_layout_width1">270dp</dimen>
+    <dimen name="menu_control_txt_size">39sp</dimen>
+    <dimen name="menu_control_txt_marginLeft">12dp</dimen>
+    <dimen name="menu_control_txt_marginTop">12dp</dimen>
+    <dimen name="menu_control_txt_paddingLeft">15dp</dimen>
+    <dimen name="menu_control_adv_layout_width">1317dp</dimen>
+    <dimen name="menu_control_adv_layout_height">150dp</dimen>
+	
+    <dimen name="play_setting_dialog_width">819dp</dimen>
+    <dimen name="play_setting_dialog_height">420dp</dimen>
+    <dimen name="play_setting_item_title_width">200dp</dimen>
+    <dimen name="play_setting_item_title_width1">450dp</dimen>
+    <dimen name="play_setting_item_height">60dp</dimen>
+    <dimen name="play_setting_item_content_text_width">390dp</dimen>
+    <dimen name="play_setting_item_content_width">450dp</dimen>
+    <dimen name="play_setting_item_text_size">39sp</dimen>
+    <dimen name="WiperSwitch_width">105dp</dimen>
+    <dimen name="WiperSwitch_marginTop">8dp</dimen>
+	
+	
+</resources>

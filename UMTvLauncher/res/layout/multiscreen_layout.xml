@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_multiscreen" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/launcher_bg">
+    
+        <LinearLayout
+        android:id="@+id/txt_TitleLayout"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="110dp"
+		android:layout_marginTop="50dp"
+		android:orientation="horizontal"
+		>
+		
+        <ImageView
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn_camera_arrow_left_default"
+	        />
+        
+		<TextView
+		    android:id="@+id/app_txt_Title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:text="@string/multi_screen"
+			android:textColor="@color/white"
+			android:textSize="35sp"
+			/>
+	</LinearLayout>
+	
+    <RelativeLayout
+        android:id="@+id/app_item_dlna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="150dip"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusRight="@+id/app_item_miracast"
+        android:nextFocusLeft="@+id/app_item_skyplay">
+
+        <RelativeLayout
+            android:id="@+id/view_dlna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_mid_bg_yellow" >
+
+            <ImageView
+                android:id="@+id/app_dlna_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/page_dlna" />
+
+            <TextView
+                android:id="@+id/app_dlna_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/app_dlna_img"
+                android:paddingTop="25dp"
+                android:text="@string/app_dlna"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/app_item_miracast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-40dip"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/app_item_dlna"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusRight="@+id/app_item_multiscreen"
+        android:nextFocusLeft="@+id/app_item_dlna"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/view_miracast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_mid_bg_grape" >
+
+            <ImageView
+                android:id="@+id/app_miracast_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/page_miracast" />
+
+            <TextView
+                android:id="@+id/app_miracast_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_miracast_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="25dp"
+                android:text="@string/app_miracast"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/app_item_multiscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-40dip"
+        android:layout_toRightOf="@+id/app_item_miracast"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusRight="@+id/app_item_skyplay"
+        android:nextFocusLeft="@+id/app_item_miracast">
+
+        <RelativeLayout
+            android:id="@+id/view_multiscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_mid_bg_blue" >
+
+            <ImageView
+                android:id="@+id/app_multiscreen_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/page_tvtomobile" />
+
+            <TextView
+                android:id="@+id/app_multiscreen_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_multiscreen_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="25dp"
+                android:text="@string/app_multiscreen"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/app_item_skyplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-40dip"
+        android:layout_toRightOf="@+id/app_item_multiscreen"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/app_item_multiscreen"
+        android:nextFocusRight="@+id/app_item_dlna"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/view_skyplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_mid_bg_green" >
+
+            <ImageView
+                android:id="@+id/app_skyplay_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/page_skyplay" />
+
+            <TextView
+                android:id="@+id/app_skyplay_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_skyplay_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="25dp"
+                android:text="@string/app_skyplay"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+ 
+       <RelativeLayout
+        android:id="@+id/focuse_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dip"
+        android:layout_marginTop="0dip">
+        
+	    <ImageView
+		   android:id="@+id/focuse_img"
+	       android:background="@drawable/icon_select"
+		   android:layout_width="0dip"
+		   android:layout_height="0dip"
+		   android:visibility="invisible"/>
+		    
+	</RelativeLayout>
+</RelativeLayout>

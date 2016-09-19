@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<key_pad_xml>
+    <channel0>
+         <enable value="1" />
+         <channel_id value="0x00" />
+         <KeyLevelNum value="0x07" />
+         <key_pad KeyThreshold="0x14" KeyCode="0x02f0" /> <!-- power(0) -->
+         <key_pad KeyThreshold="0x3D" KeyCode="0x02f1" /> <!-- input(48) -->
+         <key_pad KeyThreshold="0x5A" KeyCode="0x02f2" /> <!-- ch+(80) -->
+         <key_pad KeyThreshold="0x75" KeyCode="0x02f3" /> <!-- ch-(104) -->
+         <key_pad KeyThreshold="0x97" KeyCode="0x02f4" /> <!-- vol+(136) -->
+         <key_pad KeyThreshold="0xBC" KeyCode="0x02f5" /> <!-- vol-(172) -->
+         <key_pad KeyThreshold="0xE6" KeyCode="0x02f6" /> <!-- menu(212/216) -->
+    </channel0>
+    <channel1>
+        <enable value="0" />
+        <channel_id value="0x01" />
+        <KeyLevelNum value="0x07" />
+        <key_pad KeyThreshold="0x25" KeyCode="0x001C" /> <!-- Enter -->
+        <key_pad KeyThreshold="0x35" KeyCode="0x0069" /> <!-- Lefg -->
+        <key_pad KeyThreshold="0x50" KeyCode="0x009E" /> <!-- Back -->
+        <key_pad KeyThreshold="0x69" KeyCode="0x006C" /> <!-- Down -->
+        <key_pad KeyThreshold="0x85" KeyCode="0x007F" /> <!-- Menu -->
+        <key_pad KeyThreshold="0x9D" KeyCode="0x0067" /> <!-- Up   -->
+        <key_pad KeyThreshold="0xB9" KeyCode="0x006A" /> <!-- Right -->
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+    </channel1>
+    <channel2>
+        <enable value="0" />
+        <channel_id value="0x02" />
+        <KeyLevelNum value="0x00" />
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+    </channel2>
+    <channel3>
+        <enable value="0" />
+        <channel_id value="0x03" />
+        <KeyLevelNum value="0x00" />
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+        <key_pad KeyThreshold="0x00" KeyCode="0x0000" />
+    </channel3>
+</key_pad_xml>

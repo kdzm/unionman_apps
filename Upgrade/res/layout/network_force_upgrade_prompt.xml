@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="800dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@drawable/main_dialog_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_upgrade_prompt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dip"
+        android:gravity="center_horizontal"
+        android:text="@string/networkupgrade"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_marginTop="20dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/current_version"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_current_version"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/upgrade_version"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_upgrade_version"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/fixed_probleam"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:focusable="true"
+        android:layout_width="600dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/network_force_fix_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp" />
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/detail"
+        android:textSize="30sp"/>
+
+    <ScrollView
+        android:layout_width="600dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp">
+        <TextView
+            android:id="@+id/network_force_details_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/count_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textSize="40sp" />
+
+</LinearLayout>

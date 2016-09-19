@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dvbsetting_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:id="@+id/boot"
+        android:layout_width="@dimen/boot_to_dvb_width"
+        android:layout_height="@dimen/boot_to_dvb_height"
+        android:layout_marginTop="@dimen/boot_to_dvb_margin_top"
+        android:background="@drawable/dvbsetting_item_sh" >
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="@dimen/boot_to_dvb_item_title_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/boot_to_dvb"
+            android:textColor="@color/white"
+            android:textSize="@dimen/boot_to_dvb_item_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextViewYes"
+            android:layout_width="@dimen/boot_to_dvb_item_yes_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/boot_to_dvb_item_content_margin_left"
+            android:text="@string/boot_setting_yes"
+            android:focusable="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/boot_to_dvb_item_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextViewNo"
+            android:layout_width="@dimen/boot_to_dvb_item_yes_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/boot_to_dvb_item_content_margin_left"
+            android:focusable="true"
+            android:textColor="@color/white"
+            android:text="@string/boot_setting_no"
+            android:textSize="@dimen/boot_to_dvb_item_title_text_size" >
+        </TextView>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_below="@id/boot"
+        android:id="@+id/delay_layout"
+        android:layout_width="@dimen/boot_to_dvb_width"
+        android:layout_height="@dimen/boot_to_dvb_height"
+        android:layout_marginTop="@dimen/boot_to_dvb_margin_top"
+        android:gravity="center|left"
+        android:background="@drawable/dvbsetting_item_sh" >
+
+        <TextView            
+            android:layout_width="@dimen/boot_to_dvb_item_title_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/delay_to_dvb"
+            android:textColor="@color/white"
+            android:textSize="@dimen/boot_to_dvb_item_title_text_size" >
+        </TextView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/boot_to_dvb_height"
+            android:layout_marginLeft="@dimen/boot_to_dvb_item_content_margin_left_2"
+            android:gravity="center" >
+            <EditText                
+                android:id="@+id/delay_et"
+                android:layout_width="@dimen/boot_to_dvb_item_edit_width"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:hint="@string/input_time_hint"
+                android:textSize="@dimen/boot_to_dvb_edit_text_size"
+                android:focusable="true"
+                android:maxLength="6">
+            </EditText>
+		<TextView
+            android:id="@+id/save_delay"
+            android:layout_width="@dimen/boot_to_dvb_item_yes_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/boot_to_dvb_item_content_margin_left"
+            android:focusable="true"
+            android:textColor="@color/white"
+            android:text="@string/save"
+            android:textSize="@dimen/boot_to_dvb_item_title_text_size" >
+        </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/boot_to_dvb_item_yes_width"
+        android:layout_height="@dimen/boot_to_dvb_height"
+        android:id="@+id/bootsetting_focus"
+        android:layout_marginTop="@dimen/boot_to_dvb_margin_top"
+        android:layout_marginLeft="@dimen/boot_to_dvb_item_content_margin_left_3"
+        android:background="@drawable/dvbsetting_select_ok">
+    </ImageView>
+
+</RelativeLayout>

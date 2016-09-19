@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dvb_setting">
+        <item >Auto search</item>
+        <item >Manul search</item>
+        <item >Full frequency search</item>
+    </string-array>
+        <string-array name="dvb_setting_instruct">
+        <item >search all the program in DVB-C</item>
+        <item >Manual search a single frequency</item>
+        <item >Search all the standard frequency in order</item>
+    </string-array>
+    <string-array name="dvb_setting_dtmb">
+        <item >Auto search</item>
+        <item >Manul search</item>
+    </string-array>
+        <string-array name="dvb_setting_instruct_dtmb">
+        <item >search all the program in DTMB</item>
+        <item >Manual search a single frequency</item>
+    </string-array>
+</resources>

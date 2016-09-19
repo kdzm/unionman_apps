@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/net_setting"
+            android:textColor="@color/white"
+            android:textSize="33sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/setting_dialog_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ether_setting_ll"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="@drawable/linearlayout_background"
+            android:focusable="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ether_setting_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="60dp"
+                android:text="@string/net_ether_setting"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/ether_setting_txt_instruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="60dp"
+                android:singleLine="true"
+                android:text="@string/net_ether_setting_help"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line" />
+        <LinearLayout
+            android:id="@+id/wifi_setting_ll"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="@drawable/linearlayout_background"
+            android:focusable="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/wifi_setting_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="60dp"
+                android:text="@string/net_wifi_setting"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/wifi_setting_txt_instruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="60dp"
+                android:singleLine="true"
+                android:text="@string/net_wifi_setting_help"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+            <ImageView              
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line" />
+        <LinearLayout
+            android:id="@+id/net_state_ll"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="@drawable/linearlayout_background"
+            android:focusable="true"
+            android:clickable="true"            
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/net_state_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="60dp"
+                android:text="@string/net_state_setting"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/net_state_txt_instruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="60dp"
+                android:singleLine="true"
+                android:text="@string/net_state_setting_help"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+            <ImageView              
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line" />
+        <LinearLayout
+            android:id="@+id/net_test_ll"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="@drawable/linearlayout_background"
+            android:focusable="true"
+            android:clickable="true"            
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/net_test_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="60dp"
+                android:text="@string/net_test_setting"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/net_test_txt_instruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="60dp"
+                android:singleLine="true"
+                android:text="@string/net_test_setting_help"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+                    <ImageView               
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line" />
+                    
+        <LinearLayout
+            android:id="@+id/create_ap_ll"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="@drawable/linearlayout_background"
+            android:focusable="true"
+            android:clickable="true"            
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvCreateAPMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="60dp"
+                android:text="@string/create_ap_main"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tvCreateAPSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="60dp"
+                android:singleLine="true"
+                android:text="@string/create_ap_sub"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+                    
+    </LinearLayout>
+
+</LinearLayout>

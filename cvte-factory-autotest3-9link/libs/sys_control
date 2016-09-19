@@ -1,0 +1,91 @@
+#!/system/bin/sh
+
+#初始化串口的读写权限
+if [ $1 == "InitATUart" ];then
+    #设置标记位
+    rm -rf /data/isCvteFacAT.flag
+    echo "isCvteFacAT" > /data/isCvteFacAT.flag
+    chmod 777 /data/isCvteFacAT.flag
+    #开放system读写权限
+    mount -o remount /system
+    #开放串口读写权限
+    chmod 660 /dev/ttyAMA0
+    chown system:system /dev/ttyAMA0
+    echo "chmod 660 ttyAMA0"
+    #关闭内核打印信息
+    echo 0 > /proc/sys/kernel/printk
+    echo "0 > /proc/sys/kernel/printk"
+    #关闭Android输入终端机
+    stop console
+    echo "stop console"
+    setprop persist.sys.persskey 7
+    #重启ADB
+    #stop adbd
+    #setprop service.adb.tcp.port 5555
+    #start adbd
+#关闭串口配置
+elif [ $1 ==  "DeInitATUart" ];then
+    rm /data/isCvteFacAT.flag
+    echo 7 > /proc/sys/kernel/printk
+    start console
+#系统重启，比用系统的API来得更加快捷
+elif [ $1 ==  "reboot" ];then
+    reboot
+#CI卡的状态判断
+elif [ $1 == "cicarddetect" ];then
+    rm -rf /mnt/cicarddetect.txt
+    cat /proc/msp/sci0 > /mnt/cicarddetect.txt
+    sync
+elif [ $1 == "atinit" ];then
+    sys_control impcvtefacCH
+#导入CVTE工厂通用频道表
+elif [ $1 == "impcvtefacCH" ];then
+#    rm -rf /mnt/importch.flag
+    echo "Import Cvte Factory Common Channel Table" > /dev/console
+
+    if [ x`getprop ro.boot.AT_BOOTCH` == x'1' ];then
+        echo "use mount service import channel"
+        atusbmount_um
+    else
+        echo "use system channel database"
+        cp -rvf /system/etc/CVTE_COMMOM_CHANNEL_TABLE/atv.db /atv/db/atv.db
+        cp -rvf /system/etc/CVTE_COMMOM_CHANNEL_TABLE/dvb.db /data/dvb/dvb.db
+        cp -rvf /system/etc/CVTE_COMMOM_CHANNEL_TABLE/umdb.dat /data/data/umdb.dat
+    fi
+
+    chown system:system /atv/db/atv.db
+    chown system:system /data/dvb/dvb.db
+    chown system:system /data/data/umdb.dat
+#    echo "importch" >/mnt/importch.flag
+    echo "Import Channel Table Finish"  > /dev/console
+    sync
+#清除所有数据库文件
+elif [ $1 == "cleanchdb" ];then
+    rm -rf /atv/db/atv.db
+    rm -rf /data/dvb/dvb.db
+    rm -rf /data/data/umdb.dat
+    sync
+#杀死adb，主要是给外部adb用，2982目前只能一次连一个adb
+elif [ $1 == "adbkill" ];then
+    adb kill-server
+    echo "adb kill-server"
+#同步
+elif [ $1 == "sync" ];then
+    sync
+#remount system分区
+elif [ $1 == "remount" ];then
+    mount -o remount /system
+    echo "remount -o remount /system"
+#删除文件
+elif [ $1 == "DeleteFile" ];then
+    echo "DeleteFile Path:$2"
+    if [ $2 != null ];then
+        rm -rf $2
+        echo "Delete $2 OK"
+        sync
+    fi
+#init ttyUSB0
+elif [ $1 == "InitUSB0" ];then
+    chown system /dev/ttyUSB0
+    chmod 660 /dev/ttyUSB0
+fi

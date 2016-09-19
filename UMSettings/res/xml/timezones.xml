@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<timezones>
+    <timezone id="Asia/Shanghai">中国标准时间（北京）</timezone>
+    <timezone id="Asia/Hong_Kong">香港时间（香港）</timezone>
+    <timezone id="Asia/Tehran">德黑兰</timezone>
+    <timezone id="Europe/Moscow">伊乐库茨克时间（伊乐库茨克）</timezone>
+</timezones>

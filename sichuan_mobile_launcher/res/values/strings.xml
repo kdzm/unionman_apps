@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">sichuan_mobile_launcher</string>
+    <string name="dialogTitle">请选择认证平台：</string>
+    <string name="plat_fons">烽火</string>
+    <string name="plat_huawei">华为</string>
+    <string name="plat_zte">中兴</string>
+    <string name="dialogAlways">始终</string>
+    <string name="dialogOneshot">仅此一次</string>
+    <string name="provider_authority">stbconfig</string>
+    <string name="warn_noapp">该平台不存在或未安装</string>
+    <string name="application_title">平台选择</string>
+    <string name="message">正在检测网络，请等待，如果长时间未成功，请按设置键</string>
+
+</resources>

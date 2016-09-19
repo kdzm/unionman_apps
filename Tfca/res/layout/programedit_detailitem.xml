@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent" android:layout_height="50dip">
+     <TextView 
+	     android:layout_height="50dip"
+	     android:id="@+id/programItem"
+	     android:textColor="#ffffff"
+	     android:textSize="25sp"
+	     android:gravity="center" 
+	     android:background="@drawable/upborder" 
+	     android:layout_width="410dip" />
+	     <ImageView 
+	     android:id="@+id/deleteItem"
+	     android:gravity="center"
+	     android:src="@drawable/deletebutton"
+	     android:background="@drawable/upborder"
+	     android:layout_width="80dip" android:layout_height="wrap_content"/>
+	     <ImageView 
+	     android:id="@+id/sortItem"
+	     android:gravity="center"
+	     android:background="@drawable/upborder"
+	     android:layout_width="80dip" android:layout_height="wrap_content"/>
+	     <ImageView 
+	      android:id="@+id/likeItem"
+	     android:gravity="center"
+	     android:background="@drawable/upborder"
+	     android:layout_width="80dip" android:layout_height="wrap_content"/>
+	      <ImageView 
+	     android:id="@+id/lockItem"
+	     android:gravity="center"
+	     android:background="@drawable/upborder"
+	     android:layout_width="80dip" android:layout_height="wrap_content"/>
+	     
+</LinearLayout>

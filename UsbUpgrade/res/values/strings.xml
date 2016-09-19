@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UsbUpgrade</string>
+    <string name="dialog_title">USB Upgrader</string>
+    <string name="dialog_msg_prefix">Are you sure to upgrade file from packet:</string>
+    <string name="dialog_confirm">Confirm</string>
+    <string name="dialog_cancel">Cancel</string>
+</resources>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bgDialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/setting_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+ 	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="280dp"
+            android:text="@string/system_update_net"
+            android:textColor="@color/white"
+            android:textSize="33sp" />
+    </LinearLayout>
+           
+    <LinearLayout
+        android:layout_width="760dp"
+        android:layout_height="450dp"
+        android:background="@drawable/setting_dialog_bg"
+        android:orientation="vertical" >
+
+       <LinearLayout
+           android:id="@+id/auto_update_con"
+           android:layout_width="660dp"
+           android:layout_height="70dp"
+           android:layout_gravity="top|center_horizontal"
+           android:layout_marginTop="20dip"
+           android:gravity="center_vertical"
+           android:addStatesFromChildren="true"
+           android:background="@drawable/linearlayout_background"
+           android:orientation="horizontal" >
+            
+            <TextView 
+                android:id="@+id/auto_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="40dip"
+                android:text="@string/auto_detect"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+                    
+			<Switch 
+			    android:id="@+id/auto_switch"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.25"
+			    android:layout_gravity="right|center_vertical"
+			    android:layout_marginRight="30dip"
+			    android:textOn="@string/turnon"
+			    android:textOff="@string/turnoff"/>
+			
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/manual_update_con"
+            android:layout_width="660dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/linearlayout_background"
+            android:orientation="horizontal" >
+            
+            <TextView 
+                android:id="@+id/manual_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="40dip"
+                android:text="@string/manual_detect"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <Button
+                android:id="@+id/manual_button"
+                android:layout_width="28dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.2"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="30dip"
+                android:padding="5dip"
+                android:text="@string/detect"
+                android:textColor="@color/white" 
+                android:background="@drawable/ok_btn"/>
+
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_gravity="left"
+            android:layout_marginLeft="40dip"
+            android:text="@string/version_info"
+            android:textColor="@color/white" 
+            android:textSize="28sp"/>
+        
+           <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/app_id_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_id"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/app_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="22sp"/>
+          </LinearLayout>
+          
+           <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/project_id_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_id"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/project_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="22sp"/>
+          </LinearLayout>
+          
+         <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/software_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/software_version"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/software_number_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" 
+                    android:textSize="22sp"/>
+          </LinearLayout>
+          
+          <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/device_type_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/device_type"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/device_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="22sp"/>
+          </LinearLayout>
+          
+           <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/device_id_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/device_id"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/device_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="22sp"/>
+          </LinearLayout>
+          
+          <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/dnum_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ddnum"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/dnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="22sp"/>
+          </LinearLayout>
+            
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sw="http://schemas.android.com/apk/res/com.unionman.settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/auto_close_device" />
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@+id/switch_auto_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nextFocusUp="@id/switch_auto_close"
+        sw:text1="@string/auto_close_device" />
+    <include layout="@layout/divider" />
+    <LinearLayout
+        android:id="@+id/ly_auto_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+        <com.unionman.settings.custom.picker.TimePicker
+            android:id="@+id/time_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/ly_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="20.0dip" >
+            <Button
+                android:id="@id/btn_confirm"
+                style="@style/button"
+                android:nextFocusDown="@id/btn_confirm"
+                android:text="@string/confirm" />
+            <Button
+                android:id="@id/btn_cancle"
+                style="@style/button"
+                android:layout_toRightOf="@id/btn_confirm"
+                android:nextFocusDown="@id/btn_cancle"
+                android:text="@string/cancel" />
+        </RelativeLayout>
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ly_buttons"
+            layout="@layout/divider" />
+    </LinearLayout>
+
+</LinearLayout>

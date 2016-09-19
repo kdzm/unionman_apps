@@ -1,0 +1,530 @@
+package com.um.dvbstack;
+
+import java.io.UnsupportedEncodingException;
+import java.lang.ref.WeakReference;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.um.dvb.R;
+import com.um.ui.AndoroidApp;
+import com.um.ui.Dvbplayer_Activity;
+import com.um.ui.Tf_updatebar;
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnKeyListener;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import android.os.RemoteException;
+import android.renderscript.Int3;
+import android.text.Layout;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.WindowManager;
+import android.view.WindowManager.LayoutParams;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.view.KeyEvent;
+
+import com.um.controller.AppBaseActivity;
+
+import android.content.Intent;
+import android.content.Context;
+
+public class Status {
+    private final String TAG = new String("STATUS");
+    private AlertDialog alertDialog;
+    private Object altersync;
+
+    private static Context mConetxt;
+    private int flag = 0;
+    private LinearLayout mPrompt = null;
+    static private StatusHandler handler = null;
+    //static private Tf_updatebar updatebar;
+
+    static final int STATUS_TUNER = 1;
+    static final int STATUS_CA = 4;
+    static final int STATUS_PLAY = 3;
+
+
+	
+    public enum subtype {
+        UMSG_DVB_NULL,
+        /*tuner signal*/
+        UMSG_DVB_SIGNAL_CHANGE,
+        UMSG_DVB_NO_SIGNAL,
+        UMSG_DVB_WEAK_SIGNAL,
+        UMSG_DVB_STRONG_SIGNAL,
+        /*avplay*/
+        UMSG_DVB_AVPLAY_STOP,
+        UMSG_DVB_AVPLAY_START,
+        /*db*/
+        UMSG_DVB_DB_NIT_VERSION_CHANGE,
+        UMSG_DVB_DB_PROGRAM_NAME_CHANGE,
+        UMSG_DVB_DB_PMT_PID_CHANGE,
+        UMSG_DVB_DB_PROGRAM_BASIC_INFO_CHANGE,
+        UMSG_DVB_DB_PROGRAM_DELETE,
+        /*srch*/
+        UMSG_DVB_SRCH_PROGRESS,
+        UMSG_DVB_SRCH_GET_PROG,
+        UMSG_DVB_SRCH_GET_TP,
+        /*epg*/
+        UMSG_DVB_EPG_PF_EVENTS_UPDATE,
+        UMSG_DVB_EPG_SCH_EVENTS_UPDATE,
+        /*loader*/
+        UMSG_DVB_LOADER_FORCE_UPDATE,
+        UMSG_DVB_LOADER_MANUAL_UPDATE,
+        UMSG_DVB_LOADER_UPGRADE_PROGRESS,
+        UMSG_DVB_LOADER_UPGRADE_ERR,
+        UMSG_DVB_LOADER_UPGRADE_SUCCESS,
+        /*CA*/
+        UMSG_DVB_CA_MESSAGE_CANCEL_TYPE,
+        UMSG_DVB_CA_MESSAGE_BADCARD_TYPE,
+        UMSG_DVB_CA_MESSAGE_EXPICARD_TYPE,
+        UMSG_DVB_CA_MESSAGE_INSERTCARD_TYPE,
+        UMSG_DVB_CA_MESSAGE_NOOPER_TYPE,
+        UMSG_DVB_CA_MESSAGE_BLACKOUT_TYPE,
+        UMSG_DVB_CA_MESSAGE_OUTWORKTIME_TYPE,
+        UMSG_DVB_CA_MESSAGE_WATCHLEVEL_TYPE,
+        UMSG_DVB_CA_MESSAGE_PAIRING_TYPE,
+        UMSG_DVB_CA_MESSAGE_NOENTITLE_TYPE,
+        UMSG_DVB_CA_MESSAGE_DECRYPTFAIL_TYPE,
+        UMSG_DVB_CA_MESSAGE_NOMONEY_TYPE,
+        UMSG_DVB_CA_MESSAGE_ERRREGION_TYPE,
+        UMSG_DVB_CA_MESSAGE_NEEDFEED_TYPE,
+        UMSG_DVB_CA_MESSAGE_ERRCARD_TYPE,
+        UMSG_DVB_CA_MESSAGE_UPDATE_TYPE,
+        UMSG_DVB_CA_MESSAGE_LOWCARDVER_TYPE,
+        UMSG_DVB_CA_MESSAGE_VIEWLOCK_TYPE,
+        UMSG_DVB_CA_MESSAGE_MAXRESTART_TYPE,
+        UMSG_DVB_CA_MESSAGE_FREEZE_TYPE,
+        UMSG_DVB_CA_MESSAGE_CALLBACK_TYPE,
+        UMSG_DVB_CA_MESSAGE_STBLOCKED_TYPE,
+        UMSG_DVB_CA_MESSAGE_STBFREEZE_TYPE,
+        UMSG_DVB_CA_MESSAGE_CARDTESTSTART_TYPE,
+        UMSG_DVB_CA_MESSAGE_CARDTESTFAILD_TYPE,
+        UMSG_DVB_CA_MESSAGE_CARDTESTSUCC_TYPE,
+        UMSG_DVB_CA_MESSAGE_NOCALIBOPER_TYPE,
+
+        /*CA*/
+        UMSG_DVB_CA_SHOW_TOP_OSD_MESSAGE,
+        UMSG_DVB_CA_HIDE_TOP_OSD_MESSAGE,
+        UMSG_DVB_CA_FINGER_PRINT,
+        UMSG_DVB_CA_LOCK_SERVICE,
+        UMSG_DVB_CA_UNLOCK_SERVICE,
+        UMSG_DVB_CA_SCALE_RECEIVEPATCH,
+        UMSG_DVB_CA_SCALE_PATCHING,  
+        UMSG_DVB_CA_EMAIL_NOTIFY,   //56
+        UMSG_DVB_CA_ENTITLE_CHANGED,
+        UMSG_DVB_CA_DETITLE_RECEIVED,
+        UMSG_DVB_CA_FEEDING_REQUEST,
+        UMSG_DVB_CA_HIDE_IPPVDLG,
+        UMSG_DVB_CA_START_IPPVDLG,   //61
+        UMSG_DVB_CA_SMC_OUT,
+        UMSG_DVB_CA_SMC_IN,
+        UMSG_DVB_CA_UPDATE_WINDOW,
+        UMSG_DVB_CA_CARD_CHANGED,
+    	UMSG_DVB_CA_LOCK_SERVICE_ERROR,
+    	UMSG_DVB_CA_SHOW_PREVIEW,
+		UMSG_DVB_CA_SHOW_BOTTON_OSD_MESSAGE , 		
+		UMSG_DVB_CA_HIDE_BOTTON_OSD_MESSAGE ,  
+    }
+
+    ;
+    private static int MASK_TUNER = 1 << STATUS_TUNER;
+    private static int MASK_CA = 1 << STATUS_CA;
+    private static int MASK_PLAY = 1 << STATUS_PLAY;
+
+    private static int status_mask = 0;
+    private static int STATUS_COUNT = 32;
+
+    private int curResID = 0;
+
+    static final int STRONG_SIGNAL = 4;
+    static final int NO_SIGNAL = 2;
+
+    static final int CANCEL_TYPE = 22;
+    static final int BADCARD_TYPE = 23;
+    static final int EXPICARD_TYPE = 24;
+    static final int INSERTCARD_TYPE = 25;
+    static final int NOOPER_TYPE = 26;
+    static final int BLACKOUT_TYPE = 27;
+    static final int OUTWORKTIME_TYPE = 28;
+    static final int WATCHLEVEL_TYPE = 29;
+    static final int PAIRING_TYPE = 30;
+    static final int NOENTITLE_TYPE = 31;
+    static final int DECRYPTFAIL_TYPE = 32;
+    static final int NOMONEY_TYPE = 33;
+    static final int ERRREGION_TYPE = 34;
+    static final int NEEDFEED_TYPE = 35;
+    static final int ERRCARD_TYPE = 36;
+    static final int UPDATE_TYPE = 37;
+    static final int LOWCARDVER_TYPE = 38;
+    static final int VIEWLOCK_TYPE = 39;
+    static final int MAXRESTART_TYPE = 40;
+    static final int FREEZE_TYPE = 41;
+    static final int CALLBACK_TYPE = 42;
+    static final int STBLOCKED_TYPE = 43;
+    static final int STBFREEZE_TYPE = 44;
+    static final int CARDTESTSTART_TYPE = 45;
+    static final int CARDTESTFAILD_TYPE = 46;
+    static final int CARDTESTSUCC_TYPE = 47;
+    static final int NOCALIBOPER_TYPE = 48;
+
+    static final int SHOW_OSD_MESSAGE = 49;
+    static final int HIDE_OSD_MESSAGE = 50;
+    static final int FINGER_PRINT = 51;
+    static final int LOCK_SERVICE = 52;
+    static final int UNLOCK_SERVICE = 53;
+    static final int SCALE_RECEIVEPATCH = 54;
+    static final int SCALE_PATCHING = 55;
+    static final int EMAIL_NOTIFY = 56;
+    static final int ENTITLE_CHANGED = 57;
+    static final int DETITLE_RECEIVED = 58;
+    static final int FEEDING_REQUEST = 59;
+    static final int HIDE_IPPVDLG = 60;
+    static final int START_IPPVDLG = 61;
+    static final int SMC_OUT = 62;
+    static final int SMC_IN = 63;
+    static final int UPDATE_WINDOW = 64;
+    static final int CARD_CHANGED = 65;
+    private static Status m_instance = new Status();
+    static int TFCAS_PROGRESS_STATUS = 0;
+    static int UpdateFlag = 0;
+    private List<Integer> saveMessage = new ArrayList<Integer>();
+
+    private Status() {
+        WeakReference<Status> obj = new WeakReference<Status>(this);
+
+        for (int i = 0; i < STATUS_COUNT; i++) {
+            Integer msg = Integer.valueOf(0);
+            saveMessage.add(msg);
+        }
+
+        startListnerStatus(obj);
+    }
+
+    private void initWindow(Context context) {
+        mPrompt = (LinearLayout) LayoutInflater.from(context).inflate(R.layout.status_prompt, null);
+        mPrompt.setVisibility(View.GONE);
+        WindowManager windowManager = (WindowManager) context.getSystemService(Activity.WINDOW_SERVICE);
+        WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
+        layoutParams.flags = LayoutParams.FLAG_NOT_TOUCH_MODAL
+                | LayoutParams.FLAG_NOT_FOCUSABLE
+                | LayoutParams.FLAG_NOT_TOUCHABLE;
+        layoutParams.gravity = Gravity.CENTER;
+        layoutParams.x = 0;
+        layoutParams.y = 0;
+        layoutParams.height = WindowManager.LayoutParams.WRAP_CONTENT;
+        layoutParams.width = WindowManager.LayoutParams.WRAP_CONTENT;
+        windowManager.addView(mPrompt, layoutParams);
+    }
+
+    private void deinitWindow(Context context) {
+        if (context != null && mPrompt != null) {
+            WindowManager windowManager = (WindowManager) context.getSystemService(Activity.WINDOW_SERVICE);
+            windowManager.removeView(mPrompt);
+            mPrompt = null;
+            Log.v("Status", "revome view.");
+        }
+    }
+
+    private void showPrompt(int resId) {
+        if (mPrompt != null) {
+            TextView text = (TextView) mPrompt.findViewById(R.id.tv_prompt_content);
+            text.setText(resId);
+            mPrompt.setVisibility(View.VISIBLE);
+        }
+    }
+
+    private void hidePrompt() {
+        if (mPrompt != null) {
+            mPrompt.setVisibility(View.GONE);
+        }
+    }
+
+    public void attachContext(Context c) {
+        synchronized (m_instance) {
+            if (handler != null) {
+                handler.removeCallbacksAndMessages(null);
+            }
+            hidePrompt();
+            handler = new StatusHandler(c.getMainLooper());
+        }
+
+        mConetxt = c;
+        initWindow(c);
+        Log.v("Status", "attach context");
+        DVB.GetInstance().enableStatusListener(true);
+    }
+
+    public void detachContext() {
+        DVB.GetInstance().enableStatusListener(false);
+        synchronized (m_instance) {
+            if (handler != null) {
+                handler.removeCallbacksAndMessages(null);
+            }
+            hidePrompt();
+            handler = null;
+        }
+
+        deinitWindow(mConetxt);
+
+        mConetxt = null;
+        Log.v("Status", "dettach context");
+    }
+
+    public static Status GetInstance() {
+        return m_instance;
+    }
+
+    private static byte[] AllocData(int len) {
+        return new byte[len];
+    }
+
+    private static void SendMessage(int type, int param, byte[] data, int len) {
+        Log.i("Status", "Send message data!");
+
+        synchronized (m_instance) {
+            if (handler != null) {
+                Message msg = handler.obtainMessage(type, param, len, data);
+
+                handler.sendMessage(msg);
+                Log.i("Status", "handler Send message data!");
+            }
+        }
+    }
+
+    private static void SendMessage(int type, int param1, int param2) {
+        synchronized (m_instance) {
+            if (handler != null) {
+                Message msg = handler.obtainMessage(type, param1, param2);
+
+                handler.sendMessage(msg);
+            }
+        }
+    }
+
+    private native void startListnerStatus(Object status_this);
+
+    private class StatusHandler extends Handler {
+
+        StatusHandler(Looper lp) {
+            super(lp);
+        }
+
+        public void handleMessage(Message msg) {
+            Log.i("Status", "handleMessage!");
+            if (mConetxt == null) {
+                return;
+            }
+
+            if ((null == msg.obj) && (msg.what != 3)) {
+                doAlertMessage(msg);
+                return;
+            }
+
+
+            Log.i("Status", "do data handleMessage!");
+            doData(msg);
+        }
+
+        private int getMask(Message msg) {
+            switch (msg.what) {
+                case STATUS_CA:
+                    return MASK_CA;
+
+                case STATUS_PLAY:
+                    return MASK_PLAY;
+
+                case STATUS_TUNER:
+                    return MASK_TUNER;
+
+                default:
+                    return 0;
+            }
+        }
+
+        private boolean isClearMsg(Message msg) {
+            switch (msg.what) {
+                case STATUS_CA:
+                    return (msg.arg1 == CANCEL_TYPE) ? true : false;
+
+                case STATUS_PLAY:
+                    return (msg.arg1 == 0) ? true : false;
+
+                case STATUS_TUNER:
+                    return (msg.arg1 == STRONG_SIGNAL) ? true : false;
+
+                default:
+                    return false;
+            }
+        }
+
+        private int getResID(int status) {
+            int msgid = saveMessage.get(status);
+            Log.i("Status", "getResID:" + msgid);
+            Log.i("Status", "getResID1:" + status);
+
+            switch (status) {
+                case STATUS_CA: {
+                    switch (msgid) {
+                        case BADCARD_TYPE:
+                            return R.string.tf_badcard_type;
+
+                        case EXPICARD_TYPE:
+                            return R.string.tf_expicard_type;
+
+                        case INSERTCARD_TYPE:
+                            return R.string.tf_insert_card;
+
+                        case NOOPER_TYPE:
+                            return R.string.tf_nooper_type;
+
+                        case BLACKOUT_TYPE:
+                            return R.string.tf_blackout_type;
+
+                        case OUTWORKTIME_TYPE:
+                            return R.string.tf_outworktime_type;
+
+                        case WATCHLEVEL_TYPE:
+                            return R.string.tf_watchlevel_type;
+
+                        case PAIRING_TYPE:
+                            return R.string.tf_pairing_type;
+
+                        case NOENTITLE_TYPE:
+                            return R.string.tf_noentitle_type;
+
+                        case DECRYPTFAIL_TYPE:
+                            return R.string.tf_decryptfail_type;
+
+                        case NOMONEY_TYPE:
+                            return R.string.tf_nomoney_type;
+
+                        case ERRREGION_TYPE:
+                            return R.string.tf_erregion_type;
+
+                        case NEEDFEED_TYPE:
+                            return R.string.tf_needfeed_type;
+
+                        case ERRCARD_TYPE:
+                            return R.string.tf_card_error;
+
+                        case UPDATE_TYPE:
+                            return R.string.tf_update_type;
+
+                        case LOWCARDVER_TYPE:
+                            return R.string.tf_lowcardver;
+
+                        case VIEWLOCK_TYPE:
+                            return R.string.tf_viewlock_type;
+
+                        case MAXRESTART_TYPE:
+                            return R.string.tf_maxrestart_type;
+
+                        case FREEZE_TYPE:
+                            return R.string.tf_freeze_type;
+
+                        case CALLBACK_TYPE:
+                            return R.string.tf_callback_type;
+
+                        case STBLOCKED_TYPE:
+                            return R.string.tf_stblocked_type;
+
+                        case STBFREEZE_TYPE:
+                            return R.string.tf_stbfreeze_type;
+
+                        case CARDTESTSTART_TYPE:
+                            return R.string.tf_cardteststart_type;
+
+                        case CARDTESTFAILD_TYPE:
+                            return R.string.tf_cardtestfail_type;
+
+                        case CARDTESTSUCC_TYPE:
+                            return R.string.tf_cardtestsucc;
+
+                        case NOCALIBOPER_TYPE:
+                            return R.string.tf_nocaliboper_type;
+                        case START_IPPVDLG: {
+							
+							break;
+							
+                        }
+                        case HIDE_IPPVDLG: {
+                        	
+							break;
+                        }
+                        default:
+                            break;
+                    }
+                }
+
+                case STATUS_PLAY:
+                    Log.i("Status", "getResID2:" + status);
+                    return 0;
+
+                case STATUS_TUNER:
+                    Log.i("Status", "getResID3:" + status);
+                    return (msgid == STRONG_SIGNAL) ? 0 : R.string.altert_text_no_signal;
+
+                default:
+                    Log.i("Status", "getResID4:" + status);
+                    return 0;
+            }
+        }
+
+        private void saveResID(Message msg) {
+            saveMessage.set(msg.what, msg.arg1);
+        }
+
+        private void doData(Message msg) {
+            byte[] byteinfo = (byte[]) msg.obj;
+
+        }
+
+
+        private void doAlertMessage(Message msg) {
+            int mask = getMask(msg);
+            boolean clear = isClearMsg(msg);
+
+            if (clear) {
+                status_mask &= ~mask;
+            } else {
+                status_mask |= mask;
+                saveResID(msg);
+            }
+
+            int i = 0;
+
+            for (i = 0; i < STATUS_COUNT; i++) {
+                if ((status_mask & (1 << i)) != 0) {
+                    int resId = getResID(i);
+
+                    if (resId != 0 && curResID != resId) {
+                        curResID = resId;
+                        showPrompt(resId);
+                    }
+
+                    return;
+                }
+            }
+
+            curResID = 0;
+            hidePrompt();
+        }
+    }
+    
+}

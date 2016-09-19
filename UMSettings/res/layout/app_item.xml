@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/selector_setitem"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/setitem_height"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@id/app_icon"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@id/app_lable"
+        android:layout_width="340.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.0dip"
+        android:ellipsize="marquee"
+        android:gravity="left|center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/string_failpwd"
+        android:textColor="@color/white"
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:id="@id/app_size"
+        android:layout_width="250.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.0dip"
+        android:gravity="left|center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="20.0sp" />
+
+</LinearLayout>

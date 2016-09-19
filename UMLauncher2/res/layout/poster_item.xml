@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.um.launcher.widget.RoundedImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        app:riv_corner_radius="10dip"
+        app:riv_oval="false"
+        />
+    <com.um.launcher.widget.RoundedImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        app:riv_corner_radius="13dip"
+        app:riv_oval="false"
+        />
+
+    <com.um.launcher.widget.AutoScrollViewPager
+        android:id="@+id/image_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:id="@+id/ly_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/imageView1">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/poster_title_margin_left"
+            android:paddingRight="@dimen/poster_title_margin_left"
+            android:paddingTop="10dp"
+            android:textSize="30sp"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:textAppearance="?android:attr/textAppearanceSmallInverse"
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/poster_title_margin_left"
+            android:paddingRight="@dimen/poster_title_margin_left"
+            android:textSize="22sp"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:textAppearance="?android:attr/textAppearanceSmallInverse"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

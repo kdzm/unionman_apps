@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.um.launcher"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/education_item_integrated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/education_item_itegrated_marginLeft"
+        android:layout_marginTop="@dimen/education_item_itegrated_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusDown="@+id/education_item_reading"
+        android:nextFocusRight="@+id/education_item_child" >
+
+        <RelativeLayout
+            android:id="@+id/education_child_integrated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/page_wide_bg_grape">
+
+            <ImageView
+                android:id="@+id/education_integrated_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/page_integrated" />
+
+            <TextView
+                android:id="@+id/education_integrated_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/education_integrated_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/integrated"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/education_item_children"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/education_item_child_marginLeft"
+        android:layout_marginTop="@dimen/education_item_child_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusDown="@+id/education_item_healthy"
+        android:nextFocusRight="@+id/education_item_pple"
+        android:nextFocusLeft="@+id/education_item_child" >
+
+        <RelativeLayout
+            android:id="@+id/education_child_children"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_wide_bg_pink">
+
+            <ImageView
+                android:id="@+id/education_children_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/page_child" />
+
+            <TextView
+                android:id="@+id/education_children_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/education_children_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/children"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/education_item_pple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/education_item_pple_marginLeft"
+        android:layout_marginTop="@dimen/education_item_pple_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusDown="@+id/education_item_tsqinghua_school"
+        android:nextFocusLeft="@id/education_item_child">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_mid_bg_blue">
+
+            <ImageView
+                android:id="@+id/education_pple_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/page_pple" />
+
+            <TextView
+                android:id="@+id/education_pple_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/education_pple_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/pple"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/education_item_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/education_item_reading_marginLeft"
+        android:layout_marginTop="@dimen/education_item_reading_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusRight="@+id/education_item_healthy">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_wide_bg_orange">
+
+            <ImageView
+                android:id="@+id/education_reading_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/page_reading" />
+
+            <TextView
+                android:id="@+id/education_reading_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/education_reading_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/reading"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+	   android:id="@+id/education_reading_img_reflect"
+	   android:layout_marginLeft="@dimen/education_item_reading_marginLeft"
+       android:layout_marginTop="518dp"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"/>
+        
+    <RelativeLayout
+        android:id="@+id/education_item_healthy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/education_item_healthy_marginLeft"
+        android:layout_marginTop="@dimen/education_item_healthy_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/education_item_reading"
+        android:nextFocusRight="@+id/education_item_society">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_mid_bg_green">
+
+            <ImageView
+                android:id="@+id/education_healthy_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/page_healthy" />
+
+            <TextView
+                android:id="@+id/education_healthy_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/education_healthy_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/healthy"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+	   android:id="@+id/education_healthy_img_reflect"
+	   android:layout_marginLeft="@dimen/education_item_healthy_marginLeft"
+       android:layout_marginTop="518dp"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"/>
+        
+    <RelativeLayout
+        android:id="@+id/education_item_society"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/education_item_society_marginLeft"
+        android:layout_marginTop="@dimen/education_item_society_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@id/education_item_healthy"
+        android:nextFocusRight="@+id/education_item_tsqinghua_school">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_mid_bg_yellow">
+
+            <ImageView
+                android:id="@+id/education_society_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/page_society" />
+
+            <TextView
+                android:id="@+id/education_society_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/education_society_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/society"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+	   android:id="@+id/education_society_img_reflect"
+	   android:layout_marginLeft="@dimen/education_item_society_marginLeft"
+       android:layout_marginTop="518dp"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"/>
+        
+     <RelativeLayout
+        android:id="@+id/education_item_tsqinghua_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/education_item_tsqinghua_shcool_marginLeft"
+        android:layout_marginTop="@dimen/education_item_tsqinghua_shcool_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/education_item_society">
+
+        <RelativeLayout
+            android:id="@+id/education_child_tsqinghua_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/page_mid_bg_skyblue">
+            
+            <ImageView
+                android:id="@+id/education_tsqinghua_school_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/page_school" />
+
+            <TextView
+                android:id="@+id/education_tsqinghua_school_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/education_tsqinghua_school_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/tsqinghua_school"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <ImageView
+	   android:id="@+id/education_tsqinghua_school_img_reflect"
+	   android:layout_marginLeft="@dimen/education_item_tsqinghua_shcool_marginLeft"
+       android:layout_marginTop="518dp"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"/>
+    
+</FrameLayout>

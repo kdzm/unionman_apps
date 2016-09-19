@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tv_list">TV list</string>
+    <string name="radio_list">Radio list</string>
+    <string name="search_prog">Search prog</string>
+    <string name="edit_prg">Edit prog</string>
+    <string name="egp_guid">Epg guide</string>
+    <string name="sys_set">System set</string>
+    <string name="search_type">Search type</string>
+    <string name="menul_search">Manul search</string>
+    <string name="auto_serach">Auto search</string>
+    <string name="all_serach">Full frequency search</string>
+    <string name="signal_zhiliang">Signal quality</string>
+    <string name="search_jingdu">Progress</string>
+    <string name="signal_qingdu">Strength</string>
+    <string name="main_freq_setting">Main frequency set</string>
+    <string name="check_signal">Signal check</string>
+    <string name="parent_lock">Parent lock</string>
+    <string name="CA_information">CA info</string>
+    <string name="teltext_setting">Teltext set</string>
+    <string name="audio_setting">Audio set</string>
+
+    <string name="frequency">Frequency</string>
+    <string name="menual_search">Manul search</string>
+    <string name="symbol">Symbol</string>
+    <string name="modulation">Modulation</string>
+    <string name="band">BAND</string>
+    <string name="M6">6M</string>
+    <string name="M8">8M</string>
+    <string name="frq_unit">KHZ</string>
+    <string name="sym_unit">Kpbs</string>
+    <string name="qam_unit">QAM</string>
+    <string name="ok">Confirm</string>
+    <string name="mod_unit">QAM</string>
+    <string name="main_freq">Main frequency</string>
+    <string name="freq_units">Mhz</string>
+    <string name="confirm_ok">Confirm</string>
+    <string name="smc_info">SMC info</string>
+    <string name="smc_numb">SMC number：</string>
+    <string name="soft_version">Software ver：</string>
+    <string name="e_value">Eigenvalue：</string>
+    <string name="search_prg">Search prog</string>
+    <string name="tf_sun_card">Son mothercard</string>
+    <string name="tf_entitle_info">Entitle info</string>
+    <string name="tf_wallet_info">IPPV walletinfo </string>
+    <string name="tf_ippv_ino">IPPV info</string>
+    <string name="tf_change_pin">Modify PIN</string>
+    <string name="tf_watch_level">Modify watch level</string>
+    <string name="tf_pair_info">Card corresponding query</string>
+    <string name="tf_working_time">Modify working time</string>
+    <string name="tf_normal_entitle_info">Normal entitle info</string>
+    <string name="tf_negative_authorization_info">Negative authorized info</string>
+    <string name="tf_eigenvalue">Eigenvalue</string>
+    <string name="tf_operator_info">Operator info</string>
+    <string name="mon">Monday</string>
+    <string name="tue">Tuesday</string>
+    <string name="wed">Wendnesday</string>
+    <string name="thurs">Thursday</string>
+    <string name="fri">Friday</string>
+    <string name="sat">Saturday</string>
+    <string name="sun">Sunday</string>
+    <string name="epgguid">Epg guide</string>
+    <string name="sign_check">Signal check</string>
+    <string name="sure_check">Detection</string>
+    <string name="error_rate">Error rate</string>
+    <string name="tf_watchlevel">Modify watch level</string>
+    <string name="tf_input_pin">Modify PIN</string>
+    <string name="tf_condition_access">Condition access</string>
+    <string name="tf_smc_updat_status">SMC update status</string>
+    <string name="tf_smc_status_info">SMC status info</string>
+    <string name="dialog_enter">Confirm</string>
+    <string name="note">Tip</string>
+    <string name="data_illegal">Data illegal,please input again！</string>
+    <string name="save_success">Save success，press confirm return</string>
+    <string name="tf_pair_status">Card corresponding state</string>
+    <string name="tf_cas_version">CAS version</string>
+    <string name="tf_watch_level_str">Watch level</string>
+    <string name="tf_working_level">Watch level</string>
+    <string name="tf_working_time_str">Working time</string>
+    <string name="tf_smc_num">SMC number</string>
+    <string name="tf_area_code">Area code</string>
+    <string name="tf_stb_num">STB ID</string>
+    <string name="tf_current_pin">Current PIN</string>
+    <string name="tf_new_pin">New PIN</string>
+    <string name="tf_pin_verify">New PIN confirm</string>
+    <string name="tf_start_time">Start time</string>
+    <string name="tf_end_time">End time</string>
+    <string name="general_authorized">General authorized</string>
+    <string name="prog_id">Prog ID</string>
+    <string name="video_record">Video record</string>
+    <string name="expired_time">Expired time</string>
+    <string name="tf_pair_info_check">Card corresponding query</string>
+    <string name="tf_index">Index</string>
+    <string name="tf_stb_index">STB ID</string>
+    <string name="tf_pair_other">SMC already binding with other STB</string>
+    <string name="tf_smc_update_time">Update time</string>
+    <string name="tf_status">Status</string>
+    <string name="tf_verify_value">Confirmation code</string>
+    <string name="chan_edit">Edit prog</string>
+    <string name="program">Program</string>
+    <string name="delete">Delete</string>
+    <string name="sort">Sort</string>
+    <string name="fav">Fav</string>
+    <string name="lock">Lock</string>
+    <string name="prog_list">Prog list</string>
+    <string name="present_prog">Curret prog</string>
+    <string name="follow_prog">Next prog</string>
+    <string name="wallet_id">Wallet ID</string>
+    <string name="status">Status</string>
+    <string name="price">Price</string>
+    <string name="recored">Record</string>
+    <string name="dead_time">Expiration time</string>
+    <string name="mail_reading">Mail reading</string>
+    <string name="title">Title：</string>
+    <string name="send_time">Send time：</string>
+	<string name="sender_name">Sender Name:</string>    
+    <string name="mail_level">Mail level：</string>
+    <string name="mail">Mail</string>
+    <string name="sn">Serial number</string>
+    <string name="main_title">Theme</string>
+    <string name="level">Level</string>
+    <string name="is_read">Is reading</string>
+    <string name="tf_parent_child_info">Parent child smc info</string>
+    <string name="zimuka_status">Son mother smc staus</string>
+    <string name="tf_parent_card">Parent card</string>
+    <string name="tf_feed_period">Feed period（hours）</string>
+    <string name="tf_last_feed_time">Last feed time</string>
+    <string name="tf_feed">Feed</string>
+    <string name="tf_parent_card_num">Parent card number</string>
+    <string name="wallet_info">Wallet infor</string>
+    <string name="wallet_sn">Wallet SN</string>
+    <string name="cash">Credit limit</string>
+    <string name="waste">Already use points</string>
+    <string name="mainmenu_str">Home page</string>
+    <string name="stereo">Stereo</string>
+    <string name="cur_prog"> Current prog： </string>
+    <string name="next_prog"> Next prog： </string>
+    <string name="progam_list">Prog list</string>
+    <string name="altert_dialog_title">Warm tips</string>
+    <string name="altert_text_no_signal">NO signal</string>
+    
+    <string name="open_paid_service">Open the paid service</string>
+    <string name="read_and_delete">【OK】read  【RED】delete【green】all delete</string>
+    <string name="identifier_info">Eigenvalue info</string>
+    <string name="back_and_exit">【Recall】return  【Exit】exit</string>
+    <string name="enter_back_exit">【OK】enter 【Recall】return 【Exit】exit</string>
+    <string name="tv">TV</string>
+    <string name="radio">Radio</string>
+    <string name="search_status">Current search frequescy:</string>
+    <string name="audio_mount">Track settings</string>
+    <string name="android_app">Andorid app</string>
+    <string name="old_code">Old password</string>
+    <string name="new_code">New password</string>
+    <string name="confirm_code">Verify password</string>
+    <string name="srting_null" />
+    <string name="app_name">DVBPlayer</string>
+	<string name="app_name_private">Search</string>
+    <string name="ca_areacode">AreaCode:</string>
+	<string name="ca_bouquet">BouquetID:</string>
+	<string name="ca_user_eigenvalue">User EigenValue：</string>
+    <string name="exit_and_back">【Exit】return</string>
+    <string name="tf_smc_pair_present_stb">SMC paired with present STB!</string>
+    <string name="tf_smc_pair_none_stb">SMC have paired with none STB! </string>
+    <string name="tf_smc_pair_other_stb">SMC have paired with other STB!</string>
+    <string name="tf_no_smc_available">No SMC available!</string>
+    <string name="tv_program">TV</string>
+    <string name="radio_program">Radio</string>
+    <string name="all_program">All program</string>
+    <string name="tf_enter_new_pin">Please Enter New Pin Of 6 Digits!</string>
+    <string name="tf_affirm_new_pin">Please Affirm New Pin Of 6 Digits!</string>
+    <string name="tf_enter_old_pin">Please Enter Old Pin Of 6 Digits!</string>
+    
+    <string name="tf_change_watch_level_notice">Change Watch Level Notice:</string>
+ 	<string name="tf_change_watch_level_right">Change Watch Level Right!</string>
+    <string name="tf_change_watch_level_error">Change Watch Level Error!</string>
+ 
+    <string-array name="audio_array">
+         <item>"Stereo"</item>
+         <item>"left channel"</item>
+         <item>"right channel"</item>
+    </string-array>
+     <string-array name="qam_array">
+         <item>"16 QAM"</item>
+         <item>"32 QAM"</item>
+         <item>"64 QAM"</item>
+         <item>"128 QAM"</item>
+         <item>"256 QAM"</item>
+    </string-array>
+         <string-array name="daikuan_array">
+         <item>"6M"</item>
+         <item>"8M"</item>
+    </string-array>
+    <string-array name="dtmb_search_array">
+         <item>"Frequency"</item>
+         <item>"Number"</item>
+    </string-array>
+         <string name="searchFrequency">"Frequency"</string>
+         <string name="searchNumber">"Number"</string>
+     <string name="qam16">16 QAM</string>
+     <string name="qam32">32 QAM</string>
+     <string name="qam64">64 QAM</string>
+     <string name="qam128">128 QAM</string>
+     <string name="qam256">256 QAM</string>
+     <string name="search_radio_count">RADIO:</string>
+     <string name="search_tv_count">Search finish,TV:</string>
+     <string name="tv_list_program">TV</string>
+     <string name="radio_list_program">RADIO</string>
+     <string name="all_list_program">ALL PROGRAM</string>
+     <string name="tf_operator_id">Operator ID</string>
+     <string name="tf_operator_name">Operator Name</string>
+     <string name="tf_ippv_overview">overview</string>
+     <string name="tf_book">book</string>
+     <string name ="tf_readed">Readed</string>
+     <string name="tf_not_read">No Readed</string>
+     <string name="tf_child_card">Child Card</string>
+     <string name="tf_feedtime_not_arrive">Feedtime not arrive</string>
+	 <string name="tf_insert_parent_card">Please insert parent card</string>
+	 <string name="tf_insert_child_card">Please insert child card</string>
+	 <string name="tf_feedcard_ok">Success to pair!</string>
+	 <string name="tf_feedcard_fail">Fail to feed card!</string>
+	 <string name="tf_read_parentcard_fail">Fail to read data from parent card</string>
+	 <string name="setting_clear_prog">clear program finish!</string>
+	 <string name="factory_reset">Clear program</string>  
+	 <string name="tf_insert_card">Scrambling program!Please insert your card!</string>
+	 
+	 <string name="tf_badcard_type">Bad Card!</string>
+	 <string name="tf_expicard_type">Expire Card!</string>
+	 <string name="tf_nooper_type">Conditional Operate!</string>
+	 <string name="tf_blackout_type">Blackout!</string>
+	 <string name="tf_outworktime_type">Out Of Worktime!</string>
+	 <string name="tf_watchlevel_type">Higher Than Watch Level!</string>
+	 <string name="tf_pairing_type">Please insure STB and SMC paired!</string>
+	 <string name="tf_noentitle_type">Not entitled!</string>
+	 <string name="tf_decryptfail_type">Deciphering Failed!</string>
+	 <string name="tf_nomoney_type">Not Enough Money Is Avilable!</string>
+	 <string name="tf_erregion_type">Region error!</string>
+	 <string name="tf_needfeed_type">Card Need Feed!</string>
+	 <string name="tf_card_error">Card Checked Failed!</string>
+	 <string name="tf_update_type">System is Updating!</string>
+	 <string name="tf_lowcardver">Low Card Version!</string>
+	 <string name="tf_viewlock_type">View Lock!</string>
+	 <string name="tf_maxrestart_type">Card Damaged!</string>
+	 <string name="tf_freeze_type">Card Frozen!</string>
+	 <string name="tf_callback_type">Callback Failed!</string>
+	 <string name="tf_stblocked_type">Please Reset STB!</string>
+	 <string name="tf_stbfreeze_type">STB Frozen!</string>
+	 <string name="tf_cardteststart_type">Card Test Start!</string>
+	 <string name="tf_cardtestfail_type">Card Test Failed!</string>
+	 <string name="tf_cardtestsucc">Card Test Success!</string>
+	 <string name="tf_nocaliboper_type">No Ca Lib Operator!</string>
+	 <string name="tf_ca_scale_receivepatch">Receiving SMC Update Date!</string>
+	 <string name="tf_ca_scale_patching">SMC is Updating!</string>
+	<string name="tf_normal_email">Normal</string>
+	<string name="tf_important_email">Important</string>	 
+	<string name="tf_email_arrive">Email Arrive!</string>
+	<string name="tf_delete_email_by_index">Delete this email?</string>
+	<string name="tf_delete_all_email">Delete all email?</string>
+	<string name="tf_email_option">Email Options</string>
+	<string name="upgrade_progress">upgrade progress!</string>
+	<string name="tf_pin_not_paired">Pin Not Paired!</string>
+	<string name="tf_change_pin_correctly">Change Pin Correctly!</string>
+	<string name="tf_change_pin_wrong">Change Pin Wrong!</string>
+	<string name="tf_endtime_larger_than_start_time">End Time Bigger Than Start Time！</string>
+	<string name="tf_change_watchtime_correctly">Change Watch Time Correctly!</string>
+	<string name="tf_change_watchtime_wrong">Change Watch Time Wrong!</string>
+	<string name="tf_supplier_id">Supplier ID</string>
+	<string name="tf_product_id">Product ID</string>
+	<string name="tf_charge_interval">Charge Interval</string>
+	<string name="tf_unable_record_price">Unable Record Price</string>
+	<string name="tf_able_record_price">Able Record Price</string>
+	<string name="tf_tap_or_not">Able to tap or not</string>
+	<string name="tf_ipp_pop">IPP Pop</string>
+	<string name="tf_unable_taping">Unable tap</string>
+	<string-array name="tap_array">
+         <item>"Unable Tap"</item>
+         <item>"Able Tap"</item>
+    </string-array>
+    <string name="tf_ipp_order_cancel">Cancel Order</string>
+    <string name="tf_ippv_free_view">IPPV free segment, pay to view!</string>
+    <string name="tf_ippv_pay_view">IPPV pay segment, pay to view!</string>
+    <string name="tf_ippt_payview">IPPT pay segment, pay to view</string>
+    <string name="tf_buy">Buy</string>
+    
+	<string name="tf_ipp_msg_noviewprice">No selected price, order is canceled!</string>
+    <string name="tf_caerr_nosmc">No smart card or invalid card </string>
+    <string name="tf_caerr_no_room">No enough room!</string>
+    <string name="tf_caerr_prog_status_invalid">Program to order is invalid!</string>
+    <string name="tf_pin_err">PIN error</string>
+    <string name="tf_caerr_data_not_fount_ippv">Corresponding operator or slot is not found!</string>
+    <string name="tf_caerr_buy_success">Success</string>
+    <string name="tf_caerr_unknown">Unknown error!</string>
+	<string name="test_name">Unknown error!</string>
+	<string name="noprogram">no program list!</string>
+    <string name="bp_search_tips">Saving Program，please wait……</string>
+    <string name="sync_prog">Sync Program，please wait……</string>
+    <string name="bps">bps</string>
+    <string name="channel">channel</string>
+    <string name="dtmb_check_tips">please input valid channel number</string>
+	
+     <string name="inputNotEmpty">input can not be empty</string>
+     <string name="lastNumMayNotBeNonzero">The last number of value of Frequency may not be non-zero</string>
+     <string name="chan_edit_help">Edit the attributes of channel,such as favorite,move...</string>
+</resources>

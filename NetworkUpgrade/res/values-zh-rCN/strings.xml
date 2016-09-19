@@ -1,0 +1,38 @@
+<resources>
+
+    <string name="app_name">网络升级</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_network_upgrade_main">网络升级</string>
+    <string name="networkupgrade">网络升级</string>
+    <string name="networkupgrade_address">服务器地址</string>
+    <string name="stb_info">机顶盒信息</string>
+    <string name="software_version">●软件版本号:</string>
+    <string name="hardware_version">●硬件版本号:</string>
+    <string name="mac_address">●MAC 地址:</string>
+    <string name="serial_number_version">●序	 列 号:</string>
+    <string name="version_number">1.0.0.1</string>
+    <string name="upgrade">检测升级</string>
+    <string name="save">保存</string>
+    <string name="default_text">默认</string>
+    <string name="save_success">保存成功!</string>
+    <string name="set_default">恢复默认!</string>
+    <string name="upgrade_check">升级检测中，请稍后</string>
+    <string name="new_version">已是最新版本！</string>
+    <string name="connect_exception">连接服务器异常!</string>
+    <string name="unfind_new">没有检测到新版本!</string>
+    <string name="dialog_title">升级提示</string>
+    <string name="dialog_msg">检测到新版本，是否升级？</string>
+    <string name="dialog_pb">升级</string>
+    <string name="dialog_nb">取消</string>
+    <string name="dialog_upgrademsg">正在下载升级文件，请耐心等待...</string>
+    <string name="network_disconnect">当前未连接到网络，请先连接网络!</string>
+    <string name="dialog_tips">正在下载系统升级文件，请勿关闭电源和网络</string>
+    <string name="system_upgrade">系统升级</string>
+    <string name="ready_upgrade">准备系统升级,请勿在升级过程中关闭电源...</string>
+    <string name="check_failed">下载文件校验失败，稍后重新下载</string>
+    <string name="ready_download">准备下载...</string>
+    <string name="cancel_download">当前网络不稳定,取消下载升级文件</string>
+    <string name="check_md5">下载完成，即将进行校验</string>
+    <string name="download_failed">下载失败,稍后自动重新下载</string>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tv_background"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <SurfaceView
+        android:id="@+id/tranplentview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" />
+
+    <!-- AgingMode View -->
+
+    <TextView
+        android:id="@+id/aging_mode"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/WHITE"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/at_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@color/LIGHT_GREEN"
+        android:padding="10dp"
+        android:text="@string/at_title"
+        android:textColor="@color/RED"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/reset_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="@color/WHITE"
+        android:paddingBottom="50dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:paddingTop="50dp"
+        android:text="@string/reset_info"
+        android:textColor="@color/RED"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        android:visibility="visible"/>
+
+</RelativeLayout>

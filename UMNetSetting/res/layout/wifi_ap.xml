@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 热点设置标题 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ap_set" />
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_dialog_bg"
+        android:orientation="vertical"
+        android:layout_marginTop="20.0dip">
+        
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/setitem_left_margin"
+	        android:gravity="center_vertical" >
+	
+	        <TextView
+	            android:layout_width="170.0dip"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_vertical"
+	            android:text="@string/ap_ssid"
+	            android:textColor="@color/white"
+	            android:textSize="20.0sp" />
+	
+	        <EditText
+	            android:id="@+id/et_ssid"
+	            android:text="@string/default_ssid"
+	            style="@style/edit_short_2" />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/setitem_left_margin"
+	        android:layout_marginTop="20.0dip"
+	        android:gravity="center_vertical" >
+	
+	        <TextView
+	            android:layout_width="170.0dip"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_vertical"
+	            android:text="@string/ap_security"
+	            android:textColor="@color/white"
+	            android:textSize="20.0sp" />
+	
+	        <Spinner 
+	            android:id="@+id/sp_security"
+	            android:textSize="25.0sp"
+	        	android:textColor="@color/white"
+	        	android:gravity="center_vertical"
+	        	android:layout_width="300.0dp"
+	       		android:layout_height="50.0dp"
+	       		android:spinnerMode="dropdown"
+	        />
+	    </LinearLayout>
+	    
+	     <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/setitem_left_margin"
+	        android:layout_marginTop="20.0dip"
+	        android:gravity="center_vertical" >
+	
+	        <TextView
+	            android:layout_width="170.0dip"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_vertical"
+	            android:text="@string/ap_channel"
+	            android:textColor="@color/white"
+	            android:textSize="20.0sp" />
+	
+	         <Spinner 
+	            android:id="@+id/sp_channel"
+	            android:textSize="25.0sp"
+	        	android:textColor="@color/white"
+	        	android:gravity="center_vertical"
+	        	android:layout_width="300.0dp"
+	       		android:layout_height="50.0dp"
+	        />
+	    </LinearLayout>
+	    
+	      <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/setitem_left_margin"
+	        android:layout_marginTop="20.0dip"
+	        android:gravity="center_vertical" >
+	
+	        <TextView
+	            android:layout_width="170.0dip"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_vertical"
+	            android:text="@string/ap_password"
+	            android:textColor="@color/white"
+	            android:textSize="20.0sp" />
+	
+	        <EditText
+	            android:id="@+id/et_pwd"
+	            android:text="@string/default_psw"
+	            style="@style/edit_short_2"/>
+	    </LinearLayout>
+	    
+	     
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginTop="60.0dip" >
+	
+	        <Button
+	            android:id="@+id/btn_ok"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/save" />
+	        
+	        <Button
+	            android:id="@+id/btn_close"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginStart="20dp"
+	            android:text="@string/close" />
+	
+	        <Button
+	            android:id="@+id/btn_cancel"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginStart="20dp"
+	            android:text="@string/cancel" />
+	    </LinearLayout>
+
+    </LinearLayout>
+    
+</LinearLayout>

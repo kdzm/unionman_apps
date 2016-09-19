@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="dialog_button_width">150dp</dimen>
+    <dimen name="dialog_button_height">60dp</dimen>
+
+
+    </resources>

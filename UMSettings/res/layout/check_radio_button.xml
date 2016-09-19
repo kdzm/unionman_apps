@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/selector_setitem"
+    android:duplicateParentState="true"
+    android:gravity="left|center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@id/button_textView"
+        android:layout_width="@dimen/setitem_text1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:duplicateParentState="true"
+        android:gravity="left|center"
+        android:singleLine="true"
+        android:textSize="20.0sp" />
+
+    <TextView
+        android:id="@id/button_textView2"
+        android:layout_width="@dimen/setitem_text2"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:ellipsize="marquee"
+        android:gravity="left|center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textSize="20.0sp" />
+
+    <ImageView
+        android:id="@id/button_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:background="@drawable/selector_custom_check_unchecked"
+        android:duplicateParentState="true" />
+
+</LinearLayout>

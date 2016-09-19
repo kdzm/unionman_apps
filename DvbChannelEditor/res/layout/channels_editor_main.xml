@@ -1,0 +1,126 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/setting_bg"
+    tools:context="com.um.channelseditor.ChannelsEditorActivity"
+    tools:ignore="MergeRootFrame" >
+    
+    <!-- 小窗口 BEGIN -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dvb_list_bg"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+	    <TextView  
+		    android:id="@+id/chan_editor_text_view" 
+		    android:layout_width="fill_parent"
+		    android:gravity="center"
+		    android:textSize="30sp"
+		    android:layout_height="52dp" 
+		    android:text="@string/app_name"/>
+	    
+	    <!-- 顶部标题栏布局 BEGIN -->
+	    <LinearLayout 
+	     	android:layout_height="50dp"
+			android:layout_width="740dp"
+	    	android:layout_marginTop="30dp"
+	    	android:orientation="horizontal"
+	     	android:background="@drawable/border">
+		    <TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="3"
+				android:padding="9dp"
+				android:textSize="25sp"
+				android:textColor="#ffffff"
+				android:gravity="center" 
+				android:background="@drawable/border"
+				android:text="@string/program"/>
+		     <TextView 
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:padding="9dp"
+				android:textSize="25sp"
+				android:textColor="#ffffff"
+				android:gravity="center"
+				android:background="@drawable/border"
+				android:text="@string/channel_statue"/>
+	    </LinearLayout>
+	    <!-- 顶部标题栏布局 END -->
+	    <!-- 中间频道列表 -->
+	   	<ListView 
+	    	android:background="@drawable/border"
+		    android:id="@+id/chan_editor_list_view"
+			android:layout_height="320dp"
+			android:layout_width="740dp"
+			android:cacheColorHint="@android:color/transparent"
+			android:divider="@android:color/transparent"
+			android:scrollbarStyle="outsideInset"
+			android:listSelector="@drawable/searchmenu_btn"/>
+	   	
+	   	<!-- 底部提示栏布局 BEGIN -->
+		<LinearLayout 
+		    android:layout_marginTop="15dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginBottom="10dp"
+			android:orientation="horizontal"
+			android:layout_height="wrap_content"
+			android:layout_width="740dp"
+			android:gravity="center_horizontal"> 
+	     	<ImageView
+	     	    android:id="@+id/fav_icon"
+		     	android:layout_width="wrap_content"
+		     	android:layout_height="wrap_content"
+		     	android:src="@drawable/btn_red"
+		     	android:layout_gravity="bottom"/>
+			<TextView
+				android:layout_marginLeft="10dp"
+				android:gravity="center_vertical" 
+				android:textColor="#ffffff" 
+				android:layout_height="fill_parent" 
+				android:layout_width="80dp"
+				android:textSize="24sp"
+				android:text="@string/channel_fav"/>
+	     	<ImageView
+				android:layout_marginLeft="50dp"
+	     	    android:id="@+id/move_icon"
+		     	android:layout_width="wrap_content"
+		     	android:layout_height="wrap_content"
+		     	android:src="@drawable/btn_green"
+		     	android:layout_gravity="bottom"/>
+			<TextView
+				android:layout_marginLeft="10dp"
+				android:gravity="center_vertical" 
+				android:textColor="#ffffff" 
+				android:layout_height="fill_parent" 
+				android:layout_width="80dp"
+				android:textSize="24sp"
+				android:text="@string/channel_move"/>
+
+	     	<ImageView
+				android:layout_marginLeft="50dp"
+	     	    android:id="@+id/hide_icon"
+		     	android:layout_width="wrap_content"
+		     	android:layout_height="wrap_content"
+		     	android:src="@drawable/btn_blue"
+		     	android:layout_gravity="bottom"/>
+			<TextView
+				android:layout_marginLeft="10dp"
+				android:gravity="center_vertical" 
+				android:textColor="#ffffff" 
+				android:layout_height="fill_parent" 
+				android:layout_width="80dp"
+				android:textSize="24sp"
+				android:text="@string/channel_hide"/>
+		</LinearLayout>
+		<!-- 底部提示栏布局 END -->
+	</LinearLayout>
+	<!-- 小窗口 END -->
+</RelativeLayout>

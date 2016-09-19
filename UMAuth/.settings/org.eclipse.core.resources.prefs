@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//src/com/json/helper=UTF-8
+encoding//src/com/json/helper/BaseHelper.java=UTF-8
+encoding//src/com/json/helper/DataCompleteListener.java=UTF-8
+encoding//src/com/json/helper/JsonHelperLog.java=UTF-8
+encoding//src/com/json/helper/ParserCompleteListener.java=UTF-8
+encoding//src/com/json/helper/huawei=UTF-8
+encoding//src/com/json/helper/huawei/HuaweiAccessToken.java=UTF-8
+encoding//src/com/json/helper/huawei/HuaweiAccessTokenHelper.java=UTF-8
+encoding//src/com/json/helper/huawei/HuaweiEncryToken.java=UTF-8
+encoding//src/com/json/helper/huawei/HuaweiEpgUrlHelper.java=UTF-8
+encoding//src/com/um/auth=UTF-8
+encoding//src/com/um/auth/HuaweiAuth.java=UTF-8
+encoding//src/com/um/auth/MainService.java=UTF-8
+encoding//src/com/um/receiver=UTF-8
+encoding//src/com/um/util=UTF-8

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/menu_control"
+        android:layout_width="@dimen/menu_control_layout_width"
+        android:layout_height="@dimen/menu_control_layout_height"
+        android:background="@drawable/menu_control_up"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView               
+                android:focusable="false"
+                android:layout_width="@dimen/menu_control_txt_layout_width"
+                android:layout_height="@dimen/menu_control_txt_layout_height"
+                android:layout_marginLeft="@dimen/menu_control_txt_marginLeft"
+                android:layout_marginTop="@dimen/menu_control_txt_marginTop"
+                android:gravity="center"
+                android:paddingLeft="@dimen/menu_control_txt_paddingLeft"
+                android:text="@string/add_fav"
+                android:textSize="@dimen/menu_control_txt_size"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:id="@+id/menu_add_fav"
+                android:layout_width="@dimen/menu_control_txt_layout_width1"
+                android:layout_height="@dimen/menu_control_txt_layout_height"
+                android:layout_marginLeft="@dimen/menu_control_txt_marginLeft"
+                android:layout_marginTop="@dimen/menu_control_txt_marginTop"
+                android:gravity="center"
+                android:text="@string/add"
+                android:textSize="@dimen/menu_control_txt_size"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:id="@+id/menu_remove_fav"
+                android:layout_width="@dimen/menu_control_txt_layout_width1"
+                android:layout_height="@dimen/menu_control_txt_layout_height"
+                android:layout_marginLeft="@dimen/menu_control_txt_marginLeft"
+                android:layout_marginTop="@dimen/menu_control_txt_marginTop"
+                android:gravity="center"
+                android:text="@string/remove"
+                android:textSize="@dimen/menu_control_txt_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:focusable="false"
+                android:layout_width="@dimen/menu_control_txt_layout_width"
+                android:layout_height="@dimen/menu_control_txt_layout_height"
+                android:layout_marginLeft="@dimen/menu_control_txt_marginLeft"
+                android:gravity="center"
+                android:paddingLeft="@dimen/menu_control_txt_paddingLeft"
+                android:text="@string/shengdao_settings"
+                android:textSize="@dimen/menu_control_txt_size"/>
+
+            <TextView
+                android:textColor="#4B4B4B"
+                android:focusable="false"
+                android:id="@+id/menu_left_voice"
+                android:layout_width="@dimen/menu_control_txt_layout_width1"
+                android:layout_height="@dimen/menu_control_txt_layout_height"
+                android:layout_marginLeft="@dimen/menu_control_txt_marginLeft"
+                android:gravity="center"
+                android:text="@string/shengdao_left"
+                android:textSize="@dimen/menu_control_txt_size"/>
+
+            <TextView
+                android:textColor="#4B4B4B"
+                android:focusable="false"
+                android:id="@+id/menu_right_voice"
+                android:layout_width="@dimen/menu_control_txt_layout_width1"
+                android:layout_height="@dimen/menu_control_txt_layout_height"
+                android:gravity="center"
+                android:text="@string/shengdao_right"
+                android:textSize="@dimen/menu_control_txt_size"/>
+
+            <TextView
+                android:textColor="#4B4B4B"
+                android:focusable="false"
+                android:id="@+id/menu_stereo_voice"
+                android:layout_width="@dimen/menu_control_txt_layout_width1"
+                android:layout_height="@dimen/menu_control_txt_layout_height"
+                android:gravity="center"
+                android:paddingLeft="@dimen/menu_control_txt_paddingLeft"
+                android:text="@string/shengdao_liti"
+                android:textSize="@dimen/menu_control_txt_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:focusable="false"
+                android:layout_width="@dimen/menu_control_txt_layout_width"
+                android:layout_height="@dimen/menu_control_txt_layout_height"
+                android:layout_marginLeft="@dimen/menu_control_txt_marginLeft"
+                android:gravity="center"
+                android:paddingLeft="@dimen/menu_control_txt_paddingLeft"
+                android:text="@string/shipin_bili"
+                android:textSize="@dimen/menu_control_txt_size" />
+
+            <TextView
+                android:focusable="true"
+                android:id="@+id/menu_origin_scale"
+                android:layout_width="@dimen/menu_control_txt_layout_width1"
+                android:layout_height="@dimen/menu_control_txt_layout_height"
+                android:layout_marginLeft="@dimen/menu_control_txt_marginLeft"
+                android:gravity="center"
+                android:text="@string/shipin_origin"
+                android:textSize="@dimen/menu_control_txt_size"/>
+
+            <TextView
+                android:focusable="true"
+                android:id="@+id/menu_second_scale"
+                android:layout_width="@dimen/menu_control_txt_layout_width1"
+                android:layout_height="@dimen/menu_control_txt_layout_height"
+                android:gravity="center"
+                android:text="@string/shipin_second"
+                android:textSize="@dimen/menu_control_txt_size"/>
+<!--  
+            <TextView
+                android:focusable="true"
+                android:id="@+id/menu_third_scale"
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="@string/shipin_third"
+                android:textSize="26sp" />
+-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:focusable="false"
+                android:layout_width="@dimen/menu_control_txt_layout_width"
+                android:layout_height="@dimen/menu_control_txt_layout_height"
+                android:layout_marginLeft="@dimen/menu_control_txt_marginLeft"
+                android:gravity="center"
+                android:paddingLeft="@dimen/menu_control_txt_paddingLeft"
+                android:text="@string/ofen_watch_function"
+                android:textSize="@dimen/menu_control_txt_size" />
+
+            <TextView
+                android:focusable="true"
+                android:id="@+id/menu_offenwatch_open"
+                android:layout_width="@dimen/menu_control_txt_layout_width1"
+                android:layout_height="@dimen/menu_control_txt_layout_height"
+                android:layout_marginLeft="@dimen/menu_control_txt_marginLeft"
+                android:gravity="center"
+                android:text="@string/ofen_watch_open"
+                android:textSize="@dimen/menu_control_txt_size"/>
+
+            <TextView
+                android:focusable="true"
+                android:id="@+id/menu_offenwatch_close"
+                android:layout_width="@dimen/menu_control_txt_layout_width1"
+                android:layout_height="@dimen/menu_control_txt_layout_height"
+                android:gravity="center"
+                android:text="@string/ofen_watch_close"
+                android:textSize="@dimen/menu_control_txt_size"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/menu_selected_bg"
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/white_boder"
+        />
+    
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:layout_width="@dimen/menu_control_adv_layout_width"
+        android:layout_height="@dimen/menu_control_adv_layout_height"
+        android:layout_below="@id/menu_control"
+        android:layout_marginLeft="@dimen/menu_control_txt_marginLeft"
+        android:background="@drawable/menu_control_ads" />
+
+</RelativeLayout>

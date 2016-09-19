@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+      android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bg1"
+        android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="54dip"
+        android:layout_marginTop="0dip"
+        android:gravity="center"
+        android:text="@string/search_prog"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" >
+    </TextView>
+
+    <Button
+        android:id="@+id/search_subbtn1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="80dip"
+        android:background="@drawable/searchmenu_btn"
+        android:text="@string/auto_serach"
+        android:textColor="@color/white"
+        android:textSize="24sp" >
+
+        <requestFocus />
+    </Button>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="2dp"
+        android:background="#46a1a1a1" />
+
+    <Button
+        android:id="@+id/search_subbtn2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/searchmenu_btn"
+        android:text="@string/menul_search"
+        android:textColor="@color/white"
+        android:textSize="24sp" >
+    </Button>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="2dp"
+        android:background="#46a1a1a1" />
+
+    <Button
+        android:id="@+id/search_subbtn3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/searchmenu_btn"
+        android:text="@string/all_serach"
+        android:textColor="@color/white"
+        android:textSize="24sp" >
+    </Button>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="2dp"
+        android:background="#46a1a1a1" />
+</LinearLayout>
+</LinearLayout>

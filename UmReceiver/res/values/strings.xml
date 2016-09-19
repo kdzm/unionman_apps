@@ -1,0 +1,17 @@
+<resources>
+
+    <string name = "program_data_error">Failed to get show information！</string>
+    <string name = "opera_fail">Failed to get operators！</string>
+    <string name="app_name">UmReceiver</string>
+    <string name="update_success">Update success!</string>
+    <string name="insert_card">Please insert smart card!</string>
+    <string name="check_cable">Please check the signal!</string>
+    <string name="over_time">License expired!</string>
+    <string name="sys_time">The system time is wrong！</string>
+    <string name="ca_ok">ca_ok</string>
+    <string name="have_no_package">There is no 50 packets</string>
+    <string name="nit_version_change_tips">Program had change，search or not？</string>
+    <string name="altert_dialog_title">Warm tips</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+</resources>

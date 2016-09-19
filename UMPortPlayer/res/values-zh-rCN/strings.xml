@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UMPortPlayer</string>
+    <string name="channellist">频道列表</string>
+
+    <!-- >Search < -->
+    <string name="autoscan">自动搜台</string>
+    <string name="finetune">频道微调</string>
+    <string name="manual_search">手动搜台</string>
+    <string name="frequency_channel">频道数：</string>
+    <string name="frequency_rate">频率：</string>
+    <string name="frequency_band">频段：</string>
+    <string name="channel_string">当前频道：</string>
+    <string name="channel_number">0</string>
+    <string name="band_val">VHF-L</string>
+    <string name="auto_scanning">自动搜台中,请稍后......</string>
+
+    <!-- > Image mode < -->
+
+    <string name="picmode_standard_string">标准</string>
+    <string name="picmode_vivid_string">亮丽</string>
+    <string name="picmode_softness_string">柔和</string>
+    <string name="picmode_user_string">自设</string>
+
+    <!-- > Color temperature < -->
+    <string name="clrtmp_nature_string">标准</string>
+    <string name="clrtmp_warm_string">暖色</string>
+    <string name="clrtmp_cool_string">冷色</string>
+
+    <!-- >ASPECT< -->
+    <string name="aspect_auto_string">自动</string>
+    <string name="aspect_16_9_string">16:9</string>
+    <string name="aspect_4_3_string">4:3</string>
+    <string name="aspect_point2point_string">点对点</string>
+    <string name="aspect_panorama_string">全景</string>
+    <string name="aspect_zoom_string">人物</string>
+    <string name="aspect_zoom1_string">放大1</string>
+    <string name="aspect_zoom2_string">放大2</string>
+    <string name="aspect_cinema_string">电影</string>
+    <string name="aspect_subtitle_string">字幕</string>
+    <!-- Motion compensation mode -->
+    <string name="memc_off">普通模式</string>
+    <string name="memc_low">流畅模式1</string>
+    <string name="memc_mid">流畅模式2</string>
+    <string name="memc_high">流畅模式3</string>
+
+    <!-- >set on or off< -->
+    <string name="on">开</string>
+    <string name="off">关</string>
+    <string name="demo_string">分屏演示</string>
+
+    <!-- Support color correction -->
+    <string name="weak_string">弱</string>
+    <string name="low_string">低</string>
+    <string name="middle_string">中</string>
+    <string name="high_string">强</string>
+
+    <!-- >MenuOf3D model< -->
+    <string name="menuof_2dto3d_string">2D转3D</string>
+    <string name="menuof3d_leftright_string">左右</string>
+    <string name="menuof3d_updown_string">上下</string>
+    <string name="menuof3d_auto_string">自动</string>
+    <string name="menuof3d_frame_string">帧序列</string>
+    <string name="menuof3d_checkbox_string">checkbox</string>
+    <string name="menuof3d_line_string">line-alternative</string>
+    <string name="menuof3d_field_string">field-alternative</string>
+    <string name="menuof3d_frame2_string">frame-alternative</string>
+    <!-- >The sound mode setting< -->
+    <string name="sndmode_standard_string">标准</string>
+    <string name="sndmode_dialog_string">新闻</string>
+    <string name="sndmode_music_string">音乐</string>
+    <string name="sndmode_movie_string">电影</string>
+    <string name="sndmode_onsite1_string">临场1</string>
+    <string name="sndmode_onsite2_string">临场2</string>
+    <string name="sndmode_user_string">自设</string>
+    <string name="auto_adjust">>></string>
+
+    <!-- >SPDIF out put< -->
+    <string name="spdif_pcm_string">PCM</string>
+    <string name="spdif_rawdata_string">RAW</string>
+
+    <!-- Standard color settings< -->
+    <string name="clrsys_pal_string">PAL</string>
+    <string name="clrsys_ntsc_string">NTSC</string>
+
+    <!-- Voice system settings< -->
+    <string name="audsys_DK_string">DK</string>
+    <string name="audsys_I_string">I</string>
+    <string name="audsys_BG_string">BG</string>
+    <string name="audsys_M_string">M</string>
+
+    <!-- > Change the channel mode< -->
+    <string name="ModeEnable_string">静帧</string>
+    <string name="DisModeEnable_string">标准</string>
+    <string name="setting_iamge">图像设置</string>
+    <string name="setting_voice">声音设置</string>
+    <string name="setting_3d">3D设置</string>
+    <string name="setting_ch">频道设置</string>
+    <string name="setting_senior">高级设置</string>
+    <string name="setting_market">卖场模式</string>
+    <string name="title_activity_audio">AudioActivity</string>
+    <string name="title_activity_disp">DispActivity</string>
+
+    <!-- Signal source -->
+    <string name="DVBC">有线数字</string>
+    <string name="DTMB">无线数字</string>
+    <string name="ATV">模拟电视</string>
+    <string name="CVBS">视频</string>
+    <string name="CVBS1">视频1</string>
+    <string name="CVBS2">视频2</string>
+    <string name="CVBS3">视频3</string>
+    <string name="YPBPR">分量</string>
+    <string name="YPBPR1">分量1</string>
+    <string name="YPBPR2">分量2</string>
+    <string name="HDMI1">HDMI1</string>
+    <string name="HDMI2">HDMI2</string>
+    <string name="HDMI3">HDMI3</string>
+    <string name="HDMI4">HDMI4</string>
+    <string name="VGA">电脑</string>
+
+    <!-- no_signal -->
+    <string name="no_signal">无信号</string>
+	<string name="signal_nosupport">信号不支持</string>
+    <!-- xml Public string resources -->
+    <string name="adjust_failed">自动调整失败！</string>
+    <string name="adjust_success">自动调整成功！</string>
+    <string name="sure">确定</string>
+    <string name="exit">退出</string>
+    <string name="text">text</string>
+
+    <string name="all_scan_freq_rate">%1$s MHz</string>
+    <string name="toast_start_factory_failed">启动工厂菜单失败！</string>
+    
+     <string name="stereo">立体声</string>
+	   <string name="joint_stereo">联合立体声 </string>
+	   <string name="left_track">左声道</string>
+	   <string name="right_track">右声道</string>
+</resources>

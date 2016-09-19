@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/launcher_bg" >
+	
+
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dip"
+        android:layout_marginRight="40dip"
+        android:gravity="center_vertical|right">
+        
+        <com.um.launcher.weather.WeatherView
+          android:id="@+id/weather_view"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          >
+    	</com.um.launcher.weather.WeatherView>
+    
+       <com.um.launcher.view.DigitalClock
+          android:id="@+id/digitalClock"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dip"
+          android:focusable="false"
+          android:focusableInTouchMode="false"
+          android:shadowColor="#000"
+          android:shadowDx="2"
+          android:shadowDy="2"
+          android:shadowRadius="1"
+          android:textColor="#fff"
+          android:textSize="24sp" />
+            
+      <ImageView
+        android:id="@+id/interactive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:background="@drawable/interactive_no_connect"
+        android:scaleX="0.9"
+        android:scaleY="1.0" />
+           
+    <ImageView
+        android:id="@+id/wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:background="@drawable/wifi_signal_off"
+        android:scaleX="0.9"
+        android:scaleY="1.0" />
+
+     <ImageView
+        android:id="@+id/usb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/page_usb"
+        android:visibility="invisible" />
+ </LinearLayout>
+         
+    <!--<com.um.launcher.view.ScrollLayout-->
+        <!--android:id="@+id/root"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent" >-->
+
+       <!--
+        <com.um.launcher.view.MainPageTv
+            android:id="@+id/tv_page"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.um.launcher.view.MainPageTv>
+        -->
+		<!--
+        <com.um.launcher.view.MainPageMovie
+            android:id="@+id/movie_page"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.um.launcher.view.MainPageMovie>
+        -->
+
+        <fragment
+            android:id="@+id/first_page"
+            android:name="com.um.launcher.MainPageFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        </fragment>
+
+        <!--<com.um.launcher.view.MainPageEducation-->
+            <!--android:id="@+id/education_page"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent" >-->
+        <!--</com.um.launcher.view.MainPageEducation>-->
+
+        <!--<com.um.launcher.view.MainPageGame-->
+            <!--android:id="@+id/game_page"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent" >-->
+        <!--</com.um.launcher.view.MainPageGame>-->
+
+        <!--<com.um.launcher.view.MainPageApp-->
+            <!--android:id="@+id/app_page"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent" >-->
+        <!--</com.um.launcher.view.MainPageApp>-->
+		<!--
+        <com.um.launcher.view.MainPageSetting
+            android:id="@+id/set_page"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.um.launcher.view.MainPageSetting>
+        -->
+    <!--</com.um.launcher.view.ScrollLayout>-->
+
+    <ImageView
+        android:id="@+id/bg_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="500dp"
+        android:visibility="visible" />
+</RelativeLayout>

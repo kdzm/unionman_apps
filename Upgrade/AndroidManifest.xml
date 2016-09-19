@@ -1,0 +1,97 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.um.upgrade"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:sharedUserId="android.uid.system">
+
+    <uses-sdk
+        android:minSdkVersion="17" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission android:name="unionman.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="unionman.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED" />
+    <uses-permission android:name="unionman.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+
+    <application
+        android:icon="@drawable/upgrade_icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+        android:name="com.um.upgrade.base.MyApp">
+        <activity
+            android:name=".NetworkUpgradeMainActivity"
+            android:launchMode="singleTask"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.um.upgrade.NetworkUpgradePromptActivity"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"
+            android:label="@string/title_activity_network_upgrade_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.um.networkupgrad.Prompt" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.um.upgrade.CableUserManualUpgrade"/>
+
+        <activity android:name="com.um.upgrade.CableManualUpgradeReminderActivity"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"/>
+
+        <activity android:name="com.um.upgrade.CableForceUpgradeReminderActivity"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"/>
+
+        <activity android:name="com.um.upgrade.CableUpgradeActivity" />
+        
+        <activity android:name="com.um.upgrade.NetworkForceUpgradePromptActivity"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"/>
+
+        <activity android:name="com.um.upgrade.RecoveryUpgradeActivity"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"/>
+
+        <receiver android:name="com.um.upgrade.UsbUpgradeReceiver" >
+			<intent-filter>
+				<action android:name="android.intent.action.MEDIA_MOUNTED" />
+
+				<data android:scheme="file" />
+
+				<action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+
+				<data android:scheme="file" />
+			</intent-filter>
+		</receiver>
+
+        <receiver android:name="com.um.upgrade.CableUpgradeReceiver"
+            android:process="com.um.upgrade.receiver">
+            <intent-filter>
+                <action android:name="com.um.upgrade.CABLE_FORCE_UPGRADE"/>
+                <action android:name="com.um.upgrade.CABLE_MANUAL_UPGRADE"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.um.upgrade.DownLoadCompleteReceiver"
+            android:process="com.um.upgrade.receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

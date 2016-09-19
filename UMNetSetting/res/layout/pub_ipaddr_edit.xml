@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:text="@string/ip" />
+
+    <com.unionman.netsetup.util.LineEditText
+        android:id="@+id/et_ipaddr1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:selectAllOnFocus="true"
+        android:background="@android:color/transparent"
+        android:textColor="@drawable/item_text_color" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" 
+        android:textColor="#FFFFFF"
+        android:text="@string/spot"           
+        />
+
+    <com.unionman.netsetup.util.LineEditText
+        android:id="@+id/et_ipaddr2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:selectAllOnFocus="true"
+        android:textColor="@drawable/item_text_color" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" 
+        android:textColor="#FFFFFF"
+        android:text="@string/spot"           
+        />
+    <com.unionman.netsetup.util.LineEditText
+        android:id="@+id/et_ipaddr3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:selectAllOnFocus="true"
+        android:textColor="@drawable/item_text_color" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" 
+        android:textColor="#FFFFFF"
+        android:text="@string/spot"           
+        />
+    <com.unionman.netsetup.util.LineEditText
+        android:id="@+id/et_ipaddr4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:selectAllOnFocus="true"
+        android:textColor="@drawable/item_text_color" />s
+
+</LinearLayout>

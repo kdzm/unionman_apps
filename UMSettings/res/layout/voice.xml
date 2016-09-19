@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sw="http://schemas.android.com/apk/res/com.unionman.settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+    
+    
+    <TextView
+        style="@style/title"
+        android:text="@string/display_sound_voice" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@+id/hdmimode_id"
+        style="@style/checkRadioButton_normal"
+        android:nextFocusUp="@+id/spdifmode_id"
+        android:nextFocusDown="@+id/spdifmode_id"
+        sw:hasImage="false"
+        sw:text1="@string/display_sound_hdmi" 
+        sw:text2=""/>
+ 
+ 	<include layout="@layout/divider" />
+
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@+id/spdifmode_id"
+        style="@style/checkRadioButton_normal"
+        android:nextFocusUp="@+id/hdmimode_id"
+        android:nextFocusDown="@+id/hdmimode_id"
+        sw:hasImage="false"
+        sw:text1="@string/display_sound_spdif"
+        sw:text2="" />
+    
+     <include layout="@layout/divider" />
+
+</LinearLayout>

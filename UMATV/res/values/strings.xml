@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UMATV</string>
+    <string name="channellist">Channel List</string>
+    <string name="move_channel_message">confirm to move the channel</string>
+    <string name="delet_channel_message">confirm to delete the channel</string>
+    <string name="move_channel_ok">ok</string>
+    <string name="move_channel_cancel">cancel</string>
+    <string name="tips_info_text">move the move-icon to the place you want,then prass backbutton to confirm </string>
+    <!-- >Search < -->
+    <string name="autoscan">Auto Search</string>
+    <string name="finetune">Fine tune</string>
+    <string name="manual_search">Manual Search</string>
+    <string name="frequency_channel">Channel Num :</string>
+    <string name="frequency_rate">Freq :</string>
+    <string name="frequency_band">Band :</string>
+    <string name="channel_string">Current Channel :</string>
+    <string name="save_channel_string">Save Channel :</string>
+    <string name="save_string">Save</string>
+    <string name="save_success">Save success</string>
+    <string name="save_failure">Save failure</string>
+    <string name="recover_finetune">Parameter is not saved</string>
+    <string name="invalid_number">Invalid program number</string>
+    <string name="change_invalid_number">Use default number because of invalid program number</string>
+    <string name="channel_number">0</string>
+    <string name="band_val">VHF-L</string>
+    <string name="auto_scanning">Auto Scanning,please wait......</string>
+
+    <!-- > Image mode < -->
+
+    <string name="picmode_standard_string">Standard</string>
+    <string name="picmode_vivid_string">Vivid</string>
+    <string name="picmode_softness_string">Soft</string>
+    <string name="picmode_user_string">User</string>
+
+    <!-- > Color temperature < -->
+    <string name="clrtmp_nature_string">Standard</string>
+    <string name="clrtmp_warm_string">Warm</string>
+    <string name="clrtmp_cool_string">Cool</string>
+
+    <!-- >ASPECT< -->
+    <string name="aspect_auto_string">Auto</string>
+    <string name="aspect_16_9_string">16:9</string>
+    <string name="aspect_4_3_string">4:3</string>
+    <string name="aspect_point2point_string">Ponit.Ponit</string>
+    <string name="aspect_panorama_string">Panorama</string>
+    <string name="aspect_zoom_string">Charater</string>
+    <string name="aspect_zoom1_string">Zoom1</string>
+    <string name="aspect_zoom2_string">Zoom2</string>
+    <string name="aspect_cinema_string">Film</string>
+    <string name="aspect_subtitle_string">Subtitles</string>
+    <!-- Motion compensation mode -->
+
+    <string name="memc_off">Normal</string>
+    <string name="memc_low">Smooth1</string>
+    <string name="memc_mid">Smooth2</string>
+    <string name="memc_high">Smooth3</string>
+
+    <!-- >set on or off< -->
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="demo_string">Split Demo</string>
+
+    <!-- Support color correction -->
+    <string name="weak_string">WEAK</string>
+    <string name="low_string">LOW</string>
+    <string name="middle_string">MID</string>
+    <string name="high_string">Strong</string>
+
+    <!-- >MenuOf3D Model< -->
+    <string name="menuof_2dto3d_string">2DTO3D</string>
+    <string name="menuof3d_leftright_string">Left-Right</string>
+    <string name="menuof3d_updown_string">Up-Down</string>
+    <string name="menuof3d_auto_string">Auto</string>
+    <string name="menuof3d_frame_string">Frames Sequence</string>
+    <string name="menuof3d_checkbox_string">checkbox</string>
+    <string name="menuof3d_line_string">line-alternative</string>
+    <string name="menuof3d_field_string">field-alternative</string>
+    <string name="menuof3d_frame2_string">frame-alternative</string>
+    <!-- >The sound mode setting< -->
+    <string name="sndmode_standard_string">Standard</string>
+    <string name="sndmode_dialog_string">News</string>
+    <string name="sndmode_music_string">Music</string>
+    <string name="sndmode_movie_string">Movie</string>
+    <string name="sndmode_onsite1_string">Hoc1</string>
+    <string name="sndmode_onsite2_string">Hoc2</string>
+    <string name="sndmode_user_string">User</string>
+    <string name="auto_adjust">>></string>
+
+    <!-- >SPDIF out put< -->
+    <string name="spdif_pcm_string">PCM</string>
+    <string name="spdif_rawdata_string">RAW</string>
+
+    <!-- Standard color settings< -->
+    <string name="clrsys_pal_string">PAL</string>
+    <string name="clrsys_ntsc_string">NTSC</string>
+
+    <!-- Voice system settings< -->
+    <string name="audsys_DK_string">DK</string>
+    <string name="audsys_I_string">I</string>
+    <string name="audsys_BG_string">BG</string>
+    <string name="audsys_M_string">M</string>
+
+    <!-- > Change the channel mode< -->
+    <string name="ModeEnable_string">Standard</string>
+    <string name="DisModeEnable_string">Freeze</string>
+    <string name="setting_iamge">Pictrue Setup</string>
+    <string name="setting_voice">Sound Setup</string>
+    <string name="setting_3d">3D Setup</string>
+    <string name="setting_ch">Channel Setup</string>
+    <string name="setting_senior">Advance</string>
+    <string name="setting_market">Demo Mode</string>
+    <string name="title_activity_audio">AudioActivity</string>
+    <string name="title_activity_disp">DispActivity</string>
+
+    <!-- Signal source -->
+    <string name="DVBC">DVB-C</string>
+    <string name="DTMB">DTMB</string>
+    <string name="ATV">ATV</string>
+    <string name="CVBS1">AV1</string>
+    <string name="CVBS2">AV2</string>
+    <string name="YPBPR1">YPbPr</string>
+    <string name="HDMI1">HDMI1</string>
+    <string name="HDMI2">HDMI2</string>
+    <string name="HDMI3">HDMI3</string>
+    <string name="VGA">VGA</string>
+
+    <!-- no signal -->
+    <string name="no_signal">No Signal</string>
+
+    <!-- xml Public string resources -->
+
+    <string name="adjust_ting">Auto Adjusting ...</string>
+    <string name="adjust_failed">Auto Adjust Failure!</string>
+    <string name="adjust_success">Auto Adjust Success!</string>
+    <string name="sure">OK</string>
+    <string name="exit">Exit</string>
+    <string name="text">text</string>
+    <string name="all_scan_freq_rate">%1$s MHz</string>
+    <string name="toast_start_factory_failed">Start Factory Failed!</string>
+    <string name="title_activity_recent">RecentActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="channel_edit_list">Channel Edit</string>
+    <string name="channel_name">Chann.name</string>
+    <string name="channel_skip">Skip</string>
+    <string name="channel_move">Move</string>
+    <string name="channel_delete">Dele</string>
+    <string name="channel_enjoy">Like</string>
+    <string name="channel_back">Back</string>
+    <string name="channel_rename">Rename</string>
+    <string name="signal_quality">Signal Quality:</string>
+    <string name="track">Track:</string>
+    <string name="resolution">Resolution:</string>
+    <string name="colorformat">Color Format:</string>
+    <string name="soundformat">Sound Format:</string>
+    
+    	<string name="picmode_string">Picture Mode</string>
+     	<string name="soundmode_string">Sound Mode</string>   
+        <string name="pic_display_mode_string">Display Mode</string> 
+        
+    <string name="channellist_null">Channel list is empty</string>
+    <string name="tip">Tip</string>	
+    
+    <string name="stereo">Stereo</string>
+	<string name="joint_stereo">Joint Stereo</string>
+	<string name="left_track">Left Track</string>
+	<string name="right_track">Right Track</string>	
+</resources>

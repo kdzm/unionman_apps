@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/item_padding_bottom"
+    android:paddingTop="@dimen/item_padding_top" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="@dimen/name_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:gravity="left|center_vertical"
+        android:textColor="@drawable/value_text_color"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/tv_title_size" />
+
+    <RelativeLayout
+        android:id="@+id/layout_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:background="@drawable/item_select"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/iv_previous_description"
+            android:src="@drawable/previous_drawable" />
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textColor="@drawable/value_text_color"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/tv_content_size" />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/iv_next_description"
+            android:src="@drawable/next_drawable" />
+    </RelativeLayout>
+
+</LinearLayout>

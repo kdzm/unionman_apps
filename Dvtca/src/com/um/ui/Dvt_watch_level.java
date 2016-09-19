@@ -1,0 +1,159 @@
+package com.um.ui;
+
+import com.um.dvtca.R;
+import com.um.dvbstack.Ca;
+import com.um.dvbstack.DVB;
+import com.um.dvbstack.Ca.Ca_Rating;
+import com.um.controller.AppBaseActivity;
+import android.app.AlertDialog;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class Dvt_watch_level extends AppBaseActivity{
+	private final String TAG = "Dvt_watch_level";
+	private Button enter_btn;
+	private EditText rate;
+	private EditText pin;
+	
+    private boolean getCardStatus(){
+    	Ca ca = new Ca(DVB.getInstance());
+    	boolean []cardStatus = new boolean[1];
+    	
+    	int ret = ca.CaGetCardStatus(cardStatus);
+    	Log.d(TAG, "ret:" +ret);
+    	Log.d(TAG, "cardStatus[0]:" +cardStatus[0]);
+    	return cardStatus[0];
+    }
+	
+	@Override
+	
+	public void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.dvt_watch_level);
+		
+		Ca ca = new Ca(DVB.getInstance());
+		Ca_Rating ca_rating = new Ca_Rating();
+		int ret = ca.CaGetRating(ca_rating);
+		Log.i("Dvt_watch_level","watch rating:"+String.valueOf(ca_rating.carating));
+		if(ret != 0){
+			new AlertDialog.Builder(Dvt_watch_level.this)
+			.setMessage(R.string.got_info_fail)
+			.setPositiveButton("ok", null)
+			.show();
+			return;
+		}
+	    rate = (EditText)findViewById(R.id.editText2);
+	    rate.setText(String.valueOf(ca_rating.carating[0]));
+	    rate.setSelection(rate.getText().toString().length());
+	    
+		pin = (EditText)findViewById(R.id.editText1);
+		pin.setText(pin.getText().toString());
+		pin.setSelection(pin.getText().toString().length());
+		
+		/*button*/
+		enter_btn = (Button)findViewById(R.id.button1);
+		
+		enter_btn.setText(R.string.ok);
+		
+		enter_btn.setOnClickListener(new Button.OnClickListener()
+		{
+			public void onClick(View arg0) {
+				
+				if(getCardStatus() != true){
+					new AlertDialog.Builder(Dvt_watch_level.this)
+					.setMessage(R.string.ca_insert_card)
+					.setPositiveButton("ok", null)
+					.show();
+					return;
+				}
+				if(String.valueOf(rate.getText()).isEmpty()){
+//					new AlertDialog.Builder(Dvt_watch_level.this)
+//					.setMessage(R.string.watch_level_3_18)
+//					.setPositiveButton("ok", null)
+//					.show();
+                    Toast.makeText(Dvt_watch_level.this, getResources().getText(R.string.watch_level_3_18), Toast.LENGTH_LONG).show();
+					return;
+				}
+				
+				Ca ca = new Ca(DVB.getInstance());
+				
+				int rate_value = Integer.parseInt(String.valueOf(rate.getText()));
+				Log.i("CA","CA rate_value:"+rate_value);
+				if((rate_value < 3) || (rate_value > 18))
+				{
+//					new AlertDialog.Builder(Dvt_watch_level.this)
+//					.setMessage(R.string.watch_level_3_18)
+//					.setPositiveButton("ok", null)
+//					.show();
+                    Toast.makeText(Dvt_watch_level.this, getResources().getText(R.string.watch_level_3_18), Toast.LENGTH_LONG).show();
+					return;
+				}	
+				
+				String str = String.valueOf(pin.getText());
+				byte[] temp1 = str.getBytes();	
+				Log.i("CA","CA str:"+str);	
+				
+				if(temp1.length != 8){
+//					new AlertDialog.Builder(Dvt_watch_level.this)
+//					.setMessage(R.string.pin_len_err)
+//					.setPositiveButton("ok", null)
+//					.show();
+                    Toast.makeText(Dvt_watch_level.this, getResources().getText(R.string.pin_len_err), Toast.LENGTH_LONG).show();
+					return;
+				}
+				
+				int ret = ca.CaVerifyPin(temp1,8);
+				Log.i(TAG, "ca.CaVerifyPin, ret:"+ret);
+				if(0x8000002c == ret){
+//					new AlertDialog.Builder(Dvt_watch_level.this)
+//					.setMessage(R.string.dvt_pin_err)
+//					.setPositiveButton("ok", null)
+//					.show();
+                    Toast.makeText(Dvt_watch_level.this, getResources().getText(R.string.dvt_pin_err), Toast.LENGTH_LONG).show();
+					return;
+				}else if(0x8000002d == ret){
+//					new AlertDialog.Builder(Dvt_watch_level.this)
+//					.setMessage(R.string.pin_is_locked)
+//					.setPositiveButton("ok", null)
+//					.show();
+                    Toast.makeText(Dvt_watch_level.this, getResources().getText(R.string.pin_is_locked), Toast.LENGTH_LONG).show();
+					return;
+				}
+
+				// TODO Auto-generated method stub
+				
+				if(ca.CaSetRate(rate_value,temp1,8) != 0)
+				{
+					Log.i("CA","CA CaSetRate:"+8);	
+//					new AlertDialog.Builder(Dvt_watch_level.this)
+//					.setMessage(R.string.dvt_change_watch_level_error)
+//					.setPositiveButton("ok", null)
+//					.show();
+                    Toast.makeText(Dvt_watch_level.this, getResources().getText(R.string.dvt_change_watch_level_error), Toast.LENGTH_LONG).show();
+				}
+				else
+				{
+//					new AlertDialog.Builder(Dvt_watch_level.this)
+//					.setMessage(R.string.dvt_change_watch_level_right)
+//					.setPositiveButton("ok", null)
+//					.show();
+                    Toast.makeText(Dvt_watch_level.this, getResources().getText(R.string.dvt_change_watch_level_right), Toast.LENGTH_LONG).show();
+				}
+			}
+			}
+		);
+
+        setAutoFinish(Constant.AUTO_FINISH_WAIT_TIME_SHORT, null);
+	}
+	
+	@Override
+	protected void onPause(){
+        super.onPause();
+        finish();
+	}
+	
+}

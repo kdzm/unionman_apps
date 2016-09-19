@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sw="http://schemas.android.com/apk/res/com.unionman.settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/network_dhcp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@id/et_eth_dhcp_user_lable"
+            android:layout_width="170.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/network_pppoe_username"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <EditText
+            android:id="@id/et_eth_dhcp_user"
+            style="@style/edit_short_2"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:nextFocusUp="@id/et_eth_dhcp_user"
+            android:editable="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@id/et_eth_dhcp_pass_lable"
+            android:layout_width="170.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/network_pppoe_password"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <EditText
+            android:id="@id/et_eth_dhcp_pswd"
+            style="@style/edit_short_2"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:password="false"
+            android:editable="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center_vertical" >
+
+        <CheckBox
+            android:id="@id/eth_dhcp_option60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/selector_btn_check"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:paddingLeft="50.0dip"
+            android:text="@string/network_dhcp_option60" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210.0dip"
+        android:layout_marginTop="60.0dip" >
+
+        <Button
+            android:id="@id/btn_eth_dhcp_ok"
+            style="@style/button"
+            android:nextFocusDown="@id/btn_eth_dhcp_ok"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:text="@string/confirm" />
+
+        <!--<Button-->
+            <!--android:id="@id/btn_eth_dhcp_cancel"-->
+            <!--style="@style/button"-->
+            <!--android:layout_marginLeft="20.0dip"-->
+            <!--android:nextFocusDown="@id/btn_eth_dhcp_cancel"-->
+            <!--android:text="@string/cancel" />-->
+    </LinearLayout>
+
+    <include layout="@layout/inputts" />
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical" >   
+<LinearLayout 
+    android:id="@+id/dailogbg"
+    android:layout_width="900dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_dialog_bg"
+    android:orientation="vertical"
+    >
+  <!--android:layout_gravity="center"  -->
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"      
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center" >
+		<ImageView
+		    android:id="@+id/back_img"
+	            android:layout_width="60dp"
+	            android:layout_height="60dp"
+	            android:layout_marginRight="10dp"
+	            android:background="@drawable/info"
+            	/>
+        <TextView
+            android:id="@+id/back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/file_info"
+            android:textColor="@color/white"
+            android:textSize="44sp" />
+
+    </LinearLayout>
+    <ImageView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="30dp"
+	            android:background="@drawable/dvb_title_line"
+            	/>
+    <RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="60dp"
+    android:layout_marginBottom="60dp"
+    android:padding="20dp">
+    <TextView android:layout_width="170dp" 
+        android:layout_height="wrap_content"
+        android:textSize="48px" 
+        android:text="@string/file_info_name"
+        android:gravity="right" 
+        android:id="@+id/file_name_title" />
+    <TextView android:layout_width="400dp" 
+        android:layout_height="wrap_content"
+        android:textSize="48px" 
+        android:gravity="left" 
+        android:id="@+id/file_name"
+        android:layout_toRightOf="@id/file_name_title" />
+    
+    <TextView android:layout_width="170dp" 
+        android:layout_height="wrap_content"
+        android:textSize="48px" 
+        android:text="@string/file_info_type"
+        android:gravity="right" 
+        android:id="@+id/file_type_title"
+        android:layout_below="@id/file_name" />
+    <TextView android:layout_width="400dp" 
+        android:layout_height="wrap_content"
+        android:textSize="48px" 
+        android:gravity="left"
+        android:layout_alignTop="@id/file_type_title" 
+        android:id="@+id/file_type"
+        android:layout_toRightOf="@id/file_type_title" />
+    
+    <TextView android:layout_width="170dp" 
+        android:layout_height="wrap_content"
+        android:textSize="48px" 
+        android:text="@string/file_info_size"
+        android:gravity="right" 
+        android:id="@+id/file_size_title"
+        android:layout_below="@id/file_type" />
+    <TextView android:layout_width="400dp" 
+        android:layout_height="wrap_content"
+        android:textSize="48px" 
+        android:gravity="left"
+        android:layout_alignTop="@id/file_size_title" 
+        android:id="@+id/file_size"
+        android:layout_toRightOf="@id/file_size_title" />
+   
+    <TextView android:layout_width="170dp"
+        android:layout_height="wrap_content" 
+        android:textSize="48px"
+        android:text="@string/file_info_picsize" 
+        android:gravity="right"
+        android:id="@+id/file_picsize_title"
+        android:layout_below="@id/file_size" /> 
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:textSize="48px"
+        android:gravity="left" 
+        android:layout_alignTop="@id/file_picsize_title"
+        android:id="@+id/file_picsize"
+        android:layout_toRightOf="@id/file_picsize_title" />
+    
+    <TextView android:layout_width="170dp" 
+        android:layout_height="wrap_content"
+        android:textSize="48px" 
+        android:text="@string/file_info_modify_time"
+        android:gravity="right" 
+        android:id="@+id/file_modify_title"
+        android:layout_below="@id/file_picsize" />
+    <TextView android:layout_width="400dp" 
+        android:layout_height="wrap_content"
+        android:textSize="48px" 
+        android:gravity="left"
+        android:layout_alignTop="@id/file_modify_title" 
+        android:id="@+id/file_modify"
+        android:layout_toRightOf="@id/file_modify_title" />
+</RelativeLayout>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/date_ntp_set" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:layout_marginTop="70.0dip"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@id/date_ntp_server"
+            style="@style/edit_long"
+            android:nextFocusDown="@id/date_ntp_server"
+            android:nextFocusUp="@id/date_ntp_server" />
+
+        <Button
+            android:id="@id/btn_ntp"
+            style="@style/button"
+            android:layout_marginLeft="50.0dip"
+            android:nextFocusDown="@id/btn_ntp"
+            android:nextFocusUp="@id/btn_ntp"
+            android:text="@string/confirm" />
+    </LinearLayout>
+
+    <include layout="@layout/inputts" />
+
+</LinearLayout>

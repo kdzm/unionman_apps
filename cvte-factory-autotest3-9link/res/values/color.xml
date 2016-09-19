@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="Enable">#E0787878</color>
+    <color name="WHITE">#FFFFFFFF</color>
+    <color name="RED">#FFFF0000</color>
+    <color name="BACKBLUE">#3280A0</color>
+    <color name="DIALOG_BACKBLUE">#b6e7fb</color>
+    <color name="PASS">#00000000</color>
+    <color name="LIGHT_GREEN">#FF00FF00</color>
+    <color name="PASSCOLOR">#00000000</color>
+
+    <drawable name="tv_background">#00000000</drawable>
+
+</resources>

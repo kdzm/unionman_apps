@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">DVB城市选择</string>
+    <string name="explain">说明</string>
+    <string name="city_setting">城市设置</string>
+    <string name="city_setting_tip"> ● 选择你所在的城市</string>
+    <string name="cancle">取消</string>
+    <string name="ok">确定</string>
+    <string name="more_time_to_exit">再按一次退出程序</string>
+    <string name="install_success">安装成功</string>
+    <string name="install_fail">安装失败</string>
+    <string name="uninstall_success">卸载成功</string>
+    <string name="uninstall_fail">卸载失败</string>
+
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_prompt">提示</string>
+    <string name="dialog_no_ca_card">无CA卡</string>
+    <string name="dialog_city_not_support">不支持的城市</string>
+    <string name="city_not_support">暂不支持此城市，有线电视的某些功能可能受限；\n除有线电视之外的其他功能不会受到影响，\n所以你仍然可以执行下一步操作或跳过这一步</string>
+    <string name="ca_not_found_tips">你没有插入CA卡，有线电视的某些功能可能受限；\n你可以插入CA卡打开有线电视的所有功能；\n如果没有CA卡或暂时不想使用有线电视功能，\n你仍然可以执行下一步操作或跳过这一步</string>
+    <string name="city_dvb_installing_title">正在安装DVB服务,请稍候…</string>
+    <string name="city_dvb_installing_content">正在安装DVB服务… \n强烈建议你在安装过程中不要退出该程序，安装完成后会自动退出。</string>
+    <string name="city_already_install_title">你已安装该城市DVB服务</string>
+    <string name="city_already_install_msg">你已安装该城市DVB服务,无需再安装。</string>
+    <string name="city_install_success_title">DVB服务已安装完成</string>
+    <string name="city_install_success_msg">DVB服务已安装完成，程序即将退出。</string>
+    <string name="city_install_failed_title">DVB服务安装失败</string>
+    <string name="city_install_failed_msg">发生未知错误，DVB服务安装失败，请退出程序然后重试。\n如果仍然安装失败，请重启之后重试。</string>
+    <string name="city_fix_install_title">DVB服务组件不完整</string>
+    <string name="city_fix_install_msg">DVB服务组件相关的某些应用可能已经被删除，这会导致DVB功能受限，是否修复安装？</string>
+    <string name="city_re_install_title">DVB服务安装失败</string>
+    <string name="city_re_install_msg">检测到你安装了DVB服务，或者修改了所在城市，但是没有安装成功，是否重新安装？</string>
+    <string name="city_ca_support">该城市支持CA运营商包括: </string>
+    <string name="tf_ca">同方CA</string>
+    <string name="dvt_ca">数码CA</string>
+ 	<string name="next_step">下一步</string>
+	<string name="last_step">上一步</string>  
+	
+		<string name="exit">退出</string>
+</resources>

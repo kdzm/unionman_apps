@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="first_mainmenu_textview_margin_r">20dp</dimen>
+    <dimen name="first_mainmenu_textview_textsise">24dp</dimen>
+
+    <dimen name="search_menu_item_width">1360dp</dimen>
+    <dimen name="search_menu_item_height">135dp</dimen>
+    <dimen name="search_menu_content_margin_top_1">135dp</dimen>
+    <dimen name="search_menu_content_margin_top_2">270dp</dimen>
+    <dimen name="search_menu_content_margin_top_3">405dp</dimen>
+    <dimen name="search_menu_content_margin_top_4">540dp</dimen>
+    <dimen name="search_menu_content_margin_top_5">695dp</dimen>
+    <dimen name="search_menu_title_width">390dp</dimen>
+    <dimen name="search_menu_title_text_size">36sp</dimen>
+    <dimen name="search_menu_item_content_width_mid">247.5dp</dimen>
+    <dimen name="search_menu_item_content_width_small">187.5dp</dimen>
+    <dimen name="search_menu_item_content_margin_left">2dp</dimen>
+    <dimen name="search_menu_edit_text_margin_left">75dp</dimen>
+    <dimen name="search_menu_edit_text_item_width">390dp</dimen>
+    <dimen name="search_menu_edit_text_width">300dp</dimen>
+    <dimen name="search_menu_edit_text_height">69dp</dimen>
+    <dimen name="search_menu_button_layout_margin_top">30dp</dimen>
+    <dimen name="search_menu_focus_layout_margin_left">420dp</dimen>
+    <dimen name="search_menu_button_width">315dp</dimen>
+    <dimen name="search_menu_button_height">114dp</dimen>
+
+    <dimen name="search_content_width">1200dp</dimen>
+    <dimen name="search_content_height">819dp</dimen>
+    <dimen name="search_content_title_height">81dp</dimen>
+    <dimen name="search_content_title_text_size">45sp</dimen>
+    <dimen name="search_content_sub_title_height">69dp</dimen>
+    <dimen name="search_content_sub_title_text_size">36sp</dimen>
+    <dimen name="search_content_progs_height">345dp</dimen>
+    <dimen name="search_content_progs_width">525dp</dimen>
+    <dimen name="search_content_margin_left">52.5dp</dimen>
+    <dimen name="search_content_status_margin_top">30dp</dimen>
+    <dimen name="search_content_status_height">180dp</dimen>
+    <dimen name="search_content_status_title_width">225dp</dimen>
+    <dimen name="search_content_status_progress_width">675dp</dimen>
+    <dimen name="search_content_status_progress_margin">15dp</dimen>
+    <dimen name="search_content_status_progress_text_size">27sp</dimen>
+    <dimen name="search_content_status_progress_text_width">90dp</dimen>
+    <dimen name="search_content_prog_list_item_margin_left">30dp</dimen>
+    <dimen name="search_content_prog_list_item_text_size">36sp</dimen>
+    <dimen name="search_content_status_text_size">33sp</dimen>
+    <dimen name="search_pb_width">150dp</dimen>
+    <dimen name="search_pb_height">150dp</dimen>
+</resources>

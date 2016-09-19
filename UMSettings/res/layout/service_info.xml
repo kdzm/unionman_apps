@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sw="http://schemas.android.com/apk/res/com.unionman.settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+    
+    
+    <TextView
+        style="@style/title"
+        android:text="@string/service_info" />
+    
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="47.0dip">
+
+        <TextView
+            style="@style/textsize"
+            android:layout_width="200.dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/server_platform"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/service_platform"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+     <include layout="@layout/divider" />
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="47.0dip">
+
+        <TextView
+            style="@style/textsize"
+            android:layout_width="200.dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/server_user_id"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/service_user_id"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+     <include layout="@layout/divider" />
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="47.0dip">
+
+        <TextView
+            style="@style/textsize"
+            android:layout_width="200.dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/server_ntp_address"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/service_ntp_address"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider" />
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="47.0dip">
+
+        <TextView
+            style="@style/textsize"
+            android:layout_width="200.dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/server_itms_address"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/service_itms_address"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider" />
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="47.0dip">
+
+        <TextView
+            style="@style/textsize"
+            android:layout_width="200.dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/server_address"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/service_authentication_address"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider" />
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="47.0dip">
+
+        <TextView
+            style="@style/textsize"
+            android:layout_width="200.dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/server_upgrade_address"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/service_upgrade_address"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+       <string name="set_factory_pwd">设置恢复出厂设置密码</string> 	
+	    <string name="btn_reset_pwd">重置恢复出厂设置密码</string>
+    <string name="btn_restore_pwd">恢复默认密码</string>	
+        <string name="password_setting">用户密码设置</string> 
+        
+    <string name="password_incorrect">密码不正确</string>
+    <string name="old_code">旧密码</string>
+    <string name="new_code">新密码</string>
+    <string name="confirm_code">重复密码</string>
+    <string name="incorrect">不正确</string>
+    <string name="password_unmatch">两次输入的密码不一致</string>
+    <string name="input_new_pwd">请输入6位新密码</string>
+    <string name="modify_ok">修改成功</string>
+    <string name="input_password_hint">请输入6位数字密码</string>  
+    
+        <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    
+            <string name="restore_success">恢复默认密码成功</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>扫描中...</item>
+        <item>连接中...</item>
+        <item>验证身份…</item>
+        <item>获得IP地址…</item>
+        <item>已连接</item>
+        <item>速率</item>
+        <item>正在断开…</item>
+        <item>已断开</item>
+        <item>失败</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>扫描中...</item>
+        <item>连接到 %1$s...</item>
+        <item>通过身份验证 %1$s...</item>
+        <item>获得IP地址 %1$s...</item>
+        <item>已连接到 %1$s</item>
+        <item>速率</item>
+        <item>断开%1$s...</item>
+        <item>已断开</item>
+        <item>失败</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>Open</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x EAP</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>偏弱</item>
+        <item>正常</item>
+        <item>较好</item>
+        <item>极好</item>
+    </string-array>
+    
+	<string-array name="power_setting">
+        <item>动态节能</item>
+        <item>动态功耗演示</item>
+        <item>无信号关机</item>
+        <item>节能自动待机</item>
+    </string-array>
+</resources>

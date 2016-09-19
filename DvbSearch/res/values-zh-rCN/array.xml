@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dvb_setting">
+        <item >自动搜台</item>
+        <item >手动搜台</item>
+        <item >全频搜台</item>
+
+    </string-array>
+     <string-array name="dvb_setting_instruct">
+        <item >搜索有线数字的所有节目</item>
+        <item >手动搜索单个频点</item>
+        <item >按顺序搜索全部标准频点</item>
+    </string-array>   
+    
+     <string-array name="dvb_setting_dtmb">
+        <item >自动搜台</item>
+        <item >手动搜台</item>
+    </string-array>
+     <string-array name="dvb_setting_instruct_dtmb">
+        <item >搜索无线数字的所有节目</item>
+        <item >手动搜索单个频点</item>   
+    </string-array> 
+</resources>

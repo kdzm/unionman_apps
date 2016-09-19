@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CityFeature</string>
+    <string name="install_success">安装成功</string>
+    <string name="install_fail">安装失败</string>
+    <string name="uninstall_success">卸载成功</string>
+    <string name="uninstall_fail">卸载失败</string>
+
+</resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- movie_page -->
+    <dimen name="movie_item_netvideo_marginTop">84dp</dimen>
+    <dimen name="movie_item_netvideo_marginLeft">78dp</dimen>
+    <dimen name="movie_item_letv_marginLeft">673dp</dimen>
+    <dimen name="movie_item_letv_marginTop">56dp</dimen>
+    <dimen name="movie_item_sohu_marginLeft">58dp</dimen>
+    <dimen name="movie_item_sohu_marginTop">372dp</dimen>
+    <dimen name="movie_item_qqlive_marginLeft">270dp</dimen>
+    <dimen name="movie_item_qqlive_marginTop">372dp</dimen>
+    <dimen name="movie_item_iqy_marginLeft">482dp</dimen>
+    <dimen name="movie_item_iqy_marginTop">372dp</dimen>
+    <dimen name="movie_item_youku_marginLeft">694dp</dimen>
+    <dimen name="movie_item_youku_marginTop">372dp</dimen>
+    <dimen name="movie_item_taijie_marginLeft">906dp</dimen>
+    <dimen name="movie_item_taijie_marginTop">372dp</dimen>
+
+    <!-- education_page -->
+    <dimen name="education_item_itegrated_marginLeft">83dp</dimen>
+    <dimen name="education_item_itegrated_marginTop">103dp</dimen>
+    <dimen name="education_item_child_marginLeft">510dp</dimen>
+    <dimen name="education_item_child_marginTop">103dp</dimen>
+    <dimen name="education_item_pple_marginLeft">937dp</dimen>
+    <dimen name="education_item_pple_marginTop">103dp</dimen>
+    <dimen name="education_item_reading_marginLeft">83dp</dimen>
+    <dimen name="education_item_reading_marginTop">316dp</dimen>
+    <dimen name="education_item_healthy_marginLeft">510dp</dimen>
+    <dimen name="education_item_healthy_marginTop">316dp</dimen>
+    <dimen name="education_item_society_marginLeft">724dp</dimen>
+    <dimen name="education_item_society_marginTop">316dp</dimen>
+    <dimen name="education_item_tsqinghua_shcool_marginLeft">937dp</dimen>
+    <dimen name="education_item_tsqinghua_shcool_marginTop">316dp</dimen>
+
+    
+    <!-- first_page -->
+    <dimen name="first_item_window_marginLeft">50dp</dimen>
+    <dimen name="first_item_window_marginTop">103dp</dimen>
+    <dimen name="first_item_ad_marginLeft">85dp</dimen>
+    <dimen name="first_item_ad_marginTop">418dp</dimen>
+    <dimen name="first_item_news_marginLeft">530dp</dimen>
+    <dimen name="first_item_news_marginTop">103dp</dimen>
+    <dimen name="first_item_housekeeper_marginLeft">694dp</dimen>
+    <dimen name="first_item_housekeeper_marginTop">103dp</dimen>
+    <dimen name="first_item_source_marginLeft">857dp</dimen>
+    <dimen name="first_item_source_marginTop">103dp</dimen>
+    <dimen name="first_item_multiscreen_marginLeft">1020dp</dimen>
+    <dimen name="first_item_multiscreen_marginTop">103dp</dimen>
+    <dimen name="first_item_mediacenter_marginTop">317dp</dimen>
+    <dimen name="first_item_mediacenter_marginLeft">530dp</dimen>
+    <dimen name="first_item_appcenter_marginLeft">694dp</dimen>
+    <dimen name="first_item_appcenter_marginTop">317dp</dimen>
+    <dimen name="first_item_photo_marginLeft">857dp</dimen>
+    <dimen name="first_item_photo_marginTop">317dp</dimen>
+    <dimen name="first_item_qrcode_marginLeft">1020dp</dimen>
+    <dimen name="first_item_qrcode_marginTop">317dp</dimen>
+    
+    <!-- tv_page -->
+    <dimen name="tv_item_window_marginLeft">79dp</dimen>
+    <dimen name="tv_item_window_marginTop">86dp</dimen>
+    <dimen name="tv_item_dvbc_marginLeft">590.5dp</dimen>
+    <dimen name="tv_item_dvbc_marginTop">73dp</dimen>
+    <dimen name="tv_item_av1_marginLeft">770dp</dimen>
+    <dimen name="tv_item_av1_marginTop">73dp</dimen>
+    <dimen name="tv_item_dtv_marginLeft">590.5dp</dimen>
+    <dimen name="tv_item_dtv_marginTop">224dp</dimen>
+    <dimen name="tv_item_av2_marginLeft">770.5dp</dimen>
+    <dimen name="tv_item_av2_marginTop">224dp</dimen>
+    <dimen name="tv_item_atv_marginLeft">58dp</dimen>
+    <dimen name="tv_item_atv_marginTop">376dp</dimen>
+    <dimen name="tv_item_hdmi1_marginLeft">270dp</dimen>
+    <dimen name="tv_item_hdmi1_marginTop">376dp</dimen>
+    <dimen name="tv_item_hdmi2_marginLeft">482dp</dimen>
+    <dimen name="tv_item_hdmi2_marginTop">376dp</dimen>
+    <dimen name="tv_item_hdmi3_marginLeft">694dp</dimen>
+    <dimen name="tv_item_hdmi3_marginTop">376dp</dimen>
+    <dimen name="tv_item_vga_marginLeft">906dp</dimen>
+    <dimen name="tv_item_vga_marginTop">376dp</dimen>
+    <dimen name="tv_item_ypbpr_marginLeft">953dp</dimen>
+    <dimen name="tv_item_ypbpr_marginTop">64.5dp</dimen>
+
+    <!-- app_page -->
+    <dimen name="app_item_allapp_marginLeft">83dp</dimen>
+    <dimen name="app_item_allapp_marginTop">103dp</dimen>
+    <dimen name="app_item_video_marginLeft">510dp</dimen>
+    <dimen name="app_item_video_marginTop">103dp</dimen>
+    <dimen name="app_item_music_marginTop">103dp</dimen>
+    <dimen name="app_item_music_marginLeft">724dp</dimen>
+    <dimen name="app_item_tvqq_marginLeft">937dp</dimen>
+    <dimen name="app_item_tvqq_marginTop">103dp</dimen>
+    <dimen name="app_item_browser_marginLeft">83dp</dimen>
+    <dimen name="app_item_browser_marginTop">316dp</dimen>
+    <dimen name="app_item_filemanage_marginLeft">510dp</dimen>
+    <dimen name="app_item_filemanage_marginTop">316dp</dimen>
+    <dimen name="app_item_housenurse_marginLeft">724dp</dimen>
+    <dimen name="app_item_housenurse_marginTop">316dp</dimen>
+    <dimen name="app_item_healthydiet_marginLeft">937dp</dimen>
+    <dimen name="app_item_healthydiet_marginTop">316dp</dimen>
+
+
+    <!-- game_page -->
+    <dimen name="game_item_hall_marginLeft">83dp</dimen>
+    <dimen name="game_item_hall_marginTop">103dp</dimen>
+    <dimen name="game_item_jiajia_marginLeft">724dp</dimen>
+    <dimen name="game_item_jiajia_marginTop">103dp</dimen>
+    <dimen name="game_item_boxingking_marginLeft">510dp</dimen>
+    <dimen name="game_item_boxingking_marginTop">103dp</dimen>
+    <dimen name="game_item_helicopter_war_marginLeft">83dp</dimen>
+    <dimen name="game_item_helicopter_war_marginTop">316dp</dimen>
+    <dimen name="game_item_gp_marginLeft">937dp</dimen>
+    <dimen name="game_item_gp_marginTop">103dp</dimen>
+    <dimen name="game_item_feizhi_marginLeft">724dp</dimen>
+    <dimen name="game_item_feizhi_marginTop">316dp</dimen>
+    <dimen name="game_item_xiaochong_marginLeft">937dp</dimen>
+    <dimen name="game_item_xiaochong_marginTop">316dp</dimen>
+
+    <!-- setting_page -->
+    <dimen name="set_item_net_marginTop">133dp</dimen>
+    <dimen name="set_item_net_marginLeft">156dp</dimen>
+    <dimen name="set_item_pic_marginLeft">483dp</dimen>
+    <dimen name="set_item_pic_marginTop">133dp</dimen>
+    <dimen name="set_item_sound_marginLeft">810dp</dimen>
+    <dimen name="set_item_sound_marginTop">133dp</dimen>
+    <dimen name="set_item_powersaving_marginLeft">483dp</dimen>
+    <dimen name="set_item_powersaving_marginTop">346dp</dimen>
+    <dimen name="set_item_advanced_marginLeft">156dp</dimen>
+    <dimen name="set_item_advanced_marginTop">346dp</dimen>
+    <dimen name="set_item_recover_marginLeft">976dp</dimen>
+    <dimen name="set_item_recover_marginTop">346dp</dimen>
+    <dimen name="set_item_systeminfo_marginLeft">810dp</dimen>
+    <dimen name="set_item_systeminfo_marginTop">346dp</dimen>
+    <dimen name="set_item_help_marginLeft">937dp</dimen>
+    <dimen name="set_item_help_marginTop">346dp</dimen>
+    
+    <!-- setting_page -->
+    <!--
+    <dimen name="set_item_net_marginTop">103dp</dimen>
+    <dimen name="set_item_net_marginLeft">83dp</dimen>
+    <dimen name="set_item_pic_marginLeft">510dp</dimen>
+    <dimen name="set_item_pic_marginTop">103dp</dimen>
+    <dimen name="set_item_sound_marginLeft">724dp</dimen>
+    <dimen name="set_item_sound_marginTop">103dp</dimen>
+    <dimen name="set_item_powersaving_marginLeft">510dp</dimen>
+    <dimen name="set_item_powersaving_marginTop">316dp</dimen>
+    <dimen name="set_item_advanced_marginLeft">83dp</dimen>
+    <dimen name="set_item_advanced_marginTop">316dp</dimen>
+    <dimen name="set_item_recover_marginLeft">937dp</dimen>
+    <dimen name="set_item_recover_marginTop">103dp</dimen>
+    <dimen name="set_item_systeminfo_marginLeft">724dp</dimen>
+    <dimen name="set_item_systeminfo_marginTop">316dp</dimen>
+    <dimen name="set_item_help_marginLeft">937dp</dimen>
+    <dimen name="set_item_help_marginTop">103dp</dimen>  -->
+
+</resources>

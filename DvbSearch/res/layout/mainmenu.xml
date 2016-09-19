@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1280dip"
+    android:layout_height="720dip"
+    android:layout_gravity="center"
+    android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:gravity="center"
+        android:padding="0dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mainmenu_btn1"
+            android:gravity="center|bottom"
+            android:nextFocusLeft="@+id/button3"
+            android:nextFocusUp="@+id/button4"
+            android:text="@string/tv_list"
+            android:textColor="@color/headColor"
+            android:textSize="24sp" >
+
+            <requestFocus />
+        </Button>
+
+        <Button android:id="@+id/button2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginLeft="3dp" android:textStyle="bold" android:gravity="center|bottom" android:background="@drawable/mainmenu_btn2" android:nextFocusUp="@+id/button5" android:text="@string/radio_list" android:textSize="24sp" android:textColor="@color/headColor"></Button>
+        <Button android:layout_marginLeft="3dp" android:id="@+id/button3" android:layout_height="wrap_content" android:paddingLeft="3dp" android:layout_width="wrap_content" android:gravity="center|bottom" android:background="@drawable/mainmenu_btn3" android:nextFocusUp="@+id/button6" android:nextFocusRight="@+id/button1" android:text="@string/search_prog" android:textSize="24sp" android:textColor="@color/headColor"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mainmenu_btn4"
+            android:gravity="center|bottom"
+            android:nextFocusDown="@+id/button1"
+            android:nextFocusLeft="@+id/button6"
+            android:text="@string/android_app"
+            android:textColor="@color/headColor"
+            android:textSize="24sp" >
+        </Button>
+
+        <Button android:layout_marginLeft="3dp" android:id="@+id/button5" android:layout_height="wrap_content" android:layout_width="wrap_content" android:gravity="center|bottom" android:background="@drawable/mainmenu_btn5" android:nextFocusDown="@+id/button2" android:text="@string/egp_guid" android:textSize="24sp" android:textColor="@color/headColor"></Button>
+        <Button android:id="@+id/button6" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginLeft="3dp" android:gravity="center|bottom" android:background="@drawable/mainmenu_btn6" android:nextFocusRight="@+id/button4" android:nextFocusDown="@+id/button3" android:text="@string/sys_set" android:textSize="24sp" android:textColor="@color/headColor"></Button>
+    </LinearLayout>
+  
+    
+</LinearLayout>

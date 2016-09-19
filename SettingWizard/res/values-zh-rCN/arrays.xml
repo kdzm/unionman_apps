@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="wifi_status">
+        <!-- Status message of Wi-Fi when it is idle. -->
+        <item></item>
+        <!-- Status message of Wi-Fi when it is scanning. -->
+        <item>正在扫描\u2026</item>
+        <!-- Status message of Wi-Fi when it is connecting. -->
+        <item>正在连接\u2026</item>
+        <!-- Status message of Wi-Fi when it is authenticating. -->
+        <item>正在认证\u2026</item>
+        <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+        <item>正在获取IP地址\u2026</item>
+        <!-- Status message of Wi-Fi when it is connected. -->
+        <item>已连接</item>
+        <!-- Status message of Wi-Fi when it is suspended. -->
+        <item>已暂停</item>
+        <!-- Status message of Wi-Fi when it is disconnecting. -->
+        <item>正在断开\u2026</item>
+        <!-- Status message of Wi-Fi when it is disconnected. -->
+        <item>已断开</item>
+        <!-- Status message of Wi-Fi when it is a failure. -->
+        <item>失败</item>
+        <!-- Status message of Wi-Fi when it is blocked. -->
+        <item>拥堵</item>
+        <!-- Status message of Wi-Fi when connectiong is being verified. -->
+        <item>暂时避免接触不良</item>
+    </string-array>
+</resources>

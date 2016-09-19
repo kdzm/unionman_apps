@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bg2"
+        android:orientation="vertical" >
+	<TextView
+		android:gravity="center"
+		android:textSize="30sp"
+		android:layout_height="54dp"
+		android:layout_width="match_parent" android:text="@string/dvt_ipporder_or_unorder">
+	</TextView>
+	<LinearLayout
+		android:layout_marginRight="30dip"
+		android:layout_marginLeft="30dip"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginTop="10dip">
+		<TextView
+			android:gravity="center"
+			android:layout_height="30dp"
+			android:layout_width="200dp"
+			android:textSize="24sp" android:text="@string/dvt_ipp_num"/>
+		<TextView
+		    android:id="@+id/dvt_orderipps_num"
+			android:gravity="center"
+			android:layout_height="30dp"
+			android:layout_width="150dp"
+			android:textSize="24sp" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_marginRight="30dip"
+		android:layout_marginLeft="30dip"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginTop="10dip">
+		<TextView
+			android:gravity="center"
+			android:layout_height="30dp"
+			android:layout_width="145.5dp"
+			android:layout_marginLeft="100dip"
+			android:textSize="24sp" android:text="@string/dvt_program_name"/>
+		<TextView
+			android:gravity="center"
+			android:layout_height="30dp"
+			android:layout_width="145.5dp"
+			android:layout_marginLeft="160dip"			
+			android:textSize="24sp" android:text="@string/dvt_ipporder_status"/>
+		<TextView
+			android:gravity="center"
+			android:layout_height="30dp"
+			android:layout_width="145.5dp"
+			android:layout_marginLeft="100dip"			
+			android:textSize="24sp" android:text="@string/dvt_ipporder_prog_type"/>		
+	</LinearLayout>
+	<ListView
+		android:dividerHeight="2dip"
+		android:fadeScrollbars="false"
+		android:id="@+id/MyorderProgramView"
+		android:layout_gravity="center"
+		android:layout_marginRight="30dip"
+		android:layout_marginLeft="30dip"
+		android:layout_width="873dp"
+		android:layout_height="200dp"
+		android:fadingEdge="none"
+		android:cacheColorHint="#00000000"
+		android:listSelector="@drawable/searchmenu_btn" />
+	<LinearLayout
+		android:layout_marginRight="30dip"
+		android:layout_marginLeft="30dip"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginTop="5dip">
+		<TextView
+			android:gravity="center"
+			android:layout_height="30dp"
+			android:layout_width="180dp"
+			android:textSize="24sp" android:text="@string/dvt_ipporder_prog_startime"/>
+		<TextView
+			android:gravity="center"
+			android:layout_height="30dp"
+			android:layout_width="740dp"
+			android:id="@+id/dvt_ipps_startime"
+			android:textSize="24sp" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_marginRight="30dip"
+		android:layout_marginLeft="30dip"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginTop="10dip">
+		<TextView
+			android:gravity="center"
+			android:layout_height="30dp"
+			android:layout_width="180dp"
+			android:textSize="24sp" android:text="@string/dvt_ipporder_prog_duration"/>
+		<TextView
+			android:gravity="center"
+			android:layout_height="30dp"
+			android:layout_width="740dp"
+			android:id="@+id/dvt_ipps_duration"			
+			android:textSize="24sp"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_marginRight="30dip"
+		android:layout_marginLeft="30dip"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginTop="5dip">
+		<TextView
+			android:gravity="center"
+			android:layout_height="30dp"
+			android:layout_width="180dp"
+			android:textSize="24sp" android:text="@string/dvt_ipp_order_price"/>
+		<TextView
+			android:gravity="center"
+			android:layout_height="30dp"
+			android:layout_width="740dp"
+			android:id="@+id/dvt_ipps_orderprice"			
+			android:textSize="24sp"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_marginRight="30dip"
+		android:layout_marginLeft="30dip"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginTop="5dip">
+		<TextView
+			android:gravity="center"
+			android:layout_height="30dp"
+			android:layout_width="180dp"
+			android:textSize="24sp" android:text="@string/dvt_ipporder_prog_name"/>
+		<TextView
+			android:gravity="center"
+			android:layout_height="30dp"
+			android:layout_width="740dp"
+			android:id="@+id/dvt_ipps_progname"			
+			android:textSize="24sp"/>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_marginRight="30dip"
+		android:layout_marginLeft="30dip"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginTop="5dip">
+		<TextView
+			android:gravity="center"
+			android:layout_height="30dp"
+			android:layout_width="160dp"
+			android:textSize="24sp" android:text="@string/dvt_ipporder_prog_price"/>
+		<TextView
+			android:gravity="center"
+			android:layout_height="30dp"
+			android:layout_width="740dp"
+			android:id="@+id/dvt_ipps_curprice"			
+			android:textSize="24sp"/>
+	</LinearLayout>
+</LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" >
+
+        <TextView
+            android:id="@+id/help_ippv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/dvt_ipporder_help"
+            android:textColor="@color/white"
+            android:textSize="28sp" >
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

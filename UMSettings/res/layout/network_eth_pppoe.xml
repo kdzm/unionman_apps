@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sw="http://schemas.android.com/apk/res/com.unionman.settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/network_pppoe" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="170.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/network_pppoe_username"
+            android:textColor="@color/white"
+            android:textSize="25.0sp" />
+
+        <EditText
+            android:id="@id/et_eth_pppoe_user"
+            style="@style/edit_short"
+            android:layout_width="250.0px"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:nextFocusUp="@id/et_eth_pppoe_user" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="170.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/network_pppoe_password"
+            android:textColor="@color/white"
+            android:textSize="25.0sp" />
+
+        <EditText
+            android:id="@id/et_eth_pppoe_pswd"
+            style="@style/edit_short"
+            android:layout_width="250.0px"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:password="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100.0dip"
+        android:layout_marginTop="60.0dip"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@id/btn_eth_pppoe_disconnect"
+            style="@style/button"
+            android:nextFocusDown="@id/btn_eth_pppoe_disconnect"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:text="@string/wifi_disconnect"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@id/btn_eth_pppoe_ok"
+            style="@style/button"
+            android:nextFocusDown="@id/btn_eth_pppoe_ok"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:text="@string/wifi_connect" />
+
+        <Button
+            android:id="@id/btn_eth_pppoe_cancel"
+            style="@style/button"
+            android:layout_marginLeft="10.0dip"
+            android:nextFocusDown="@id/btn_eth_pppoe_cancel"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+    <include layout="@layout/inputts" />
+
+</LinearLayout>

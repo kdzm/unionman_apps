@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/timesettitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="22.0px" />
+
+    <EditText
+        android:id="@+id/timevalue"
+        android:layout_below="@id/timesettitle"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:numeric="integer"
+        android:textColor="@color/white"
+        android:textSize="22.0px"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:text="@string/ms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/timevalue"
+        android:layout_below="@id/timesettitle"
+        android:textSize="22.0px" />
+
+    <Button
+        android:id="@+id/timebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timevalue"
+        android:text="@string/playlist_dialog_detail_ok"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
+

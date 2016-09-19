@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UMFactoryMenu</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="iv_previous_description">前一个</string>
+    <string name="iv_next_description">后一个</string>
+
+    <string name="command_setting_adc_tune">正在设置……</string>
+    <string name="command_set_adc_tune">自动校正ADC</string>
+    <string name="command_setted_adc_tune_successfully">设置成功！</string>
+    <string name="command_setted_adc_tune_failed">设置失败！</string>
+
+    <string name="command_open_watch_dog">打开WatchDog</string>
+    <string name="command_restore_to_default">重置Flash</string>
+    <string name="command_enable_uart">打开Uart</string>
+    <string name="command_enable_uart_debug">打开Uart调试</string>
+    <string name="command_update_pq">更新PQ</string>
+    <string name="command_update_date">更新日期</string>
+    <string name="command_update_main">更新主板</string>
+    <string name="command_sw_version">软件版本</string>
+    <string name="command_board">主板</string>
+    <string name="command_panel">控制面板</string>
+    <string name="command_main_pq_version">主PQ版本</string>
+    <string name="command_sub_pq_version">子PQ版本</string>
+    <string name="command_date">%1$s年%2$s月%3$s日</string>
+    <string name="command_time">%1$s时%2$s分%3$s秒</string>
+
+    <string name="display_name_factory_menu">工厂菜单</string>
+    <string name="display_name_adc">ADC Adjust</string>
+    <string name="display_name_white_balance">White Balance</string>
+    <string name="display_name_overscan">Overscan</string>
+    <string name="display_name_non_linear">NonLinear</string>
+    <string name="display_name_non_standard">NonStandard</string>
+    <string name="display_name_fac_single_key">FactorySingleKey</string>
+    <string name="display_name_other_options">Other Options</string>
+    
+    <string name="dlg_title_factory_key">工厂调试</string>
+    <string name="dlg_message_turn_on_factory_key">确定开启工厂调试按键吗？</string>
+    <string name="dlg_message_turn_off_factory_key">确定关闭工厂调试按键吗？</string>
+    
+    <string name="dlg_title_reset">重置Flash</string>
+    <string name="dlg_message_reset">是否重置Flash，此操作不可恢复？</string>
+
+    <string name="dlg_title_erase_eeprom">重置EEPROM</string>
+    <string name="dlg_message_erase_eeprom">是否重置EEPROM，此操作不可恢复？</string>
+    
+    <string name="btn_submit">确定</string>
+    <string name="btn_cancel">取消</string>
+
+    <string name="tv_unit_khz">kHz</string>
+    <string name="command_usb_update_mac">UPDATE</string>
+	<string name="aging_note_txt">Aging Mode On</string>
+	<string name="mmode_note_txt">M</string>
+	<string name="command_pq_update">UPDATE</string>
+	<string name="command_aq_update_mac">UPDATE</string>
+	<string name="command_logo_update_mac">UPDATE</string>
+	<string name="command_machinetype_update_mac">UPDATE</string>
+	<string name="command_screenparam_update_mac">UPDATE</string>
+	<string name="command_salepic_update_mac">UPDATE</string>
+	<string name="agingtimer_name">秒表计时器</string>  
+    <string name="init_time_second">00:00</string>  
+    <string name="init_time_100millisecond">00:00:00:00:0</string>  
+    <string name="init_time_seconds">00:00:00:00</string> 
+    <string name="menu_setting_timer_unit">设置计时单位</string>  
+    <string name="menu_about">关于</string>  
+    <string name="menu_exit">退出</string>  
+    <string name="menu_setting_second">1秒</string>  
+    <string name="menu_setting_100milisec">0.1秒</string>  
+    <string name="upgrade_file_not_exists">The upgrade file does not exist!</string>
+    <string name="insert_the_USB">Please insert the U disc!</string>
+    <string name="pq_ap_version">请选择PQ和AQ版本</string>  
+
+</resources>

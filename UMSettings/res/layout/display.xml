@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sw="http://schemas.android.com/apk/res/com.unionman.settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/display_set" />
+
+<LinearLayout
+         android:layout_width="fill_parent"
+        android:layout_height="@dimen/setitem_height"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        
+        <RadioButton
+            android:id="@+id/rb_4k_25"
+            style="@style/radio"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:nextFocusUp="@+id/rb_4k_25"
+            android:nextFocusDown="@+id/rb_4k_30"
+            android:text="@string/display_set_4k_25" />
+        <RadioButton
+            android:id="@+id/rb_1080p_50"
+            style="@style/radio"
+            android:nextFocusLeft="@id/rb_4k_25"
+            android:nextFocusUp="@+id/rb_1080p_50"
+            android:nextFocusDown="@+id/rb_1080p_60"
+            android:text="@string/display_set_1080p_50" />
+        
+ 
+      
+         <RadioButton
+            android:id="@+id/rb_720p_50"
+            style="@style/radio"
+            android:layout_marginLeft="10.0dip"
+            android:nextFocusUp="@+id/rb_720p_50"
+            android:nextFocusDown="@+id/rb_720p_60"
+            android:text="@string/display_set_720p_50"/>
+         
+         
+        <RadioButton
+            android:id="@+id/rb_Pal"
+            style="@style/radio"
+            android:layout_marginLeft="10.0dip"
+            android:nextFocusUp="@id/rb_Pal"
+            android:nextFocusRight="@+id/rb_1080p_60"
+            android:nextFocusDown="@+id/rb_Ntsc"
+            android:text="@string/display_mod_set_pal" />
+      </LinearLayout>  
+  
+<LinearLayout
+         android:layout_width="fill_parent"
+        android:layout_height="@dimen/setitem_height"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        
+     	<RadioButton
+            android:id="@+id/rb_4k_30"
+            style="@style/radio"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:nextFocusUp="@id/rb_4k_25"
+            android:text="@string/display_set_4k_30" />
+        <RadioButton
+            android:id="@+id/rb_1080p_60"
+            style="@style/radio"
+            android:nextFocusLeft="@+id/rb_4k_30"
+            android:nextFocusRight="@+id/rb_720p_60"
+            android:nextFocusUp="@+id/rb_1080p_50"
+            android:text="@string/display_set_1080p_60" />
+        
+ 
+      
+         <RadioButton
+            android:id="@+id/rb_720p_60"
+            style="@style/radio"
+            android:layout_marginLeft="10.0dip"
+            android:nextFocusUp="@+id/rb_720p_50"
+            android:nextFocusRight="@+id/rb_Ntsc"
+            android:text="@string/display_set_720p_60"/>       
+         
+       <RadioButton
+            android:id="@+id/rb_Ntsc"
+            style="@style/radio"
+            android:layout_marginLeft="10.0dip"
+            android:nextFocusRight="@+id/rb_Ntsc"
+            android:nextFocusUp="@+id/rb_Pal"
+            android:text="@string/display_mod_set_ntsc" />
+</LinearLayout>
+
+
+
+
+    <TextView
+        style="@style/title"
+        android:text="@string/display_position" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <SeekBar
+            android:id="@+id/seekLeft"
+            style="@style/seekBar"
+            android:layout_width="592.0dip"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:nextFocusLeft="@id/leftMenu_layout"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:text="@string/display_position_left"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <SeekBar
+            android:id="@+id/seekBarRight"
+            style="@style/seekBar"
+            android:layout_width="592.0dip"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:nextFocusLeft="@+id/leftMenu_layout"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:text="@string/display_position_right"
+            android:textSize="20.0sp" />
+    </LinearLayout>   
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <SeekBar
+            android:id="@+id/seekBarTop"
+            style="@style/seekBar"
+            android:layout_width="592.0dip"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:nextFocusLeft="@+id/leftMenu_layout"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:text="@string/display_position_top"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_marginLeft="@dimen/setitem_left_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <SeekBar
+            android:id="@+id/seekBarBottom"
+            style="@style/seekBar"
+            android:layout_width="592.0dip"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:nextFocusDown="@+id/checkBoxHdmi"
+            android:nextFocusLeft="@+id/leftMenu_layout"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:text="@string/display_position_bottom"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/title"
+        android:text="@string/display_picture" />
+
+    
+     <com.unionman.settings.custom.CheckRadioButton
+        android:id="@+id/checkBoxPic"
+        style="@style/checkRadioButton_normal"
+        android:paddingLeft="5.0dip"
+        android:nextFocusDown="@+id/checkBoxPic"
+        android:nextFocusUp="@+id/seekBarBottom"
+        sw:hasImage="false"
+        sw:text1="@string/display_picture" />
+     
+     <include layout="@layout/divider" />
+
+</LinearLayout>

@@ -1,0 +1,703 @@
+package com.um.ui;
+
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import com.um.dvtca.R;
+import com.um.dvbstack.Ca;
+import com.um.dvbstack.DVB;
+
+import android.app.AlertDialog;
+import android.content.Context;
+import android.os.Bundle;
+import android.text.TextWatcher;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+import android.widget.TextView;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import android.os.Parcel;
+
+import com.um.controller.AppBaseActivity;
+import java.io.UnsupportedEncodingException;
+
+
+public class Dvt_ipp_order_info extends AppBaseActivity {
+	static JSONArray jsonArrayippsInfo;
+	static int index = 0;
+	static int periodNum = 0;
+	public static int PERIOD = 0;
+	private Context mContext = Dvt_ipp_order_info.this;
+	
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.dvt_ipp_order_info);
+        		
+		int[] buffLen = {40960};
+		byte[] buff = new byte [buffLen[0]];
+        
+		 Ca ca = new Ca(DVB.getInstance());
+		 int ret = ca.CaGetAllIpps(0, buff, buffLen);
+		 System.out.printf("dvt_viewed_ipps,ret:%d,buffLen:%d\n", ret, buffLen[0]); 
+		 
+		 if((ret == 0)&&(0 != buffLen[0]))
+		 {
+			try {
+				 final String jsonStr = new String(buff, 0, buffLen[0], "gb2312");
+				 showIppsInfo(jsonStr);
+				 SetOnItemSelectListener(jsonStr);
+			} catch (UnsupportedEncodingException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}	
+			
+			SetOnItemClickListener();
+		 }else{
+			 Log.e("Dvt_buy_program","CaGetViewedIpps:fail");
+		 }
+    }
+    
+	@Override
+	protected void onPause(){
+        super.onPause();
+        finish();
+	}
+    
+    private void showIppsInfo(final String jsonStr){
+    	System.out.println("jsonStr:"+jsonStr);
+		ListView list = (ListView) findViewById(R.id.MyorderProgramView);
+		ArrayList<HashMap<String, String>> mylist = new ArrayList<HashMap<String, String>>();
+		Ca ca = new Ca(DVB.getInstance());
+		 
+		try {
+		  	JSONObject jsonObject = new JSONObject(jsonStr);
+		  	/*JSONArray*/ jsonArrayippsInfo = jsonObject.getJSONArray("ippsInfo");
+		
+		 	int count = jsonObject.getInt("count");
+		 	TextView ippcount = (TextView)findViewById(R.id.dvt_orderipps_num);
+		 	ippcount.setText(String.valueOf(count));
+		 	
+		 	System.out.format("count:%d\n", count);
+		 	System.out.format("jsonArrayippsInfo.length:%d\n", jsonArrayippsInfo.length());
+		 	
+		 	
+			for(int i = 0; i < jsonArrayippsInfo.length(); i++)
+			{		
+				String ProdName = jsonArrayippsInfo.getJSONObject(i).getString("productName");		
+				
+				String StatusStr = "";
+				int ippStatus = jsonArrayippsInfo.getJSONObject(i).getInt("ippStatus");
+				Log.i("showIppsInfo","333  status:"+ippStatus);
+
+				if ((ippStatus & 0x02) != 0)
+				{
+					StatusStr = getString(R.string.dvt_ippordered);
+				}
+				else
+				{
+					StatusStr = getString(R.string.dvt_ippunorder);					
+				}
+				
+				String IppTypeStr = "";	
+				if ((ippStatus & 0x08) != 0)
+				{
+					Log.i("IPPV","333  status:");
+					IppTypeStr = "IPPV";
+				}
+				else
+				{
+					Log.i("IPPT","333  status:");
+					IppTypeStr = "IPPT";
+				}
+				 	 
+				 HashMap<String, String> map = new HashMap<String, String>();
+					map.put("prod_name",ProdName);
+					map.put("status",StatusStr);
+					map.put("type",IppTypeStr);					
+					mylist.add(map);
+			}
+				
+			SimpleAdapter saImageItems = new SimpleAdapter(this,mylist,
+					 R.layout.dvt_ipp_order_info_item, new String[] {"prod_name","status","type"},
+					 new int[]{R.id.order_program_Item1,R.id.order_program_Item2,R.id.order_program_Item3});
+			list.setAdapter(saImageItems);
+			} catch (JSONException ex) {  
+				System.out.println("get JSONObject fail");
+		}  
+	}
+    
+    private void RefeshIppsInfo(){
+		ListView list = (ListView) findViewById(R.id.MyorderProgramView);
+		ArrayList<HashMap<String, String>> mylist = new ArrayList<HashMap<String, String>>();
+		Ca ca = new Ca(DVB.getInstance());
+		 
+		try {
+			
+		 	System.out.format("jsonArrayippsInfo.length:%d\n", jsonArrayippsInfo.length());
+		 	
+		 	
+			for(int i = 0; i < jsonArrayippsInfo.length(); i++)
+			{		
+				String ProdName = jsonArrayippsInfo.getJSONObject(i).getString("productName");		
+				
+				String StatusStr = "";
+				int ippStatus = jsonArrayippsInfo.getJSONObject(i).getInt("ippStatus");
+				Log.i("RefeshIppsInfo","333  status:"+ippStatus);
+				if ((ippStatus & 0x02) != 0)
+				{
+					StatusStr = getString(R.string.dvt_ippordered);
+				}
+				else
+				{
+					StatusStr = getString(R.string.dvt_ippunorder);					
+				}
+				
+				String IppTypeStr = "";	
+				if ((ippStatus & 0x08) != 0)
+				{
+					IppTypeStr = "IPPV";
+				}
+				else
+				{
+					IppTypeStr = "IPPT";
+				}
+				 	 
+				 HashMap<String, String> map = new HashMap<String, String>();
+					map.put("prod_name",ProdName);
+					map.put("status",StatusStr);
+					map.put("type",IppTypeStr);					
+					mylist.add(map);
+			}
+				
+			SimpleAdapter saImageItems = new SimpleAdapter(this,mylist,
+					 R.layout.dvt_ipp_order_info_item, new String[] {"prod_name","status","type"},
+					 new int[]{R.id.order_program_Item1,R.id.order_program_Item2,R.id.order_program_Item3});
+			list.setAdapter(saImageItems);
+			} catch (JSONException ex) {  
+				System.out.println("get JSONObject fail");
+		}  
+	}
+    
+    public void SetOnItemSelectListener(final String jsonStr)
+    {
+        ListView emailListView = (ListView) findViewById(R.id.MyorderProgramView);
+		 final TextView IppPrice = (TextView)findViewById(R.id.dvt_ipps_orderprice);
+		 final TextView IppStartime = (TextView)findViewById(R.id.dvt_ipps_startime);
+		 final TextView IppDuration = (TextView)findViewById(R.id.dvt_ipps_duration);
+		 final TextView IppProgName = (TextView)findViewById(R.id.dvt_ipps_progname);
+		 final TextView IppCurPrice = (TextView)findViewById(R.id.dvt_ipps_curprice);
+		 
+        emailListView.setOnItemSelectedListener(new OnItemSelectedListener()
+        {
+            public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3)
+            {
+            	index  = arg2;
+                Log.e("Dvt_email", "email Listener"+index);
+    			try {
+    				 //JSONObject jsonObject = new JSONObject(jsonStr);
+    			  	 //JSONArray jsonArrayippsInfo = jsonObject.getJSONArray("ippsInfo");
+					 int StartTime = jsonArrayippsInfo.getJSONObject(index).getInt("startTime");
+					 int Duration = jsonArrayippsInfo.getJSONObject(index).getInt("duration");
+					 int Price = jsonArrayippsInfo.getJSONObject(index).getInt("curTppNoTapPrice");
+					 int Status = jsonArrayippsInfo.getJSONObject(index).getInt("ippStatus");
+					 int curInterval = jsonArrayippsInfo.getJSONObject(index).getInt("curInterval");
+					 int unit = jsonArrayippsInfo.getJSONObject(index).getInt("byUnit");
+					 String ServiceName = jsonArrayippsInfo.getJSONObject(index).getString("serviceName");
+					 
+					Dvt_email_read general_authorized = new Dvt_email_read();
+					String start_time_str = "";
+					 try {
+							start_time_str = general_authorized.calculateSendDate(StartTime);
+					 } catch (ParseException e) {
+						e.printStackTrace();
+					 }		
+					 
+					 Dvt_ipp_buy_info viewedIpp = new Dvt_ipp_buy_info();
+					 String durationStr="";
+					 String orderPriceStr="";
+
+					 durationStr = viewedIpp.dvt_display_date(StartTime);
+					 if ((Status & 0x02) == 0)
+					 {
+						 orderPriceStr = viewedIpp.dvt_display_yuan(0);
+					 }
+					 else
+					 {
+						 if ((Status & 0x8) != 0)
+						 {
+							 orderPriceStr = viewedIpp.dvt_display_yuan(Price);
+						 }
+						 else
+						 {
+							 orderPriceStr = viewedIpp.dvt_display_yuan_min(Price, curInterval, unit);
+						 }
+					 }
+					
+					String curPriceStr = "";
+					if ((Status & 0x8) != 0)
+					{
+						curPriceStr = dvt_display_curprice_yuan(Price);
+					}
+					else
+					{
+						curPriceStr = dvt_display_curprice_yuan_min(Price, curInterval, unit);
+					}
+					
+					
+					 IppPrice.setText(orderPriceStr);
+					 IppStartime.setText(start_time_str);
+					 IppDuration.setText(durationStr);
+					 IppProgName.setText(ServiceName);
+					 IppCurPrice.setText(curPriceStr);
+					 
+    			} catch (JSONException ex) {  
+    				System.out.println("get JSONObject fail");
+    			}
+            }
+            
+            public void onNothingSelected(AdapterView<?> arg0)
+            {
+                // TODO Auto-generated method stub
+            }
+        });
+    }
+
+    public void SetOnItemClickListener()
+    {
+        ListView ippListView = (ListView) findViewById(R.id.MyorderProgramView);
+		final Ca ca = new Ca(DVB.getInstance());
+		
+        /* Add setOnItemClickListener*/
+        ippListView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,long arg3)
+            {
+                // TODO Auto-generated method stub
+                ListView listView = (ListView)arg0;
+                
+				final HashMap<String, String> map = (HashMap<String, String>)listView.getItemAtPosition(arg2);
+				
+				int ippstatus = 0;				
+    			try {
+    				ippstatus = jsonArrayippsInfo.getJSONObject(index).getInt("ippStatus");
+    				} catch (JSONException ex) {  
+    				System.out.println("get JSONObject fail");
+    			}
+    			
+				AlertDialog.Builder ipp_builder = new AlertDialog.Builder(Dvt_ipp_order_info.this);
+				LinearLayout layout = (LinearLayout) LayoutInflater.from(Dvt_ipp_order_info.this).inflate(R.layout.dvt_ipp_order_tip, null);
+				ipp_builder.setView(layout);
+				Button okButton = (Button)layout.findViewById(R.id.ipp_ok_btn);
+				Button cancleButton = (Button) layout.findViewById(R.id.ipp_cancle_btn);
+				final EditText ippEdit = (EditText) layout.findViewById(R.id.dvt_ipp_num);
+				final TextView text1 = (TextView) layout.findViewById(R.id.ipp_tip); 
+				final AlertDialog ippDialog = ipp_builder.create();    			
+				
+				TextWatcher periodWatcher = new UmTextWatcher(mContext, PERIOD);
+				ippEdit.addTextChangedListener(periodWatcher);
+				
+				if (periodNum != 0)
+				{
+					ippEdit.setText(periodNum+"");
+				}
+				else
+				{
+					ippEdit.setText(1+"");
+				}
+				
+				if (((ippstatus & 0x8) != 0) || ((ippstatus & 0x02) != 0))
+    			{
+    				//ippv or ordered_ippt
+					ippEdit.setEnabled(false);
+    			}
+    			else
+    			{
+    				//ippt
+    				ippEdit.setEnabled(true);
+    			}
+				
+				if ((ippstatus & 0x2) != 0)
+    			{
+    				//subType = 0;
+					text1.setText(R.string.dvt_ipp_is_unorder);
+    			}
+    			else
+    			{
+    				//subType = 1;
+    				text1.setText(R.string.dvt_ipp_is_order);
+    			}
+				
+				ippDialog.show();	
+				View.OnClickListener onClickListener = new View.OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						switch (v.getId()) {
+						case R.id.ipp_ok_btn:
+						{
+							/*ding gou*/
+							int ret = 0;
+							int subType = 0;							
+							int status = 0;
+							int periods = 0;
+							
+			    			try {
+			    				status = jsonArrayippsInfo.getJSONObject(index).getInt("ippStatus");
+			    			} catch (JSONException ex) {  
+			    				System.out.println("get JSONObject fail");
+			    			}
+			    			
+			    			Log.i("ipp order","111  status:"+status);
+			    			if (((status & 0x2) == 0) && ((status & 0x8) == 0)) //ippt and go to order
+			    			{
+			    				if(!("".equalsIgnoreCase(ippEdit.getText().toString())))
+			    				{
+			    					periods = Integer.valueOf(ippEdit.getText().toString());
+			    					if (periods == 0)
+			    					{
+				    					Toast.makeText(mContext, mContext.getResources().getText(R.string.dvt_ipp_periods_invalid), Toast.LENGTH_LONG).show();
+				    					ippDialog.cancel();
+				    					return;
+			    					}
+			    					Log.i("ipp order 1111","periods:"+periods);
+			    				}else
+			    				{
+			    					//periods = 0;
+			    					//text1.setText(R.string.dvt_ipp_periods_invalid);	
+			    					Toast.makeText(mContext, mContext.getResources().getText(R.string.dvt_ipp_periods_invalid), Toast.LENGTH_LONG).show();
+			    					ippDialog.cancel();
+			    					return;
+			    				}			    				
+			    			}
+			    			
+			    			Parcel ippParam = dvt_write_ippinfo();			    			
+							ret = ca.CaBookIpp(ippParam);
+										    			
+			    			if ((status & 0x2) != 0) //unsub
+			    			{
+			    				if (ret == 0)
+			    				{
+					    			try {
+				    					status = status & 0xfd;
+						    			Log.i("ipp order","222  status:"+status);
+					    				jsonArrayippsInfo.getJSONObject(index).put("ippStatus", status);
+					    	
+					    			} catch (JSONException ex) {  
+					    				System.out.println("get JSONObject fail");
+					    			}
+					    			
+				    				String unorderStatusStr = "";
+				    				unorderStatusStr = getString(R.string.dvt_ippunorder);									    				
+				    				map.put("status", unorderStatusStr);
+					    			Log.i("ipp order","222  put dvt_ippunorder:");
+
+				    				//text1.setText(R.string.dvt_ipp_unorder_success);
+				    				Toast.makeText(mContext, mContext.getResources().getText(R.string.dvt_ipp_unorder_success), Toast.LENGTH_LONG).show();
+				    				
+				    				RefeshIppsInfo();
+				    				
+			    				}
+			    				else
+			    				{
+			    					/*unsub fail*/
+			    					//text1.setText(R.string.dvt_ipp_unorder_fail);
+				    				Toast.makeText(mContext, mContext.getResources().getText(R.string.dvt_ipp_unorder_fail), Toast.LENGTH_LONG).show();
+			    				}
+			    			}
+			    			else     // sub
+			    			{
+			    				if (ret == 0)
+								{
+				    				//text1.setText(R.string.dvt_ipp_order_success);
+			    					periodNum = periods;
+				    				Toast.makeText(mContext, mContext.getResources().getText(R.string.dvt_ipp_order_success), Toast.LENGTH_LONG).show();
+				    				
+					    			try {
+				    					status = status | 0x02;
+						    			Log.i("ipp order","333  status:"+status);
+					    				jsonArrayippsInfo.getJSONObject(index).put("ippStatus", status);
+					    			} catch (JSONException ex) {  
+					    				System.out.println("get JSONObject fail");
+					    			}
+					    			
+				    				String orderStatusStr = "";
+				    				orderStatusStr = getString(R.string.dvt_ippordered);
+				    				map.put("status", orderStatusStr);
+				    				RefeshIppsInfo();
+				    				
+								}
+								else if (ret == 0x8000002e)
+								{
+									//text1.setText(R.string.dvt_ipp_lack_money);
+				    				Toast.makeText(mContext, mContext.getResources().getText(R.string.dvt_ipp_lack_money), Toast.LENGTH_LONG).show();
+
+								}
+								else if (ret == 0x8000002f)
+								{
+									//text1.setText(R.string.dvt_ipp_need_verypin);
+				    				Toast.makeText(mContext, mContext.getResources().getText(R.string.dvt_ipp_need_verypin), Toast.LENGTH_LONG).show();
+
+								}
+								else if (ret == 0x80000031)
+								{
+									//text1.setText(R.string.dvt_ipp_slot_invalide);
+				    				Toast.makeText(mContext, mContext.getResources().getText(R.string.dvt_ipp_slot_invalide), Toast.LENGTH_LONG).show();
+								}
+								else if (ret == 0x80000032)
+								{
+									//text1.setText(R.string.dvt_ipp_product_expired);
+				    				Toast.makeText(mContext, mContext.getResources().getText(R.string.dvt_ipp_product_expired), Toast.LENGTH_LONG).show();									
+								}
+								else if (ret == 0x80000036)
+								{
+									//text1.setText(R.string.dvt_ipp_price_error);
+				    				Toast.makeText(mContext, mContext.getResources().getText(R.string.dvt_ipp_price_error), Toast.LENGTH_LONG).show();									
+								}
+								else
+								{
+									//text1.setText(R.string.dvt_caerr_unknown);
+				    				Toast.makeText(mContext, mContext.getResources().getText(R.string.dvt_caerr_unknown), Toast.LENGTH_LONG).show();									
+								}
+			    			}
+			    			
+			    			Log.i("ipp order click", "return");
+							ippDialog.cancel();
+							
+						}
+							break;
+						case R.id.ipp_cancle_btn:
+			    			Log.i("ipp order click", "cancle");
+							ippDialog.cancel();
+							break;
+						default:
+							break;
+						}
+					}
+				};
+				okButton.setOnClickListener(onClickListener);
+				cancleButton.setOnClickListener(onClickListener);
+            }
+
+        });
+    }
+    
+    public Parcel dvt_write_ippinfo()
+    {    	
+		int operator_id = 0;
+		int prod_id = 0;
+		int slot_id = 0;
+		byte product_name[] = new byte[25];
+		int start_time = 0;
+		int end_time = 0;
+		int duration = 0;
+		byte service_name[] = new byte[25];
+		int cur_tpp_tap_price = 0;
+		int cur_tpp_notap_price = 0;
+		int cur_cpp_tap_price = 0;
+		int cur_cpp_notap_price = 0;
+		int booked_price = 0;
+		int booked_price_type = 0;
+		int booked_interval = 0;
+		int cur_interval = 0;
+		int ipp_status = 0;    
+		int ipp_type = 0;
+		int taping = 0;
+		int price = 0;
+		int expired_date = 0;
+		int price_code = 0;
+		int ecm_pid = 0;
+		int buy_program = 0;
+		int by_unit = 0;
+		int ippt_period = 0;
+		
+		int pinLen = 0;
+		byte pin [] = new byte[8];
+//		pin[0]=pin[1]=pin[2]=pin[3]=pin[4]=pin[5]=pin[6]=pin[7]=2;
+		int status = 0;
+		
+		try {			
+			operator_id = jsonArrayippsInfo.getJSONObject(index).getInt("operatorId");
+			prod_id = jsonArrayippsInfo.getJSONObject(index).getInt("prodId");
+			slot_id = jsonArrayippsInfo.getJSONObject(index).getInt("slotId");
+			String productName = jsonArrayippsInfo.getJSONObject(index).getString("productName");
+			String serviceNameStr = jsonArrayippsInfo.getJSONObject(index).getString("serviceName");
+			Log.i("Parcel", "serviceNameStr"+serviceNameStr);	
+			
+			try {
+				product_name = productName.getBytes("gb2312");
+				service_name = serviceNameStr.getBytes("gb2312");
+			} catch (UnsupportedEncodingException e1) {
+				e1.printStackTrace();
+			}	
+			
+			start_time = jsonArrayippsInfo.getJSONObject(index).getInt("startTime");
+			duration = jsonArrayippsInfo.getJSONObject(index).getInt("duration");
+			
+			cur_tpp_tap_price = jsonArrayippsInfo.getJSONObject(index).getInt("curTppTapPrice");
+			cur_tpp_notap_price = jsonArrayippsInfo.getJSONObject(index).getInt("curTppNoTapPrice");
+			cur_cpp_tap_price = jsonArrayippsInfo.getJSONObject(index).getInt("curCppTapPrice");
+			cur_cpp_notap_price = jsonArrayippsInfo.getJSONObject(index).getInt("curCppNoTapPrice");
+			booked_price = jsonArrayippsInfo.getJSONObject(index).getInt("bookedPrice");
+			booked_price_type = jsonArrayippsInfo.getJSONObject(index).getInt("bookedPriceType");
+			booked_interval = jsonArrayippsInfo.getJSONObject(index).getInt("bookedInterval");
+			booked_price_type = jsonArrayippsInfo.getJSONObject(index).getInt("bookedPriceType");
+			cur_interval = jsonArrayippsInfo.getJSONObject(index).getInt("curInterval");
+			ipp_status = jsonArrayippsInfo.getJSONObject(index).getInt("ippStatus");			
+			by_unit = jsonArrayippsInfo.getJSONObject(index).getInt("byUnit");
+			ippt_period = jsonArrayippsInfo.getJSONObject(index).getInt("ipptPeriod");		
+
+		} catch (JSONException ex) {  
+			System.out.println("get JSONObject fail");
+		}
+		
+//		Log.i("Parcel", "operator_id"+operator_id);
+//		Log.i("Parcel", "prod_id"+prod_id);
+//		Log.i("Parcel", "slot_id"+slot_id);		
+//		Log.i("Parcel", "product_name"+product_name);	
+//		Log.i("Parcel", "start_time"+start_time);	
+//		Log.i("Parcel", "end_time"+end_time);	
+//		Log.i("Parcel", "duration"+duration);	
+//		Log.i("Parcel", "cur_tpp_tap_price"+cur_tpp_tap_price);	
+//		Log.i("Parcel", "cur_tpp_notap_price"+cur_tpp_notap_price);	
+//		Log.i("Parcel", "cur_cpp_tap_price"+cur_cpp_tap_price);	
+//		Log.i("Parcel", "cur_cpp_notap_price"+cur_cpp_notap_price);	
+//		Log.i("Parcel", "booked_price_type"+booked_price_type);	
+//		Log.i("Parcel", "booked_interval"+booked_interval);	
+//		Log.i("Parcel", "cur_interval"+cur_interval);	
+//		Log.i("Parcel", "ipp_status"+ipp_status);	
+//		Log.i("Parcel", "ipp_type"+ipp_type);	
+//		Log.i("Parcel", "taping"+taping);	
+//		Log.i("Parcel", "price"+price);	
+//		Log.i("Parcel", "expired_date"+expired_date);	
+//		Log.i("Parcel", "price_code"+price_code);	
+//		Log.i("Parcel", "ecm_pid"+ecm_pid);	
+//		Log.i("Parcel", "buy_program"+buy_program);	
+//		Log.i("Parcel", "by_unit"+by_unit);	
+//		Log.i("Parcel", "ippt_period"+ippt_period);	
+//		Log.i("Parcel", "pin"+pin[0]);	
+//		Log.i("Parcel", "pin"+pin[1]);	
+//		Log.i("Parcel", "pin"+pin[2]);	
+//		Log.i("Parcel", "pin"+pin[3]);	
+		
+		
+		
+    	Parcel ippParam = Parcel.obtain();		
+    	ippParam.writeInterfaceToken("android.Dvbstack.ICa");
+		ippParam.writeInt(operator_id);
+		ippParam.writeInt(prod_id);
+		ippParam.writeInt(slot_id);
+		ippParam.writeByteArray(product_name, 0, product_name.length);
+		ippParam.writeInt(start_time);
+		ippParam.writeInt(end_time);
+		ippParam.writeInt(duration);
+		ippParam.writeByteArray(service_name, 0, service_name.length);				
+		ippParam.writeInt(cur_tpp_tap_price);
+		ippParam.writeInt(cur_tpp_notap_price);
+		ippParam.writeInt(cur_cpp_tap_price);
+		ippParam.writeInt(cur_cpp_notap_price);
+		ippParam.writeInt(booked_price);
+		ippParam.writeInt(booked_price_type);
+		ippParam.writeInt(booked_interval);
+		ippParam.writeInt(cur_interval);
+		ippParam.writeInt(ipp_status);
+		ippParam.writeInt(ipp_type);
+		ippParam.writeInt(taping);
+		ippParam.writeInt(price);
+		ippParam.writeInt(expired_date);
+		ippParam.writeInt(price_code);
+		ippParam.writeInt(ecm_pid);
+		ippParam.writeInt(buy_program);
+		ippParam.writeInt(by_unit);
+		ippParam.writeInt(ippt_period);
+//		ippParam.writeInt(pinLen);
+		ippParam.writeByteArray(pin,0,pin.length);		
+		
+    	return ippParam;
+    	
+    }
+    
+    public String dvt_display_curprice_yuan(int fen)
+    {
+    	String str = "";
+    	
+    	if (fen == 0)
+    	{
+    		str = str+"不回传、不可录像的价格("+fen+"元)";
+    	}
+    	else
+    	{
+    		int yuan = fen/100;
+    		int feng = fen%100;
+    		str = str+"不回传、不可录像的价格("+yuan+"."+feng+"元)";
+    	}
+    	return str;
+    	
+    }
+    
+    public static final  int DVTCAS_IPP_BYUNIT_MIN = 0;
+    public static final  int DVTCAS_IPP_BYUNIT_HOUR = 1;
+    public static final  int DVTCAS_IPP_BYUNIT_DAY = 2;
+    public static final  int DVTCAS_IPP_BYUNIT_MON = 3;
+    public static final  int DVTCAS_IPP_BYUNIT_YER = 4;
+    
+    public String dvt_display_curprice_yuan_min(int fen, int min, int  uint)
+    {
+    	String str = "";
+    	
+    	if (fen == 0)
+    	{
+    		str = str+"不回传、不可录像的价格("+fen+"元)";
+    	}
+    	else
+    	{
+    		int yuan = fen/100;
+    		int feng = fen%100;
+    		str = str+"不回传、不可录像的价格("+yuan+"."+feng+"元/";
+    	}
+    	
+    	if (min != 0)
+    	{
+    		str = str+min;
+    	}
+ 
+    	switch(uint)
+    	{
+	    	case DVTCAS_IPP_BYUNIT_MIN:
+	    		str = str+"分钟)";
+	    		break;
+	    	case DVTCAS_IPP_BYUNIT_HOUR:
+	    		str = str+"小时)";	    		
+	    		break;
+	    	case DVTCAS_IPP_BYUNIT_DAY:
+	    		str = str+"天)";
+	    		break;
+	    	case DVTCAS_IPP_BYUNIT_MON:
+	    		str = str+"月)";
+	    		break;
+	    	case DVTCAS_IPP_BYUNIT_YER:
+	    		str = str+"年)";
+	    		break;	    		
+	    	default:
+	    		str = str+"分钟)";	    		
+	    		break;
+	    	
+    	}
+    	
+    	return str;
+    }
+    
+}
+
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.um.umsmcupdate"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <receiver android:name=".SmcUpdateReceiver"
+            android:process="com.um.umsmcupdate.receiver">
+            <intent-filter>
+                <action android:name="com.um.umsmcupdate.START_PROGRESS_RECEIVEPATCH"/>
+                <action android:name="com.um.umsmcupdate.STOP_PROGRESS_RECEIVEPATCH"/>
+                <action android:name="com.um.umsmcupdate.START_PROGRESS_PATCHING"/>
+                <action android:name="com.um.umsmcupdate.STOP_PROGRESS_PATCHING"/>
+            </intent-filter>
+        </receiver>
+        
+        <service android:name=".SmcUpdateService">
+            <intent-filter>
+                <action android:name="com.um.umsmcupdate.START_PROGRESS_RECEIVEPATCH"/>
+                <action android:name="com.um.umsmcupdate.STOP_PROGRESS_RECEIVEPATCH"/>
+                <action android:name="com.um.umsmcupdate.START_PROGRESS_PATCHING"/>
+                <action android:name="com.um.umsmcupdate.STOP_PROGRESS_PATCHING"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

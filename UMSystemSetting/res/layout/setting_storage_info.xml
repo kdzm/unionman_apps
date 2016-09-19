@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_storage_layout" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+<LinearLayout
+    android:layout_width="967dp"
+    android:layout_height="600dp"
+    android:layout_marginLeft="157dp"
+    android:layout_marginTop="60dp"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/setting_storageinfo"
+            android:textColor="@color/white"
+            android:textSize="33sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/setting_dialog_bg"
+        android:orientation="vertical"
+         >
+
+    <ScrollView 
+	        android:id="@+id/setting_storage_scrollview"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent">
+	<LinearLayout
+	    android:id="@+id/setting_storage_bg_layout" 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/transparent"
+	    android:orientation="vertical">
+	    
+	    <LinearLayout
+	     android:id="@+id/setting_storageinfointernal_layout" 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:orientation="horizontal"
+	     android:gravity="center_vertical"	
+	     android:layout_marginTop="50dp"        
+	        >
+	    <LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:gravity="left"
+	    android:layout_marginLeft="140dip"      
+	        >
+	 		<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+	 		    android:textColor="@color/white"
+	 		    android:textSize="22sp"
+	 		    android:text="@string/setting_storageinfointernal" />	        
+	    </LinearLayout>     
+	   <LinearLayout
+	    android:id="@+id/setting_storage_internal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="right"
+	    android:layout_marginRight="198dip"
+	     android:orientation="vertical">
+	 <LinearLayout 
+		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"  
+        android:orientation="vertical"	
+        android:gravity="center"  
+        android:padding="20dp"     
+	     >
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@color/transparent"
+	    android:orientation="horizontal">
+			 <TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+	 		    android:textColor="@color/greywhite"
+	 		    android:textSize="18sp"
+	 		    android:text="@string/setting_storageinfototal" />
+			 <TextView 
+			    android:id="@+id/internal_total_memory_size_txt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="20dp"
+	 		    android:textColor="@color/greywhite"
+	 		    android:layout_gravity="right"
+	 		    android:textSize="18sp"
+	 		    android:text="@string/setting_storageinfototal" />
+			 <TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+	 		    android:textColor="@color/greywhite"
+	 		    android:textSize="18sp"
+	 		    android:text="@string/setting_storageinfoavail" />
+			 <TextView 
+			    android:id="@+id/internal_avail_memory_size_txt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+	 		    android:textColor="@color/greywhite"
+	 		    android:textSize="18sp"
+	 		    />
+		</LinearLayout>   
+	 		<ProgressBar
+	 		    android:id="@+id/internal_storage_pg"
+	 		    android:layout_width="wrap_content"
+	 		    android:layout_height="wrap_content" 
+                android:maxHeight="10dp"		 		    
+                android:minHeight="10dp" 	
+                android:maxWidth="200dp"	
+                android:minWidth="400dp"  	 		    
+	 		    style="?android:attr/progressBarStyleHorizontal"
+	 		    android:max="100"
+        		android:progress="0"
+	 		    />		  
+	 </LinearLayout>   	        
+	    	    </LinearLayout>      
+	    </LinearLayout>
+	    
+<LinearLayout
+    	android:id="@+id/setting_storageinfoexternal_layout" 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	     android:orientation="horizontal"
+	     android:gravity="center_vertical"	        
+	        >
+	    <LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="left"
+	    	android:layout_marginLeft="160dip"	   	           
+	        >
+	 		<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+	 		    android:textColor="@color/white"
+	 		    android:textSize="22sp"
+	 		    android:text="@string/setting_storageinfoexternal" />      
+	    </LinearLayout>     
+	    <LinearLayout 
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="right"
+	    	android:layout_marginRight="198dip"
+	     	android:orientation="vertical"	        
+	        >
+	 <LinearLayout 
+		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"  
+        android:orientation="vertical"	
+        android:gravity="center" 
+         android:padding="20dp"                 
+	     >
+	 <LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@color/transparent"
+	    android:orientation="horizontal">
+			 <TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+	 		    android:textColor="@color/greywhite"
+	 		    android:textSize="18sp"
+	 		    android:text="@string/setting_storageinfototal" />
+			 <TextView 
+			    android:id="@+id/external_total_memory_size_txt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+			 	android:layout_marginRight="20dp"				
+				android:layout_gravity="right"
+	 		    android:textColor="@color/greywhite"
+	 		    android:textSize="18sp"
+	 		    />
+            <TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+	 		    android:textColor="@color/greywhite"
+	 		    android:textSize="18sp"
+	 		    android:text="@string/setting_storageinfoavail" />
+			 <TextView 
+			    android:id="@+id/external_avail_memory_size_txt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+	 		    android:textColor="@color/greywhite"
+	 		    android:textSize="18sp"
+	 		    />
+		</LinearLayout>   
+ 		<ProgressBar
+ 		    android:id="@+id/external_storage_pg"
+ 		    android:layout_width="wrap_content"
+ 		    android:layout_height="wrap_content" 
+               android:maxHeight="10dp"		 		    
+               android:minHeight="10dp" 	
+               android:maxWidth="200dp"	
+               android:minWidth="400dp"   
+ 		    style="?android:attr/progressBarStyleHorizontal"
+ 		    android:max="100"
+       		android:progress="0"
+ 		    />	  
+	 </LinearLayout>   	        
+	    	    </LinearLayout>      
+	    </LinearLayout>
+	    	    
+	</LinearLayout>
+</ScrollView>
+</LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

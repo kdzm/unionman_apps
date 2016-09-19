@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content" 
+	android:background="@drawable/setting_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1"
+	>
+
+    <LinearLayout
+        android:layout_width="760dp"
+        android:layout_height="450dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:background="@drawable/dvb_list_bg"
+        android:orientation="vertical"
+		>
+	    <LinearLayout 
+	        android:id="@+id/linearLayout1" 
+	    	android:layout_width="match_parent"
+	    	android:layout_height="86dp" 
+	    	android:orientation="vertical" 
+	    	android:layout_weight="0.14"
+	    	>
+	        <TextView 
+	            android:id="@+id/textView1"
+	        	android:gravity="center"
+				android:layout_gravity="center" 
+				android:layout_width="wrap_content"
+	        	android:layout_height="50dp"
+				android:textSize="30sp"
+				android:text="@string/soundchannel_setting" 
+	        	android:textAppearance="?android:attr/textAppearanceLarge" 
+	        	>
+			</TextView>
+			
+			<ImageView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/dvb_title_line"
+            	/>
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/fre_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="56dp"
+	        android:gravity="center"
+	        android:orientation="horizontal"
+			>
+	
+	        <Spinner
+	            android:id="@+id/soundChannelSetting"
+	            android:layout_width="260dp"
+	            android:layout_height="40dp"
+	            style="@style/dvb_spinner"
+				>
+	        </Spinner>
+	    </LinearLayout>
+
+		<LinearLayout 
+		    android:id="@+id/linearLayout3"
+		    android:layout_width="match_parent"
+			android:layout_height="70dp" 
+			android:gravity="center"
+			android:orientation="vertical" 
+			android:layout_weight="0.51"
+			>
+			</LinearLayout>
+		</LinearLayout>
+</LinearLayout>

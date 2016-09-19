@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/game_item_hall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/game_item_hall_marginTop"
+        android:layout_marginLeft="@dimen/game_item_hall_marginLeft"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusRight="@+id/game_item_boxingking"
+        android:nextFocusDown="@+id/game_item_helicopter_war" >
+
+        <RelativeLayout
+            android:id="@+id/game_child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_wide_bg_grape">
+
+           <ImageView
+                android:id="@+id/game_hall_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/page_gamehall" />
+                        
+            <TextView
+                android:id="@+id/game_hall_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/game_hall_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/games_hall"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/game_item_boxingking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/game_item_boxingking_marginLeft"
+        android:layout_marginTop="@dimen/game_item_boxingking_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/game_item_hall"
+        android:nextFocusRight="@+id/game_item_jiajia" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_narrow_bg_yellow" >
+
+            <ImageView
+                android:id="@+id/game_boxingking_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/page_boxingqing" />
+
+            <TextView
+                android:id="@+id/game_boxingking_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/game_boxingking_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/game_boxingking"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+	   android:id="@+id/game_boxingking_img_reflect"
+	   android:layout_marginLeft="@dimen/game_item_boxingking_marginLeft"
+       android:layout_marginTop="518dp"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"/>
+        
+     <RelativeLayout
+        android:id="@+id/game_item_jiajia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/game_item_jiajia_marginLeft"
+        android:layout_marginTop="@dimen/game_item_jiajia_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/game_item_boxingking"
+        android:nextFocusRight="@+id/game_item_gp"
+        android:nextFocusDown="@+id/game_item_feizhi" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_mid_bg_grape">
+
+            <ImageView
+                android:id="@+id/game_jiajia_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/page_jiajia" />
+
+            <TextView
+                android:id="@+id/game_jiajia_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/game_jiajia_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/game_jiajia"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/game_item_gp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/game_item_gp_marginLeft"
+        android:layout_marginTop="@dimen/game_item_gp_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/game_item_jiajia"
+        android:nextFocusDown="@+id/game_item_xiaochong" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_mid_bg_blue">
+
+            <ImageView
+                android:id="@+id/game_gp_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/page_gp" />
+
+            <TextView
+                android:id="@+id/game_gp_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/game_gp_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/game_gp"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/game_item_helicopter_war"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/game_item_helicopter_war_marginLeft"
+        android:layout_marginTop="@dimen/game_item_helicopter_war_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusRight="@+id/game_item_boxingking"
+        android:nextFocusUp="@+id/game_item_hall" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_wide_bg_orange">
+
+            <ImageView
+                android:id="@+id/game_helicopter_war_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/page_war" />
+
+            <TextView
+                android:id="@+id/game_helicopter_war_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/game_helicopter_war_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/game_helicopter_war"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <ImageView
+	   android:id="@+id/game_war_img_reflect"
+	   android:layout_marginLeft="@dimen/game_item_helicopter_war_marginLeft"
+       android:layout_marginTop="518dp"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"/>
+    
+    <RelativeLayout
+        android:id="@+id/game_item_feizhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/game_item_feizhi_marginLeft"
+        android:layout_marginTop="@dimen/game_item_feizhi_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/game_item_boxingking"
+        android:nextFocusRight="@+id/game_item_xiaochong"
+        android:nextFocusUp="@+id/game_item_jiajia" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_mid_bg_green">
+
+            <ImageView
+                android:id="@+id/game_feizhi_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/page_feizhi" />
+
+            <TextView
+                android:id="@+id/game_feizhi_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/game_feizhi_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/game_feizhi"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+	   android:id="@+id/game_feizhi_img_reflect"
+	   android:layout_marginLeft="@dimen/game_item_feizhi_marginLeft"
+       android:layout_marginTop="518dp"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"/>
+        
+    <RelativeLayout
+        android:id="@+id/game_item_xiaochong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/game_item_xiaochong_marginLeft"
+        android:layout_marginTop="@dimen/game_item_xiaochong_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/game_item_feizhi"
+        android:nextFocusUp="@+id/game_item_gp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_mid_bg_cyan">
+
+            <ImageView
+                android:id="@+id/game_xiaochong_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/page_xiaochong" />
+
+            <TextView
+                android:id="@+id/game_xiaochong_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/game_xiaochong_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="@string/game_xiaochong"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+	   android:id="@+id/game_xiaochong_img_reflect"
+	   android:layout_marginLeft="@dimen/game_item_xiaochong_marginLeft"
+       android:layout_marginTop="518dp"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"/>
+</FrameLayout>

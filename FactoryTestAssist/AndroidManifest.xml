@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unionman.factorytestassist"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    
+	<uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        <activity
+            android:name="com.unionman.factorytestassist.PrepareActivity"
+            android:excludeFromRecents="true" >
+            <intent-filter android:priority="10000">
+                <action android:name="android.intent.action.MAIN" />
+		<category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.UM_HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.unionman.factorytestassist.FastResetActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.unionman.intent.ACTION_FAST_RESET" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>       
+    </application>
+
+</manifest>

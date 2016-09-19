@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="@dimen/tf_smc_info_width"
+        android:layout_height="@dimen/tf_smc_info_height"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bg1"
+        android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tf_smc_info_title_height"
+        android:layout_gravity="top"
+        android:background="@drawable/searchmenu_btn"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/tf_change_pin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_change_pin_title_text_size" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tf_smc_info_title_height"
+        android:layout_marginTop="@dimen/tf_change_pin_item_magin_top"
+        android:background="@drawable/searchmenu_btn"
+        android:gravity="center|right" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/tf_change_pin_item_title_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tf_change_pin_item_margin_left"
+            android:layout_weight="0.08"
+            android:gravity="center|right"
+            android:text="@string/tf_current_pin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_change_pin_item_text_size" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="@dimen/tf_change_pin_item_content_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tf_change_pin_item_content_magin_left"
+            android:layout_marginRight="@dimen/tf_change_pin_item_content_magin_right"
+            android:layout_weight="1"
+            android:maxLength="6"
+            android:gravity="center_horizontal"
+            android:inputType="numberPassword"
+            android:selectAllOnFocus="true"
+            >
+
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tf_smc_info_title_height"
+        android:layout_marginTop="@dimen/tf_change_pin_items_margin"
+        android:background="@drawable/searchmenu_btn"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="@dimen/tf_change_pin_item_title_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tf_change_pin_item_margin_left"
+            android:layout_weight="0.08"
+            android:gravity="center|right"
+            android:selectAllOnFocus="true"
+            android:text="@string/tf_new_pin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_change_pin_item_text_size" >
+
+            <requestFocus></requestFocus>
+        </TextView>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="@dimen/tf_change_pin_item_content_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tf_change_pin_item_content_magin_left"
+            android:layout_marginRight="@dimen/tf_change_pin_item_content_magin_right"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:inputType="numberPassword"
+            android:selectAllOnFocus="true"
+            android:maxLength="6" 
+            >
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tf_smc_info_title_height"
+        android:layout_marginTop="@dimen/tf_change_pin_items_margin"
+        android:background="@drawable/searchmenu_btn"
+        android:gravity="center"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="@dimen/tf_change_pin_item_title_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tf_change_pin_item_margin_left"
+            android:layout_weight="0.08"
+            android:gravity="center|right"
+            android:text="@string/tf_pin_verify"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_change_pin_item_text_size" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="@dimen/tf_change_pin_item_content_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tf_change_pin_item_content_magin_left"
+            android:layout_marginRight="@dimen/tf_change_pin_item_content_magin_right"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:selectAllOnFocus="true" 
+            >
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:layout_marginTop="50dp"
+         android:background="@drawable/btn_bg"
+        android:layout_gravity="center" />
+
+</LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" >
+
+
+    </LinearLayout>
+</LinearLayout>

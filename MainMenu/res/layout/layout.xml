@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+          android:layout_weight="1"
+        >
+  <RelativeLayout 
+      android:id="@+id/rl_network"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:background="@drawable/select_bg"
+      >
+
+            <ImageView
+                android:id="@+id/ib_network"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/network"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="13dp"
+                android:paddingRight="20dp"
+                android:text="@string/network"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+ 
+   </RelativeLayout>   
+    <RelativeLayout 
+      android:id="@+id/rl_picture"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+            android:background="@drawable/select_bg"
+      >
+            <ImageView
+                android:id="@+id/ib_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/picture"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="13dp"
+                android:paddingRight="20dp"
+                android:text="@string/picture"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+  </RelativeLayout>  
+            <RelativeLayout
+            android:id="@+id/rl_voice"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:background="@drawable/select_bg">
+
+            <ImageView
+                android:id="@+id/ib_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/voice"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="13dp"
+                android:paddingRight="20dp"
+                android:text="@string/voice"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_energy"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:background="@drawable/select_bg" >
+
+            <ImageButton
+                android:id="@+id/ib_energy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/energy"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="13dp"
+                android:paddingRight="20dp"
+                android:text="@string/energy"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RelativeLayout> 
+        </LinearLayout>   
+            <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+          android:layout_weight="1"
+        >  
+         <RelativeLayout
+            android:id="@+id/rl_settings"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="3"
+      android:background="@drawable/select_bg">
+
+            <ImageButton
+                android:id="@+id/ib_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settings"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="13dp"
+                android:paddingRight="20dp"
+                android:text="@string/settings"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RelativeLayout>  
+                <RelativeLayout
+            android:id="@+id/rl_aboutme"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="3"
+        android:background="@drawable/select_bg" >
+
+            <ImageButton
+                android:id="@+id/ib_aboutme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/aboutme"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="13dp"
+                android:paddingRight="20dp"
+                android:text="@string/aboutme"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RelativeLayout> 
+                <RelativeLayout
+            android:id="@+id/rl_apk"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="2"
+      android:background="@drawable/select_bg">
+
+            <ImageButton
+                android:id="@+id/ib_apk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/apk"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="13dp"
+                android:paddingRight="20dp"
+                android:text="@string/apk"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </RelativeLayout> 
+         </LinearLayout>      
+</LinearLayout>
+</RelativeLayout>

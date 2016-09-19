@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabmain"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+    >
+
+    <FrameLayout
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="110dp"
+        >
+
+        <LinearLayout
+			android:id="@+id/listFile"
+            android:layout_width="match_parent"
+			android:layout_height="445dp"
+            android:gravity="center"
+            >
+
+			<ListView android:visibility="invisible"
+				android:id="@+id/listView"
+                android:layout_width="match_parent"
+				android:layout_height="match_parent"
+                android:listSelector="@drawable/listview_selector"
+				android:divider="@drawable/list_line"
+				android:fadingEdge="none"
+                />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/gridFile"
+            android:layout_width="wrap_content"
+			android:layout_height="445dp"
+            android:gravity="center"
+            >
+            <GridView android:visibility="invisible"
+                android:layout_gravity="center"
+				android:id="@+id/gridView"
+                android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+                android:horizontalSpacing="5dp"
+				android:verticalSpacing="5dp"
+                android:columnWidth="5dp"
+				android:numColumns="7"
+                android:listSelector="@color/transparent"
+                />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

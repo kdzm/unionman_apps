@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridFile_device"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/media_center_bg"
+    >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="110dp"
+		android:layout_marginTop="50dp"
+		android:orientation="horizontal"
+		>
+		
+	    <ImageView
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn_camera_arrow_left_default"
+	        />
+    
+	    <TextView
+		    android:id="@+id/device_txt_Title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:text="@string/device_title"
+			android:textColor="@color/white"
+			android:textSize="35sp"
+			/>
+    </LinearLayout>
+    
+    <FrameLayout
+		android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="110dp"
+        >
+        <LinearLayout
+			android:id="@+id/gridFile_device"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <GridView
+                android:id="@+id/devicegridView"
+				android:visibility="invisible"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+                android:horizontalSpacing="20dp"
+				android:verticalSpacing="20dp"
+                android:columnWidth="170dp"
+				android:numColumns="auto_fit"
+                android:listSelector="@color/transparent"
+                />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

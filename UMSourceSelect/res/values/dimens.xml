@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bg_marginLeft">175dp</dimen>
+    <dimen name="bg_marginTop">0dp</dimen>
+    <dimen name="tv_item_window_marginLeft">79dp</dimen>
+    <dimen name="tv_item_window_marginTop">86dp</dimen>
+    <dimen name="tv_item_cmcc_marginLeft">28dp</dimen>
+    <dimen name="tv_item_cmcc_marginTop">160dp</dimen>    
+    <dimen name="tv_item_atv_marginLeft">190dp</dimen>
+    <dimen name="tv_item_atv_marginTop">160dp</dimen>
+    <dimen name="tv_item_dtv_marginLeft">352dp</dimen>
+    <dimen name="tv_item_dtv_marginTop">160dp</dimen>
+    <dimen name="tv_item_av1_marginLeft">514dp</dimen>
+    <dimen name="tv_item_av1_marginTop">160dp</dimen>
+    <dimen name="tv_item_ypbpr_marginLeft">676dp</dimen>
+    <dimen name="tv_item_ypbpr_marginTop">160dp</dimen>
+    
+    <dimen name="tv_item_hdmi1_marginLeft">190dp</dimen>
+    <dimen name="tv_item_hdmi1_marginTop">376dp</dimen>
+    <dimen name="tv_item_hdmi2_marginLeft">352dp</dimen>
+    <dimen name="tv_item_hdmi2_marginTop">376dp</dimen>
+    <dimen name="tv_item_hdmi3_marginLeft">514dp</dimen>
+    <dimen name="tv_item_hdmi3_marginTop">376dp</dimen>
+    <dimen name="tv_item_vga_marginLeft">514dp</dimen>
+    <dimen name="tv_item_vga_marginTop">376dp</dimen>
+   <!--  <dimen name="tv_item_vga_marginLeft">676dp</dimen>
+    <dimen name="tv_item_vga_marginTop">376dp</dimen> -->
+</resources>

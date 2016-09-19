@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/version"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/layout_check_all" />
+        <!-- 列表模式 -->
+
+        <LinearLayout
+            android:id="@+id/ll_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:descendantFocusability="beforeDescendants"
+                android:divider="@null"
+                android:padding="5dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+       
+        <!-- 表格模式 -->
+
+        <LinearLayout
+            android:id="@+id/ll_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/gv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:horizontalSpacing="5dp"
+                android:numColumns="5"
+                android:verticalSpacing="20dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+  
+    <!-- 挂载设备 -->
+
+    <LinearLayout
+        android:id="@+id/ll_mounted_equipment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_dev_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/choose_equipment"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <GridView
+            android:id="@+id/gv_mounted_equipment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22dp"
+            android:gravity="center"
+            android:stretchMode="columnWidth"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <!-- 类型选择 -->
+
+    <LinearLayout
+        android:id="@+id/ll_choose_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/choose_type"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <RelativeLayout
+            android:layout_width="1200dp"
+            android:layout_height="550dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ib_all"
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/type_selected_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/type_all" />
+
+            <ImageButton
+                android:id="@+id/ib_moive"
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@id/ib_all"
+                android:background="@drawable/type_selected_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/type_mov" />
+
+            <ImageButton
+                android:id="@+id/ib_music"
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@id/ib_moive"
+                android:background="@drawable/type_selected_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/type_music" />
+
+            <ImageButton
+                android:id="@+id/ib_image"
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@id/ib_music"
+                android:background="@drawable/type_selected_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/type_img" />
+
+            <ImageView
+                android:id="@+id/iv_copy_all"
+                android:layout_width="230dp"
+                android:layout_height="300dp"
+                android:layout_alignLeft="@id/ib_all"
+                android:layout_below="@id/ib_all"
+                android:layout_marginStart="7dp" />
+
+            <ImageView
+                android:id="@+id/iv_copy_moive"
+                android:layout_width="230dp"
+                android:layout_height="300dp"
+                android:layout_alignLeft="@id/ib_moive"
+                android:layout_below="@id/ib_moive"
+                android:layout_marginStart="7dp" />
+
+            <ImageView
+                android:id="@+id/iv_copy_music"
+                android:layout_width="230dp"
+                android:layout_height="300dp"
+                android:layout_alignLeft="@id/ib_music"
+                android:layout_below="@id/ib_music"
+                android:layout_marginStart="7dp" />
+
+            <ImageView
+                android:id="@+id/iv_copy_image"
+                android:layout_width="230dp"
+                android:layout_height="300dp"
+                android:layout_alignLeft="@id/ib_image"
+                android:layout_below="@id/ib_image"
+                android:layout_marginStart="7dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

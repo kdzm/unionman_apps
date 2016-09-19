@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bg1"
+        android:orientation="vertical" >
+
+    
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:background="@drawable/searchmenu_btn" android:layout_height="45dp" android:gravity="center">
+ 		<TextView android:text="@string/tf_working_time" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:layout_gravity="center" android:textSize="30sp" android:textColor="@color/white"></TextView>
+       
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/searchmenu_btn" >
+
+    	<TextView
+    	    android:id="@+id/textView2"
+    	    android:layout_width="140dp"
+    	    android:layout_height="match_parent"
+    	    android:layout_marginLeft="60dp"
+    	    android:gravity="right|center"
+    	    android:text="@string/tf_start_time"
+    	    android:textColor="@color/white"
+    	    android:textSize="24sp" >
+</TextView>
+
+    	<TimePicker
+    	    android:id="@+id/timePicker1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="match_parent"
+    	    android:layout_alignParentLeft="false"
+    	    android:layout_alignParentTop="true"
+    	    android:layout_marginLeft="50dp"
+    	    android:layout_toRightOf="@+id/textView2" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/searchmenu_btn" >
+
+    	<TextView
+    	    android:id="@+id/textView3"
+    	    android:layout_width="140dp"
+    	    android:layout_height="match_parent"
+    	    android:layout_marginLeft="60dp"
+    	    android:gravity="right|center"
+    	    android:text="@string/tf_end_time"
+    	    android:textColor="@color/white"
+    	    android:textSize="24sp" >
+</TextView>
+
+    	<TimePicker
+    	    android:id="@+id/timePicker2"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentTop="true"
+    	    android:layout_marginLeft="50dp"
+    	    android:layout_toRightOf="@+id/textView3" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/searchmenu_btn" >
+
+       <TextView
+           android:id="@+id/textView4"
+           android:layout_width="140dp"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="60dp"
+           android:gravity="right"
+           android:text="@string/tf_input_pin"
+           android:textColor="@color/white"
+           android:textSize="24sp" >
+		</TextView>
+       <EditText 
+           android:id="@+id/editText3" 
+           android:layout_height="wrap_content" 
+           android:inputType="numberPassword" 
+           android:layout_alignParentTop="true" 
+           android:layout_toRightOf="@+id/textView4" 
+           android:layout_width="140dp" 
+           android:layout_marginLeft="60dp" 
+           android:maxLength="6" 
+           android:selectAllOnFocus="true"
+           >
+          <requestFocus></requestFocus>
+       </EditText>
+   
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ok_btn"
+        android:layout_gravity="center" />
+   
+</LinearLayout>
+</LinearLayout>

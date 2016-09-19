@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       <!-- 设置页 -->
+    <string name="net_setting">网络设置</string>
+    <string name="pic_setting">图像设置</string>
+    <string name="voice_setting">声音设置</string>
+    <string name="system">系统升级</string>
+    <string name="advance_setting">系统设置</string>
+    <string name="recover_setting">恢复设置</string>
+    <string name="system_info">关于本机</string>
+    <string name="help">使用帮助</string>
+    <string name="powersaving">节能设置</string>
+    <string name="appmanage">应用程序管理</string> 
+    
+   <string name="children_lock">儿童锁</string>
+   <string name="upgrade_setting">软件升级</string>
+   <string name="not_support">暂不支持该应用</string>
+</resources>

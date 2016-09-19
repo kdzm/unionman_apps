@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NetErrorInfo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="error">错 误</string>
+    <string name="reboot">重 启</string>
+    <string name="cancle">取 消</string>
+    <string name="error_code_dialog_title_template">提示信息</string>
+    <string name="error_code_dialog_info_tip" />
+    <string name="error_code_dialog_operate_suggestion">操作建议:</string>
+    <string name="code_title">提示代码：</string>
+    <string name="tip_title">信息提示：</string>
+    <string name="suggest_title">用户操作提示建议：</string>
+   <!--  互联网呆萌版提示语  -->
+    
+    <string name="tip_10000">主人，我的网络连接不上啦！(⊙□⊙)</string>
+    <string name="suggest_10000">"1.请重启一下机顶盒吧
+2.请检查网线连好了吗？
+还是不行？请联系上门提供安装服务的装维人员或拨打10086"</string>
+    <string name="tip_10001">主人，网络连接不上，我的IP被占用啦…（⊙▽⊙）</string>
+    <string name="suggest_10001">"1.请重一下启机顶盒吧
+2.请检查网线连好了吗？
+还是不行？请联系上门提供安装服务的装维人员或拨打10086"</string>
+    <string name="tip_10010">主人，网络连接不上，我的IP失效啦…(⊙□⊙)</string>
+    <string name="suggest_10010">"尝试重启机顶盒吧！
+还是不行？请联系上门提供安装服务的装维人员或拨打10086"</string>
+    <string name="tip_10030">时间同步失败，偶尔出现可忽略，若频繁出现请拨打10086咨询。</string>
+    <string name="suggest_10030">""</string>
+    <string name="tip_10040">主人，网络不稳定了，升级失败哦，请稍后重试吧(=￣ω￣=)。</string>
+    <string name="suggest_10040">"1.网线连好了吗？
+2.重启一下机顶盒和光猫吧！
+还是不行？请联系上门提供安装服务的装维人员或拨打10086"</string>
+    <string name="tip_10041">主人，网络不稳定了，升级失败，请稍后重试吧(=￣ω￣=)。</string>
+    <string name="suggest_10041">"1.网线连好了吗？
+2.重启一下机顶盒和光猫吧！
+还是不行？请联系上门提供安装服务的装维人员或拨打10086"</string>
+    <string name="tip_10043">主人，网络不稳定了，升级失败，请稍后重试吧(=￣ω￣=)。</string>
+    <string name="suggest_10043">"1.网线连好了吗？
+2.重启一下机顶盒和光猫吧！
+还是不行？请联系上门提供安装服务的装维人员或拨打10086"</string>
+    <string name="tip_10044">主人，空间不足啦，请在设置界面清理内存后再升级吧
+(=￣ω￣=)。</string>
+    <string name="suggest_10044">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_10045">主人，升级失败了！（〒▽〒）请稍后重试吧！ </string>
+    <string name="suggest_10045">"还是不行？请联系上门提供安装服务的装维人员或拨打10086"</string>
+    <string name="tip_29001">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29001">"还是不行？请联系上门提供安装服务的装维人员或拨打10086"</string>
+    <string name="tip_29002">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29002">"还是不行？请联系上门提供安装服务的装维人员或拨打10086"</string>
+    <string name="tip_29003">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29003">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29004">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29004">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29005">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29005">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29006">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29006">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29007">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29007">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29008">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29008">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29009">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29009">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29010">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29010">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29011">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29011">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29012">主人，您已欠费被停机喇，登录失败了（〒▽〒）请您充点话费再重试吧！</string>
+    <string name="suggest_29012">"还是不行？请联系上门提供安装服务的装维人员或拨打10086"</string>
+    <string name="tip_29013">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29013">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29014">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29014">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29015">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29015">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29016">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29016">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29017">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29017">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29018">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29018">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29019">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29019">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29020">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29020">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29021">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29021">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29022">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29022">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29023">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29023">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29024">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29024">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29025">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29025">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29026">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29026">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29027">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29027">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29028">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29028">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29029">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29029">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29030">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29030">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29031">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29031">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29032">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29032">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29033">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29033">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29034">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29034">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29035">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29035">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29036">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29036">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29037">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29037">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29038">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29038">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29039">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29039">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+    <string name="tip_29040">主人，登录失败（〒▽〒）请试试重启机顶盒吧！</string>
+    <string name="suggest_29040">"还是不行？请联系上门提供安装服务的装维人员或拨打10086。"</string>
+</resources>
+<!-- 官方严肃版提示语 -->
+   
+    <!--
+<string name="tip_10000">信息提示：机顶盒网络连接失败！</string>
+    <string name="suggest_10000">"请按以下步骤检查：
+1、请检查网线是否正常连接；
+2、请尝试断电重启机顶盒；
+3、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_10001">IP地址冲突，机顶盒网络连接失败！</string>
+    <string name="suggest_10001">"请按以下步骤检查：
+1、请尝试断电重启机顶盒重新获取IP地址；
+2、请检查家庭网络中是否有其他设备通过静态IP方式占用该地址并更换IP地址；
+3、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_10002">登录失败，系统异常。</string>
+    <string name="suggest_10002">
+请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。</string>
+
+    <string name="tip_10010">机顶盒自动获取IP地址失败或无效，网络连接失败！</string>
+    <string name="suggest_10010">"请按以下步骤检查：
+1、请检查机顶盒与家庭路由器或DHCP服务器之间网络是否连通；
+2、请尝试断电重启机顶盒；
+3、请尝试断电重启路由器；
+4、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_10030">时间同步失败，偶尔出现可忽略，若频繁出现请拨打10086咨询。</string>
+    <string name="suggest_10030">""</string>
+    <string name="tip_10040">机顶盒升级包下载失败！</string>
+    <string name="suggest_10040">"请按以下步骤检查：
+1、请检查网线是否正常连接；
+2、请尝试断电重启机顶盒；
+3、请尝试断电重启光猫；
+4、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_10041">机顶盒升级失败！</string>
+    <string name="suggest_10041">"请按以下步骤检查：
+1、请检查网线是否正常连接；
+2、请尝试断电重启机顶盒；
+3、请断电重启光猫；
+4、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_10043">机顶盒访问升级服务器失败！</string>
+    <string name="suggest_10043">"请按以下步骤检查：
+1、请检查网线是否正常连接；
+2、请断电重启光猫；
+3、请尝试断电重启机顶盒；
+4、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_10044">机顶盒可用空间不足，本次升级失败！</string>
+    <string name="suggest_10044">"请按以下步骤检查：
+1、删除机顶盒保存的电影等大文件
+2、卸载占用存储较多的游戏以释放空间
+3、请尝试断电重启机顶盒；
+4、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_10045">升级文件不存在；本次升级失败！</string>
+    <string name="suggest_10045">"请后续再尝试升级。若问题多次出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29001">请求参数异常；登录失败！</string>
+    <string name="suggest_29001">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29002">请求参数异常；登录失败！</string>
+    <string name="suggest_29002">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29003">授权凭证无效；登录失败！</string>
+    <string name="suggest_29003">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29004">授权凭证无效；登录失败！</string>
+    <string name="suggest_29004">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29005">授权凭证无效；登录失败！</string>
+    <string name="suggest_29005">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29006">授权范围无效；登录失败！</string>
+    <string name="suggest_29006">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29007">授权服务器拒绝异常；登录失败！</string>
+    <string name="suggest_29007">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29008">不支持指定的访问类型；登录失败！</string>
+    <string name="suggest_29008">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29009">认证证书错误；登录失败！</string>
+    <string name="suggest_29009">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29010">用户暂停业务；登录失败！</string>
+    <string name="suggest_29010">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29011">用户暂停业务；登录失败！</string>
+    <string name="suggest_29011">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29012">用户业务状态为欠费停机；登录失败！</string>
+    <string name="suggest_29012">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29013">该业务账号不存在；登录失败！</string>
+    <string name="suggest_29013">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29014">验证码错误；登录失败！</string>
+    <string name="suggest_29014">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29015">验证码过期；登录失败！</string>
+    <string name="suggest_29015">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29016">手机号未绑定；登录失败！</string>
+    <string name="suggest_29016">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29017">认证方式错误；登录失败！</string>
+    <string name="suggest_29017">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29018">用户账号或密码错误；登录失败！</string>
+    <string name="suggest_29018">"请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、请检查业务帐号或密码是否正确输入；
+3、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29019">业务账号被锁定；登录失败！</string>
+    <string name="suggest_29019">"请稍后重试；若重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29020">机顶盒校验失败；登录失败！</string>
+    <string name="suggest_29020">"请按“菜单”或“首页”键尝试重新接入，如果依然失败，需对业务帐号进行解绑。
+请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29021">该机顶盒被其他账号占用；登录失败！</string>
+    <string name="suggest_29021">"请按“菜单”或“首页”键尝试重新接入，如果依然失败，需对业务帐号进行解绑。
+请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29022">认证服务器系统异常；登录失败！</string>
+    <string name="suggest_29022">"请按“菜单”或“首页”键尝试重新接入；若问题重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    <string name="tip_29023">超过允许登录的最大设备数；认证失败！</string>
+    <string name="suggest_29023">"请按“菜单”或“首页”键尝试重新接入；若问题重复出现，请拨打10086客户服务热线进行咨询。"</string>
+    
+    <string name="tip_29024">用户帐号未激活。</string>
+ <string name="suggest_29024">请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。
+     
+ </string>
+
+<string name="tip_29025">登录失败，系统异常。</string>
+ <string name="suggest_29025">请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。</string>
+ 
+ <string name="tip_29026">登录失败，系统异常。</string>
+ <string name="suggest_29026">请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。</string>
+
+<string name="tip_29027">登录失败，系统异常。</string>
+ <string name="suggest_29027">请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。</string>
+
+<string name="tip_29028">登录失败，系统异常。</string>
+ <string name="suggest_29028">请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。</string>
+
+<string name="tip_29029">登录失败，系统异常。</string>
+ <string name="suggest_29029">
+请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。</string>
+ 
+ <string name="tip_29030">登录失败，系统异常。</string>
+ <string name="suggest_29030">请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。</string>
+
+<string name="tip_29031">登录失败，系统异常。</string>
+ <string name="suggest_29031">请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10086客户服务热线进行咨询。</string>
+
+<string name="tip_29032">登录失败，系统异常。</string>
+ <string name="suggest_29032">请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10087客户服务热线进行咨询。</string>
+
+<string name="tip_29033">登录失败，系统异常。</string>
+ <string name="suggest_29033">
+请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10088客户服务热线进行咨询。</string>
+ 
+ 
+<string name="tip_29034">登录失败，系统异常。</string>
+ <string name="suggest_29034">请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10089客户服务热线进行咨询。</string>
+
+<string name="tip_29035">登录失败，系统异常。</string>
+ <string name="suggest_29035">
+请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10090客户服务热线进行咨询。</string>
+
+<string name="tip_29036">登录失败，系统异常。</string>
+ <string name="suggest_29036">请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10091客户服务热线进行咨询。</string>
+
+<string name="tip_29037">登录失败，系统异常。</string>
+ <string name="suggest_29037">请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10093客户服务热线进行咨询。</string>
+
+<string name="tip_29038">登录失败，系统异常。</string>
+ <string name="suggest_29038">请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10096客户服务热线进行咨询。</string>
+
+<string name="tip_29039">登录失败，系统异常。</string>
+ <string name="suggest_29039">请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10098客户服务热线进行咨询。</string>
+
+<string name="tip_29040">登录失败，系统异常。</string>
+<string name="suggest_29040">请按“菜单”或“首页”键尝试重新接入，如果依然失败，请按照以下步骤尝试解决故障：
+1、请尝试断电重启机顶盒重新拨号；
+2、若按以上操作，问题仍未解决，请拨打10099客户服务热线进行咨询。</string>
+    -->
+

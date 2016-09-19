@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bg2"
+        android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="@string/mail_reading"
+        android:textSize="35sp" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/tf_email_readbg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="30dip"
+                android:gravity="left|center"
+                android:text="@string/title"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="30dip"
+                android:gravity="left|center"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="30dip"
+                android:text="@string/sender_name"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="550dp"
+                android:layout_height="38dp"
+                android:gravity="left"
+               android:id="@+id/textSendername"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="306dp"
+            android:background="@drawable/border"
+            android:gravity="center" >
+			<ScrollView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content">
+	            <TextView
+	                android:layout_width="600dp"
+	                android:layout_height="wrap_content"
+	                android:gravity="left|center"
+	                android:id="@+id/textEmailContent"
+	                android:textSize="24sp" />
+			</ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/dvt_mailread_help"
+            android:textSize="30sp" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

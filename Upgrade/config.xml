@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<upgrade>
+<package product-model="reviver_alios4.2" vendor="unionman">
+	<target-machine>
+		<software min-version="1.0.0.0" max-version="1.0.0.0"/>
+		<hardware version="16519620"/>
+		<serial>
+			<segment form="15010111430000051002233445598" to="150301133789999970019F0FFFFD1" length="17"/>
+		</serial>
+	</target-machine>
+	<source version="2.0.0.12">
+		<packet type="zip" url="http://bgw025052.chinaw3.com:80/upgrade/data/update-reviver_alios4.2-2.0.0.12.zip"/>
+	</source>
+	<control>
+		<mode update-mode = "force"/>
+	</control>
+</package>
+</upgrade>

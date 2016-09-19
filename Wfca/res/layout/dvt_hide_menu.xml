@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bg1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:background="#46a1a1a1" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/dvt_hide_menu"
+                android:textColor="@color/white"
+                android:textSize="24sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:clickable="true"
+            android:gravity="center|top"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/hide_menu_button1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/searchmenu_btn"
+                android:text="@string/dvt_open_close_lib_print"
+                android:textColor="@color/white"
+                android:textSize="24sp" 
+                android:nextFocusUp="@+id/button2">
+
+                <requestFocus />
+            </Button>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:background="#46a1a1a1"
+                android:textColor="@color/white" >
+            </TextView>
+
+            <Button
+                android:id="@+id/hide_menu_button2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/searchmenu_btn"
+                android:text="@string/main_freq_setting"
+                android:textColor="@color/white"
+                android:textSize="24sp" 
+                android:nextFocusDown="@+id/button1">
+            </Button>
+
+        </LinearLayout>
+      <LinearLayout 
+		android:layout_height="70dp" 
+		android:id="@+id/linearLayout4" 
+		android:layout_width="match_parent" 
+		android:orientation="vertical" 
+		android:layout_weight="0.51" 
+		 android:layout_marginTop="40dp"
+		android:gravity="center">
+
+		<TextView 
+        	android:gravity="center" 
+        	android:layout_gravity="center" 
+        	android:layout_height="60dp" 
+        	android:textSize="24sp" 
+        	android:text="@string/condition_access_help" 
+        	android:textAppearance="?android:attr/textAppearanceLarge" 
+        	android:layout_width="wrap_content"
+        	android:id="@+id/textView4">
+		</TextView>
+		</LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

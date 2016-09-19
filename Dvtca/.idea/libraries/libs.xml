@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../AliLauncher/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../AliLauncher/libs/AuiJar.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../AliLauncher/libs/AliTvAppSdk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../AliLauncher/libs/lib_base.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../AliLauncher/libs/commons-codec.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../AliLauncher/libs/imageload.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

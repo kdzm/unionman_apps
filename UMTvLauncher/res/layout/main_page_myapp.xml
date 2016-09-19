@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.um.launcher"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/app_item_allapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_item_allapp_marginLeft"
+        android:layout_marginTop="@dimen/app_item_allapp_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusRight="@+id/app_item_video">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_wide_bg_pink" >
+
+            <ImageView
+                android:id="@+id/all_app_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/page_allapp" />
+
+            <TextView
+                android:id="@+id/app_allapp_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/all_app_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="25dp"
+                android:text="@string/app_normal"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/app_item_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_item_video_marginLeft"
+        android:layout_marginTop="@dimen/app_item_video_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/app_item_allapp"
+        android:nextFocusRight="@+id/app_item_music">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_mid_bg_yellow" >
+
+            <ImageView
+                android:id="@+id/video_app_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/page_video" />
+
+            <TextView
+                android:id="@+id/app_video_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/video_app_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="25dp"
+                android:text="@string/video_normal"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/app_item_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_item_music_marginLeft"
+        android:layout_marginTop="@dimen/app_item_music_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusDown="@+id/app_item_housenurse"
+        android:nextFocusRight="@+id/app_item_tvqq">
+
+        <RelativeLayout
+            android:id="@+id/app_child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/page_mid_bg_grape">
+
+            <ImageView
+                android:id="@+id/music_app_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/page_music" />
+            
+            <TextView
+                android:id="@+id/app_music_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/music_app_img"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="25dp"
+                android:text="@string/audio_normal"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/app_item_tvqq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_item_tvqq_marginLeft"
+        android:layout_marginTop="@dimen/app_item_tvqq_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/app_item_music">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_mid_bg_blue">
+
+            <ImageView
+                android:id="@+id/img_tvqq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/page_tvqq" />
+
+            <TextView
+                android:id="@+id/app_tvqq_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_tvqq"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="25dp"
+                android:text="@string/qq_normal"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/app_item_browser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_item_browser_marginLeft"
+        android:layout_marginTop="@dimen/app_item_browser_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusRight="@+id/app_item_filemanage" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_wide_bg_orange">
+
+            <ImageView
+                android:id="@+id/img_browser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/page_browser" />
+
+            <TextView
+                android:id="@+id/app_browser_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_browser"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="25dp"
+                android:text="@string/email_normal"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <ImageView
+	   android:id="@+id/app_browser_img_reflect"
+	   android:layout_marginLeft="@dimen/app_item_browser_marginLeft"
+       android:layout_marginTop="518dp"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"/>
+        
+    <RelativeLayout
+        android:id="@+id/app_item_filemanage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_item_filemanage_marginLeft"
+        android:layout_marginTop="@dimen/app_item_filemanage_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/app_item_browser"
+        android:nextFocusRight="@+id/app_item_housenurse" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_mid_bg_green">
+
+            <ImageView
+                android:id="@+id/img_filemanage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/page_filemanage" />
+
+            <TextView
+                android:id="@+id/app_filemanage_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_filemanage"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="25dp"
+                android:text="@string/filemanage_normal"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+	   android:id="@+id/app_filemanage_img_reflect"
+	   android:layout_marginLeft="@dimen/app_item_filemanage_marginLeft"
+       android:layout_marginTop="518dp"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"/>
+        
+    <RelativeLayout
+        android:id="@+id/app_item_housenurse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_item_housenurse_marginLeft"
+        android:layout_marginTop="@dimen/app_item_housenurse_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/app_item_filemanage"
+        android:nextFocusRight="@+id/app_item_healthydiet">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_mid_bg_cyan">
+
+            <ImageView
+                android:id="@+id/img_housenurse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/page_nurse" />
+
+            <TextView
+                android:id="@+id/app_housenurse_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_housenurse"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="25dp"
+                android:text="@string/homenurse_normal"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+	   android:id="@+id/app_housenurse_img_reflect"
+	   android:layout_marginLeft="@dimen/app_item_housenurse_marginLeft"
+       android:layout_marginTop="518dp"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"/>
+        
+    <RelativeLayout
+        android:id="@+id/app_item_healthydiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/app_item_healthydiet_marginLeft"
+        android:layout_marginTop="@dimen/app_item_healthydiet_marginTop"
+        android:background="@drawable/icon_select"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/app_item_housenurse">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/page_mid_bg_skyblue">
+
+            <ImageView
+                android:id="@+id/img_icon_healthydie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/page_diet" />
+
+            <TextView
+                android:id="@+id/app_healthydiet_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_icon_healthydie"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="25dp"
+                android:text="@string/healthydiet_normal"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+	   android:id="@+id/app_healthydiet_img_reflect"
+	   android:layout_marginLeft="@dimen/app_item_healthydiet_marginLeft"
+       android:layout_marginTop="518dp"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"/>
+        
+</FrameLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="760dp"
+        android:layout_height="450dp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:background="@drawable/main_dialog_bg"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="30sp"
+                android:text="@string/upgrade"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dvb_title_line"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/fre_layout"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/frequency"
+                    android:textSize="24sp"
+                    android:background="@drawable/dvb_list_item"
+                    >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/freq_edit_text"
+                    android:layout_width="260dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6"
+                    android:textColor="@color/edit_text_color"
+                    android:textSize="20sp"
+                    android:background="@drawable/sel_edit_text"
+                    android:selectAllOnFocus="true"
+                    >
+                </EditText>
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:text="@string/frq_unit"
+                    android:background="@drawable/dvb_list_item"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/symbol_layout"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/menualsearchtextView2"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/symbol"
+                    android:textSize="24sp"
+                    android:background="@drawable/dvb_list_item"
+                    >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/symbol_edit_text"
+                    android:layout_width="260dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textColor="@color/edit_text_color"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:textSize="20sp"
+                    android:background="@drawable/sel_edit_text"
+                    android:selectAllOnFocus="true"
+                    >
+                </EditText>
+                <TextView
+                    android:id="@+id/menualsearchtextView3"
+                    android:textSize="24sp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/sym_unit"
+                    android:background="@drawable/dvb_list_item"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/qam_layout"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/menualsearchtextview2"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/modulation"
+                    android:textSize="24sp"
+                    android:background="@drawable/dvb_list_item"
+                    >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/qam_spinner"
+                    android:layout_width="260dp"
+                    android:layout_height="40dp"
+                    style="@style/dvb_spinner"
+                    >
+                </Spinner>
+
+                <TextView
+                    android:textSize="24sp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/qam_unit"
+                    android:background="@drawable/dvb_list_item"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/pid"
+                    android:textSize="24sp"
+                    android:background="@drawable/dvb_list_item"
+                    >
+                </TextView>
+                <EditText
+                    android:layout_width="260dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/pid_edit_text"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:textColor="@color/edit_text_color"
+                    android:background="@drawable/sel_edit_text"
+                    android:selectAllOnFocus="true"
+                    android:textSize="20sp"
+                    android:numeric="integer"/>
+                <TextView
+                    android:textSize="24sp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:background="@drawable/dvb_list_item"
+                    >
+                </TextView>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cable_user_upgrade_button"
+                android:background="@drawable/sel_btn_bg"
+                android:layout_marginTop="15dp"
+                android:textSize="24sp"
+                android:text="@string/upgrade" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

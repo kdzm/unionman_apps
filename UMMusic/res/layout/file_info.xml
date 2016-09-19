@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:padding="10dp">
+    <TextView android:layout_width="170dp" 
+        android:layout_height="wrap_content"
+        android:textSize="24px" 
+        android:text="@string/audioinfo_title"
+        android:gravity="right" 
+        android:id="@+id/file_name_title" />
+    <TextView android:layout_width="400dp" 
+        android:layout_height="wrap_content"
+        android:textSize="24px" 
+        android:gravity="left" 
+        android:id="@+id/file_name"
+        android:layout_toRightOf="@id/file_name_title" />
+    
+    <TextView android:layout_width="170dp" 
+        android:layout_height="wrap_content"
+        android:textSize="24px" 
+        android:text="@string/audioinfo_size"
+        android:gravity="right" 
+        android:id="@+id/file_size_title"
+        android:layout_below="@id/file_name" />
+    <TextView android:layout_width="400dp" 
+        android:layout_height="wrap_content"
+        android:textSize="24px" 
+        android:gravity="left"
+        android:layout_alignTop="@id/file_size_title" 
+        android:id="@+id/file_size"
+        android:layout_toRightOf="@id/file_size_title" />
+    
+    <TextView android:layout_width="170dp" 
+        android:layout_height="wrap_content"
+        android:textSize="24px" 
+        android:text="@string/audioinfo_type"
+        android:gravity="right" 
+        android:id="@+id/file_type_title"
+        android:layout_below="@id/file_size" />
+    <TextView android:layout_width="400dp" 
+        android:layout_height="wrap_content"
+        android:textSize="24px" 
+        android:gravity="left"
+        android:layout_alignTop="@id/file_type_title" 
+        android:id="@+id/file_type"
+        android:layout_toRightOf="@id/file_type_title" />
+    
+    <TextView android:layout_width="170dp" 
+        android:layout_height="wrap_content"
+        android:textSize="24px" 
+        android:text="@string/audioinfo_artist"
+        android:gravity="right" 
+        android:id="@+id/file_artist_title"
+        android:layout_below="@id/file_type" />
+    <TextView android:layout_width="400dp" 
+        android:layout_height="wrap_content"
+        android:textSize="24px" 
+        android:gravity="left"
+        android:layout_alignTop="@id/file_artist_title" 
+        android:id="@+id/file_artist"
+        android:layout_toRightOf="@id/file_artist_title" />
+   
+    
+    <TextView android:layout_width="170dp" 
+        android:layout_height="wrap_content"
+        android:textSize="24px" 
+        android:text="@string/audioinfo_album"
+        android:gravity="right" 
+        android:id="@+id/file_album_title"
+        android:layout_below="@id/file_artist" />
+    <TextView android:layout_width="400dp" 
+        android:layout_height="wrap_content"
+        android:textSize="24px" 
+        android:gravity="left"
+        android:layout_alignTop="@id/file_album_title" 
+        android:id="@+id/file_album"
+        android:layout_toRightOf="@id/file_album_title" />
+    
+    <TextView android:layout_width="170dp" 
+        android:layout_height="wrap_content"
+        android:textSize="24px" 
+        android:text="@string/audioinfo_duration"
+        android:gravity="right" 
+        android:id="@+id/file_duration_title"
+        android:layout_below="@id/file_album" />
+    <TextView android:layout_width="400dp" 
+        android:layout_height="wrap_content"
+        android:textSize="24px" 
+        android:gravity="left"
+        android:layout_alignTop="@id/file_duration_title" 
+        android:id="@+id/file_duration"
+        android:layout_toRightOf="@id/file_duration_title" />
+</RelativeLayout>

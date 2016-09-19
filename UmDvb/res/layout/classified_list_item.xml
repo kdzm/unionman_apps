@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView android:id="@+id/classified_name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical|left"
+        android:textSize="@dimen/classified_list_item_text_size"
+        android:layout_marginLeft="@dimen/classified_list_item_marginLeft"
+        android:paddingTop="@dimen/classified_list_item_paddingTop"
+        android:paddingBottom="@dimen/classified_list_item_paddingTop"
+        android:textStyle="bold"/>
+</LinearLayout>

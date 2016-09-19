@@ -1,0 +1,159 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_wizard_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="228dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center_vertical"
+        android:text="@string/setting_wizard"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="942dp"
+        android:layout_height="450dp"
+        android:layout_marginLeft="168dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="942dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.86"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="520dp"
+                android:layout_height="370dp"
+                android:layout_marginLeft="48dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="@string/dev_reset"
+                    android:textColor="@color/black_deep"
+                    android:textSize="60sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/blue"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:text="@string/password"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp" />
+
+                    <EditText
+                        android:id="@+id/tv_reset_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/cb_password_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="@string/show_password"
+                        android:textColor="@color/black_light01"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="370dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/explain"
+                    android:textColor="@color/black_light01"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/device_reset_title"
+                    android:textColor="@color/black_light02"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_reset_cancle"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="610dp"
+                android:background="@drawable/sel_button_selector"
+                android:text="@string/cancel"
+                android:textColor="@drawable/item_text_color"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_reset_sure"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/sel_button_selector"
+                android:text="@string/ok"
+                android:textColor="@drawable/item_text_color"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgv_reflection"
+        android:layout_width="942dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="168dp"
+        android:contentDescription="@string/app_name" />
+
+</LinearLayout>

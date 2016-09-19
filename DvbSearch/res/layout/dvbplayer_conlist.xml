@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/quicklistbg"
+     >
+    
+
+        <TextView
+            android:id="@+id/prog_tpye_name"
+            android:layout_width="397dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="@string/progam_list"
+            android:textSize="30sp" />
+
+        <ListView
+            android:id="@+id/quicklist"
+            android:layout_width="397dip"
+            android:layout_height="300dip"
+            android:layout_marginTop="15dip"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/searchmenu_btn"
+            android:text="@string/progam_list" />
+ 
+    
+
+</LinearLayout>

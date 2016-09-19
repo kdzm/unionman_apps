@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">SetttingWizard</string>
+	<string name="setting_wizard">SetttingWizard</string>
+	<string name="explain">Explain</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="menu_settings">Settings</string>
+	<string name="title_activity_main">MainActivity</string>
+	<string name="start">Start</string>
+	<string name="next_step">NextStep</string>
+	<string name="last_step">LastStep</string>
+	<string name="finish">Finish</string>
+	<string name="ignore">Ignore</string>
+	<string name="wired_network">Wired</string>
+	<string name="wireless_network">Wireless</string>
+	<string name="welcome">Welcome</string>
+	<string name="thanks">Welcome to use </string>
+	<string name="please_setup">Plaese spent mintes to setup your TV</string>
+	<string name="welcome_page_remind">now begine your setting</string>
+	<string name="remote_control_info">Remote Control</string>
+	<string name="language_setup">Language</string>
+	<string name="screen_setup">Display</string>
+	<string name="network_setup">Netword</string>
+	<string name="scan">Scan</string>
+	<string name="password">password:</string>
+	<string name="please_input_password">password</string>
+	<string name="dev_info">Device Info</string>
+	<string name="dev_reset">Device Reset</string>
+	<string name="device_info">Device Info</string>
+	<string name="device_model"> ● Model</string>
+	<string name="device_sort_num"> ● Serial number</string>
+    <string name="mac_address"> ● Haddr</string>
+	<string name="android_version"> ● Android</string>
+	<string name="software_version"> ● Software</string>
+	<string name="hardware_version"> ● Hardware</string>
+	<string name="wireless_info">Wireless Info</string>
+	<string name="wired_info">Wired Info</string>
+	<string name="back">Back</string>
+	<string name="device_more_info">The STB info below</string>
+	<string name="wireless_information">Wireless</string>
+	<string name="wireless_more_info">The wireless info below</string>
+	<string name="ip"> ● IpAddress</string>
+	<string name="gateway"> ● Gateway</string>
+	<string name="subnet_mask"> ● Netmask</string>
+	<string name="dns1"> ● DSN1</string>
+	<string name="dns2"> ● DSN2</string>
+	<string name="wired_information">Wired info</string>
+	<string name="wired_more_info">wired info below</string>
+	<string name="wifi_off">wifi is off！</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="wired_auto_setup">Wired auto</string>
+	<string name="wired_manual_setup">Wired manual</string>
+	<string name="wireless_auto_setup">Wireless setup</string>
+	<string name="device_reset_message">Sure to reset？</string>
+	<string name="input_password">Enter password</string>
+	<string name="password_error">Password error</string>
+	<string name="auto_get_ip_please_wait">Obtaining ipaddr,please wait\u2026</string>
+	<string name="aleady_connect">Connected </string>
+	<string name="wired_auto_subhead">Press OK to config</string>
+	<string name="wired_manual_subhead">Press OK to config</string>
+	<string name="wireless_auto_subhead">Press OK to config</string>
+	<string name="ethernet_ipaddr">Ipaddress:</string>
+	<string name="ethernet_netmask">Netmask:</string>
+	<string name="ethernet_gateway">Gateway: </string>
+	<string name="ethernet_dns1">DNS1: </string>
+	<string name="ethernet_dns2">DNS2: </string>
+	<string name="ethernet_save">Save</string>
+	<string name="ethernet_cancel">Cancel</string>
+	<string name="enable_ethernet">Enable ethernet</string>
+	<string name="connect">Connect</string>
+	<string name="forget">Forget</string>
+	<string name="connect_fail">Connect fail</string>
+	<string name="obtaining_ipaddr">Obtaining ipaddraddress</string>
+	<string name="authentivating">Authentivating</string>
+	<string name="connecting">Connecting</string>
+	<string name="not_reach">Not reach</string>
+	<string name="title_start">Press "start" to continue！</string>
+	<string name="language_setup_explain_1"> ● Please select language</string>
+	<string name="language_setup_explain_2"> ● If noting to change, press "next step"!</string>
+	<string name="screen_setup_explain_1"> ● Press directiion key to setup your screen</string>
+	<string name="screen_setup_explain_2"> ● If noting to change, press "next step"!</string>
+	<string name="network_setup_explain_1"> ● Press "next step" and connecting automatically </string>
+	<string name="network_setup_explain_2"> ● Your can select another attended mode by press UP or DOWN</string>
+	<string name="wired_setup_explain_1"> ● Input the infomation and then press "next step" to connect</string>
+	<string name="wireless_setup_explain_1"> ● Choose access point and input password to connect</string>
+	<string name="wireless_setup_explain_2"> ● Press "BACK" key or "UP""DOWN" key to chose anther access point</string>
+	<string name="wired_manual_explain"> ● Input the info of network,then click next button </string>		
+	<string name="setup_finish_explain_1"> ● Finish</string>
+	<string name="device_info_explain_1"> ● Know your STB infomation</string>
+	<string name="wired_info_explain_1"> ● Know your wireled info like ipAddress</string>
+	<string name="wireless_info_explain_1"> ● Know your wireless info like ipAddress</string>
+	<string name="show_password">Show password</string>
+	<string name="device_reset_title"> ● Reset your STB</string>
+    <string name="more_time_to_exit"> Press again to exit</string>
+    <string name="back_to_setup"> No connection,Press last step to setup</string>
+    <string name="eth_phy_link_down_check">Cable not connected,please connect your network cable first</string>
+    <string name="network_phy_link_failed">NewWork is not working, can not get IP address</string>
+    <string name="factory_mode">Factory Mode</string>
+    <string name="entry_confirm">Confirm</string>
+	<string name="entry_cancel">Cancel</string>
+	<string name="entry_show_pwd">Show Password</string>
+	<string name="entry_enter_pwd">Please input password:</string>
+	<string name="entry_pwd_error">Passwrod Error!</string>
+    <string name="password_too_short">Password too short</string>
+    <string name="twn_zho">中文 (繁体)</string>
+    <string name="chn_zho">中文 (简体)</string>
+    <string name="usa_eng">English(US)</string>
+    <string name="city_setting">City Setting</string>
+    <string name="city_setting_tip"> ● select your city</string>
+    <string name="skip">Skip</string>
+
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    
+        <string name="picmode_standard_string">Standard</string>
+    <string name="picmode_dynamic_string">Vivid</string>
+    <string name="picmode_softness_string">Soft</string>
+     <string name="picmode_user_string">User</string>  
+     
+         <!-- Signal source -->
+    <string name="SourceSelect">SourceSelect</string>
+    <string name="DVBC">DVB-C</string>
+    <string name="DTMB">DTMB</string>
+    <string name="ATV">ATV</string>
+    <string name="CVBS">AV</string>
+    <string name="CVBS1">AV1</string>
+    <string name="CVBS2">AV2</string>
+     <string name="CVBS3">AV3</string>
+    <string name="YPBPR">YPbPr</string>
+        <string name="YPBPR1">YPbPr1</string>
+            <string name="YPBPR2">YPbPr2</string>
+    <string name="HDMI1">HDMI1</string>
+    <string name="HDMI2">HDMI2</string>
+    <string name="HDMI3">HDMI3</string>
+      <string name="HDMI4">HDMI4</string>
+    <string name="VGA">VGA</string>
+    <string name="pic_mode">Picture Mode</string>
+    
+    <string name="city_dvb_installing_title">Installing DVB service,please wait…</string>
+   <string name="city_dvb_installing_content">The installation process may take about 1 minute.\nNot to exit the program during the install,after the installation is complete will automatically exit.</string>
+    <string name="city_already_install_title">You have installed the DVB service</string>
+    <string name="city_already_install_msg">You have installed the DVB service of this city,no need to install.</string>
+    <string name="city_install_success_title">DVB service has been installed</string>
+    <string name="city_install_success_msg">DVB service has been installed，program will exit.</string>
+    <string name="city_install_failed_title">DVB service install failed</string>
+    <string name="city_install_failed_msg">An unknown error occurred, DVB service installation failure, please exit the program and try again.\nIf still fail, please try again after restarting.</string>   
+    
+<string name="spot">.</string>
+
+    <!-- Wifi Setting -->
+    <string name="wifi_setting">WiFi Setting</string>
+    <!-- Label for the status of the connection -->
+    <string name="wifi_status">Status</string>
+    <!-- Action bar text message to manually add a wifi network [CHAR LIMIT=20]-->
+    <string name="wifi_add_network">Add network</string>
+    <!-- Substring of wifi status for wifi with authentication.  This version is for when the string is first in the list (titlecase in english) -->
+    <!-- Label for the signal strength of the connection -->
+    <string name="wifi_signal">Signal strength</string>
+    <!-- Label for the link speed of the connection -->
+    <string name="wifi_speed">Link speed</string>
+    <string name="wifi_secured_first_item">Secured with <xliff:g id="wifi_security_short">%1$s</xliff:g></string>
+    <!--Substring of status line when Wi-Fi Protected Setup (WPS) is available and string is listed first [CHAR LIMIT=20]-->
+    <string name="wifi_wps_available_first_item">WPS available</string>
+    <!-- Substring of wifi status when Wi-Fi Protected Setup (WPS) is available and string is listed after a wifi_secured_* string-->
+    <string name="wifi_wps_available_second_item">\u0020(WPS available)</string>
+    <string name="wifi_secured_second_item">, secured with <xliff:g id="wifi_security_short">%1$s</xliff:g></string>
+    <!-- Button label to save a Wi-Fi network configuration -->
+    <string name="wifi_save">Save</string>
+    <!-- Button label to delete a Wi-Fi network -->
+    <string name="wifi_forget">Forget</string>
+    <!-- Button label to dismiss the dialog -->
+    <string name="wifi_cancel">Cancel</string>
+    <!-- Summary for the remembered network. -->
+    <string name="wifi_remembered">Saved</string>
+    <!-- Summary for the remembered network but currently not in range. -->
+    <string name="wifi_not_in_range">Not in range</string>
+    <!-- Status for networks disabled for unknown reason -->
+    <string name="wifi_disabled_generic">Disabled</string>
+    <!-- Status for networked disabled from a DNS or DHCP failure -->
+    <string name="wifi_disabled_network_failure">Avoided poor Internet connection</string>
+    <!-- Status for networks disabled from authentication failure (wrong password or certificate). -->
+    <string name="wifi_disabled_password_failure">Authentication problem</string>
+    <!-- Toast message when Wi-Fi cannot scan for networks -->
+    <!-- Button label to connect to a Wi-Fi network -->
+    <string name="wifi_connect">Connect</string>
+    <string name="wifi_fail_to_scan">Can\'t scan for networks</string>
+    <!-- Wi-Fi settings. text displayed when Wi-Fi is off and network list is empty-->
+    <string name="wifi_stoped">To see available networks, turn Wi\u2011Fi on.</string>
+    <!-- Do not translate. Used for diagnostic screens, precise translation is not necessary Menu item on Wifi information screen-->
+    <string name="wifi_status_test" translatable="false">Wi-Fi status</string>
+    <!-- Wi-Fi settings. text displayed when Wi-Fi is on and network list is empty-->
+    <string name="wifi_search_wifi_list">Searching for Wi\u2011Fi networks\u2026</string>
+    <!-- Wi-Fi dialog -->
+    <!-- Used in Wi-Fi settings dialogs when Wi-Fi does not have any security. -->
+    <string name="wifi_security_none">None</string>
+    <!-- Do not translate.  Terminology for wifi with WEP security -->
+    <string name="wifi_security_wep">WEP</string>
+    <!-- Do not translate.  Terminology for wifi with WPA security -->
+    <string name="wifi_security_wpa">WPA PSK</string>
+    <!-- Do not translate.  Terminology for wifi with WPA2 security -->
+    <string name="wifi_security_wpa2">WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with both WPA/WPA2 security, or un     known -->
+    <string name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+    <!-- Do not translate.  Terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+    <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
+    <string name="wifi_security_eap">802.1x EAP</string>
+    <string name="wifi_security_short_wep">WEP</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA security -->
+    <string name="wifi_security_short_wpa">WPA</string>
+    <!-- Do not translate.  Concise terminology for wifi with WPA2 security -->
+    <string name="wifi_security_short_wpa2">WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with both WPA/WPA2 security -->
+    <string name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <!-- Do not translate.  Concise terminology for wifi with unknown PSK type -->
+    <string name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+    <string name="wifi_security_short_eap">802.1x</string>
+    <string name="wifi_ssid">Network SSID</string>
+    <string name="wifi_ssid_hint">Enter the SSID</string>
+    <string name="wifi_security">Security</string>
+    <string name="wifi_password">Password</string>
+    <string name="wifi_show_password">Show password</string>
+    <string name="wifi_show_advanced">Show advanced options</string>
+    <string name="choose_mode">choose mode</string> 
+    <string name="usermode">user mode</string>  
+    <string name="storemode">store mode</string>              
+</resources>

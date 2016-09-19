@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unionman.umosd"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.unionman.umosd.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <!--<action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />-->
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".OsdReceiver"
+            android:process="com.unionman.umosd.receiver">
+            <intent-filter>
+                <action android:name="com.unionman.umosd.START_TFCA_TOP_OSD"/>
+                <action android:name="com.unionman.umosd.START_TFCA_BOTTON_OSD"/>
+                <action android:name="com.unionman.umosd.STOP_TFCA_TOP_OSD"/>
+                <action android:name="com.unionman.umosd.STOP_TFCA_BOTTON_OSD"/>
+                <action android:name="com.unionman.umosd.START_DVTCA_BOTTON_OSD"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".OsdService">
+            <intent-filter>
+                <action android:name="com.unionman.umosd.START_TFCA_TOP_OSD"/>
+                <action android:name="com.unionman.umosd.START_TFCA_BOTTON_OSD"/>
+                <action android:name="com.unionman.umosd.STOP_TFCA_TOP_OSD"/>
+                <action android:name="com.unionman.umosd.STOP_TFCA_BOTTON_OSD"/>
+                <action android:name="com.unionman.umosd.START_DVTCA_BOTTON_OSD"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

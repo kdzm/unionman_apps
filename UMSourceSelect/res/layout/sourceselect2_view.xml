@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/source_select2_id"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="@dimen/bg_marginTop"
+	    android:background="@drawable/source_bg">
+    
+	    <TextView
+	      android:id="@+id/tv_source_txt"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_marginLeft="70dip"
+	      android:layout_marginTop="80dip"
+	      android:text="@string/SourceSelect"
+	      android:textColor="@color/white"
+	      android:textSize="40sp" />
+	    
+         <ImageView
+	       android:id="@+id/tv_line_img"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_marginLeft="300dp"
+	       android:layout_marginTop="145dp"
+	       android:scaleX="2.8"
+           android:scaleY="1.0"
+	       android:background="@drawable/page_line"/>
+
+	<RelativeLayout
+        android:id="@+id/tv_item_cmcc"
+        android:layout_width="180dp"
+        android:layout_height="230dp"
+        android:layout_marginLeft="@dimen/tv_item_cmcc_marginLeft"
+        android:layout_marginTop="@dimen/tv_item_cmcc_marginTop"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusRight="@+id/tv_item_atv"
+        android:nextFocusUp="@+id/tv_item_port3"
+        android:nextFocusDown="@+id/tv_item_port3">
+
+       <RelativeLayout
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:duplicateParentState="true"
+		    android:layout_centerInParent="true"
+		    android:background="@drawable/page_s_bg">
+		      <ImageView
+	            android:id="@+id/view_cmcc"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:duplicateParentState="true"
+	            android:background="@drawable/page_cmcc">
+        	</ImageView>
+			<TextView
+               android:id="@+id/tv_cmcc_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="160dp"
+               android:layout_centerHorizontal="true"
+               android:duplicateParentState="true"
+               android:text="@string/CMCC"
+               android:textColor="@color/white"
+               android:textSize="22sp" /> 
+    	</RelativeLayout>
+    	<RelativeLayout
+    	     android:id="@+id/view_cmcc_focus"
+    	     android:layout_width="180dp"
+        	 android:layout_height="230dp"
+        	 android:background="@drawable/focus"/>
+    </RelativeLayout>         
+ 	
+ 	 <RelativeLayout
+        android:id="@+id/tv_item_atv"
+        android:layout_width="180dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="@dimen/tv_item_atv_marginTop"
+        android:layout_toRightOf="@+id/tv_item_cmcc"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/tv_item_cmcc"
+        android:nextFocusRight="@+id/tv_item_dtv"
+        android:nextFocusUp="@+id/tv_item_port4"
+        android:nextFocusDown="@+id/tv_item_port4">
+
+       <RelativeLayout
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:duplicateParentState="true"
+		    android:layout_centerInParent="true"
+		    android:background="@drawable/page_s_bg">
+		      <ImageView
+	            android:id="@+id/view_atv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:duplicateParentState="true"
+	            android:background="@drawable/page_atv">
+        	</ImageView>
+			<TextView
+               android:id="@+id/tv_atv_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="160dp"
+               android:layout_centerHorizontal="true"
+               android:duplicateParentState="true"
+               android:text="@string/ATV"
+               android:textColor="@color/white"
+               android:textSize="22sp" /> 
+    	</RelativeLayout>
+    	<RelativeLayout
+    	     android:id="@+id/view_atv_focus"
+    	     android:layout_width="180dp"
+        	 android:layout_height="230dp"
+        	 android:background="@drawable/focus"/>
+    </RelativeLayout>
+    <!-- 无线数字 -->
+    <RelativeLayout
+        android:id="@+id/tv_item_dtv"
+        android:layout_width="180dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="@dimen/tv_item_dtv_marginTop"
+        android:layout_toRightOf="@+id/tv_item_atv"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/tv_item_atv"
+        android:nextFocusRight="@+id/tv_item_port1"
+        android:nextFocusUp="@+id/tv_item_port5"
+        android:nextFocusDown="@+id/tv_item_port5" >
+
+       <RelativeLayout
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:duplicateParentState="true"
+		    android:background="@drawable/page_s_bg">
+		      <ImageView
+	            android:id="@+id/view_dtv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:duplicateParentState="true"
+	            android:background="@drawable/page_dtmb">
+        	</ImageView>
+			<TextView
+               android:id="@+id/tv_dtv_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="160dp"
+               android:layout_centerHorizontal="true"
+               android:duplicateParentState="true"
+               android:text="@string/DTMB"
+               android:textColor="@color/white"
+               android:textSize="22sp" /> 
+    	</RelativeLayout>
+    	<RelativeLayout
+    	     android:id="@+id/view_dtv_focus"
+    	     android:layout_width="180dp"
+        	 android:layout_height="230dp"
+        	 android:background="@drawable/focus"/>
+    </RelativeLayout>
+    
+    <!-- 视频块 -->
+     <RelativeLayout
+        android:id="@+id/tv_item_port1"
+        android:layout_width="180dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="@dimen/tv_item_av1_marginTop"
+        android:layout_toRightOf="@+id/tv_item_dtv"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/tv_item_dtv"
+        android:nextFocusRight="@+id/tv_item_port2"
+        android:nextFocusUp="@+id/tv_item_port6"
+        android:nextFocusDown="@+id/tv_item_port6" >
+
+        <RelativeLayout
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:duplicateParentState="true"
+		    android:background="@drawable/page_s_bg">
+		      <ImageView
+	            android:id="@+id/view_port1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:duplicateParentState="true"
+	            >
+        	</ImageView>
+        	
+			<TextView
+               android:id="@+id/tv_port1_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="160dp"
+               android:layout_centerHorizontal="true"
+               android:duplicateParentState="true"
+          
+               android:textColor="@color/white"
+               android:textSize="22sp" /> 
+               <!--android:text="@string/CVBS"  -->
+    	</RelativeLayout>
+    	<RelativeLayout
+    	     android:id="@+id/view_port1_focus"
+    	     android:layout_width="180dp"
+        	 android:layout_height="230dp"
+        	 android:background="@drawable/focus"/>
+    </RelativeLayout>
+ 	
+    <RelativeLayout
+        android:id="@+id/tv_item_port2"
+         android:layout_width="180dp"
+        android:layout_height="230dp"
+		android:layout_toRightOf="@id/tv_item_port1"
+        android:layout_marginTop="@dimen/tv_item_ypbpr_marginTop"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusUp="@id/tv_item_port6"
+        android:nextFocusDown="@id/tv_item_port6"
+        android:nextFocusLeft="@+id/tv_item_port1"
+        android:nextFocusRight="@+id/tv_item_port3">
+
+        <RelativeLayout
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:duplicateParentState="true"
+		    android:background="@drawable/page_s_bg">
+		      <ImageView
+	            android:id="@+id/view_port2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:duplicateParentState="true"
+	            >
+        	</ImageView>
+			<TextView
+               android:id="@+id/tv_port2_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="160dp"
+               android:layout_centerHorizontal="true"
+               android:duplicateParentState="true"
+               
+               android:textColor="@color/white"
+               android:textSize="22sp" /> 
+    	</RelativeLayout>
+    	<RelativeLayout
+    	     android:id="@+id/view_port2_focus"
+    	     android:layout_width="180dp"
+        	 android:layout_height="230dp"
+        	 android:background="@drawable/focus"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/tv_item_port3"
+        android:layout_width="180dp"
+        android:layout_height="230dp"
+        android:layout_alignLeft="@id/tv_item_cmcc"
+        android:layout_marginTop="@dimen/tv_item_hdmi1_marginTop"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:nextFocusLeft="@+id/tv_item_port2"
+        android:nextFocusRight="@+id/tv_item_port4"
+        android:nextFocusUp="@+id/tv_item_cmcc"
+        android:nextFocusDown="@+id/tv_item_cmcc" >
+
+      <RelativeLayout
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:duplicateParentState="true"
+		    android:background="@drawable/page_s_bg">
+		      <ImageView
+	            android:id="@+id/view_port3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:duplicateParentState="true"
+	            >
+        	</ImageView>
+			<TextView
+               android:id="@+id/tv_port3_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="160dp"
+               android:layout_centerHorizontal="true"
+               android:duplicateParentState="true"
+               android:textColor="@color/white"
+               android:textSize="22sp" /> 
+    	</RelativeLayout>
+    	<RelativeLayout
+    	     android:id="@+id/view_port3_focus"
+    	     android:layout_width="180dp"
+        	 android:layout_height="230dp"
+        	 android:background="@drawable/focus"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_item_port4"
+         android:layout_width="180dp"
+        android:layout_height="230dp"
+
+        android:layout_marginTop="@dimen/tv_item_hdmi2_marginTop"
+        android:layout_toRightOf="@+id/tv_item_port3"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/tv_item_port3"
+        android:nextFocusRight="@+id/tv_item_port5"
+        android:nextFocusUp="@+id/tv_item_dvbc"
+        android:nextFocusDown="@+id/tv_item_dvbc"
+        android:gravity="center" >
+
+        <RelativeLayout
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:duplicateParentState="true"
+		    android:background="@drawable/page_s_bg">
+		      <ImageView
+	            android:id="@+id/view_port4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:duplicateParentState="true"
+	           >
+        	</ImageView>
+			<TextView
+               android:id="@+id/tv_port4_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="160dp"
+               android:layout_centerHorizontal="true"
+               android:duplicateParentState="true"
+    
+               android:textColor="@color/white"
+               android:textSize="22sp" /> 
+    	</RelativeLayout>
+    	<RelativeLayout
+    	     android:id="@+id/view_port4_focus"
+    	     android:layout_width="180dp"
+        	 android:layout_height="230dp"
+        	 android:background="@drawable/focus"/>
+    </RelativeLayout>
+
+   <RelativeLayout
+        android:id="@+id/tv_item_port5"
+         android:layout_width="180dp"
+        android:layout_height="230dp"
+   
+        android:layout_marginTop="@dimen/tv_item_hdmi3_marginTop"
+        android:layout_toRightOf="@+id/tv_item_port4"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/tv_item_port4"
+        android:nextFocusRight="@+id/tv_item_port6"
+        android:nextFocusUp="@+id/tv_item_dtv"
+        android:nextFocusDown="@+id/tv_item_dtv"
+        android:gravity="center">
+ 
+        <RelativeLayout
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:duplicateParentState="true"
+		    android:layout_centerInParent="true"
+		    android:background="@drawable/page_s_bg">
+		      <ImageView
+	            android:id="@+id/view_port5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:duplicateParentState="true"
+	          >
+        	</ImageView>
+			<TextView
+               android:id="@+id/tv_port5_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="160dp"
+               android:layout_centerHorizontal="true"
+               android:duplicateParentState="true"
+      
+               android:textColor="@color/white"
+               android:textSize="22sp" /> 
+    	</RelativeLayout>
+    	<RelativeLayout
+    	     android:id="@+id/view_port5_focus"
+    	     android:layout_width="180dp"
+        	 android:layout_height="230dp"
+        	 android:background="@drawable/focus"/>
+    </RelativeLayout>
+  
+    <RelativeLayout
+        android:id="@+id/tv_item_port6"
+         android:layout_width="180dp"
+        android:layout_height="230dp"
+
+        android:layout_marginTop="@dimen/tv_item_vga_marginTop"
+        android:layout_toRightOf="@+id/tv_item_port5"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@+id/tv_item_port5"
+        android:nextFocusUp="@+id/tv_item_port1"
+        android:nextFocusDown="@+id/tv_item_port1"
+        android:gravity="center" >
+
+        <RelativeLayout
+		    android:layout_height="wrap_content"
+		    android:layout_width="wrap_content"
+		    android:layout_centerInParent="true"
+		    android:duplicateParentState="true"
+		    android:background="@drawable/page_s_bg">
+		      <ImageView
+	            android:id="@+id/view_port6"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:duplicateParentState="true"
+	            >
+        	</ImageView>
+			<TextView
+               android:id="@+id/tv_port6_txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="160dp"
+               android:layout_centerHorizontal="true"
+               android:duplicateParentState="true"
+      
+               android:textColor="@color/white"
+               android:textSize="22sp" /> 
+    	</RelativeLayout>
+    	<RelativeLayout
+    	     android:id="@+id/view_port6_focus"
+    	     android:layout_width="180dp"
+        	 android:layout_height="230dp"
+        	 android:background="@drawable/focus"/>
+    </RelativeLayout>
+ 	<RelativeLayout
+        android:id="@+id/focuse_item"
+        android:layout_width="952dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dip"
+        android:layout_marginTop="0dip">
+        
+	    <ImageView
+		   android:id="@+id/focuse_img"
+	       android:background="@drawable/source_focus"
+		   android:layout_width="0dip"
+		   android:layout_height="0dip"
+		   android:visibility="invisible"/>
+	    </RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

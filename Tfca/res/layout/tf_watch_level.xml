@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/dvb_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="@dimen/tf_smc_info_width"
+        android:layout_height="@dimen/tf_smc_info_height"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_bg1"
+        android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchmenu_btn"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/tf_watch_level"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_change_pin_title_text_size" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tf_smc_info_title_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/tf_watch_level_margin_top"
+        android:background="@drawable/searchmenu_btn"
+        android:gravity="center|left"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/tf_watch_level_item_title_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tf_watch_level_item_title_margin_left"
+            android:gravity="right"
+            android:text="@string/tf_watchlevel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_change_pin_item_text_size" >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="@dimen/tf_watch_level_item_content_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tf_watch_level_item_content_margin_left"
+            android:inputType="number"
+            android:maxLength="2"
+            android:gravity="center_horizontal"
+            android:selectAllOnFocus="true" >
+
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tf_smc_info_title_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center|left" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="@dimen/tf_watch_level_item_title_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tf_watch_level_item_title_margin_left"
+            android:gravity="right"
+            android:text="@string/tf_input_pin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tf_smc_info_item_title_text_size" >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="@dimen/tf_watch_level_item_content_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tf_watch_level_item_content_margin_left"
+            android:layout_marginRight="@dimen/tf_watch_level_item_content_margin_right"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:gravity="center_horizontal"
+            android:selectAllOnFocus="true" >
+
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:layout_marginTop="50dp"
+         android:background="@drawable/btn_bg"
+        android:layout_gravity="center" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" >
+
+
+    </LinearLayout>
+    
+</LinearLayout>

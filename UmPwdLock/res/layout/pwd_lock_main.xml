@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_bg"
+     android:gravity="center"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="1027dp"
+        android:layout_height="640dp"
+       android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/set_factory_pwd"
+            android:textColor="@color/white"
+            android:textSize="33sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/setting_dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button 
+            android:id="@+id/btn_reset_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_reset_pwd"    
+             android:textColor="@color/white"
+            android:textSize="33sp"   
+            android:background="@drawable/ok_btn"         
+            />
+
+    
+        <Button 
+            android:id="@+id/btn_restore_pwd"            
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_restore_pwd"    
+             android:textColor="@color/white"
+            android:textSize="33sp" 
+           android:background="@drawable/ok_btn"               
+            />
+
+
+       
+          
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

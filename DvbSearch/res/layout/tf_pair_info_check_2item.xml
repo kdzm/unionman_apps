@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView
+	    android:id="@+id/pair_Info_Check_Item1"
+	    android:layout_width="370dp"
+	    android:layout_height="46dip"
+	    android:layout_gravity="center"
+	    android:gravity="center|left"
+	    android:textColor="#ffffff"
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/pair_Info_Check_Item2"
+	    android:layout_width="370dp"
+	    android:layout_height="46dip"
+	    android:layout_gravity="center"
+	    android:ellipsize="marquee"
+	    android:gravity="center|left"
+	    android:marqueeRepeatLimit="marquee_forever"
+	    android:singleLine="true"
+	    android:textColor="#ffffff"
+	    android:textSize="20sp" />
+
+</LinearLayout>

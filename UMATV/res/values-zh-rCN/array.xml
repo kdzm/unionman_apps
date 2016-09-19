@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pic_setting">
+        <item>图像模式</item>
+        <item>色温</item>
+        <item>运动补偿</item>
+        <item>图像降噪</item>
+        <item>动态对比度</item>
+<!--        <item>肤色校正</item> -->
+<!--        <item>蓝电平扩展</item> -->
+        <item>VGA设置</item>
+        <item>比例模式</item>
+    </string-array>
+    <string-array name="voice_setting">
+        <item>声音模式</item>
+<!--        <item>高音</item> -->
+<!--        <item>低音</item> -->
+        <item>均衡器</item>
+        <item>平衡</item>
+        <item>SRS</item>
+        <item>智能音量</item>
+        <item>SPDIF输出</item>
+<!--        <item>SPDIF输出延迟</item> -->
+<!--        <item>重低音开关</item> -->
+<!--        <item>重低音音量</item> -->
+        <item>壁挂音效果</item>
+    </string-array>
+
+    <string name="SPDIF_delay">SPDIF延迟</string>
+
+    <string-array name="menuof3d_setting">
+        <item>3D模式</item>
+        <item>左右交换</item>
+        <item>3D转2D</item>
+        <item>景深</item>
+        <item>视点</item>
+    </string-array>
+    <string-array name="channel_setting"> 
+        <item>自动搜台</item>
+        <item>手动搜台</item>
+        <item>频道微调</item>
+        <item>频道编辑</item>
+        <item>声音设置</item>
+        <item>图像设置</item>
+        <item>换台模式</item>
+        <item>彩色制式</item>
+        <item>伴音制式</item>  
+    </string-array>
+    <string-array name="channel_setting_help"> 
+        <item>自动搜索模拟电视全频段节目</item>
+        <item>在当前频点通过调整拖动条位置搜索到一个有效节目</item>
+        <item>调整当前节目的频率点使图像声音更佳</item>
+        <item>编辑频道的删除，移动等属性</item>
+        <item>设置声音参数</item>
+        <item>设置图像参数</item>  
+        <item>设置换台模式</item>
+        <item>设置节目彩色调制制式</item>
+        <item>设置节目伴音调制制式</item>       
+    </string-array>    
+    <string-array name="senior_setting">
+        <item>动态背光</item>
+        <item>静态背光</item>
+        <item>单独听</item>
+    </string-array>
+    <string-array name="demo_mode_setting">
+        <item>运动补偿</item>
+<!--        <item>彩色饱和度</item> -->
+<!--        <item>图像降噪</item> -->
+<!--        <item>清晰度</item> -->
+        <item>动态对比度</item>
+        <item>4K图像</item>
+<!--        <item>DBDR</item> -->
+    </string-array>
+
+    <!-- > ATV APP  < -->
+    <string-array name="picture_mode_setting">
+        <item>模式</item>
+        <item>亮度</item>
+        <item>对比度</item>
+        <item>色度</item>
+        <item>色调</item>
+        <item>清晰度</item>
+    </string-array>
+    <string-array name="color_temp_setting">
+        <item>色温模式</item>
+        <item>红色</item>
+        <item>绿色</item>
+        <item>蓝色</item>
+    </string-array>
+    <string-array name="VGA_setting">
+        <item>自动调整</item>
+        <item>水平</item>
+        <item>垂直</item>
+        <item>时钟</item>
+        <item>相位</item>
+    </string-array>
+    <string-array name="EQ_setting">
+        <item>120Hz</item>
+        <item>500Hz</item>
+        <item>1.5KHz</item>
+        <item>5KHz</item>
+        <item>10KHz</item>
+    </string-array>
+    <string-array name="SRS_setting">
+        <item>SRS开关</item>
+        <item>语音清晰度</item>
+        <item>低音提升</item>
+    </string-array>
+    <string-array name="Auto_Adjust">
+        <item>自动调整</item>
+    </string-array>
+
+    <string-array name="Stereo_Mode">
+        <item>左声道</item>
+        <item>右声道</item>
+        <item>立体声</item>
+    </string-array>
+    
+    <!-- The screen color system< -->
+    <string-array name="COLOR_CLRSYS">
+        <item>PAL</item>
+        <item>NTSC</item>
+    </string-array>
+
+    <!-- Display voice system< -->
+    <string-array name="SOUND_CLRSYS">
+        <item>DK</item>
+        <item>I</item>
+        <item>BG</item>
+        <item>M</item>
+    </string-array>
+    <string-array name="source">
+        <item>ATV</item>
+        <item>CVBS1</item>
+        <item>CVBS2</item>
+        <item>CVBS3</item>
+        <item>DTMB</item>
+        <item>DVBC</item>
+        <item>HDMI1</item>
+        <item>HDMI2</item>
+        <item>HDMI3</item>
+        <item>HDMI4</item>
+        <item>VGA</item>
+        <item>YPbPr</item>
+    </string-array>
+    <string-array name="source_next">
+        <item>720P 60Hz</item>
+    </string-array>
+    <string-array name="text_colorchange">
+        <item>#ffffff</item>
+        <item>#6B6B6B</item>
+        <item>#ff9900</item>
+        <item>#898989</item>
+    </string-array>
+
+</resources>

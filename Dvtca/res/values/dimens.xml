@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="first_mainmenu_textview_margin_r">20dp</dimen>
+    <dimen name="first_mainmenu_textview_textsise">24dp</dimen>
+    <dimen name="dvt_change_pin_item_text_size">24sp</dimen>
+    <dimen name="dvt_change_pin_btn_top">10dp</dimen>
+    <dimen name="dvt_smc_main_width">625dp</dimen>
+</resources>

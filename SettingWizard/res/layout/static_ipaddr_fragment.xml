@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settingwizard="http://schemas.android.com/apk/res/com.unionman.settingwizard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical">
+        <com.unionman.settingwizard.util.IpAddrEdit
+            android:id="@+id/ipet_ipaddr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            settingwizard:text="@string/ethernet_ipaddr">
+        </com.unionman.settingwizard.util.IpAddrEdit>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+   android:layout_marginBottom="20dp"        
+        android:gravity="center_vertical">
+        <com.unionman.settingwizard.util.IpAddrEdit
+            android:id="@+id/ipet_netmask"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            settingwizard:text="@string/ethernet_netmask">
+        </com.unionman.settingwizard.util.IpAddrEdit>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:layout_marginBottom="20dp"      
+        android:gravity="center_vertical">
+        <com.unionman.settingwizard.util.IpAddrEdit
+            android:id="@+id/ipet_gateway"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            settingwizard:text="@string/ethernet_gateway">
+        </com.unionman.settingwizard.util.IpAddrEdit>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+           android:layout_marginBottom="20dp"
+        android:gravity="center_vertical">
+        <com.unionman.settingwizard.util.IpAddrEdit
+            android:id="@+id/ipet_dns1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            settingwizard:text="@string/ethernet_dns1">
+        </com.unionman.settingwizard.util.IpAddrEdit>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+        <com.unionman.settingwizard.util.IpAddrEdit
+            android:id="@+id/ipet_dns2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:nextFocusDown="@+id/btn_save"
+            settingwizard:text="@string/ethernet_dns2">
+        </com.unionman.settingwizard.util.IpAddrEdit>
+    </LinearLayout>
+</LinearLayout>

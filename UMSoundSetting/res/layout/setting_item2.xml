@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_listItem_lay"
+    android:layout_width="match_parent"
+    android:layout_height="67dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+<LinearLayout 
+    android:layout_width="600dp"
+    android:layout_height="wrap_content"  
+       android:orientation="vertical"  
+    >
+    <TextView
+        android:id="@+id/setting_menu_item_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:paddingLeft="60dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/white" />
+       <TextView
+        android:id="@+id/setting_menu_item_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:paddingLeft="60dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray" 
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        />
+       </LinearLayout>
+       <LinearLayout 
+        android:layout_width="wrap_content"
+       android:layout_height="wrap_content"  
+       android:layout_marginLeft="40dp"
+       android:orientation="horizontal"
+           >
+       
+      
+<ImageView
+        android:id="@+id/left_arrow_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+         />
+    <TextView
+        android:id="@+id/setting_menu_item_val"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:text="@string/testtext"
+        android:gravity="center"
+        android:textSize="22sp" >
+   
+    </TextView>
+     <ImageView
+        android:id="@+id/right_arrow_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+       /> 
+
+       </LinearLayout>
+</LinearLayout>

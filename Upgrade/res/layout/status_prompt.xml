@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:background="@drawable/prompt"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_prompt_content"
+		android:layout_width="625dp"
+		android:layout_height="122dp"
+        android:paddingLeft="80dp"
+        android:text="@string/altert_dialog_title"
+        android:textColor="#0C4CA6"
+        android:textSize="30sp" />
+
+</LinearLayout>

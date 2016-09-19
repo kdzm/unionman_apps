@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dvb_setting_dvbc">
+        <item >Conditional Access</item>
+        <item >Main frequency set</item>
+        <item >Progress Info</item>
+<!--         <item >Password Setting</item>
+        <item >Soundchannel Setting</item> -->
+        <item >Factory Reset</item>
+    </string-array>
+    <string-array name="dvb_setting_instruct_dvbc">
+        <item >Set the parameters of CA</item>
+        <item >Set the local main frequency</item>
+        <item >View the information of current program</item>
+<!--         <item >Set the password of DVBC</item>
+        <item >Switch the Sound channel of TV</item> -->       
+        <item >All setup parameters of DVBC are reseted to factory defaults</item>
+    </string-array>
+    <string-array name="dvb_setting_dtmb">
+        <item >Progress Info</item>
+<!--         <item >Password Setting</item>
+        <item >Soundchannel Setting</item> -->
+        <item >Factory Reset</item>
+    </string-array>
+     <string-array name="dvb_setting_instruct_dtmb">
+        <item >View the information of current program</item>
+<!--         <item >Set the password of DTMB</item>
+        <item >Switch the Sound channel of TV</item>   -->      
+        <item >All setup parameters of DTMB are reseted to factory defaults</item>
+    </string-array>   
+</resources>

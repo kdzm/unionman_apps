@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="checkRadioButton_1">
+    <attr name="text1" format="string" />
+    <attr name="text_color1" format="reference|color" />
+    <attr name="text_size1" format="dimension" />
+    <attr name="text_marginLeft1" format="dimension" />
+    <attr name="text2" format="string" />
+    <attr name="text_color2" format="reference|color" />
+    <attr name="text_size2" format="dimension" />
+    <attr name="text_marginLeft2" format="dimension" />
+    <attr name="hasImage" format="boolean" />
+    <attr name="image_marginLeft" format="dimension" />
+    <attr name="image_src_unChecked" format="reference" />
+    <attr name="image_src_checked" format="reference" />
+    <attr name="image_bg" format="reference" />
+    <attr name="image_alpha" format="integer" />
+    <attr name="image_height" format="dimension" />
+    <attr name="image_width" format="dimension" />
+    <attr name="isChecked" format="boolean" />
+    <attr name="visibility" format="string" />
+    <attr name="check_model">
+        <enum name="radio" value="0" />
+        <enum name="checkbox" value="1" />
+    </attr>
+  </declare-styleable>
+</resources>

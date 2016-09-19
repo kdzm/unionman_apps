@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="first_mainmenu_textview_margin_r">20dp</dimen>
+    <dimen name="first_mainmenu_textview_textsise">24dp</dimen>
+</resources>

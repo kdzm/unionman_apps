@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UmPwdLock</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="set_factory_pwd">Set Reset Factory Password</string>
+    <string name="btn_reset_pwd">Reset Factory Password</string>
+    <string name="btn_restore_pwd">Restort Password</string>
+	<string name="password_setting">User Password Setting</string>
+	   
+    <string name="password_incorrect">password</string>
+    <string name="old_code">Old password</string>
+    <string name="new_code">New password</string>
+    <string name="confirm_code">Verify password</string>
+    <string name="incorrect">incorrect</string>
+    <string name="password_unmatch">Two new passwords are not match</string>
+    <string name="input_new_pwd">Please input six new password number</string>
+    <string name="modify_ok">Modified OK</string>
+    <string name="input_password_hint">Enter the password for six number</string>	 
+    
+        <string name="ok">Confirm</string>
+    <string name="cancel">Cancel</string>
+    
+        <string name="restore_success">Restore Success</string>
+</resources>

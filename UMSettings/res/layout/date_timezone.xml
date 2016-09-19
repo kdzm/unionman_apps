@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sw="http://schemas.android.com/apk/res/net.sunniwell.app.swsettings.huawei"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/date_timezone" />
+
+    <ListView
+        android:id="@id/date_timezone_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:clipChildren="true"
+        android:divider="@drawable/background_divider"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="0.0dip"
+        android:listSelector="@drawable/selector_menulistview"
+        android:nextFocusDown="@id/date_timezone_list"
+        android:nextFocusLeft="@id/leftMenu_layout"
+        android:nextFocusUp="@id/date_timezone_list" />
+
+</LinearLayout>

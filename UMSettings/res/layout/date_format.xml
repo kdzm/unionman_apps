@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sw="http://schemas.android.com/apk/res/com.unionman.settings"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/trans"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/date_date_format" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@id/crb_date_format_local"
+        style="@style/checkRadioButton_normal"
+        android:nextFocusUp="@id/crb_date_format_local"
+        sw:check_model="radio" />
+
+    <include layout="@layout/divider" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@id/crb_date_format_1"
+        style="@style/checkRadioButton_normal"
+        sw:check_model="radio" />
+
+    <include layout="@layout/divider" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@id/crb_date_format_2"
+        style="@style/checkRadioButton_normal"
+        sw:check_model="radio" />
+
+    <include layout="@layout/divider" />
+
+    <com.unionman.settings.custom.CheckRadioButton
+        android:id="@id/crb_date_format_3"
+        style="@style/checkRadioButton_normal"
+        android:nextFocusDown="@id/crb_date_format_3"
+        sw:check_model="radio" />
+
+    <include layout="@layout/divider" />
+
+</LinearLayout>

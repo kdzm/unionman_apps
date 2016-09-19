@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/background_dialog.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/button_bg_focus.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/button_bg_focus_disable.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/button_bg_normal.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/button_bg_normal_disable.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/input_long_bg_focus.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/input_long_bg_normal.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/input_short_bg_focus.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/input_short_bg_normal.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/selector_button.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/selector_short_input.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/dialog_input_id.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/values/colors.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/unionman/gettoken/CustomDialog.java" charset="UTF-8" />
+  </component>
+</project>

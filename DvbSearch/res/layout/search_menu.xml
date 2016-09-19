@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dvb_background"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:id="@+id/searchmode"
+        android:layout_width="@dimen/search_menu_item_width"
+        android:layout_height="@dimen/search_menu_item_height"
+        android:layout_marginTop="@dimen/search_menu_content_margin_top_1"
+        android:background="@drawable/dvbsetting_item_sh"
+        android:gravity="center|left" >
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="@dimen/search_menu_title_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/search_type"
+            android:textSize="@dimen/search_menu_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/autosearch"
+            android:layout_width="@dimen/search_menu_item_content_width_mid"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/search_menu_item_content_margin_left"
+            android:textColor="@color/white"
+            android:text="@string/auto_serach"
+            android:focusable="true"
+            android:nextFocusDown="@+id/sign_check_btn"
+            android:textSize="@dimen/search_menu_title_text_size" >
+            <requestFocus>
+            </requestFocus>
+        </TextView>
+
+        <TextView
+            android:id="@+id/manulsearch"
+            android:layout_width="@dimen/search_menu_item_content_width_mid"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/search_menu_item_content_margin_left"
+            android:textColor="@color/white"
+            android:text="@string/menul_search"
+            android:focusable="true"
+            android:nextFocusDown="@+id/sign_check_btn"
+            android:textSize="@dimen/search_menu_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/fullsearch"
+            android:layout_width="@dimen/search_menu_item_content_width_mid"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/search_menu_item_content_margin_left"
+            android:textColor="@color/white"
+            android:text="@string/all_serach"
+            android:focusable="true"
+            android:nextFocusDown="@+id/sign_check_btn"
+            android:textSize="@dimen/search_menu_title_text_size" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setfre"
+        android:layout_width="@dimen/search_menu_item_width"
+        android:layout_height="@dimen/search_menu_item_height"
+        android:layout_marginTop="@dimen/search_menu_content_margin_top_2"
+        android:background="@drawable/dvbsetting_item_sh"
+        android:gravity="center|left" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/search_menu_title_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/frequency"
+            android:textSize="@dimen/search_menu_title_text_size" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/layoutfreq"
+            android:layout_width="@dimen/search_menu_edit_text_item_width"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/search_menu_edit_text_margin_left"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/search_edit_frq"
+                android:layout_width="@dimen/search_menu_edit_text_width"
+                android:layout_height="@dimen/search_menu_edit_text_height"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:inputType="numberDecimal"
+                android:focusable="true"
+                android:maxLength="3"
+                android:textSize="@dimen/search_menu_title_text_size"
+                android:selectAllOnFocus="true">
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:textColor="@color/white"
+            android:text="@string/frq_unit"
+            android:textSize="@dimen/search_menu_title_text_size" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setsymbol"
+        android:layout_width="@dimen/search_menu_item_width"
+        android:layout_height="@dimen/search_menu_item_height"
+        android:layout_marginTop="@dimen/search_menu_content_margin_top_3"
+        android:background="@drawable/dvbsetting_item_sh"
+        android:gravity="center|left" >
+
+        <TextView
+            android:id="@+id/textViewsymbol"
+            android:layout_width="@dimen/search_menu_title_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/symbol"
+            android:textSize="@dimen/search_menu_title_text_size" />
+        <LinearLayout
+            android:id="@+id/layoutsymbol"
+            android:layout_width="@dimen/search_menu_edit_text_item_width"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/search_menu_edit_text_margin_left"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/search_edit_symbol"
+                android:layout_width="@dimen/search_menu_edit_text_width"
+                android:layout_height="@dimen/search_menu_edit_text_height"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:focusable="true"
+                android:maxLength="4"
+                android:textSize="@dimen/search_menu_title_text_size"
+                android:selectAllOnFocus="true">
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:textColor="@color/white"
+            android:text="@string/sym_unit"
+            android:textSize="@dimen/search_menu_title_text_size" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setmodulation"
+        android:layout_width="@dimen/search_menu_item_width"
+        android:layout_height="@dimen/search_menu_item_height"
+        android:layout_marginTop="@dimen/search_menu_content_margin_top_4"
+        android:background="@drawable/dvbsetting_item_sh"
+        android:gravity="center|left" >
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="@dimen/search_menu_title_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/modulation"
+            android:textSize="@dimen/search_menu_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textViewQam1"
+            android:layout_width="@dimen/search_menu_item_content_width_small"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/search_menu_item_content_margin_left"
+            android:textColor="@color/white"
+            android:text="@string/qam16"
+            android:focusable="true"
+            android:nextFocusDown="@+id/sign_check_btn"
+            android:textSize="@dimen/search_menu_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textViewQam2"
+            android:layout_width="@dimen/search_menu_item_content_width_small"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/search_menu_item_content_margin_left"
+            android:textColor="@color/white"
+            android:text="@string/qam32"
+            android:focusable="true"
+            android:nextFocusDown="@+id/sign_check_btn"
+            android:textSize="@dimen/search_menu_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textViewQam3"
+            android:layout_width="@dimen/search_menu_item_content_width_small"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/search_menu_item_content_margin_left"
+            android:textColor="@color/white"
+            android:text="@string/qam64"
+            android:focusable="true"
+            android:nextFocusDown="@+id/sign_check_btn"
+            android:textSize="@dimen/search_menu_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textViewQam4"
+            android:layout_width="@dimen/search_menu_item_content_width_small"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/search_menu_item_content_margin_left"
+            android:textColor="@color/white"
+            android:text="@string/qam128"
+            android:focusable="true"
+            android:nextFocusDown="@+id/sign_check_btn"
+            android:textSize="@dimen/search_menu_title_text_size" >
+        </TextView>
+	
+        <TextView
+            android:id="@+id/textViewQam5"
+            android:layout_width="@dimen/search_menu_item_content_width_small"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/search_menu_item_content_margin_left"
+            android:textColor="@color/white"
+            android:text="@string/qam256"
+            android:focusable="true"
+            android:nextFocusRight="@+id/sign_check_btn"
+            android:nextFocusDown="@+id/sign_check_btn"
+            android:textSize="@dimen/search_menu_title_text_size" >
+        </TextView>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/setBand"
+        android:layout_width="@dimen/search_menu_item_width"
+        android:layout_height="@dimen/search_menu_item_height"
+        android:layout_marginTop="@dimen/search_menu_content_margin_top_3"
+        android:background="@drawable/dvbsetting_item_sh"
+        android:gravity="center|left" >
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="@dimen/search_menu_title_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/band"
+            android:textSize="@dimen/search_menu_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textViewBand1"
+            android:layout_width="@dimen/search_menu_item_content_width_small"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/search_menu_item_content_margin_left"
+            android:textColor="@color/white"
+            android:text="@string/M6"
+            android:focusable="true"
+            android:nextFocusDown="@+id/sign_check_btn"
+            android:textSize="@dimen/search_menu_title_text_size" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textViewBand2"
+            android:layout_width="@dimen/search_menu_item_content_width_small"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/search_menu_item_content_margin_left"
+            android:textColor="@color/white"
+            android:text="@string/M8"
+            android:focusable="true"
+            android:nextFocusRight="@+id/sign_check_btn"
+            android:nextFocusDown="@+id/sign_check_btn"
+            android:textSize="@dimen/search_menu_title_text_size" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_sure"
+        android:layout_width="@dimen/search_menu_item_width"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/search_menu_content_margin_top_5"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/search_check_btn"
+            android:layout_width="@dimen/search_menu_button_width"
+            android:layout_height="@dimen/search_menu_button_height"
+            android:background="@drawable/dvbsetting_ok_sh"
+            android:gravity="center"
+            android:focusable="true"
+            android:text="@string/ok"
+            android:textSize="@dimen/search_menu_title_text_size" >
+        </Button>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="@dimen/search_menu_item_content_width_mid"
+        android:layout_height="@dimen/search_menu_item_height"
+        android:id="@+id/search_focus"
+        android:layout_marginTop="@dimen/search_menu_content_margin_top_1"
+        android:layout_marginLeft="@dimen/search_menu_focus_layout_margin_left"
+        android:background="@drawable/dvbsetting_select_ok">
+    </ImageView>
+
+</RelativeLayout>
