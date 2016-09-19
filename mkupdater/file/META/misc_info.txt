@@ -1,0 +1,2 @@
+recovery_api_version=3
+fstab_version=2

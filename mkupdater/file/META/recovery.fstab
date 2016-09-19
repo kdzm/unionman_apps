@@ -1,0 +1,18 @@
+# device                                        mountpoint  fstype
+/dev/block/platform/hi_mci.1/by-name/fastboot   /fastboot   emmc    defaults        defaults
+/dev/block/platform/hi_mci.1/by-name/bootargs   /bootargs   emmc    defaults        defaults
+/dev/block/platform/hi_mci.1/by-name/recovery   /recovery   emmc    defaults        defaults
+/dev/block/platform/hi_mci.1/by-name/baseparam  /baseparam  emmc    defaults        defaults
+/dev/block/platform/hi_mci.1/by-name/panelparam /panelparam emmc    defaults        defaults
+/dev/block/platform/hi_mci.1/by-name/logo       /logo       emmc    defaults        defaults
+/dev/block/platform/hi_mci.1/by-name/kernel     /boot       emmc    defaults        defaults
+/dev/block/platform/hi_mci.1/by-name/misc       /misc       emmc    defaults        defaults
+/dev/block/platform/hi_mci.1/by-name/system     /system     ext4    defaults        defaults
+/dev/block/platform/hi_mci.1/by-name/userdata   /data       ext4    defaults        defaults
+/dev/block/platform/hi_mci.1/by-name/cache      /cache      ext4    defaults        defaults
+/dev/block/sda1                                 /sdcard     auto    defaults        defaults
+#UNIONMAN BEGIN
+/dev/block/platform/hi_mci.1/by-name/sdcard      /sdcardInside      ext4    defaults        defaults
+/dev/block/platform/hi_mci.1/by-name/custom      /custom      ext4    defaults        defaults
+/dev/block/platform/hi_mci.1/by-name/facdata      /facdata      ext4    defaults        defaults
+#UNIONMAN END
