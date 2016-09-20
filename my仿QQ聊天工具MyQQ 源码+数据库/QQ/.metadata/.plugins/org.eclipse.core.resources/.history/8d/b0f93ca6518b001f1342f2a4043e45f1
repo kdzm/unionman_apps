@@ -1,0 +1,33 @@
+package com.qq.servre.model;
+
+import com.qq.common.User;
+import com.qq.server.db.SqlHelper;
+import javax.swing.*;
+public class QqServerUser {
+	public void Serverinsert(String []paras)
+	{
+		boolean b=true;
+		SqlHelper mysql=new SqlHelper();
+		String sql="insert into personalinfo(qum,petname,password,sex) values(?,?,?,?,?)";
+		if(!mysql.SqlUpdate(sql, paras))
+		{
+			//提示
+			b=false;
+		}
+		//关闭对话
+	}
+	public boolean CheckUser(User u)
+	{
+		boolean b=false;
+		String sql="select * from personalinfo where qnum=? and password=?";
+		String []paras=new String[2];
+		paras[0]=u.getQum();
+		paras[1]=u.getPassword();
+		if(new SqlHelper().SqlQuery(sql,paras))
+		{
+			b=true;
+		}
+		return b;
+	}
+	
+}

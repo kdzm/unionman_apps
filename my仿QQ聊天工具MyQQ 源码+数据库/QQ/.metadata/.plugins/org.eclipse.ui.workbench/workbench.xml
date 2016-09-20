@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="21" version="2.0">
+<workbenchAdvisor/>
+<window height="741" maximized="true" width="1036" x="22" y="11">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="98" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="124" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="98" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="62" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="39" y="22"/>
+<coolItem id="org.eclipse.ui.examples.contributions.editor.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.examples.contributions.toolbars.sampleToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.examples.fieldassist.actionSet" itemType="typeToolBarContribution" x="39" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="183" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1278173065703" focus="true" label="工作空间 - Java">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SqlHelper.java" partName="SqlHelper.java" path="E:/java/作品/QQ/Qqserver/src/com/qq/server/db/SqlHelper.java" title="SqlHelper.java" tooltip="Qqserver/src/com/qq/server/db/SqlHelper.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Qqserver/src/com/qq/server/db/SqlHelper.java"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="0"/>
+</editor>
+<editor focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QqClientLogin.java" partName="QqClientLogin.java" path="E:/java/作品/QQ/QqClient/src/com/qq/client/view/QqClientLogin.java" title="QqClientLogin.java" tooltip="QqClient/src/com/qq/client/view/QqClientLogin.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/QqClient/src/com/qq/client/view/QqClientLogin.java"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="4"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.jdt.ui.TypeHierarchy" partName="层次结构">
+<viewState hidefields="false" hidelocaltypes="false" hidenonpublic="false" hidestatic="false" input="=QqClient/src&lt;com.qq.client.view{QqClientLogin.java[QqClientLogin" isWindowWorkingSet="true" link_editors="0" mv_vertical_scroll="0" orientation="3" qualified_names="0" ratio="350" selection="=QqClient/src&lt;com.qq.client.view{QqClientLogin.java[QqClientLogin" showinherited="false" sortbydefiningtype="false" vertical_scroll="0" view="2" workingSetName=""/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="问题">
+<viewState columnWidth0="250" columnWidth1="75" columnWidth2="150" columnWidth3="60" columnWidth4="0" horizontalPosition="0" verticalPosition="0">
+<columnOrder columnOrderIndex="0"/>
+<columnOrder columnOrderIndex="1"/>
+<columnOrder columnOrderIndex="2"/>
+<columnOrder columnOrderIndex="3"/>
+<columnOrder columnOrderIndex="4"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="控制台">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.PackageExplorer" partName="包资源管理器">
+<viewState group_libraries="1" isWindowWorkingSet="true" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.FieldsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*" isEnabled="true"/>
+<child filterId="org.eclipse.pde.ui.BinaryProjectFilter1" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
+</xmlDefinedFilters>
+</customFilters>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="大纲">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.SourceView" partName="声明"/>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
+</views>
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.examples.fieldassist.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.WorkingSetActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.update.ui.softwareUpdates"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.junit.JUnitActionSet"/>
+<show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
+<show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<show_view_action id="org.eclipse.jdt.ui.SourceView"/>
+<show_view_action id="org.eclipse.jdt.ui.JavadocView"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.views.ProgressView"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewInterfaceCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewEnumCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewAnnotationCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSnippetFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<new_wizard_action id="org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
+<view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
+<view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.2992"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@a60191" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="包资源管理器"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="层次结构"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1a791f" ratio="0.75" ratioLeft="756" ratioRight="252" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.22302738" ratioLeft="277" ratioRight="965" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.6923077" ratioLeft="459" ratioRight="204" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView:Console View #1" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@a60191" ratio="0.86929715" ratioLeft="705" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/client/view/QqFriendList.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/client/view/QqClientLogin.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/client/tools/ClientConServerThread.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/client/tools/ManageClientConServerThread.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/client/model/QqClientConServer.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Qqserver/src/com/qq/server/model/MyQqServer.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Qqserver/src/com/qq/server/view/MyServerFrame.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/common/Message.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/common/User.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Qqserver/src/com/qq/server/db/SqlHelper.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/common/Message.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/common/MessageType.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/common/User.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/client/model/QqClientConServer.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/client/model/QqClientUser.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/client/tools/ClientConServerThread.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/client/tools/ManageClientConServerThread.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/client/tools/ManageQqChat.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/client/tools/ManageQqFriendList.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/client/view/QqChat.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/client/view/QqClientLogin.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/client/view/QqFriendList.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/client/view/Register.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Qqserver/src/com/qq/server/view/MyServerFrame.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Qqserver/src/com/qq/server/model/MyQqServer.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Qqserver/src/com/qq/server/model/QqServerUser.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Qqserver/src/com/qq/server/model/SerConClientThread.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Qqserver/src/com/qq/server/model/ManageClientThread.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/QqClient/src/com/qq/client/view/QqClientLogin.java"/>
+</editors>
+<item historyLabel="MyQqServer.java" index="5">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="MyServerFrame.java" index="6">
+<position info="not_deleted" x="514" y="0"/>
+</item>
+<item historyLabel="Message.java" index="7">
+<position/>
+</item>
+<item historyLabel="QqClientLogin.java" index="1">
+<position info="not_deleted" x="5909" y="0"/>
+</item>
+<item historyLabel="MyServerFrame.java" index="6">
+<position info="not_deleted" x="860" y="0"/>
+</item>
+<item historyLabel="MyQqServer.java" index="5">
+<position info="not_deleted" x="641" y="0"/>
+</item>
+<item historyLabel="QqClientConServer.java" index="4">
+<position info="not_deleted" x="360" y="0"/>
+</item>
+<item historyLabel="ClientConServerThread.java" index="2">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="ManageClientConServerThread.java" index="3">
+<position info="not_deleted" x="514" y="0"/>
+</item>
+<item historyLabel="ClientConServerThread.java" index="2">
+<position info="not_deleted" x="737" y="0"/>
+</item>
+<item historyLabel="Message.java" index="7">
+<position info="not_deleted" x="236" y="0"/>
+</item>
+<item historyLabel="ClientConServerThread.java" index="2">
+<position info="not_deleted" x="1347" y="0"/>
+</item>
+<item historyLabel="User.java" index="8">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="ManageClientConServerThread.java" index="3">
+<position info="not_deleted" x="378" y="0"/>
+</item>
+<item historyLabel="QqFriendList.java" index="0">
+<position info="not_deleted" x="481" y="0"/>
+</item>
+<item historyLabel="SqlHelper.java" index="9">
+<position/>
+</item>
+<item historyLabel="Message.java" index="10">
+<position/>
+</item>
+<item historyLabel="MessageType.java" index="11">
+<position/>
+</item>
+<item historyLabel="User.java" index="12">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="Message.java" index="10">
+<position/>
+</item>
+<item historyLabel="QqClientConServer.java" index="13">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="QqClientUser.java" index="14">
+<position/>
+</item>
+<item historyLabel="ClientConServerThread.java" index="15">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="ManageClientConServerThread.java" index="16">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="ManageQqChat.java" index="17">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="ManageQqFriendList.java" index="18">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="QqChat.java" index="19">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="QqClientLogin.java" index="20">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="QqFriendList.java" index="21">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="Register.java" index="22">
+<position/>
+</item>
+<item historyLabel="MyServerFrame.java" index="23">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="MyQqServer.java" index="24">
+<position/>
+</item>
+<item historyLabel="QqServerUser.java" index="25">
+<position/>
+</item>
+<item historyLabel="MyQqServer.java" index="24">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="QqServerUser.java" index="25">
+<position/>
+</item>
+<item historyLabel="MyQqServer.java" index="24">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="QqServerUser.java" index="25">
+<position info="not_deleted" x="426" y="0"/>
+</item>
+<item historyLabel="SerConClientThread.java" index="26">
+<position/>
+</item>
+<item historyLabel="QqServerUser.java" index="25">
+<position info="not_deleted" x="365" y="0"/>
+</item>
+<item historyLabel="SqlHelper.java" index="9">
+<position info="not_deleted" x="224" y="9"/>
+</item>
+<item historyLabel="QqServerUser.java" index="25">
+<position info="not_deleted" x="365" y="0"/>
+</item>
+<item historyLabel="SerConClientThread.java" index="26">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="ManageClientThread.java" index="27">
+<position/>
+</item>
+<item historyLabel="SerConClientThread.java" index="26">
+<position info="not_deleted" x="296" y="0"/>
+</item>
+<item historyLabel="ManageClientThread.java" index="27">
+<position/>
+</item>
+<item historyLabel="SerConClientThread.java" index="26">
+<position info="not_deleted" x="296" y="0"/>
+</item>
+<item historyLabel="ManageClientThread.java" index="27">
+<position/>
+</item>
+<item historyLabel="QqServerUser.java" index="25">
+<position info="not_deleted" x="365" y="0"/>
+</item>
+<item historyLabel="SqlHelper.java" index="9">
+<position/>
+</item>
+<item active="true" historyLabel="QqClientLogin.java" index="28">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@a60191"/>
+</trimArea>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.examples.contributions.verticalTrim"/>
+<trimItem IMemento.internal.id="bottom"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QqClientLogin.java" tooltip="QqClient/src/com/qq/client/view/QqClientLogin.java">
+<persistable path="/QqClient/src/com/qq/client/view/QqClientLogin.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SqlHelper.java" tooltip="Qqserver/src/com/qq/server/db/SqlHelper.java">
+<persistable path="/Qqserver/src/com/qq/server/db/SqlHelper.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ManageClientThread.java" tooltip="Qqserver/src/com/qq/server/model/ManageClientThread.java">
+<persistable path="/Qqserver/src/com/qq/server/model/ManageClientThread.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SerConClientThread.java" tooltip="Qqserver/src/com/qq/server/model/SerConClientThread.java">
+<persistable path="/Qqserver/src/com/qq/server/model/SerConClientThread.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyQqServer.java" tooltip="Qqserver/src/com/qq/server/model/MyQqServer.java">
+<persistable path="/Qqserver/src/com/qq/server/model/MyQqServer.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QqServerUser.java" tooltip="Qqserver/src/com/qq/server/model/QqServerUser.java">
+<persistable path="/Qqserver/src/com/qq/server/model/QqServerUser.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyServerFrame.java" tooltip="Qqserver/src/com/qq/server/view/MyServerFrame.java">
+<persistable path="/Qqserver/src/com/qq/server/view/MyServerFrame.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Register.java" tooltip="QqClient/src/com/qq/client/view/Register.java">
+<persistable path="/QqClient/src/com/qq/client/view/Register.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QqFriendList.java" tooltip="QqClient/src/com/qq/client/view/QqFriendList.java">
+<persistable path="/QqClient/src/com/qq/client/view/QqFriendList.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QqChat.java" tooltip="QqClient/src/com/qq/client/view/QqChat.java">
+<persistable path="/QqClient/src/com/qq/client/view/QqChat.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ManageQqFriendList.java" tooltip="QqClient/src/com/qq/client/tools/ManageQqFriendList.java">
+<persistable path="/QqClient/src/com/qq/client/tools/ManageQqFriendList.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ManageQqChat.java" tooltip="QqClient/src/com/qq/client/tools/ManageQqChat.java">
+<persistable path="/QqClient/src/com/qq/client/tools/ManageQqChat.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ManageClientConServerThread.java" tooltip="QqClient/src/com/qq/client/tools/ManageClientConServerThread.java">
+<persistable path="/QqClient/src/com/qq/client/tools/ManageClientConServerThread.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientConServerThread.java" tooltip="QqClient/src/com/qq/client/tools/ClientConServerThread.java">
+<persistable path="/QqClient/src/com/qq/client/tools/ClientConServerThread.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QqClientUser.java" tooltip="QqClient/src/com/qq/client/model/QqClientUser.java">
+<persistable path="/QqClient/src/com/qq/client/model/QqClientUser.java"/>
+</file>
+</mruList>
+</workbench>

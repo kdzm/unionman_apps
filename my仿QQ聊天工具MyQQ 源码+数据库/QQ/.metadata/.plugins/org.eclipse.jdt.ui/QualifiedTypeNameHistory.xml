@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.ClassLoader"/>
+<fullyQualifiedTypeName name="java.awt.Event"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="com.qq.client.model.QqClientUser"/>
+<fullyQualifiedTypeName name="com.qq.servre.model.MyQqServer"/>
+<fullyQualifiedTypeName name="com.qq.client.view.QqChat"/>
+<fullyQualifiedTypeName name="com.qq.client.view.QqFriendList"/>
+<fullyQualifiedTypeName name="com.qq.common.Message"/>
+<fullyQualifiedTypeName name="com.qq.server.view.MyServerFrame"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.util.URI"/>
+<fullyQualifiedTypeName name="java.net.URISyntaxException"/>
+<fullyQualifiedTypeName name="javax.swing.border.TitledBorder"/>
+<fullyQualifiedTypeName name="com.qq.server.db.SqlHelper"/>
+<fullyQualifiedTypeName name="com.qq.common.User"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+</qualifiedTypeNameHistroy>

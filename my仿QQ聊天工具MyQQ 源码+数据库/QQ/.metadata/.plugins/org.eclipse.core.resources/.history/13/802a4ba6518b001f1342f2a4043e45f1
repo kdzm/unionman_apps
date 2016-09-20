@@ -1,0 +1,65 @@
+/*
+ * 这是qq服务器，它在监听，等待某个qq客户端来连接
+ */
+package com.qq.servre.model;
+import java.net.*;
+import java.awt.event.ActionEvent;
+import java.io.*;
+import java.util.*;
+import com.qq.common.Message;
+import com.qq.common.User;
+import com.qq.server.view.MyServerFrame;
+
+public class MyQqServer {
+
+	public MyQqServer()
+	{
+			//在9999端口监听
+			System.out.println("我是服务器,在9999监听");
+			ServerSocket ss = null;
+			try {
+				ss=new ServerSocket(9999);
+			} catch (Exception e) {
+				// TODO: handle exception
+				e.printStackTrace();
+			}
+			
+		try{
+			//阻塞，等待连接
+			while(true)//循环监听
+			{
+				Socket s=ss.accept();
+				
+				//接受客户端发来的信息
+				ObjectInputStream ois=new ObjectInputStream(s.getInputStream());
+				User u=(User)ois.readObject();
+				Message m=new Message();
+				ObjectOutputStream oos=new ObjectOutputStream(s.getOutputStream());
+	
+				//数据库的验证登陆
+				if(new QqServerUser().CheckUser(u))
+				{
+					//返回一个成功登陆的信息包
+					m.setMessType("1");
+					oos.writeObject(m);
+					//这里就单开一个线程。让该线程与该客户端保持通讯
+					SerConClientThread scct=new SerConClientThread(s);
+					ManageClientThread.addClientThread(u.getQum(),scct);
+					//启动与该客户端通信的线程
+					scct.start();
+					//并通知其他的在线用户
+					scct.notifyOther(u.getQum());
+					
+				}else{
+					m.setMessType("2");
+					oos.writeObject(m);
+					//关闭连接
+				}
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			
+			
+		}
+	}
+}
